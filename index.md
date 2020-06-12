@@ -1,4 +1,4 @@
-@def title = "Franklin Example"
+@def title = "BCBI Biomedical Informatics and Data Science Skills"
 @def tags = ["syntax", "code"]
 
 # How to use Franklin
