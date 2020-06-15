@@ -9,6 +9,7 @@ The website_* must be defined for the RSS to work
 
 @def author = "Center for Biomedical Informatics at Brown University"
 @def title = "BIDSS"
+@def prepath = "bidss"
 
 @def mintoclevel = 2
 
