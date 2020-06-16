@@ -215,7 +215,7 @@ SIDE BAR
 }
 
 .side-bar .footer {
-  width: 150px;
+  width: 250px;
   font-size: 13px;
   padding-right:1rem;
   padding-left:1rem;
@@ -243,7 +243,7 @@ input[type=checkbox]:checked ~ #side-menu{display: block;}
   }
   .side-bar .header {
     padding-left: 15px;
-    width: 150px;} /* middle space */
+    width: 250px;} /* middle space */
   .show-menu {display: block;}
 }
 /* side bar adjustments for narrow mode (bar on top) */
