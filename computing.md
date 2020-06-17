@@ -12,6 +12,14 @@
 ## Introduction
 ## Numbers and Math
 
+### Documentation
+* Manual
+    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
+    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/mathematical-operations/" target="_blank">Mathematical Operations and Elementary Functions</a> ~~~
+* Base
+    * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
+    * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
+
 ### Theory: Number Variable Types
 * Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
     * Signed: `Int8, Int16, Int32, Int64, and Int128`
