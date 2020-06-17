@@ -14,12 +14,26 @@
 
 ### Types of Numbers
 * Integer (positive and negative countin number) - e.g. -3, -2, -1, 0, 1, 2, and 3
-** Signed: Int8, Int16, Int32, Int64, Int128
+    * Signed: Int8, Int16, Int32, Int64, Int128
     * Unsigned: UInt8, UInt16, UInt32, UInt64, UInt128
     * Bool (0 = False and 1 = True)
 * Fload (real or floating point numbers) - e.g., -2.14, 0.0, and 3.777
     * Float16, FLoat32, Float64
 * Use typeof function to determine type
+
+```julia:./exdot.jl
+# Define two variables x and y
+x = 100
+y = 3.14
+
+# Print out the variable types for each
+println("$(typeof(x))")
+println("$(typeof(y))")
+```
+
+The above code produces:
+
+\output{./exdot.jl}
 
 ## Strings, Characters, and Regular Expressions
 ## Control Flow
