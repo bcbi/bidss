@@ -159,7 +159,7 @@ SIDE BAR
   text-align:right;
   padding-right: 2rem;
   border:0;
-  width: calc(100% - 220px);
+  width: calc(100% - 320px);
   background-color: white;
 }
 .side-bar .menu {
