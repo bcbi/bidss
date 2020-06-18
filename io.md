@@ -1,128 +1,125 @@
-@def title = "Scientific Computing and Julia"
+@def title = "File Input/Output"
 @def hascode = true
-@def date = Date(2019, 3, 22)
+@def date = Date(2020, 6, 18)
 @def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["julia", "file io", "input", "output"]
 
 # File Input/Output
 
 \toc
 
 ## Documentation
-* Manual
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/mathematical-operations/" target="_blank">Mathematical Operations and Elementary Functions</a> ~~~
-* Base
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
+* ~~~ <a href="https://www.oreilly.com/library/view/julia-10-programming/9781788999090/" target="_blank">Julia 1.0 Programming:</a> ~~~ Chapter 8 (I/O, Networking, and Parallel Computing)
+    * ~~~ <a href="https://www.oreilly.com/library/view/temporary-access/" target="_blank">Sign in for Brown University access to O'Reilly</a> ~~~  
+* Introducing Julia Wikibook: ~~~ <a href="https://en.wikibooks.org/wiki/Introducing_Julia/Working_with_text_files" target="_blank">Working with text files</a> ~~~
+* Julia Base: ~~~ <a href="https://docs.julialang.org/en/v1/base/io-network/#Base.readline" target="_blank">I/O and Network</a> ~~~ 
 
-## Theory: Number Variable Types
-* Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
-    * Signed: `Int8, Int16, Int32, Int64, and Int128`
-    * Unsigned: `UInt8, UInt16, UInt32, UInt64, and UInt128`
-    * Boolean: `Bool` (0 = False and 1 = True)
-* Float (real or floating point numbers) - e.g., `-2.14, 0.0, and 3.777`
-    * `Float16, Float32, Float64`
+## Theory: Reading and Writing Files
 
-## Examples:
+* Note: Using Julia Base functions only
 
-### Types of Numbers
+## Practice
 
-Use `typeof()` function to determine type
+### ~~~ <a href="https://archive.ics.uci.edu/ml/datasets/adult" target="_blank"> UCI Machine Learning Repository: Adult Data Set</a> ~~~ 
 
-Input:
+* Tabulate and report counts for sex in Adult Data Set
 
-```julia:./types.jl
-# Define two variables x and y
-x = 100
-y = 3.14
 
-# Print out the variable types for each
-println(typeof(x))
-println(typeof(y))
+
+**_Dataset_** (adult.data)
+
+```plaintext
+39, State-gov, 77516, Bachelors, 13, Never-married, Adm-clerical, Not-in-family, White, Male, 2174, 0, 40, United-States, <=50K
+50, Self-emp-not-inc, 83311, Bachelors, 13, Married-civ-spouse, Exec-managerial, Husband, White, Male, 0, 0, 13, United-States, <=50K
+38, Private, 215646, HS-grad, 9, Divorced, Handlers-cleaners, Not-in-family, White, Male, 0, 0, 40, United-States, <=50K
+53, Private, 234721, 11th, 7, Married-civ-spouse, Handlers-cleaners, Husband, Black, Male, 0, 0, 40, United-States, <=50K
+28, Private, 338409, Bachelors, 13, Married-civ-spouse, Prof-specialty, Wife, Black, Female, 0, 0, 40, Cuba, <=50K
 ```
 
-Output:
+**_Input_** (process_file.jl)
 
-\output{./types.jl}
+```julia:./process_file.jl
+# process_file.jl
+# Tabulate and report counts for sex in Adult Data Set
+# https://archive.ics.uci.edu/ml/datasets/adult
 
+# relative path of file
+data_file = open("_data/adult/adult.data", "r")
 
-### Arithmetic Operators
+# absolute path of file
+# data_file = open("/Users/user/data/adult/adult.data", "r")
 
-| Operator | Example |
-| :--- | :--- |
-| Addition | x + y |
-| Subtraction | x - y |
-| Multiplication | x * y |
-| Division | x / y |
-| Power (Exponent) | x ^ y |
-| Remainder (Modulo) | x % y |
-| Negation (for Bool) | !x |
+# initialize collection (dictionary for tabulating counts)
+gender_dict = Dict()
 
-Input:
+# read each line, extract sex, and keep track of counts
+for line in readlines(data_file)
 
-```julia:./math_operators.jl
-# Demonstrates different math operations
-using Printf
+  # skip empty lines
+  if isempty(line)
+      continue
+   end
 
-n1 = 7    # First number
-n2 = 3    # Second number
- 
-# Output results of different math operations
-println("$n1 + $n2 = $(n1 + n2)")             # Addition 
-println("$n1 - $n2 = $(n1 - n2)")             # Subtraction 
-println("$n1 * $n2 = $(n1 * n2)")             # Multiplication 
-println("$n1 / $n2 = $(n1 / n2)")             # Division 
-@printf("%d / %d = %.2f\n", n1, n2, n1 / n2)  # Print to 2 decimal places
-println("$n1 ^ $n2 = $(n1 ^ n2)")             # Power/Exponent
-println("$n1 % $n2 = $(n1 % n2)")             # Modulo/Remainder
+  # split line into array, based on delimiter (comma and space)
+  line_array = split(line, ", ")
+
+  # tabulate the counts for gender
+  gender = line_array[10]
+  if haskey(gender_dict, gender)
+    gender_dict[gender] += 1
+  else
+    gender_dict[gender] = 1
+  end
+end
+
+# report total counts
+println("Sort by key (alphabetical):")
+for gender in keys(gender_dict)
+  println("  $gender = $(gender_dict[gender])")
+end
+
+# report total counts by key, in reverse order
+println("Sort by key (reverse alphabetical):")
+for gender in sort(collect(keys(gender_dict)), rev=true)
+  println("  $gender = $(gender_dict[gender])")
+end
+
+# report total counts by value, in reverse order (send output to file)
+output_file = open("process_file_output.txt", "w")
+println("Sort by value (reverse numerical):")
+for (count, gender) in sort(collect(zip(values(gender_dict),keys(gender_dict))), rev=true)
+  println("  $gender = $(gender_dict[gender])")
+  write(output_file, "$gender = $count\n")
+end
 ```
 
-Output:
+**_Output_**
 
-\output{./math_operators.jl}
+\output{./process_file.jl}
 
-### Comparison Operators and Functions
 
-Input:
+### From BIDSS Manual (Need to Modify)
 
-| Operator | Example |
-| :--- | :--- |
-| Equality | x == y or isequal(x, y) |
-| Inequality | x != y or !isequal (x, y) |
-| Less than | x < y |
-| Less than or equal to | x <= y |
-| Greater than | x > y |
-| Greater than or equal to | x >= y |
+**_Terminal_**
 
-```julia:./compare_operators.jl
-# compare.jl                                                                                                 
-# Demonstrate comparison operators                                                                               
+```plaintext
+$ julia process_file.jl
+Sort by key (alphabetical):
+  Female = 10771
+  Male = 21790
+Sort by key (reverse alphabetical):
+  Male = 21790
+  Female = 10771
+Sort by value (reverse numerical):
+  Male = 21790
+  Female = 10771
 
-# Assign values to variables using parallel assignment                                                           
-c1, c2, c3, c4 = 25, 50, 75, 50
-println("c1 = $(c1), c2 = $(c2), c3 = $(c3), c4 = $(c4)")
+$ ls -1
+process_file.jl
+process_file_output.txt
 
-# Output results of different comparison operations                                                             
- 
-# Testing equality                                                                                               
-println("  c1 = c3 is $(c1 == c3)")
-println("  c2 = c4 is $(isequal(c2, c4))")
-
-# Changing values using abbreviated assignment operators                                                        
-c1 *= 3    	# Shorthand for c1 = c1 * 3                                                                       
-c4 += 1    	# Shorthand for c4 = c4 + 1                                                                       
-
-println("c1 = $(c1), c2 = $(c2), c3 = $(c3), c4 = $(c4)")
- 
-# Testing less than and greater than
-println("  c1 < c2 is $(c1 < c2)")
-println("  c4 <= c2 is $(c4 <= c2)")
-println("  c1 > c2 is $(c1 > c2)")
-println("  c3 >= c2 is $(c3 >= c2)") 
+$ more process_file_output.txt
+Male = 21790
+Female = 10771
 ```
-
-Output:
-
-\output{./compare_operators.jl}
