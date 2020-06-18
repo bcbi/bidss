@@ -212,8 +212,8 @@ SIDE BAR
 .menu-list-link.active{
   font-weight:600;
   color:#ed1c24;
-  padding-top:0.25rem;
-  padding-bottom:0.25rem;
+  padding-top:0rem;
+  padding-bottom:0rem;
   text-decoration:none;
 }
 
