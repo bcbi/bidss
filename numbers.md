@@ -17,7 +17,7 @@
     * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
     * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
 
-## Theory: Number Variable Types
+## Theory
 * Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
     * Signed: `Int8, Int16, Int32, Int64, and Int128`
     * Unsigned: `UInt8, UInt16, UInt32, UInt64, and UInt128`
@@ -25,7 +25,7 @@
 * Float (real or floating point numbers) - e.g., `-2.14, 0.0, and 3.777`
     * `Float16, Float32, Float64`
 
-## Examples:
+## Practice
 
 ### Types of Numbers
 

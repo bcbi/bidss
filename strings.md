@@ -1,128 +1,171 @@
-@def title = "Scientific Computing and Julia"
+@def title = "Strings, Characters, and Regular Expressions"
 @def hascode = true
 @def date = Date(2019, 3, 22)
 @def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
 
 @def tags = ["setup", "enviornment"]
 
-# Strings, Characters, and Regular Expressions TEST
+# Strings, Characters, and Regular Expressions
 
 \toc
 
 ## Documentation
-* Manual
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/mathematical-operations/" target="_blank">Mathematical Operations and Elementary Functions</a> ~~~
-* Base
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
+* Julia
+    * Manual: ~~~ <a href="https://docs.julialang.org/en/v1/manual/strings/" target="_blank">Strings</a> ~~~
+    * Base: ~~~ <a href="https://docs.julialang.org/en/v1/base/strings/" target="_blank">Strings</a> ~~~
+* Regular Expressions
+    * ~~~ <a href="https://regex101.com/" target="_blank">Regular Expressions 101</a> ~~~
+    * ~~~ <a href="http://www.regexlib.com/" target="_blank">Regular Expressions Library</a> ~~~
+    * ~~~ <a href="http://www.regexlib.com/CheatSheet.aspx" target="_blank">Regular Expressions Cheat Sheet</a> ~~~
 
-## Theory: Number Variable Types
-* Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
-    * Signed: `Int8, Int16, Int32, Int64, and Int128`
-    * Unsigned: `UInt8, UInt16, UInt32, UInt64, and UInt128`
-    * Boolean: `Bool` (0 = False and 1 = True)
-* Float (real or floating point numbers) - e.g., `-2.14, 0.0, and 3.777`
-    * `Float16, Float32, Float64`
+## Theory
 
-## Examples:
+## Practice
 
-### Types of Numbers
+### Characters and Strings
+* `Char` is a single character
+* `String` is a sequence of one or more characters (index values start at `1`)
+
+#### Some functions that can be performed on strings
+
+| Action                                            | Function                          |
+| :------------------------------------------------ | :-------------------------------- |
+| get `word` length                                 | `length(word)`                    |
+| extract `nth` character from `word`               | `word[n]`                         |
+| extract substring `nth-mth` character from `word` | `word[n:m]`                       |
+| search for `letter` in `word`                     | `findfirst(isequal(letter), word)`|
+| search for `subword` in `word`                    | `occursin(word, subword)`         |
+| remove record separator from `word` (e.g., `n`)   | `chomp(word)`                     |
+| remove last character from `word`                 | `chop(word)`                      |
+
 
 Use `typeof()` function to determine type
 
 Input:
 
-```julia:./types.jl
-# Define two variables x and y
-x = 100
-y = 3.14
+```julia:./chars_and_strings.jl
+# chars_and_strings.jl
 
-# Print out the variable types for each
-println(typeof(x))
-println(typeof(y))
+letter = 'b'
+word = "good-bye"
+subword = "good"
+
+word_length = length(word)
+word_first_char = word[1]
+word_subword = word[6:8]
+
+println("Length of word: $word_length")
+println("First character: $word_first_char")
+println("Last three characters: $word_subword")
+
+println("$letter is in $word: $(findfirst(isequal(letter), word))")
+println("$subword is in $word: $(occursin(word, subword))")
+println("chop off the last character: $(chop(word))")
+
 ```
 
 Output:
 
-\output{./types.jl}
+\output{./chars_and_strings.jl}
 
 
-### Arithmetic Operators
+### Regular Expressions (regex)
 
-| Operator | Example |
-| :--- | :--- |
-| Addition | x + y |
-| Subtraction | x - y |
-| Multiplication | x * y |
-| Division | x / y |
-| Power (Exponent) | x ^ y |
-| Remainder (Modulo) | x % y |
-| Negation (for Bool) | !x |
+*Regular expressions* are powerful tools for pattern matching and text processing. They are representated ad a `pattern` that consists of a special set of characters to search for in a string `str`.
+
+#### Functions
+
+| Action                                            | Function                          |
+| :------------------------------------------------ | :-------------------------------- |
+| Check if regex matches a string		            | 'occursin(r"pattern", str)'       |
+| Capture regex matches			                    | `match(r"pattern", str)`          |
+| Specify alternative regex			                | `pattern1|pattern2`              |
+
+
+#### Character Class 
+
+*Character class* specifies a list of characters to match (`[...]` where `...` represents the list) or not match (`[^...]`)
+
+| Character Class                                           | `...`                             |
+| :-------------------------------------------------------- | :-------------------------------- |
+| Any lowercase vowel                                       | `\[aeiou]`                        |
+| Any digit                                                 | `[0-9]`                           |
+| Any lowercase letter                                      | `[a-z]`                           |
+| Any uppercase letter                                      | `[A-Z]`                           |
+| Any digit, lowercase letter, or uppercase letter          | `[a-zA-Z0-9]`                     |
+| Anything except a lowercase vowel                         | `[^aeiou]`                        |
+| Anything except a digit                                   | `[^0-9]`                          |
+| Anything except a space                                   | `[^ ]`                            |
+| Any character                                             | `.`                               |
+| Any word character (equivalent to `[a-zA-Z0-9_]`)         | `\w`                              |
+| Any non-word character (equivalent to `[^a-zA-Z0-9_]`)    | `W`                               |
+| A digit character (equivalent to `[0-9]`)                 | `\d`                              |
+| Any non-digit character (equivalent to `[^0-9]`)          | `\D`                              |
+| Any whitespace character (equivalent to `[\t\r\n\f]`)     | `\s`                              |
+| Any non-whitespace character (equivalent to `[^\t\r\n\f]`)| `\S`                              |
+
+
+#### Anchors
+
+*Anchors* are special characters that can be used to match a pattern at a specified position
+
+| Anchor                                            | Special Character                 |
+| :------------------------------------------------ | :-------------------------------- |
+| Beginning of line	                                | `^`                               |
+| End of line                                       | `$`                               |
+| Beginning of string                               | `\A`                              |
+| End of string                                     | `\Z`                              |
+
+
+#### Repetition and Quantifier Characters
+
+*Repetition or quantifier characters* specify the number of times to match a particular character or set of characters
+
+| Repetition                                        | Character                |
+| :------------------------------------------------ | :----------------------- |
+| Zero or more times                                | `*`                      |
+| One or more times                                 | `+`                      |
+| Zero or one time                                  | `?`                      |
+| Exactly n times                                   | `{n}`                    |
+| n or more times                                   | `{n,}`                   |
+| m or less times                                   | `{,m}`                   |
+| At least n and at most m times                    | `{n.m}`                  |
 
 Input:
 
-```julia:./math_operators.jl
-# Demonstrates different math operations
-using Printf
+```julia:./regex.jl
+# regex.jl
+number1 = "(555)123-4567"
+number2 = "123-45-6789"
 
-n1 = 7    # First number
-n2 = 3    # Second number
- 
-# Output results of different math operations
-println("$n1 + $n2 = $(n1 + n2)")             # Addition 
-println("$n1 - $n2 = $(n1 - n2)")             # Subtraction 
-println("$n1 * $n2 = $(n1 * n2)")             # Multiplication 
-println("$n1 / $n2 = $(n1 / n2)")             # Division 
-@printf("%d / %d = %.2f\n", n1, n2, n1 / n2)  # Print to 2 decimal places
-println("$n1 ^ $n2 = $(n1 ^ n2)")             # Power/Exponent
-println("$n1 % $n2 = $(n1 % n2)")             # Modulo/Remainder
+# check if matches
+if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number1)
+   println("match!")
+end
+
+if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number2)
+  println("match!")
+else
+  println("no match!")
+end
+
+# capture matches
+# use parentheses to "capture" different parts of a regular 
+# expression for later use the first set of parentheses corresponds 
+# to index 1, second to index 2, etc.
+
+number_details = match(r"\(([0-9]{3})\)([0-9]{3}-[0-9]{4})", number1)
+
+if number_details != nothing
+   area_code = number_details[1]
+   phone_number = number_details[2]
+
+   println("area code: $area_code")
+   println("phone number: $phone_number")
+end
+
 ```
 
 Output:
 
-\output{./math_operators.jl}
-
-### Comparison Operators and Functions
-
-Input:
-
-| Operator | Example |
-| :--- | :--- |
-| Equality | x == y or isequal(x, y) |
-| Inequality | x != y or !isequal (x, y) |
-| Less than | x < y |
-| Less than or equal to | x <= y |
-| Greater than | x > y |
-| Greater than or equal to | x >= y |
-
-```julia:./compare_operators.jl
-# compare.jl                                                                                                 
-# Demonstrate comparison operators                                                                               
-
-# Assign values to variables using parallel assignment                                                           
-c1, c2, c3, c4 = 25, 50, 75, 50
-println("c1 = $(c1), c2 = $(c2), c3 = $(c3), c4 = $(c4)")
-
-# Output results of different comparison operations                                                             
- 
-# Testing equality                                                                                               
-println("  c1 = c3 is $(c1 == c3)")
-println("  c2 = c4 is $(isequal(c2, c4))")
-
-# Changing values using abbreviated assignment operators                                                        
-c1 *= 3    	# Shorthand for c1 = c1 * 3                                                                       
-c4 += 1    	# Shorthand for c4 = c4 + 1                                                                       
-
-println("c1 = $(c1), c2 = $(c2), c3 = $(c3), c4 = $(c4)")
- 
-# Testing less than and greater than
-println("  c1 < c2 is $(c1 < c2)")
-println("  c4 <= c2 is $(c4 <= c2)")
-println("  c1 > c2 is $(c1 > c2)")
-println("  c3 >= c2 is $(c3 >= c2)") 
-```
-
-Output:
-
-\output{./compare_operators.jl}
+\output{./regex.jl}
