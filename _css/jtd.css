@@ -183,13 +183,13 @@ SIDE BAR
 .menu-list-child-list .menu-list-item{
   position:relative
 }
-/*.menu-list-child-list .menu-list-item::before{
+.menu-list-child-list .menu-list-item::before{
   position:absolute;
-  margin-top:0.3em;
+  margin-top:0em;
   margin-left:-0.8em;
   color:rgba(92,89,98,0.3);
   content:"- "
-}*/
+}
 .menu-list-child-list .menu-list-item.active::before{
   color:#5c5962
 }
