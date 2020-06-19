@@ -1,128 +1,103 @@
-@def title = "Scientific Computing and Julia"
+@def title = "REPL & Packages"
 @def hascode = true
 @def date = Date(2019, 3, 22)
 @def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
 
 @def tags = ["setup", "enviornment"]
 
-# Numbers and Math
+# REPL & Packages
 
 \toc
 
 ## Documentation
-* Manual
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/mathematical-operations/" target="_blank">Mathematical Operations and Elementary Functions</a> ~~~
-* Base
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
+* ~~~ <a href="https://juliadocs.github.io/Julia-Cheat-Sheet/" target="_blank">Julia Cheat Sheet</a> ~~~ (see REPL and Package Management)
+* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/REPL/" target="_blank">Julia REPL</a> ~~~ 
+* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Pkg/index.html" target="_blank">Julia Pkg</a> ~~~ 
+* Packages
+    * ~~~ <a href="https://juliadata.github.io/CSV.jl/stable/" target="_blank">CSV.jl</a> ~~~ 
+    * ~~~ <a href="https://juliadata.github.io/DataFrames.jl/stable/" target="_blank">DataFrames.jl</a> ~~~
 
-## Theory: Number Variable Types
-* Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
-    * Signed: `Int8, Int16, Int32, Int64, and Int128`
-    * Unsigned: `UInt8, UInt16, UInt32, UInt64, and UInt128`
-    * Boolean: `Bool` (0 = False and 1 = True)
-* Float (real or floating point numbers) - e.g., `-2.14, 0.0, and 3.777`
-    * `Float16, Float32, Float64`
+## Using REPL
 
-## Examples:
+* Interactive command-line REPL (read-eval-print loop)
+* Allows for quick and easy evaluation of Julia statements
+* Includes dedicated help `?` and shell modes `;`
 
-### Types of Numbers
+### Julia REPL Example (local)
 
-Use `typeof()` function to determine type
+* Type "julia" in terminal to launch REPL
 
-Input:
+~~~ <img src="/_images/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
 
-```julia:./types.jl
-# Define two variables x and y
-x = 100
-y = 3.14
+### Julia REPL Help Pages (local)
 
-# Print out the variable types for each
-println(typeof(x))
-println(typeof(y))
+* Type "?" to enter help pages within REPL
+* Type a function from Julia to read help pages (ex: `println`)
+
+~~~ <img src="/_images/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
+
+### Practice with this web-based Julia REPL
+<!-- Could be cool how to add something like this below from https://repl.it/languages -->
+
+~~~ <iframe height="700px" width="100%" src="https://repl.it/@logankilpatrick/TryJulia?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> ~~~
+
+## Installing Packages
+
+* Start Julia REPL by typing the following in Terminal or PowerShell ~~~ <span class="red-text">(Note: do not need to type $ - this is to indicate the shell prompt)</span> ~~~
+<!-- ~~~ <div class="indent-code"><code> $ julia </code></div> ~~~ -->
+```plaintext
+$ julia
 ```
 
-Output:
-
-\output{./types.jl}
-
-
-### Arithmetic Operators
-
-| Operator | Example |
-| :--- | :--- |
-| Addition | x + y |
-| Subtraction | x - y |
-| Multiplication | x * y |
-| Division | x / y |
-| Power (Exponent) | x ^ y |
-| Remainder (Modulo) | x % y |
-| Negation (for Bool) | !x |
-
-Input:
-
-```julia:./math_operators.jl
-# Demonstrates different math operations
-using Printf
-
-n1 = 7    # First number
-n2 = 3    # Second number
- 
-# Output results of different math operations
-println("$n1 + $n2 = $(n1 + n2)")             # Addition 
-println("$n1 - $n2 = $(n1 - n2)")             # Subtraction 
-println("$n1 * $n2 = $(n1 * n2)")             # Multiplication 
-println("$n1 / $n2 = $(n1 / n2)")             # Division 
-@printf("%d / %d = %.2f\n", n1, n2, n1 / n2)  # Print to 2 decimal places
-println("$n1 ^ $n2 = $(n1 ^ n2)")             # Power/Exponent
-println("$n1 % $n2 = $(n1 % n2)")             # Modulo/Remainder
+* Go into REPL mode for Pkg, Julia’s built in package manager, by pressing `]`
+```plaintext
+$ julia ]
 ```
 
-Output:
-
-\output{./math_operators.jl}
-
-### Comparison Operators and Functions
-
-Input:
-
-| Operator | Example |
-| :--- | :--- |
-| Equality | x == y or isequal(x, y) |
-| Inequality | x != y or !isequal (x, y) |
-| Less than | x < y |
-| Less than or equal to | x <= y |
-| Greater than | x > y |
-| Greater than or equal to | x >= y |
-
-```julia:./compare_operators.jl
-# compare.jl                                                                                                 
-# Demonstrate comparison operators                                                                               
-
-# Assign values to variables using parallel assignment                                                           
-c1, c2, c3, c4 = 25, 50, 75, 50
-println("c1 = $(c1), c2 = $(c2), c3 = $(c3), c4 = $(c4)")
-
-# Output results of different comparison operations                                                             
- 
-# Testing equality                                                                                               
-println("  c1 = c3 is $(c1 == c3)")
-println("  c2 = c4 is $(isequal(c2, c4))")
-
-# Changing values using abbreviated assignment operators                                                        
-c1 *= 3    	# Shorthand for c1 = c1 * 3                                                                       
-c4 += 1    	# Shorthand for c4 = c4 + 1                                                                       
-
-println("c1 = $(c1), c2 = $(c2), c3 = $(c3), c4 = $(c4)")
- 
-# Testing less than and greater than
-println("  c1 < c2 is $(c1 < c2)")
-println("  c4 <= c2 is $(c4 <= c2)")
-println("  c1 > c2 is $(c1 > c2)")
-println("  c3 >= c2 is $(c3 >= c2)") 
+```plaintext
+$ (@v1.4) pkg>
+```
+* Update package repository in Pkg REPL
+```plaintext
+$ (@v1.4) pkg> update
 ```
 
-Output:
+* Add packages in Pkg REPL
+```plaintext
+$ (@v1.4) pkg> add CSV
+```
+```plaintext
+$ (@v1.4) pkg> add DataFrames
+```
 
-\output{./compare_operators.jl}
+* Check installation
+```plaintext
+(@v1.4) pkg> status
+            Status `~/.julia/environments/v1.0/Project.toml`
+                [336ed68f] CSV v0.4.3
+                [a93c6f00] DataFrames v0.17.1
+                ...
+```
+
+* Get back to the Julia REPL and exit by pressing backspace or ^C.
+```plaintext
+(@v1.4) pkg>
+
+julia>
+```
+
+## Using Packages
+
+```plaintext
+julia> using CSV
+		julia> using DataFrames
+
+		julia> exit()
+```
+
+## Troubleshooting
+
+* If you get an error like: `ERROR: SystemError: opening file "C:\\Users\\User\\.julia\\registries\\General\\Registry.toml"`: No such file or directory
+<!-- not sure how to escape backslashes -->
+    * Delete `C:\\Users\\User\\.julia\\registries` where User is your computer’s username and try again
+    * https://discourse.julialang.org/t/registry-toml-missing/24152

@@ -540,3 +540,24 @@ body { counter-reset: eqnum; }
 .hljs-metas { color: red; }
 
 .hljs-metap { color: rgb(51, 131, 231); }
+
+
+
+
+
+
+
+
+/* ==================================================================
+    Customized CSS on Markdown Pages
+================================================================== */
+
+/* repl.md */
+
+.red-text {
+  color: red;
+}
+
+.indent-code {
+  margin-left: 200px;
+}
