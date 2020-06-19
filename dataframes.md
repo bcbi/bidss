@@ -17,10 +17,10 @@
 
 
 
-## Theory: 
+## Theory
 
 
-## Practice:
+## Practice
 
 **Install and Load DataFrames.jl Package**
 
