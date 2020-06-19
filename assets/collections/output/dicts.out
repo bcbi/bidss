@@ -1,0 +1,32 @@
+Wednesday
+no key "Sat"
+print key-value pairs
+  Wed = Wednesday
+  Tue = Tuesday
+  Thu = Thursday
+  Mon = Monday
+  Fri = Friday
+print values (sorted)
+  Friday
+  Monday
+  Thursday
+  Tuesday
+  Wednesday
+print lengths
+  Friday = 6
+  Tuesday = 7
+  Thursday = 8
+  Wednesday = 9
+  Monday = 6
+print lengths in descending order
+  9 = Wednesday
+  8 = Thursday
+  7 = Tuesday
+  6 = Monday
+  6 = Friday
+print lengths in ascending order
+  6 = Friday
+  6 = Monday
+  7 = Tuesday
+  8 = Thursday
+  9 = Wednesday
