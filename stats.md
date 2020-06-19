@@ -10,6 +10,54 @@
 \toc
 
 ## Documentation
-* ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
+* ~~~ <a href="https://juliadocs.github.io/Julia-Cheat-Sheet/" target="_blank">Julia Cheat Sheet</a> ~~~
+* ~~~ <a href="http://juliastats.github.io/" target="_blank">Julia Stats</a> ~~~
+* Packages
+    * ~~~ <a href="https://juliadata.github.io/CSV.jl/stable/" target="_blank">CSV.jl</a> ~~~
+    * ~~~ <a href="https://juliadata.github.io/DataFrames.jl/stable/man/getting_started.html" target="_blank">DataFrames.jl</a> ~~~
+    * ~~~ <a href="http://juliastats.github.io/Distributions.jl/latest/starting.html" target="_blank">Distributions.jl</a> ~~~
+    * ~~~ <a href="http://juliastats.github.io/HypothesisTests.jl/dev/" target="_blank">HypothesisTests.jl</a> ~~~
+* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Statistics/index.html" target="_blank">Statistics Module</a> ~~~
+* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Random/index.html" target="_blank">Random Number Generator</a> ~~~
 
 ## Getting Started
+
+* Start Julia REPL (Read/Evaluate/Print/Loop) by typing the following in Terminal or PowerShell:
+
+```
+$ julia
+```
+
+* Go into REPL mode for Pkg, Julia’s built in package manager, by pressing ‘]’:
+
+```
+julia> ]
+(@v1.4) pkg>
+```
+
+* Update package repository in Pkg REPL
+
+```
+(@v1.4) pkg> update)
+```
+
+* Add packages in Pkg REPL
+
+```
+(@v1.4) pkg> add CSV
+(@v1.4) pkg> add DataFrames
+(@v1.4) pkg> add Distributions
+(@v1.4) pkg> add HypothesisTests
+```
+
+* Get back to the Julia REPL and exit by pressing backspace or ^C
+
+```
+(@v1.4) pkg>
+julia> using CSV
+julia> using DataFrames
+julia> using Distributions
+julia> using HypothesisTests
+julia> exit()
+```
+
