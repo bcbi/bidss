@@ -1,4 +1,4 @@
-@def title = "Scientific Computing and Julia"
+@def title = "Control Flow"
 @def hascode = true
 @def date = Date(2019, 3, 22)
 @def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
@@ -10,78 +10,127 @@
 \toc
 
 ## Documentation
-* Manual
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/manual/mathematical-operations/" target="_blank">Mathematical Operations and Elementary Functions</a> ~~~
-* Base
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
-    * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
+* Julia Documentation
+    * ~~~ <a href="https://docs.julialang.org/en/v1.0/manual/control-flow/" target="_blank">Control Flow</a> ~~~
 
-## Theory: Number Variable Types
-* Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
-    * Signed: `Int8, Int16, Int32, Int64, and Int128`
-    * Unsigned: `UInt8, UInt16, UInt32, UInt64, and UInt128`
-    * Boolean: `Bool` (0 = False and 1 = True)
-* Float (real or floating point numbers) - e.g., `-2.14, 0.0, and 3.777`
-    * `Float16, Float32, Float64`
+## Theory
 
-## Examples:
+## Examples
 
-### Types of Numbers
+* Test if a specified expression is true or false 
+* Short-circuit evaluation
+    * Test if all of the conditions are true 		`x && y`
+    * Test if any of the conditions are true		`x || y`
+    * Test if a condition is not true			`!z`
+* Conditional evaluation
+    * `if` statement
+    * `if-else`
+    * `if-elseif-else` 
+    * `?:` (ternary operator)
 
-Use `typeof()` function to determine type
+### Conditional Statements
 
 Input:
 
-```julia:./types.jl
-# Define two variables x and y
-x = 100
-y = 3.14
+```julia:./conditions.jl
+# conditions.jl
+# Demonstrates use of if statement
 
-# Print out the variable types for each
-println(typeof(x))
-println(typeof(y))
+x, y, z = 100, 200, 300
+println("x = $x, y = $y, z = $z")
+
+# Test if x equals 100
+if x == 100
+  println("$x equals 100")
+end
+
+# Test if y does not equal z
+if !(y == z)
+   println("$y does not equal $z")
+end
+
+# Test multiple conditions
+if x < y < z
+  println("$y is less than $z and greater than $x")
+end
+
+# Test multiple conditions using "&&"
+if x < y && x < z
+  println("$x is less than $y and $z")
+end
+
+# Test multiple conditions using "||"
+if y < x || y < z
+  println("$y is less than $x or $z")
+end
+
+# if-else statement
+if x < 100
+  println("$x less than 100")
+else
+  println("$x is equal to or greater than 100")
+end
+
+# Same logic as above but using the ternary or 
+# base three operator (?:)
+println(x < 100 ? "$x less than 100 again" : "$x equal to or greater than 100 again")
+
+# if-elseif-else statement
+if y < 100
+   println("$y is less than 100")
+elseif y < 200
+  println("$y is less than 200")
+elseif y < 300
+  println("$y is less than 300")
+else
+  println("$y is greater than or equal to 300")
+end
 ```
 
 Output:
 
-\output{./types.jl}
+\output{./conditions.jl}
 
 
-### Arithmetic Operators
-
-| Operator | Example |
-| :--- | :--- |
-| Addition | x + y |
-| Subtraction | x - y |
-| Multiplication | x * y |
-| Division | x / y |
-| Power (Exponent) | x ^ y |
-| Remainder (Modulo) | x % y |
-| Negation (for Bool) | !x |
+### Loops
+* Repeat a block of code a specified number of times or until some condition is met.
+* `while` loop
+* `for` loop
+* Use `break` to terminate loop
 
 Input:
 
-```julia:./math_operators.jl
-# Demonstrates different math operations
-using Printf
+```julia:./loops.jl
+# loops.jl                                                                                                     # Demonstrates use of loops                                                                                    
 
-n1 = 7    # First number
-n2 = 3    # Second number
- 
-# Output results of different math operations
-println("$n1 + $n2 = $(n1 + n2)")             # Addition 
-println("$n1 - $n2 = $(n1 - n2)")             # Subtraction 
-println("$n1 * $n2 = $(n1 * n2)")             # Multiplication 
-println("$n1 / $n2 = $(n1 / n2)")             # Division 
-@printf("%d / %d = %.2f\n", n1, n2, n1 / n2)  # Print to 2 decimal places
-println("$n1 ^ $n2 = $(n1 ^ n2)")             # Power/Exponent
-println("$n1 % $n2 = $(n1 % n2)")             # Modulo/Remainder
+i = 1
+
+# while loop for incrementing i by 1 from 1 to 3
+while i <= 3
+  println("while: $i")
+  global i += 1     # updating operator; equivalent to i = i + 1
+end
+
+# for loop
+for j = 1:3
+  println("for: $j")
+end
+
+for j in 1:3
+  println("for again: $j")
+end
+
+# nested for loop
+for j = 1:3
+  for k = 1:3
+    println("nested for: $j * $k = $(j*k)")
+  end
+end
 ```
 
 Output:
 
-\output{./math_operators.jl}
+\output{./loops.jl}
 
 ### Comparison Operators and Functions
 
