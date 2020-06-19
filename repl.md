@@ -86,6 +86,11 @@ $ (@v1.4) pkg> add DataFrames
 julia>
 ```
 
+* To see REPL history
+```
+$ more ~/.julia/logs/repl_history.jl
+```
+
 ## Using Packages
 
 ```plaintext
