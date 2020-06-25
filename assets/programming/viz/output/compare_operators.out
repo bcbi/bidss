@@ -1,0 +1,8 @@
+c1 = 25, c2 = 50, c3 = 75, c4 = 50
+  c1 = c3 is false
+  c2 = c4 is true
+c1 = 75, c2 = 50, c3 = 75, c4 = 51
+  c1 < c2 is false
+  c4 <= c2 is false
+  c1 > c2 is true
+  c3 >= c2 is true
