@@ -1,0 +1,6 @@
+Length of word: 8
+First character: g
+Last three characters: bye
+b is in good-bye: 6
+good is in good-bye: false
+chop off the last character: good-by
