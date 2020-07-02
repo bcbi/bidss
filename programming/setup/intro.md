@@ -6,6 +6,7 @@
 @def tags = ["setup", "enviornment"]
 
 # Overview
+This page provides an overview of the setup required to perform the programming exercises in BIDSS. Subsequent pages provide detailed step by step instructions for setup for each of the sections that follow.
 
 \toc
 
