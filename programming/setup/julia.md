@@ -16,24 +16,20 @@ If you are not running OS X 10.15 Catalina, you can upgrade for free following t
 
 1. **Download Julia** \\ \\ Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julialang.org/downloads/</a>~~~ and download the "Current stable release" of Julia for macOS 10.8+ (.dmg)
 
-2. **Install Julia** \\ \\ Open the downloaded file (julia-1.4.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. When complete, go to the *File* menu and select *Eject "Julia 1.4.X"*
+2. **Install Julia** \\ \\ Open the downloaded file (julia-1.4.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
 
 3. **Create a symbolic link** \\ \\ Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. 
-    1. Navigate to your Applications folder
-        * Minimize any open windows so that you can see your Desktop.
-        * Click once anywhere on your Desktop. The word *Finder* should appear next to the Apple in the top left hand corner of your screen. 
-        * Under the *Go* menu select *Go to folder*. A window will popup with a text box. Delete anything that is currently in that text box and type "/Applications", then click *Go*. 
-        * A Finder window will popup with all of the applications currently installed on your computer.
-    2. Copy the Julia application path
+    1. Copy the Julia application path
         * Locate the Julia application in the list of Applications (if you have more than one from prior installations, select the highest version number).
         * Right click on it and select *copy*. 
-    3. Open Terminal
+    2. Open Terminal
         * Click the magnifying glass in the top right corner of your screen. This will open a Spotlight Search box. Type "Terminal" and hit "return." This should open up a mostly blank box that has the name of your computer and username in it.
         
-    4. Create the symbolic link - **it is very important to pay attention to exact directions including spaces below**
+    3. Create the symbolic link - **it is very important to pay attention to exact directions including spaces below**
         * Start by typing "ln -s " into the terminal
         * Next, right click and *Paste* the path to the Julia application that you previously copied. This should appear something like "/Applications/Julia-1.4.app"
-        * Finally, type " julia" \\ *the final command will look something like:*\\ `ln -s /Applications/Julia-1.4.app julia`
+        * Type "/Contents/MacOS/applet" directly after ".app"
+        * Finally, type " julia" \\ *the final command will look something like:*\\ `ln -s /Applications/Julia-1.4.app/Contents/MacOS/applet julia`
         * If your command looks correct based on the above example, hit *return*
 
 4. **Run Julia** \\ \\
