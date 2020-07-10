@@ -1,18 +1,12 @@
 name: Build and Deploy
 on:
-  push:
-    # NOTE:
-    #   For a **project** site (username.github.io/project/), push things
-    #     to the **master** branch and make sure to set the line below to
-    # `   - master`; also, at the end of the file, change to `BRANCH: gh-pages`
-    #
-    #   For a **personal** site (username.github.io/), push things to a **dev**
-    #     branch  and make sure to set the line  below to `- dev` this is
-    #     because for user pages GitHub pages **requires** the deployment to be
-    #     on the master branch; also, at the end of the file, change to
-    #    `BRANCH: master`
+  pull_request:
     branches:
       - master
+  push:
+    branches:
+      - master
+    tags: '*'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
