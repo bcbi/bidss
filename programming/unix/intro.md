@@ -47,8 +47,8 @@ If code then becomes the working directory, the full path for the data directory
 The Unix shell provides a command line interface for interacting with the operating system and is where commands are entered. 
 
 * The shell prompt or command-line prompt may look different depending on your shell (e.g., Bourne shell [sh], C shell [csh], or Bourne-Again shell [bash])
-* Default prompts  include $ and \%
-* The prompt # typically appears when logged in as the superuser or root user who can do anything on the system, so should be restricted to trusted users, used only when necessary and with caution
+* Default prompts  include $ and %
+* The prompt \# typically appears when logged in as the superuser or root user who can do anything on the system, so should be restricted to trusted users, used only when necessary and with caution
 * The prompt can be configured to include additional information such as hostname, username, and pathname (e.g., computer:/home/bcbi/course bcbi $).
 
 ## Unix Commands
