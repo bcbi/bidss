@@ -1,14 +1,14 @@
+name: comment_with_url_of_pr_preview
 on:
   pull_request:
     types: [opened, reopened]
-
 jobs:
-  pr_preview_comment:
+  comment_with_url_of_pr_preview:
     runs-on: ubuntu-latest
     steps:
-      - name: Comment PR
+      - name: Create PR comment
         if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
-        uses: thollander/actions-comment-pull-request@master
+        uses: thollander/actions-comment-pull-request@1f25fabed60c3f141743c3a522529950a8fb2191
         with:
           message: 'Once the build has completed, you can preview your PR at this URL: https://bcbi.github.io/bidss_previews/previews/PR${{ github.event.number }}/'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
