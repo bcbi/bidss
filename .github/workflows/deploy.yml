@@ -28,6 +28,9 @@ jobs:
     - name: Fix URLs for PR preview deployment (pull request previews)
       if: github.event_name == 'pull_request'
       run: |
+        pwd
+        ls -lad
+        ls -la
         rm -rf config.md.original
         mv config.md config.md.original
         sed -e 's/@def prepath = "bidss"/@def prepath = "bidss_previews\/previews\/PR${{ github.event.number }}"/g' -e 's/@def website_url   = "https:\/\/bcbi\.github\.io\/bidss\/"/@def website_url   = "https:\/\/bcbi\.github\.io\/bidss_previews\/previews\/PR${{ github.event.number }}\/"/g' config.md
