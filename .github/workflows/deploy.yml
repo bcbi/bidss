@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: build_and_deploy_franklin_docs
 on:
   pull_request:
     branches:
@@ -8,7 +8,7 @@ on:
       - master
     tags: '*'
 jobs:
-  build-and-deploy:
+  build_and_deploy_franklin_docs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
