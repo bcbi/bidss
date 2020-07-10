@@ -1,6 +1,0 @@
-Length of array: 5
-First day of week: Monday
-Third day of week: Wednesday
-Last day of week: Friday
-Thursday is in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]: true
-UndefVarError: unshift! not defined

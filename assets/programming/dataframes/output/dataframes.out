@@ -1,5 +1,0 @@
-DataFrameRow
-│ Row │ id    │ gender │ age   │
-│     │ Int64 │ String │ Int64 │
-├─────┼───────┼────────┼───────┤
-│ 2   │ 2     │ M      │ 54    │

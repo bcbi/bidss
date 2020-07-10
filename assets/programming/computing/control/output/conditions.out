@@ -1,9 +1,0 @@
-x = 100, y = 200, z = 300
-100 equals 100
-200 does not equal 300
-200 is less than 300 and greater than 100
-100 is less than 200 and 300
-200 is less than 100 or 300
-100 is equal to or greater than 100
-100 equal to or greater than 100 again
-200 is less than 300
