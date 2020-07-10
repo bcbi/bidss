@@ -15,8 +15,6 @@ jobs:
       uses: actions/checkout@v2
       with:
         persist-credentials: false
-        
-
     - name: Install SSH Client
       if: github.event_name != 'pull_request'
       uses: webfactory/ssh-agent@v0.2.0
