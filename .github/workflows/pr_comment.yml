@@ -1,9 +1,9 @@
-name: comment_with_url_of_pr_preview
+name: pr_comment
 on:
   pull_request:
     types: [opened, reopened]
 jobs:
-  comment_with_url_of_pr_preview:
+  pr_comment:
     runs-on: ubuntu-latest
     steps:
       - name: Create PR comment
