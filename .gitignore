@@ -10,6 +10,8 @@ node_modules/
 *.jl.cov
 *.jl.mem
 .DS_Store
+Icon
+Icon[]
 Manifest.toml
 deps/build.log
 deps/deps.jl
