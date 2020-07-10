@@ -21,7 +21,7 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
     - name: Install SSH Client (pull request previews)
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
       uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV_PREVIEW }}
