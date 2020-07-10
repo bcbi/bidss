@@ -48,6 +48,14 @@ git push origin yourinitials/your-branch-name
 6. In the large `Leave a comment` box, enter a long detailed description of the changes that your pull request makes.
 7. Click the green `Create pull request` botton.
 
+## 2.4 Update your branch with new changes from `master`
+
+```bash
+git fetch --all --prune
+git checkout dpa/contributing
+git rebase origin/master
+```
+
 # 3. Troubleshooting
 
 ## 3.1 If you accidentally worked on the `master` branch instead of a separate branch:
