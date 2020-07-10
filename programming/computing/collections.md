@@ -102,7 +102,7 @@ println("Last day of week: $array_last_day")
 println("$day is in $day_array: $(in(day, day_array))")
 
 # add Sunday to beginning and Saturday to end
-unshift!(day_array, "Sunday")
+pushfirst!(day_array, "Sunday")
 push!(day_array, "Saturday")
 
 # print each element of array
