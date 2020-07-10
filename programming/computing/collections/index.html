@@ -15,7 +15,7 @@ println(<span class=hljs-string >&quot;Last day of week: <span class=hljs-variab
 println(<span class=hljs-string >&quot;<span class=hljs-variable >$day</span> is in <span class=hljs-variable >$day_array</span>: <span class=hljs-subst >$(<span class=hljs-keyword >in</span>(day, day_array)</span>)&quot;</span>)
 
 <span class=hljs-comment ># add Sunday to beginning and Saturday to end</span>
-unshift!(day_array, <span class=hljs-string >&quot;Sunday&quot;</span>)
+pushfirst!(day_array, <span class=hljs-string >&quot;Sunday&quot;</span>)
 push!(day_array, <span class=hljs-string >&quot;Saturday&quot;</span>)
 
 <span class=hljs-comment ># print each element of array</span>
@@ -33,7 +33,16 @@ First day of week: Monday
 Third day of week: Wednesday
 Last day of week: Friday
 Thursday is in [&quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;]: true
-UndefVarError: unshift! not defined
+Day of week: 
+  Sunday
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+Day of the week: Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday
+Day of the week (sorted): Friday;Monday;Saturday;Sunday;Thursday;Tuesday;Wednesday
 </code></pre> <h3 id=sets ><a href="#sets">Sets</a></h3> <p>Sets are an unordered collection of unique elements.</p> <h4 id=creating_sets ><a href="#creating_sets">Creating sets</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >New set &#40;empty&#41;<td align=left ><code>Set&#91;&#93;</code><tr><td align=left >Specify type<td align=left ><code>Set&#123;Int64&#125;</code><tr><td align=left >Set with values<td align=left ><code>Set&#40;&#91;1, 2, 3, 4, 5&#93;&#41;</code><tr><td align=left >Set with values<td align=left ><code>Set&#40;&#91;&quot;a1&quot;, &quot;b2&quot;, &quot;c3&quot;, &quot;b2&quot;&#93;&#41;</code></table> <h4 id=interacting_with_sets ><a href="#interacting_with_sets">Interacting with sets</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Get length of set my_set<td align=left ><code>length&#40;my_set&#41;</code><tr><td align=left >Check if value is in set<td align=left ><code>in&#40;str, my_set&#41;</code><tr><td align=left >Add value<td align=left ><code>push&#33;&#40;my_set, str&#41;</code></table> <h4 id=comparing_sets ><a href="#comparing_sets">Comparing sets</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Intersection<td align=left >intersect&#40;my<em>set, your</em>set&#41;<tr><td align=left >Union<td align=left >union&#40;my<em>set, your</em>set&#41;<tr><td align=left >Difference<td align=left >setdiff&#40;my<em>set, your</em>set&#41;</table> <p>Input:</p> <pre><code class="julia hljs"><span class=hljs-comment ># sets.jl</span>
 
 color_set = <span class=hljs-built_in >Set</span>([<span class=hljs-string >&quot;red&quot;</span>, <span class=hljs-string >&quot;yellow&quot;</span>, <span class=hljs-string >&quot;blue&quot;</span>])
