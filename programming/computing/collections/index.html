@@ -1,0 +1,153 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/bidss/libs/highlight/github.min.css"> <link rel=stylesheet  href="/bidss/css/jtd.css"> <link rel=icon  href="/bidss/assets/favicon.ico"> <title>Scientific Computing and Julia</title> <div class=page-wrap > <div class=side-bar > <div class=header > <a href="" class=title > <img src="/bidss/assets/bidss_logo.png" alt = "BIDSS" width = "125"> </a> </div> <label for=show-menu  class=show-menu >MENU</label> <input type=checkbox  id=show-menu  role=button > <div class=menu  id=side-menu > <ul class=menu-list > <li class="menu-list-item "><a href="/bidss/" class="menu-list-link ">Home</a> <li class="menu-list-item "><a href="/bidss/setup/" class="menu-list-link ">Setup</a> <!--<ul class="menu-list-child-list ">--> <li class="menu-list-item "><a href="/bidss/programming/setup/intro" class=menu-list-link >Overview</a> <li class="menu-list-item "><a href="/bidss/programming/setup/wsl" class=menu-list-link >Linux for Windows</a> <li class="menu-list-item "><a href="/bidss/programming/setup/julia" class=menu-list-link >Julia</a <li class="menu-list-item "><a href="/bidss/programming/setup/r" class=menu-list-link >R</a> <li class="menu-list-item "><a href="/bidss/programming/setup/python" class=menu-list-link >Python</a> <li class="menu-list-item "><a href="/bidss/programming/setup/vscode" class=menu-list-link >VS Code</a> <li class="menu-list-item "><a href="/bidss/programming/setup/filezilla" class=menu-list-link >FileZilla</a> <li class="menu-list-item "><a href="#" class=menu-list-link >GitHub</a> <!--</ul>--> <li class="menu-list-item "><a href="/bidss/unix/" class="menu-list-link ">Unix</a> <!--<ul class="menu-list-child-list ">--> <li class="menu-list-item "><a href="#" class=menu-list-link >Getting Started with Unix</a> <li class="menu-list-item "><a href="#" class=menu-list-link >Analyzing the Adult (Census Income) Data Set</a> <li class="menu-list-item "><a href="#" class=menu-list-link >Analyzing the MIMIC-III Demo Data Set</a> <!--</ul>--> <li class="menu-list-item "><a href="/bidss/databases/" class="menu-list-link ">Databases</a> <!--<ul class="menu-list-child-list ">--> <li class="menu-list-item "><a href="#" class=menu-list-link >Getting Started with MySQL</a> <li class="menu-list-item "><a href="#" class=menu-list-link >Querying the EMRbots Database</a> <li class="menu-list-item "><a href="#" class=menu-list-link >Querying the MIMIC-III Demo Database</a> <!--</ul>--> <li class="menu-list-item "><a href="/bidss/computing/" class="menu-list-link ">Computing</a> <!--<ul class="menu-list-child-list ">--> <li class="menu-list-item "><a href="#" class=menu-list-link >Introduction</a> <li class="menu-list-item "><a href="/bidss/programming/computing/numbers/" class=menu-list-link >Numbers and Math</a> <li class="menu-list-item "><a href="/bidss/programming/computing/strings/" class=menu-list-link >Strings, Characters, and Regular Expressions</a> <li class="menu-list-item "><a href="/bidss/programming/computing/control/" class=menu-list-link >Control Flow</a> <li class="menu-list-item "><a href="/bidss/programming/computing/collections/" class=menu-list-link >Collections and Data Structures</a> <li class="menu-list-item "><a href="/bidss/programming/computing/io/" class=menu-list-link >File Input/Output</a> <li class="menu-list-item "><a href="/bidss/programming/computing/repl/" class=menu-list-link >REPL and Packages</a> <li class="menu-list-item "><a href="/bidss/programming/computing/dataframes/" class=menu-list-link >DataFrames</a> <li class="menu-list-item "><a href="/bidss/programming/computing/stats/" class=menu-list-link >Statistics and Machine Learning</a> <li class="menu-list-item "><a href="/bidss/programming/computing/viz/" class=menu-list-link >Plotting and Visualization</a> <!--</ul>--> <li class="menu-list-item "><a href="/bidss/menu1/" class="menu-list-link ">Code blocks</a> <li class="menu-list-item "><a href="/bidss/menu2/" class="menu-list-link ">More goodies</a> <li class="menu-list-item "><a href="/bidss/menu3/" class="menu-list-link ">Tags</a> <ul class="menu-list-child-list "> <li class="menu-list-item "><a href="#" class=menu-list-link >Submenu</a> </ul> </ul> </div> <div class=footer > <img src="/bidss/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics"> <!--This is <em>Just the docs</em>, adapted from the <a href="https://github.com/pmarsceill/just-the-docs" target=_blank >Jekyll theme</a>.--> </div> </div> <div class=main-content-wrap > <div class=main-content > <div class=main-header > <a id=github  href="https://github.com/bcbi">BCBI on GitHub</a> </div> <div class=franklin-content ><h1 id=collections_and_data_structures ><a href="#collections_and_data_structures">Collections and Data Structures</a></h1> <div class=franklin-toc ><ol><li><a href="#documentation">Documentation</a><li><a href="#theory">Theory</a><li><a href="#practice">Practice</a><ol><li><a href="#arrays">Arrays</a><ol><li><a href="#creating_arrays">Creating arrays</a><li><a href="#creating_array_from_string">Creating array from string</a><li><a href="#accessing_elements">Accessing elements</a><li><a href="#adding_and_removing_elements">Adding and removing elements</a><li><a href="#sort_and_unique">Sort and unique</a><li><a href="#compare_arrays">Compare arrays</a><li><a href="#convert_array_to_string">Convert array to string</a></ol><li><a href="#sets">Sets</a><ol><li><a href="#creating_sets">Creating sets</a><li><a href="#interacting_with_sets">Interacting with sets</a><li><a href="#comparing_sets">Comparing sets</a></ol><li><a href="#dictionaries">Dictionaries</a><ol><li><a href="#creating_dictionaries">Creating dictionaries</a><li><a href="#accessing_dictionaries">Accessing dictionaries</a><li><a href="#converting_dictionaries">Converting dictionaries</a><li><a href="#sorting_dictionaries">Sorting dictionaries</a></ol></ol></ol></div> <h2 id=documentation ><a href="#documentation">Documentation</a></h2> <ul> <li><p>Base</p> <ul> <li><p> <a href="https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets" target=_blank >Collections and Data Structures</a> </p> </ul> <li><p>Other</p> <ul> <li><p>Learn X in Y Minutes: <a href="https://learnxinyminutes.com/docs/julia/" target=_blank >X=Julia</a> </p> <li><p>Introducing Julia Wikibook: <a href="https://en.wikibooks.org/wiki/Introducing_Julia/Arrays_and_tuples" target=_blank >Arrays and Tuples</a> and <a href="https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets" target=_blank >Dictionaries and Sets</a> </p> </ul> </ul> <h2 id=theory ><a href="#theory">Theory</a></h2> <h2 id=practice ><a href="#practice">Practice</a></h2> <h3 id=arrays ><a href="#arrays">Arrays</a></h3> <p>Arrays are ordered collection of elements. In <code>Julia</code> they are automatically indexed &#40;consecutively numbered&#41; by an integer starting with 1.</p> <h4 id=creating_arrays ><a href="#creating_arrays">Creating arrays</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >New array &#40;empty&#41;<td align=left ><code>&#91;&#93;</code><tr><td align=left >Specify type &#40;integer&#41;<td align=left ><code>Int64&#91;&#93;</code><tr><td align=left >Specify type &#40;string&#41;<td align=left ><code>String&#91;&#93;</code><tr><td align=left >Array with values<td align=left ><code>&#91;1, 2, 3, 4, 5&#93;</code><tr><td align=left >Array with values<td align=left ><code>&#91;&quot;a1&quot;, &quot;b2&quot;, &quot;c3&quot;&#93;</code><tr><td align=left >Array of numbers<td align=left ><code>collect&#40;1:10&#41;</code></table> <h4 id=creating_array_from_string ><a href="#creating_array_from_string">Creating array from string</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Split string <code>str</code> by delimiter into words &#40;e.g., space&#41;<td align=left ><code>split&#40;str, &quot; &quot;&#41;</code></table> <h4 id=accessing_elements ><a href="#accessing_elements">Accessing elements</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Get length of array my_array<td align=left ><code>length&#40;my_array&#41;</code><tr><td align=left >Get first element of array my_array<td align=left ><code>my_array&#91;1&#93;</code><tr><td align=left >Get last element of array my_array<td align=left ><code>my_array&#91;end&#93;</code><tr><td align=left >Get n element of array my_array &#40;e.g., 2&#41;<td align=left ><code>my_array&#91;2&#93;</code><tr><td align=left >Check if element is in array<td align=left ><code>in&#40;str, my_array&#41;</code></table> <h4 id=adding_and_removing_elements ><a href="#adding_and_removing_elements">Adding and removing elements</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Add element to end<td align=left ><code>push&#33;&#40;my_array, str&#41;</code><tr><td align=left >Remove element from end<td align=left ><code>pop&#33;&#40;my_array&#41;</code><tr><td align=left >Remove element from beginning<td align=left ><code>popfirst&#33;&#40;my_array&#41;</code><tr><td align=left >Add element to beginning<td align=left ><code>pushfirst&#33;&#40;my_array, str&#41;</code></table> <h4 id=sort_and_unique ><a href="#sort_and_unique">Sort and unique</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Sort array &#40;will not change array itself&#41;<td align=left ><code>sort&#40;my_array&#41;</code><tr><td align=left >Sort array in place &#40;will change array&#41;<td align=left ><code>sort&#33;&#40;my_array&#41;</code><tr><td align=left >Get unique elements in array<td align=left ><code>unique&#40;my_array&#41;</code></table> <h4 id=compare_arrays ><a href="#compare_arrays">Compare arrays</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Intersection<td align=left ><code>intersect&#40;my_array, your_array&#41;</code><tr><td align=left >Union<td align=left ><code>union&#40;my_array, you_array&#41;</code></table> <h4 id=convert_array_to_string ><a href="#convert_array_to_string">Convert array to string</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Convert array to string<td align=left ><code>join&#40;collect&#40;my_array&#41;, str&#41;</code></table> <p>Input:</p> <pre><code class="julia hljs"><span class=hljs-comment ># arrays.jl</span>
+
+day_array = [<span class=hljs-string >&quot;Monday&quot;</span>, <span class=hljs-string >&quot;Tuesday&quot;</span>, <span class=hljs-string >&quot;Wednesday&quot;</span>, <span class=hljs-string >&quot;Thursday&quot;</span>, <span class=hljs-string >&quot;Friday&quot;</span>]
+day = <span class=hljs-string >&quot;Thursday&quot;</span>
+
+array_length = length(day_array)
+array_first_day = day_array[<span class=hljs-number >1</span>]
+array_last_day = day_array[<span class=hljs-keyword >end</span>]
+
+println(<span class=hljs-string >&quot;Length of array: <span class=hljs-variable >$array_length</span>&quot;</span>)
+println(<span class=hljs-string >&quot;First day of week: <span class=hljs-variable >$array_first_day</span>&quot;</span>)
+println(<span class=hljs-string >&quot;Third day of week: <span class=hljs-subst >$(day_array[<span class=hljs-number >3</span>])</span>&quot;</span>)
+println(<span class=hljs-string >&quot;Last day of week: <span class=hljs-variable >$array_last_day</span>&quot;</span>)
+
+println(<span class=hljs-string >&quot;<span class=hljs-variable >$day</span> is in <span class=hljs-variable >$day_array</span>: <span class=hljs-subst >$(<span class=hljs-keyword >in</span>(day, day_array)</span>)&quot;</span>)
+
+<span class=hljs-comment ># add Sunday to beginning and Saturday to end</span>
+pushfirst!(day_array, <span class=hljs-string >&quot;Sunday&quot;</span>)
+push!(day_array, <span class=hljs-string >&quot;Saturday&quot;</span>)
+
+<span class=hljs-comment ># print each element of array</span>
+println(<span class=hljs-string >&quot;Day of week: &quot;</span>)
+<span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(day_array)
+    println(<span class=hljs-string >&quot;  <span class=hljs-subst >$(day_array[i])</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;Day of the week: <span class=hljs-subst >$(join(collect(day_array)</span>, &quot;</span>;<span class=hljs-string >&quot;))&quot;</span>)
+
+<span class=hljs-comment ># sort the array and print again</span>
+sort!(day_array)
+println(<span class=hljs-string >&quot;Day of the week (sorted): <span class=hljs-subst >$(join(collect(day_array)</span>, &quot;</span>;<span class=hljs-string >&quot;))&quot;</span>)</code></pre> <p>Output:</p> <pre><code class="plaintext hljs">Length of array: 5
+First day of week: Monday
+Third day of week: Wednesday
+Last day of week: Friday
+Thursday is in [&quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;]: true
+Day of week: 
+  Sunday
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+Day of the week: Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday
+Day of the week (sorted): Friday;Monday;Saturday;Sunday;Thursday;Tuesday;Wednesday
+</code></pre> <h3 id=sets ><a href="#sets">Sets</a></h3> <p>Sets are an unordered collection of unique elements.</p> <h4 id=creating_sets ><a href="#creating_sets">Creating sets</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >New set &#40;empty&#41;<td align=left ><code>Set&#91;&#93;</code><tr><td align=left >Specify type<td align=left ><code>Set&#123;Int64&#125;</code><tr><td align=left >Set with values<td align=left ><code>Set&#40;&#91;1, 2, 3, 4, 5&#93;&#41;</code><tr><td align=left >Set with values<td align=left ><code>Set&#40;&#91;&quot;a1&quot;, &quot;b2&quot;, &quot;c3&quot;, &quot;b2&quot;&#93;&#41;</code></table> <h4 id=interacting_with_sets ><a href="#interacting_with_sets">Interacting with sets</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Get length of set my_set<td align=left ><code>length&#40;my_set&#41;</code><tr><td align=left >Check if value is in set<td align=left ><code>in&#40;str, my_set&#41;</code><tr><td align=left >Add value<td align=left ><code>push&#33;&#40;my_set, str&#41;</code></table> <h4 id=comparing_sets ><a href="#comparing_sets">Comparing sets</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Intersection<td align=left >intersect&#40;my<em>set, your</em>set&#41;<tr><td align=left >Union<td align=left >union&#40;my<em>set, your</em>set&#41;<tr><td align=left >Difference<td align=left >setdiff&#40;my<em>set, your</em>set&#41;</table> <p>Input:</p> <pre><code class="julia hljs"><span class=hljs-comment ># sets.jl</span>
+
+color_set = <span class=hljs-built_in >Set</span>([<span class=hljs-string >&quot;red&quot;</span>, <span class=hljs-string >&quot;yellow&quot;</span>, <span class=hljs-string >&quot;blue&quot;</span>])
+color_set2 = <span class=hljs-built_in >Set</span>([<span class=hljs-string >&quot;red&quot;</span>, <span class=hljs-string >&quot;orange&quot;</span>, <span class=hljs-string >&quot;yellow&quot;</span>])
+
+println(<span class=hljs-string >&quot;Length	of set:	<span class=hljs-subst >$(length(color_set)</span>)&quot;</span>)
+
+println(<span class=hljs-string >&quot;Color Set 1&quot;</span>)
+<span class=hljs-keyword >for</span> color <span class=hljs-keyword >in</span> color_set
+    println(<span class=hljs-string >&quot;  <span class=hljs-subst >$(color)</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;Color Set 2: <span class=hljs-subst >$(join(collect(color_set2)</span>, &quot;</span>---<span class=hljs-string >&quot;))&quot;</span>)
+
+println(<span class=hljs-string >&quot;Intersection: <span class=hljs-subst >$(intersect(color_set, color_set2)</span>)&quot;</span>)
+println(<span class=hljs-string >&quot;Union: <span class=hljs-subst >$(union(color_set, color_set2)</span>)&quot;</span>)
+println(<span class=hljs-string >&quot;Difference: <span class=hljs-subst >$(setdiff(color_set, color_set2)</span>)&quot;</span>)
+println(<span class=hljs-string >&quot;Difference: <span class=hljs-subst >$(setdiff(color_set2, color_set)</span>)&quot;</span>)</code></pre> <p>Output:</p> <pre><code class="plaintext hljs">Length	of set:	3
+Color Set 1
+  yellow
+  blue
+  red
+Color Set 2: yellow---orange---red
+Intersection: Set([&quot;yellow&quot;, &quot;red&quot;])
+Union: Set([&quot;yellow&quot;, &quot;orange&quot;, &quot;blue&quot;, &quot;red&quot;])
+Difference: Set([&quot;blue&quot;])
+Difference: Set([&quot;orange&quot;])
+</code></pre> <h3 id=dictionaries ><a href="#dictionaries">Dictionaries</a></h3> <p>Dictionaries are unordered collection of key-value pairs where the key serves as the index &#40;“associative collection”&#41;. Similar to elements of a set, keys are <em>always</em> unique.</p> <h4 id=creating_dictionaries ><a href="#creating_dictionaries">Creating dictionaries</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >New dictionary &#40;empty&#41;<td align=left ><code>Dict&#91;&#93;</code><tr><td align=left >Specify type<td align=left ><code>Dict&#123;String, Int64&#125;</code><tr><td align=left >Dictionary with values<td align=left ><code>Dict&#40;&quot;one&quot; &#61;&gt; 1 , &quot;two&quot; &#61;&gt; 2, &quot;three&quot; &#61;&gt; 3, &quot;four&quot; &#61;&gt; 4&#41;</code></table> <h4 id=accessing_dictionaries ><a href="#accessing_dictionaries">Accessing dictionaries</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Get value for key in dictionary my_dict<td align=left >my_dict&#91;&quot;one&quot;&#93;<tr><td align=left >Check if dictionary has key<td align=left >haskey&#40;my_dict, &quot;one&quot;&#41;<tr><td align=left >Check for key/value pair<td align=left >in&#40;&#40;&quot;one&quot; &#61;&gt; 1&#41;, my_dict&#41;<tr><td align=left >Get value and set default<td align=left >get&#40;my<em>dict, &quot;one&quot;, 5&#41;&lt;br&gt;get&#40;my</em>dict, &quot;five&quot;, 5&#41;<tr><td align=left >Add key/value pair<td align=left >my_dict&#91;&quot;five&quot;&#93; &#61; 5<tr><td align=left >Delete key/value pair<td align=left >delete&#33;&#40;my_dict, &quot;four&quot;&#41;<tr><td align=left >Get keys<td align=left >keys&#40;my_dict&#41;<tr><td align=left >Get values<td align=left >values&#40;dict&#41;</table> <h4 id=converting_dictionaries ><a href="#converting_dictionaries">Converting dictionaries</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Convert keys to array<td align=left ><code>collect&#40;keys&#40;my_dict&#41;&#41;</code><tr><td align=left >Convert values to array<td align=left ><code>collect&#40;values&#40;my_dict&#41;&#41;</code></table> <h4 id=sorting_dictionaries ><a href="#sorting_dictionaries">Sorting dictionaries</a></h4> <table><tr><th align=left >Action<th align=left >Syntax<tr><td align=left >Sorting keys<td align=left ><code>sort&#40;collect&#40;keys&#40;my_dict&#41;&#41;&#41;</code><tr><td align=left >Sorting values<td align=left ><code>sort&#40;collect&#40;values&#40;my_dict&#41;&#41;&#41;</code><tr><td align=left >Sort by value &#40;descending&#41; with keys<td align=left ><code>sort&#40;collect&#40;zip&#40;values&#40;my_dict&#41;, keys&#40;my_dict&#41;&#41;&#41;, rev&#61;true&#41;</code><tr><td align=left >Sort by value &#40;ascending&#41; with keys<td align=left ><code>sort&#40;collect&#40;zip&#40;values&#40;my_dict&#41;, keys&#40;my_dict&#41;&#41;&#41;, rev&#61;false&#41;</code><tr><td align=left >Get top n by value &#40;e.g., 3&#41;<td align=left ><code>sort&#40;collect&#40;zip&#40;values&#40;my_dict&#41;, keys&#40;my_dict&#41;&#41;&#41;, rev&#61;true&#41;&#91;1:3&#93;</code></table> <p>Input:</p> <pre><code class="julia hljs"><span class=hljs-comment ># dicts.jl</span>
+
+day_dict = <span class=hljs-built_in >Dict</span>()
+day_length_dict = <span class=hljs-built_in >Dict</span>()
+
+day_dict[<span class=hljs-string >&quot;Mon&quot;</span>] = <span class=hljs-string >&quot;Monday&quot;</span>
+day_dict[<span class=hljs-string >&quot;Tue&quot;</span>] = <span class=hljs-string >&quot;Tuesday&quot;</span>
+day_dict[<span class=hljs-string >&quot;Wed&quot;</span>] = <span class=hljs-string >&quot;Wednesday&quot;</span>
+day_dict[<span class=hljs-string >&quot;Thu&quot;</span>] = <span class=hljs-string >&quot;Thursday&quot;</span>
+day_dict[<span class=hljs-string >&quot;Fri&quot;</span>] = <span class=hljs-string >&quot;Friday&quot;</span>
+
+<span class=hljs-keyword >if</span> haskey(day_dict, <span class=hljs-string >&quot;Wed&quot;</span>)
+   println(<span class=hljs-string >&quot;<span class=hljs-subst >$(day_dict[<span class=hljs-string >&quot;Wed&quot;</span>])</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+<span class=hljs-keyword >if</span> !haskey(day_dict, <span class=hljs-string >&quot;Sat&quot;</span>)
+   println(<span class=hljs-string >&quot;no key \&quot;Sat\&quot;&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;print key-value pairs&quot;</span>)
+<span class=hljs-keyword >for</span> day <span class=hljs-keyword >in</span> keys(day_dict)
+    println(<span class=hljs-string >&quot;  <span class=hljs-variable >$day</span> = <span class=hljs-subst >$(day_dict[day])</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;print values (sorted)&quot;</span>)
+<span class=hljs-keyword >for</span> day_value <span class=hljs-keyword >in</span> sort(collect(values(day_dict)))
+    println(<span class=hljs-string >&quot;  <span class=hljs-variable >$day_value</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+<span class=hljs-comment ># get length of each value and keep track of lengths</span>
+<span class=hljs-keyword >for</span> day_value <span class=hljs-keyword >in</span> values(day_dict)
+    day_length = length(day_value)
+    day_length_dict[day_value] = day_length
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;print lengths&quot;</span>)
+<span class=hljs-keyword >for</span> day <span class=hljs-keyword >in</span> keys(day_length_dict)
+    println(<span class=hljs-string >&quot;  <span class=hljs-variable >$day</span> = <span class=hljs-subst >$(day_length_dict[day])</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;print lengths in descending order&quot;</span>)
+<span class=hljs-keyword >for</span> (day, length) <span class=hljs-keyword >in</span> sort(collect(zip(values(day_length_dict), keys(day_length_dict))), rev=<span class=hljs-literal >true</span>)
+    println(<span class=hljs-string >&quot;  <span class=hljs-variable >$day</span> = <span class=hljs-variable >$length</span>&quot;</span>)
+<span class=hljs-keyword >end</span>
+
+println(<span class=hljs-string >&quot;print lengths in ascending order&quot;</span>)
+<span class=hljs-keyword >for</span> (day, length) <span class=hljs-keyword >in</span> sort(collect(zip(values(day_length_dict), keys(day_length_dict))), rev=<span class=hljs-literal >false</span>)
+    println(<span class=hljs-string >&quot;  <span class=hljs-variable >$day</span> = <span class=hljs-variable >$length</span>&quot;</span>)
+<span class=hljs-keyword >end</span></code></pre> <p>Output:</p> <pre><code class="plaintext hljs">Wednesday
+no key &quot;Sat&quot;
+print key-value pairs
+  Wed = Wednesday
+  Tue = Tuesday
+  Thu = Thursday
+  Mon = Monday
+  Fri = Friday
+print values (sorted)
+  Friday
+  Monday
+  Thursday
+  Tuesday
+  Wednesday
+print lengths
+  Friday = 6
+  Tuesday = 7
+  Thursday = 8
+  Wednesday = 9
+  Monday = 6
+print lengths in descending order
+  9 = Wednesday
+  8 = Thursday
+  7 = Tuesday
+  6 = Monday
+  6 = Friday
+print lengths in ascending order
+  6 = Friday
+  6 = Monday
+  7 = Tuesday
+  8 = Thursday
+  9 = Wednesday
+</code></pre><div class=page-foot > <div class=copyright > &copy; Center for Biomedical Informatics at Brown University. Last modified: July 10, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. </div> </div> </div> </div> </div> </div> <!-- end of class page-wrap-->

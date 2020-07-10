@@ -1,0 +1,18 @@
+while: 1
+while: 2
+while: 3
+for: 1
+for: 2
+for: 3
+for again: 1
+for again: 2
+for again: 3
+nested for: 1 * 1 = 1
+nested for: 1 * 2 = 2
+nested for: 1 * 3 = 3
+nested for: 2 * 1 = 2
+nested for: 2 * 2 = 4
+nested for: 2 * 3 = 6
+nested for: 3 * 1 = 3
+nested for: 3 * 2 = 6
+nested for: 3 * 3 = 9
