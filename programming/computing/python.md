@@ -6,8 +6,6 @@
 @def tags = ["setup", "enviornment"]
 
 
-\toc
-
 # Introduction to Python
 
 Python is one of the many languages used in the data science community to perform data manipulation, statistical modeling and machine learning. There are certain tasks where Python excels and you may choose to use it over Julia. This section will provide you with the basic syntax of Python to get started and some use cases where you might choose to use the language.
@@ -419,5 +417,3 @@ Once in the Julia REPL you can type the close bracket symbol ```]```, which will
 ```
 
 We can install any package from the package environment by replacing the package name with the wanted package.
-
-\\
