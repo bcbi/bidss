@@ -14,8 +14,8 @@ Python is one of the many languages used in the data science community to perfor
 
 For this section, a side-by-side comparison of Julia code will be provided for reference.
 
-##Basic Syntax
-###REPL
+## Basic Syntax
+### REPL
 Much like Julia python provides a REPL to run code:
 
 ```
@@ -25,7 +25,7 @@ $ python
 
 When using Python, it is important to note that syntax and packages may vary depending on the version you have installed. Thus as with the Julia REPL, you can check your version of Python by adding the ```--version``` argument to the above command.
 
-###Setting Variables
+### Setting Variables
 The syntax for setting variables is exactly the same for each language:
 
 Python:
@@ -38,7 +38,7 @@ Julia
 
 Python provides the ```type(x)``` function in order to find the type of a variable ```x```.
 
-###Types
+### Types
 The following table shows the some basic types in Julia and Python:
 
 | Description | Julia  | Python |
@@ -48,7 +48,7 @@ The following table shows the some basic types in Julia and Python:
 | String      | String | str    |
 
 
-###Logical and Equality Operators
+### Logical and Equality Operators
 The following table shows the logical operators in Julia and Python:
 
 | Description         | Julia                | Python               |
@@ -60,7 +60,7 @@ The following table shows the logical operators in Julia and Python:
 | Not Equal           | !=                   | !=                   |
 
 
-###If Statements
+### If Statements
 Python:
 
 ```
@@ -78,7 +78,7 @@ end
 
 One of the key syntactical features of Python is how it uses whitespace. Instead of adding the ```end``` keyword to denote the end of an if statement, in Python, only code that is tabbed under the if statement will run.
 
-###While Loops
+### While Loops
 Python:
 
 ```
@@ -96,7 +96,7 @@ end
 
 Similar to if statements, in Python the code that needs to be run inside the while loop should be tabbed.
 
-###For Loops
+### For Loops
 Python:
 
 ```
@@ -112,7 +112,7 @@ for element = range
 end
 ```
 
-###Functions
+### Functions
 
 A simple example of a function that returns the sum of two integers can be seen below.
 
@@ -131,7 +131,7 @@ function function_name(x,y)
 end
 ```
 
-###Commenting
+### Commenting
 
 Python:
 
@@ -153,11 +153,11 @@ a multiline comment.
 =#
 ```
 
-##Data Structures
+## Data Structures
 
-###Arrays
+### Arrays
 
-####Creating Arrays
+#### Creating Arrays
 
 Python and Julia have similar syntax to create an Array. In Python arrays are called lists. While in Julia we can define Array types, in Python arrays cannot have type constraints without additional packages.
 
@@ -166,7 +166,7 @@ The syntax to create an array in both languages is as follows:
 array = []
 ```
 
-####Indexing in Arrays
+#### Indexing in Arrays
 
 Unlike in Julia, Python indexes at 0 rather than 1. Thus in order to access the first element in an array you would write ```array[0]```, while in Julia it would be ```array[1]```. To access the last index in array, Python provides negative indexing. Thus in Python we would use ```array[-1]```, where in Julia we would use ```array[end]```. Python's negative indexing may also be useful in indexing an array in reverse. If we want to access for example the second-to-last element in a Python array we can use ```array[-2]```.
 
@@ -174,7 +174,7 @@ Python, much like Julia, also offers array slicing in order to retrieve subsets 
 
 In Python the syntax also allows us to omit indices that are implied: if we want to get the slice of the array that starts at the second index and ends at the last index we can write ```array[1:]```, where in Julia we would write ```array[2:end]```. We can omit the ending index after the colon, as it implied when left out that we want to include the rest of the array in our slice. Similarly, if we wanted to have a slice that starts at the beginning of the array and lasts at the second to last element we would use ```array[:-1]```, where in Julia we would use ```array[1:length(a)-1]```.
 
-####Appending to Arrays
+#### Appending to Arrays
 
 Python:
 
@@ -188,7 +188,7 @@ Julia:
 append!(array,element)
 ```
 
-####Array Length
+#### Array Length
 Python:
 
 ```
@@ -201,7 +201,7 @@ Julia:
 length(array)
 ```
 
-####Array/List Comprehension
+#### Array/List Comprehension
 
 Both languages provide syntax that shortens iteratively adding elements to an array:
 
@@ -233,12 +233,12 @@ Julia:
 
 The example above would yield ```[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]``` in both languages.
 
-#####Python Documentation
+##### Python Documentation
 Documentation on Python lists can be found [here](https://docs.python.org/3/tutorial/datastructures.html).
 
-###Sets
+### Sets
 
-####Creating Sets
+#### Creating Sets
 
 Python:
 ```
@@ -250,7 +250,7 @@ Julia:
 s = Set()
 ```
 
-####Adding/Removing Elements
+#### Adding/Removing Elements
 Python:
 
 ```
@@ -265,7 +265,7 @@ push!(s,element)
 delete!(s,element)
 ```
 
-####Set Operations
+#### Set Operations
 
 Python:
 
@@ -289,12 +289,12 @@ push!(b,2)
 - Union: ```union(a,b)``` and outputs: ```set(Any[1,2])```
 - Intersection ```intersect(a,b)``` and outputs: ```set(Any[])```
 
-#####Python Documentation
+##### Python Documentation
 More set operations in Python can be found in the official Python set docummentation [page](https://docs.python.org/3/library/stdtypes.html#set).
 
-###Dictionaries
+### Dictionaries
 
-####Creating a Dictionary
+#### Creating a Dictionary
 Python:
 ```d = {}``` or ```d = dict()```
 
@@ -303,7 +303,7 @@ Julia:
 d = Dict()
 ```
 
-####Accessing Dictionary
+#### Accessing Dictionary
 Python:
 ```
 d[key] = value
@@ -313,7 +313,7 @@ Julia:
 ```
 d[key] = value
 ```
-####Iterating Through Key-Value Pairs:
+#### Iterating Through Key-Value Pairs:
 
 The below example prints all key value pairs in a dictionary ```d```.
 
@@ -332,12 +332,12 @@ for (key, value) in d:
 end
 ```
 
-#####Python Documentation
+##### Python Documentation
 Python official [documentation](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) on dictionaries further outlines the language's features.
 
-###DataFrames
+### DataFrames
 
-####Importing Libraries
+#### Importing Libraries
 Both Python and Julia support the use of DataFrames through external libraries and hence must be imported.
 Python:
 
@@ -351,7 +351,7 @@ Julia:
 using DataFrames
 ```
 
-####Creating a DataFrame
+#### Creating a DataFrame
 Python:
 
 ```
@@ -370,21 +370,21 @@ Julia:
 df = DataFrame(A = [element_1, element_2, ...], B = [element_1, element_2, ...])
 ```
 
-####Accessing a Column
+#### Accessing a Column
 Python and Julia:
 ```
 df.A``` or ```df["A"]
 ```
 
 
-#####pandas Documentation
+##### pandas Documentation
 The full pandas documentation is very extensive and should have any features that we could find in DataFrames.jl. The documentation can be found [here](https://pandas.pydata.org/docs/user_guide/index.html).
 
 
 
 ## Miscellanious Tasks
 
-###Reading a CSV file as a DataFrame
+### Reading a CSV file as a DataFrame
 Python:
 
 ```
@@ -399,7 +399,7 @@ using CSV
 df = CSV.read([your filename])
 ```
 
-###Installing Packages
+### Installing Packages
 Python:
 ```
 $ pip install [package name]
