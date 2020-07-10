@@ -1,0 +1,15 @@
+pages:
+    stage: deploy
+    sdfsdfsd
+    script:
+        - mv __site public
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
+        s
+        dfsdfsdfdf
+        sdfsdfsdf
+        sdfsdfsdfsd
+        fsdfs
