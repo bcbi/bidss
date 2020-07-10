@@ -16,14 +16,20 @@ jobs:
       with:
         persist-credentials: false
     - name: Install SSH Client
-      continue-on-error: true
+      if: github.event_name != 'pull_request'
       uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
-    # NOTE
-    #   Python is necessary for pre-rendering steps as well as to install
-    #   matplotlib which is necessary if you intend to use PyPlot. If you do
-    #   not, then you can remove the `run: pip install matplotlib` line.
+    - name: Install SSH Client (pull request previews)
+      if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
+      uses: webfactory/ssh-agent@v0.2.0
+      with:
+        ssh-private-key: ${{ secrets.FRANKLIN_PRIV_PREVIEW }}
+    - name: Install SSH Client (main)
+      if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+      uses: webfactory/ssh-agent@v0.2.0
+      with:
+        ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
     - name: Install python
       uses: actions/setup-python@v1
       with:
@@ -33,20 +39,21 @@ jobs:
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.4.1
-    # NOTE
-    #   The steps below ensure that NodeJS and Franklin are loaded then it
-    #   installs highlight.js which is needed for the prerendering step.
-    #   Then the environment is activated and instantiated to install all
-    #   Julia packages which may be required to successfully build your site.
-    #
-    #   The last line should be `optimize()` though you may want to give it
-    #   specific arguments, see the documentation or ?optimize in the REPL.
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "Franklin"]);
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
             optimize()'
+    - name: Deploy (pull request previews)
+      if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        BRANCH: gh-pages
+        FOLDER: __site
+        REPOSITORY_NAME: bcbi/bidss_previews
+        SSH: true
+        TARGET_FOLDER: "previews/PR${{ github.event.number }}"
     - name: Deploy (main)
       if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'schedule')
       uses: JamesIves/github-pages-deploy-action@releases/v3

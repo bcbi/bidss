@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  pr_preview_comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@master
+        with:
+          message: 'Once the build has completed, you can preview your PR at this URL: https://bcbi.github.io/bidss_previews/previews/PR${{ github.event.number }}/'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
