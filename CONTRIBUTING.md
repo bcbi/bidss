@@ -2,9 +2,9 @@
 
 | Table of contents | 
 | ----------------- |
-| [1. One-time setup](#) | 
-| [2. Normal workflow](#) |
-| [3. Troubleshooting](#) |
+| [1. One-time setup](#1-one-time-setup) | 
+| [2. Normal workflow](#2-normal-workflow) |
+| [3. Troubleshooting](#3-troubleshooting) |
 
 # 1. One-time setup
 
