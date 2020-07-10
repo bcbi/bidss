@@ -8,7 +8,7 @@
 
 \toc
 
-# Introduciton to Python
+# Introduction to Python
 
 Python is one of the many languages used in the data science community to perform data manipulation, statistical modeling and machine learning. There are certain tasks where Python excels and you may choose to use it over Julia. This section will provide you with the basic syntax of Python to get started and some use cases where you might choose to use the language.
 
@@ -32,7 +32,7 @@ Python:
 
 ```x = 1```
 
-Julia 
+Julia
 
 ```x = 1```
 
@@ -76,7 +76,7 @@ if (boolean expression)
 end
 ```
 
-One of the key syntactical features of Python is how it uses whitespace. Instead of adding the ```end``` keyword to denote the end of an if statement, in Python, only code that is tabbed under the if statement will run. 
+One of the key syntactical features of Python is how it uses whitespace. Instead of adding the ```end``` keyword to denote the end of an if statement, in Python, only code that is tabbed under the if statement will run.
 
 ###While Loops
 Python:
@@ -114,7 +114,7 @@ end
 
 ###Functions
 
-A simple example of a function that returns the sum of two integers can be seen below. 
+A simple example of a function that returns the sum of two integers can be seen below.
 
 Python:
 
@@ -159,7 +159,7 @@ a multiline comment.
 
 ####Creating Arrays
 
-Python and Julia have similar syntax to create an Array. In Python arrays are called lists. While in Julia we can define Array types, in Python arrays cannot have type constraints without additional packages. 
+Python and Julia have similar syntax to create an Array. In Python arrays are called lists. While in Julia we can define Array types, in Python arrays cannot have type constraints without additional packages.
 
 The syntax to create an array in both languages is as follows:
 ```
@@ -168,11 +168,11 @@ array = []
 
 ####Indexing in Arrays
 
-Unlike in Julia, Python indexes at 0 rather than 1. Thus in order to access the first element in an array you would write ```array[0]```, while in Julia it would be ```array[1]```. To access the last index in array, Python provides negative indexing. Thus in Python we would use ```array[-1]```, where in Julia we would use ```array[end]```. Python's negative indexing may also be useful in indexing an array in reverse. If we want to access for example the second-to-last element in a Python array we can use ```array[-2]```. 
+Unlike in Julia, Python indexes at 0 rather than 1. Thus in order to access the first element in an array you would write ```array[0]```, while in Julia it would be ```array[1]```. To access the last index in array, Python provides negative indexing. Thus in Python we would use ```array[-1]```, where in Julia we would use ```array[end]```. Python's negative indexing may also be useful in indexing an array in reverse. If we want to access for example the second-to-last element in a Python array we can use ```array[-2]```.
 
 Python, much like Julia, also offers array slicing in order to retrieve subsets of arrays. The syntax is similar for both languages for array slicing: ```array[(start index):(end index)]```, where start index and end index are the indices where you would like your array slice to start and end. It must be noted that Python's end index, uinlike in Julia, is not inclusive. In other words if we wanted to access the elements from the first to third indices we would need to write ```array[0:3]``` in Python, where the fourth element at ```array[3]``` will not be included in the subset of the array.
 
-In Python the syntax also allows us to omit indices that are implied: if we want to get the slice of the array that starts at the second index and ends at the last index we can write ```array[1:]```, where in Julia we would write ```array[2:end]```. We can omit the ending index after the colon, as it implied when left out that we want to include the rest of the array in our slice. Similarly, if we wanted to have a slice that starts at the beginning of the array and lasts at the second to last element we would use ```array[:-1]```, where in Julia we would use ```array[1:length(a)-1]```. 
+In Python the syntax also allows us to omit indices that are implied: if we want to get the slice of the array that starts at the second index and ends at the last index we can write ```array[1:]```, where in Julia we would write ```array[2:end]```. We can omit the ending index after the colon, as it implied when left out that we want to include the rest of the array in our slice. Similarly, if we wanted to have a slice that starts at the beginning of the array and lasts at the second to last element we would use ```array[:-1]```, where in Julia we would use ```array[1:length(a)-1]```.
 
 ####Appending to Arrays
 
@@ -245,7 +245,7 @@ Python:
 s = set()
 ```
 
-Julia: 
+Julia:
 ```
 s = Set()
 ```
@@ -258,7 +258,7 @@ s.add(element)
 s.remove(element)
 ```
 
-Julia: 
+Julia:
 
 ```
 push!(s,element)
@@ -307,7 +307,7 @@ d = Dict()
 Python:
 ```
 d[key] = value
-``` 
+```
 
 Julia:
 ```
@@ -389,7 +389,7 @@ Python:
 
 ```
 import pandas as pd
-df = pd.read_csv([your filename]) 
+df = pd.read_csv([your filename])
 ```
 
 Jullia:
@@ -412,7 +412,7 @@ $julia
 $julia>
 ```
 
-Once in the Julia REPL you can type the close bracket symbol ```]```, which will take you the package environment. 
+Once in the Julia REPL you can type the close bracket symbol ```]```, which will take you the package environment.
 
 ```
 (v1.0) pkg> add [package name]
