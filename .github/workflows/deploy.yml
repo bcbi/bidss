@@ -47,12 +47,10 @@ jobs:
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
             optimize()'
-    - name: Build and Deploy
+    - name: Deploy (main)
+      if: github.ref == 'refs/heads/dev' && (github.event_name == 'push' || github.event_name == 'schedule')
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        SSH: true
-        # NOTE
-        #   Set this to `BRANCH: gh-pages` for a **project** page and  to
-        #   `BRANCH: master` for a **personal** page
         BRANCH: gh-pages
         FOLDER: __site
+        SSH: true
