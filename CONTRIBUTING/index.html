@@ -6,7 +6,7 @@
 </a></h1>
 <h2 id=21_set_up_branch ><a href="#21_set_up_branch">2.1 Set up branch</a></h2>  Run these commands to set up your own branch: <pre><code class="bash hljs">git fetch --all --prune
 git checkout master
-git merge --ff-only origin/master
+git reset --hard origin/master
 git branch yourinitials/your-branch-name
 git checkout yourinitials/your-branch-name</code></pre>
 <h2 id=22_save_work_and_push_to_github ><a href="#22_save_work_and_push_to_github">2.2 Save work and push to GitHub</a></h2>
@@ -31,6 +31,10 @@ git commit</code></pre>
 <li><p>Click the green <code>Create pull request</code> botton.</p>
 
 </ol>
+<h2 id=24_update_your_local_branch_with_changes_made_on_githubcom ><a href="#24_update_your_local_branch_with_changes_made_on_githubcom">2.4 Update your local branch with changes made on GitHub.com</a></h2>
+<p>After you push your branch to GitHub, you may decide to use the GitHub web editor to make changes directly in your web browser. If you do this, you should then pull the changes you made on the GitHub website back down to your local computer: <pre><code class="bash hljs">git fetch --all --prune
+git checkout yourinitials/your-branch-name
+git merge origin/yourinitials/your-branch-name</code></pre>
 <h1 id=ol_start3_troubleshooting ><a href="#ol_start3_troubleshooting"><ol start=3 >
 <li><p>Troubleshooting</p>
 
