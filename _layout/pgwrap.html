@@ -15,46 +15,48 @@
         <!-- {{ispage databases/*}}active{{end}} -->
         <!-- <li class="menu-list-item {{ispage menu1/*}}active{{end}}"><a href="/menu1/" class="menu-list-link {{ispage menu1}}active{{end}}">Code blocks</a> -->
           <!-- <ul class="menu-list-child-list "> -->
-            <!-- <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a> -->
+            <!-- <li class="menu-list-item"><a href="#" class="menu-list-link">Submenu</a> -->
           <!-- </ul> -->
-        <li class="menu-list-item {{ispage index}}active{{end}}"><a href="/"  class="menu-list-link active">Home</a>
-        <li class="menu-list-item active"><a href="/programming/setup/intro/" class="menu-list-link active">Setup</a>
-          <ul class="menu-list-child-list active">
-            <li class="menu-list-item active"><a href="/programming/setup/intro/"     class="menu-list-link active">Overview</a>
-            <li class="menu-list-item active"><a href="/programming/setup/wsl/"       class="menu-list-link active">Linux for Windows</a>
-            <li class="menu-list-item active"><a href="/programming/setup/julia/"     class="menu-list-link active">Julia</a>
-            <li class="menu-list-item active"><a href="/programming/setup/r/"         class="menu-list-link active">R</a>
-            <li class="menu-list-item active"><a href="/programming/setup/vscode/"    class="menu-list-link active">VS Code</a>
-            <li class="menu-list-item active"><a href="/programming/setup/filezilla/" class="menu-list-link active">FileZilla</a>
+        <li class="menu-list-item"><a href="/"  class="menu-list-link {{ispage index}}active{{end}}">1. Home</a>
+        <li class="menu-list-item {{ispage /programming/setup/*}}active{{end}}"><a href="/programming/setup/intro/" class="menu-list-link ">2. Setup</a>
+          <ul class="menu-list-child-list ">
+            <li class="menu-list-item"><a href="/programming/setup/intro/"     class="menu-list-link {{ispage /programming/setup/intro/}}active{{end}}">2.1. Overview</a>
+            <li class="menu-list-item"><a href="/programming/setup/wsl/"       class="menu-list-link {{ispage /programming/setup/wsl/}}active{{end}}">2.2. Linux for Windows</a>
+            <li class="menu-list-item"><a href="/programming/setup/julia/"     class="menu-list-link {{ispage /programming/setup/julia/}}active{{end}}">2.3. Julia</a>
+            <li class="menu-list-item"><a href="/programming/setup/r/"         class="menu-list-link {{ispage /programming/setup/r/}}active{{end}}">2.4. R</a>
+            <li class="menu-list-item"><a href="/programming/setup/vscode/"    class="menu-list-link {{ispage /programming/setup/vscode/}}active{{end}}">2.5. VS Code</a>
+            <li class="menu-list-item"><a href="/programming/setup/filezilla/" class="menu-list-link {{ispage /programming/setup/filezilla/}}active{{end}}">2.6. FileZilla</a>
           </ul>
-        <li class="menu-list-item active"><a href="/unix/" class="menu-list-link active">Unix</a>
-          <ul class="menu-list-child-list active">
-            <li class="menu-list-item active"><a href="/programming/unix/intro/"  class="menu-list-link active">Getting Started with Unix</a>
-            <li class="menu-list-item active"><a href="/programming/unix/census/" class="menu-list-link active">Analyzing the Adult (Census Income) Data Set</a>
-            <li class="menu-list-item active"><a href="/programming/unix/mimic/"  class="menu-list-link active">Analyzing the MIMIC-III Demo Data Set</a>
+        <li class="menu-list-item {{ispage /programming/unix/*}}active{{end}}"><a href="/programming/unix/intro/" class="menu-list-link ">3. Unix</a>
+          <ul class="menu-list-child-list ">
+            <li class="menu-list-item"><a href="/programming/unix/intro/"  class="menu-list-link {{ispage /programming/unix/intro/}}active{{end}}">3.1. Getting Started with Unix</a>
+            <li class="menu-list-item"><a href="/programming/unix/census/" class="menu-list-link {{ispage /programming/unix/census/}}active{{end}}">3.2. Analyzing the Adult (Census Income) Data Set</a>
+            <li class="menu-list-item"><a href="/programming/unix/mimic/"  class="menu-list-link {{ispage /programming/unix/mimic/}}active{{end}}">3.3. Analyzing the MIMIC-III Demo Data Set</a>
           </ul>
-        <li class="menu-list-item active"><a href="/programming/db/mysql/" class="menu-list-link active">Databases</a>
-          <ul class="menu-list-child-list active">
-            <li class="menu-list-item active"><a href="/programming/db/mysql/"   class="menu-list-link active">Getting Started with MySQL</a>
-            <li class="menu-list-item active"><a href="/programming/db/emrbots/" class="menu-list-link active">Querying the EMRbots Database</a>
-            <li class="menu-list-item active"><a href="/programming/db/mimic/"   class="menu-list-link active">Querying the MIMIC-III Demo Database</a>
+        <li class="menu-list-item {{ispage /programming/db/*}}active{{end}}"><a href="/programming/db/mysql/" class="menu-list-link ">4. Databases</a>
+          <ul class="menu-list-child-list ">
+            <li class="menu-list-item"><a href="/programming/db/mysql/"   class="menu-list-link {{ispage /programming/db/mysql/}}active{{end}}">4.1. Getting Started with MySQL</a>
+            <li class="menu-list-item"><a href="/programming/db/emrbots/" class="menu-list-link {{ispage /programming/db/emrbots/}}active{{end}}">4.2. Querying the EMRbots Database</a>
+            <li class="menu-list-item"><a href="/programming/db/mimic/"   class="menu-list-link {{ispage /programming/db/mimic/}}active{{end}}">4.3. Querying the MIMIC-III Demo Database</a>
           </ul>
-        <li class="menu-list-item active"><a href="/programming/computing/numbers/" class="menu-list-link active">Computing</a>
-          <ul class="menu-list-child-list active">
-            <li class="menu-list-item active"><a href="/programming/computing/numbers/"     class="menu-list-link active">Numbers and Math</a>
-            <li class="menu-list-item active"><a href="/programming/computing/strings/"     class="menu-list-link active">Strings, Characters, and Regular Expressions</a>
-            <li class="menu-list-item active"><a href="/programming/computing/control/"     class="menu-list-link active">Control Flow</a>
-            <li class="menu-list-item active"><a href="/programming/computing/collections/" class="menu-list-link active">Collections and Data Structures</a>
-            <li class="menu-list-item active"><a href="/programming/computing/io/"          class="menu-list-link active">File Input/Output</a>
-            <li class="menu-list-item active"><a href="/programming/computing/repl/"        class="menu-list-link active">REPL and Packages</a>
-            <li class="menu-list-item active"><a href="/programming/computing/dataframes/"  class="menu-list-link active">DataFrames</a>
-            <li class="menu-list-item active"><a href="/programming/computing/stats/"       class="menu-list-link active">Statistics and Machine Learning</a>
-            <li class="menu-list-item active"><a href="/programming/computing/viz/"         class="menu-list-link active">Plotting and Visualization</a>
+        <li class="menu-list-item {{ispage /programming/computing/*}}active{{end}}"><a href="/programming/computing/numbers/" class="menu-list-link ">5. Computing</a>
+          <ul class="menu-list-child-list ">
+            <li class="menu-list-item"><a href="/programming/computing/numbers/"     class="menu-list-link {{ispage /programming/computing/numbers/}}active{{end}}">5.1. Numbers and Math</a>
+            <li class="menu-list-item"><a href="/programming/computing/strings/"     class="menu-list-link {{ispage /programming/computing/strings/}}active{{end}}">5.2. Strings, Characters, and Regular Expressions</a>
+            <li class="menu-list-item"><a href="/programming/computing/control/"     class="menu-list-link {{ispage /programming/computing/control/}}active{{end}}">5.3. Control Flow</a>
+            <li class="menu-list-item"><a href="/programming/computing/collections/" class="menu-list-link {{ispage /programming/computing/collections/}}active{{end}}">5.4. Collections and Data Structures</a>
+            <li class="menu-list-item"><a href="/programming/computing/io/"          class="menu-list-link {{ispage /programming/computing/io/}}active{{end}}">5.5. File Input/Output</a>
+            <li class="menu-list-item"><a href="/programming/computing/repl/"        class="menu-list-link {{ispage /programming/computing/repl/}}active{{end}}">5.6. REPL and Packages</a>
+            <li class="menu-list-item"><a href="/programming/computing/dataframes/"  class="menu-list-link {{ispage /programming/computing/dataframes/}}active{{end}}">5.7. DataFrames</a>
+            <li class="menu-list-item"><a href="/programming/computing/stats/"       class="menu-list-link {{ispage /programming/computing/stats/}}active{{end}}">5.8. Statistics and Machine Learning</a>
+            <li class="menu-list-item"><a href="/programming/computing/viz/"         class="menu-list-link {{ispage /programming/computing/viz/}}active{{end}}">5.9. Plotting and Visualization</a>
           </ul>
       </ul>
     </div>
     <div class="footer">
-      <img src = "/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics">
+      <a href = "https://github.com/bcbi">
+        <img src = "/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics">
+      </a>
     </div>
   </div>
   <!-- CONTENT -->
