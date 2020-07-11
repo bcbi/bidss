@@ -70,10 +70,54 @@ git checkout yourinitials/your-branch-name
 git stash pop
 ```
 
-## 3.2 Simple merge conflicts
+## 3.2 "Simple" merge conflicts
 
-TODO: write this section.
+If your pull request has a "simple" merge conflict, then you will see the following message at the bottom of the pull request page, right above the merge button:
 
-## 3.3 Complicated merge conflicts
+> This branch has conflicts that must be resolved
+>
+> Use the web editor or the to resolve conflicts. 
+
+Next to this message, click on the button that says "Resolve conflicts".  This brings you to a new page where you can resolve all of the merge conflicts.
+
+Each merge conflict begins with the characters `<<<<<<<` and ends with the characters `>>>>>>>`. For example, a conflict may look like this:
+```julia
+println("apple")
+println("banana")
+<<<<<<< someones_initials/some_branch_name
+a = 1 + 1
+b = 2 + 2
+c = 3 + 3
+=======
+a = "hello"
+b = "world"
+>>>>>>> master
+println("pear")
+```
+
+To resolve this merge conflict, you must replace all of the merge conflict text (including the `<<<<<<<` at the beginning and the `>>>>>>>` at the end) with the text that you actually want to include. For example, in the above example, you might decide that you want to resolve the merge conflict as follows:
+```julia
+println("apple")
+println("banana")
+a = 1 + 1
+b = "world"
+c = 3 + 3
+println("pear")
+```
+
+Repeat this process for all of the merge conflicts. You can use the `Prev` and `Next` buttons to quickly jump between merge conflicts.
+
+**Important:** Make sure that you resolve all of the merge conflicts. In particular, make sure that you have removed all of the conflict markers. The conflict markers are the lines that look like this:
+```
+<<<<<<< blah_blah_blah
+<<<<<<< 
+=======
+>>>>>>> 
+>>>>>>> blah_blah_blah
+```
+
+Once you have resolved all of the merge conflicts and removed all of the conflict markers, click on the `Mark as resolved` button. Then, click on the green `Commit merge` button.
+
+## 3.3 "Complicated" merge conflicts
 
 TODO: write this section.
