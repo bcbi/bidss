@@ -63,10 +63,15 @@ git rebase origin/master
 ```bash
 git stash
 git branch yourinitials/your-branch-name
+foo
 git fetch --all --prune
+foo
 git checkout master
+foo
 git merge --ff-only origin/master
+foo
 git checkout yourinitials/your-branch-name
+foo
 ```
 
 ## 3.2 Simple merge conflicts
