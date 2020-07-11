@@ -32,7 +32,7 @@ git add -A
 git commit
 ```
 
-`vim` opens. Press `i` to enter Insert mode. Type a long and descriptive commit message. When you are done, press `Esc` to exit Insert mode. Then, type `:wq` to save and exit.
+`vim` opens. Press `i` to enter `Insert mode`. Type a long and descriptive commit message. When you are done, press `Esc` to exit `Insert mode`. Then, type `:wq` to write and quit.
 
 ```bash
 git push origin yourinitials/your-branch-name
