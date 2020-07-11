@@ -65,8 +65,9 @@ git stash
 git branch yourinitials/your-branch-name
 git fetch --all --prune
 git checkout master
-git merge --ff-only origin/master
+git reset --hard origin/master
 git checkout yourinitials/your-branch-name
+git stash pop
 ```
 
 ## 3.2 Simple merge conflicts
