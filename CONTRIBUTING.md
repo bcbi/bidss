@@ -99,13 +99,11 @@ println("pear")
 
 Repeat this process for all of the merge conflicts. You can use the `Prev` and `Next` buttons to quickly jump between merge conflicts.
 
-**Important:** Make sure that you resolve all of the merge conflicts. In particular, make sure that you have removed all of the conflict markers. The conflict markers are the lines that look like this:
+**Important:** Make sure that you resolve all of the merge conflicts. In particular, make sure that you have removed all of the conflict markers. The conflict markers are the characters that look like this:
 ```
-<<<<<<< blah_blah_blah
 <<<<<<< 
 =======
 >>>>>>> 
->>>>>>> blah_blah_blah
 ```
 
 Once you have resolved all of the merge conflicts and removed all of the conflict markers, click on the `Mark as resolved` button. Then, click on the green `Commit merge` button.
