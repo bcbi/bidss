@@ -19,7 +19,7 @@ Run these commands to set up your own branch:
 ```bash
 git fetch --all --prune
 git checkout master
-git merge --ff-only origin/master
+git reset --hard origin/master
 git branch yourinitials/your-branch-name
 git checkout yourinitials/your-branch-name
 ```
@@ -47,6 +47,15 @@ git push origin yourinitials/your-branch-name
 5. In the `title` box, Enter a descriptive **title** for your pull request.
 6. In the large `Leave a comment` box, enter a long detailed description of the changes that your pull request makes.
 7. Click the green `Create pull request` botton.
+
+## 2.4 Update your local branch with changes made on GitHub.com
+
+After you push your branch to GitHub, you may decide to use the GitHub web editor to make changes directly in your web browser. If you do this, you should then pull the changes you made on the GitHub website back down to your local computer:
+```bash
+git fetch --all --prune
+git checkout yourinitials/your-branch-name
+git merge origin/yourinitials/your-branch-name
+```
 
 # 3. Troubleshooting
 
