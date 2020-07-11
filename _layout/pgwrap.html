@@ -10,49 +10,52 @@
     <input type="checkbox" id="show-menu" role="button">
     <div class="menu" id="side-menu">
       <ul class="menu-list">
-        <li class="menu-list-item {{ispage index}}active{{end}}"><a href="/" class="menu-list-link {{ispage index}}active{{end}}">Home</a>
-        <li class="menu-list-item"><a href="/programming/setup/intro" class="menu-list-link {{ispage setup}}active{{end}}">Setup</a>
-          <ul class="menu-list-child-list ">
-            <li class="menu-list-item  {{ispage programming/setup/intro}}active{{end}}"><a href="/programming/setup/intro" class="menu-list-link">Overview</a>
-            <li class="menu-list-item "><a href="/programming/setup/wsl" class="menu-list-link">Linux for Windows</a>
-            <li class="menu-list-item "><a href="/programming/setup/julia" class="menu-list-link">Julia</a
-            <li class="menu-list-item "><a href="/programming/setup/r" class="menu-list-link">R</a>
-            <li class="menu-list-item "><a href="/programming/setup/python" class="menu-list-link">Python</a>
-            <li class="menu-list-item "><a href="/programming/setup/vscode" class="menu-list-link">VS Code</a>
-            <li class="menu-list-item "><a href="/programming/setup/filezilla" class="menu-list-link">FileZilla</a>
-            <li class="menu-list-item "><a href="#" class="menu-list-link">GitHub</a>
+        <!-- {{ispage index}}active{{end}}       -->
+        <!-- {{ispage setup}}active{{end}}       -->
+        <!-- {{ispage databases/*}}active{{end}} -->
+        <li class="menu-list-item active"><a href="/" class="menu-list-link {{ispage index}}active{{end}}">Home</a>
+        <li class="menu-list-item active"><a href="/programming/setup/intro/" class="menu-list-link active">Setup</a>
+          <ul class="menu-list-child-list active">
+            <li class="menu-list-item active"><a href="/programming/setup/intro"      class="menu-list-link active">Overview</a>
+            <li class="menu-list-item active"><a href="/programming/setup/wsl"        class="menu-list-link active">Linux for Windows</a>
+            <li class="menu-list-item active"><a href="/programming/setup/julia"      class="menu-list-link active">Julia</a
+            <li class="menu-list-item active"><a href="/programming/setup/r"          class="menu-list-link active">R</a>
+            <li class="menu-list-item active"><a href="/programming/setup/python"     class="menu-list-link active">Python</a>
+            <li class="menu-list-item active"><a href="/programming/setup/vscode"     class="menu-list-link active">VS Code</a>
+            <li class="menu-list-item active"><a href="/programming/setup/filezilla"  class="menu-list-link active">FileZilla</a>
+            <li class="menu-list-item active"><a href="#"                             class="menu-list-link active">GitHub</a>
           </ul>
-        <li class="menu-list-item {{ispage unix/*}}active{{end}}"><a href="/unix/" class="menu-list-link {{ispage unix}}active{{end}}">Unix</a>
-          <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Getting Started with Unix</a>
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Analyzing the Adult (Census Income) Data Set</a>
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Analyzing the MIMIC-III Demo Data Set</a>
+        <li class="menu-list-item active"><a href="/unix/" class="menu-list-link {{ispage /programming/unix/*}}active{{end}}">Unix</a>
+          <ul class="menu-list-child-list active">
+            <li class="menu-list-item active"><a href="/programming/unix/intro"       class="menu-list-link active">Getting Started with Unix</a>
+            <li class="menu-list-item active"><a href="/programming/unix/census"      class="menu-list-link active">Analyzing the Adult (Census Income) Data Set</a>
+            <li class="menu-list-item active"><a href="/programming/unix/mimic"       class="menu-list-link active">Analyzing the MIMIC-III Demo Data Set</a>
           </ul>
-        <li class="menu-list-item {{ispage databases/*}}active{{end}}"><a href="/databases/" class="menu-list-link {{ispage databases}}active{{end}}">Databases</a>
+        <li class="menu-list-item active"><a href="/databases/" class="menu-list-link {{ispage databases}}active{{end}}">Databases</a>
           <<ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Getting Started with MySQL</a>
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Querying the EMRbots Database</a>
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Querying the MIMIC-III Demo Database</a>
+            <li class="menu-list-item active"><a href="#" class="menu-list-link">Getting Started with MySQL</a>
+            <li class="menu-list-item active"><a href="#" class="menu-list-link">Querying the EMRbots Database</a>
+            <li class="menu-list-item active"><a href="#" class="menu-list-link">Querying the MIMIC-III Demo Database</a>
           </ul>
-        <li class="menu-list-item {{ispage computing/*}}active{{end}}"><a href="/computing/" class="menu-list-link {{ispage computing}}active{{end}}">Computing</a>
+        <li class="menu-list-item active"><a href="/programming/computing/computing/" class="menu-list-link {{ispage computing}}active{{end}}">Computing</a>
           <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Introduction</a>
-            <li class="menu-list-item "><a href="/programming/computing/numbers/" class="menu-list-link">Numbers and Math</a>
-            <li class="menu-list-item "><a href="/programming/computing/strings/" class="menu-list-link">Strings, Characters, and Regular Expressions</a>
-            <li class="menu-list-item "><a href="/programming/computing/control/" class="menu-list-link">Control Flow</a>
-            <li class="menu-list-item "><a href="/programming/computing/collections/" class="menu-list-link">Collections and Data Structures</a>
-            <li class="menu-list-item "><a href="/programming/computing/io/" class="menu-list-link">File Input/Output</a>
-            <li class="menu-list-item "><a href="/programming/computing/repl/" class="menu-list-link">REPL and Packages</a>
-            <li class="menu-list-item "><a href="/programming/computing/dataframes/" class="menu-list-link">DataFrames</a>
-            <li class="menu-list-item "><a href="/programming/computing/stats/" class="menu-list-link">Statistics and Machine Learning</a>
-            <li class="menu-list-item "><a href="/programming/computing/viz/" class="menu-list-link">Plotting and Visualization</a>
+            <li class="menu-list-item active"><a href="#"                                    class="menu-list-link">Introduction</a>
+            <li class="menu-list-item active"><a href="/programming/computing/numbers/"      class="menu-list-link active">Numbers and Math</a>
+            <li class="menu-list-item active"><a href="/programming/computing/strings/"      class="menu-list-link active">Strings, Characters, and Regular Expressions</a>
+            <li class="menu-list-item active"><a href="/programming/computing/control/"      class="menu-list-link active">Control Flow</a>
+            <li class="menu-list-item active"><a href="/programming/computing/collections/"  class="menu-list-link active">Collections and Data Structures</a>
+            <li class="menu-list-item active"><a href="/programming/computing/io/"           class="menu-list-link active">File Input/Output</a>
+            <li class="menu-list-item active"><a href="/programming/computing/repl/"         class="menu-list-link active">REPL and Packages</a>
+            <li class="menu-list-item active"><a href="/programming/computing/dataframes/"   class="menu-list-link active">DataFrames</a>
+            <li class="menu-list-item active"><a href="/programming/computing/stats/"        class="menu-list-link active">Statistics and Machine Learning</a>
+            <li class="menu-list-item active"><a href="/programming/computing/viz/"          class="menu-list-link active">Plotting and Visualization</a>
           </ul>
-        <li class="menu-list-item {{ispage menu1/*}}active{{end}}"><a href="/menu1/" class="menu-list-link {{ispage menu1}}active{{end}}">Code blocks</a>
-        <li class="menu-list-item {{ispage menu2/*}}active{{end}}"><a href="/menu2/" class="menu-list-link {{ispage menu2}}active{{end}}">More goodies</a>
-        <li class="menu-list-item {{ispage menu3/*}}active{{end}}"><a href="/menu3/" class="menu-list-link {{ispage menu3}}active{{end}}">Tags</a>
-          <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a>
-          </ul>
+        <!-- <li class="menu-list-item {{ispage menu1/*}}active{{end}}"><a href="/menu1/" class="menu-list-link {{ispage menu1}}active{{end}}">Code blocks</a> -->
+        <!-- <li class="menu-list-item {{ispage menu2/*}}active{{end}}"><a href="/menu2/" class="menu-list-link {{ispage menu2}}active{{end}}">More goodies</a> -->
+        <!-- <li class="menu-list-item {{ispage menu3/*}}active{{end}}"><a href="/menu3/" class="menu-list-link {{ispage menu3}}active{{end}}">Tags</a> -->
+          <!-- <ul class="menu-list-child-list "> -->
+            <!-- <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a> -->
+          <!-- </ul> -->
       </ul>
     </div>
     <div class="footer">
