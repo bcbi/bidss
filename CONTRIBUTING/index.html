@@ -48,9 +48,38 @@ git checkout master
 git reset --hard origin/master
 git checkout yourinitials/your-branch-name
 git stash pop</code></pre>
-<h2 id=32_simple_merge_conflicts ><a href="#32_simple_merge_conflicts">3.2 Simple merge conflicts</a></h2>
-<p>TODO: write this section.</p>
-<h2 id=33_complicated_merge_conflicts ><a href="#33_complicated_merge_conflicts">3.3 Complicated merge conflicts</a></h2>
+<h2 id=32_quotsimplequot_merge_conflicts ><a href="#32_quotsimplequot_merge_conflicts">3.2 &quot;Simple&quot; merge conflicts</a></h2>
+<p>If your pull request has a &quot;simple&quot; merge conflict, then you will see the following message at the bottom of the pull request page, right above the merge button:</p>
+<blockquote>
+<p>This branch has conflicts that must be resolved</p>
+<p>Use the web editor or the to resolve conflicts. </p>
+</blockquote>
+<p>Next to this message, click on the button that says &quot;Resolve conflicts&quot;.  This brings you to a new page where you can resolve all of the merge conflicts.</p>
+<p>Each merge conflict begins with the characters <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and ends with the characters <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. For example, a conflict may look like this: <pre><code class="julia hljs">println(<span class=hljs-string >&quot;apple&quot;</span>)
+println(<span class=hljs-string >&quot;banana&quot;</span>)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; someones_initials/some_branch_name
+a = <span class=hljs-number >1</span> + <span class=hljs-number >1</span>
+b = <span class=hljs-number >2</span> + <span class=hljs-number >2</span>
+c = <span class=hljs-number >3</span> + <span class=hljs-number >3</span>
+=======
+a = <span class=hljs-string >&quot;hello&quot;</span>
+b = <span class=hljs-string >&quot;world&quot;</span>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; master
+println(<span class=hljs-string >&quot;pear&quot;</span>)</code></pre>
+<p>To resolve this merge conflict, you must replace all of the merge conflict text &#40;including the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> at the beginning and the <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> at the end&#41; with the text that you actually want to include. For example, in the above example, you might decide that you want to resolve the merge conflict as follows: <pre><code class="julia hljs">println(<span class=hljs-string >&quot;apple&quot;</span>)
+println(<span class=hljs-string >&quot;banana&quot;</span>)
+a = <span class=hljs-number >1</span> + <span class=hljs-number >1</span>
+b = <span class=hljs-string >&quot;world&quot;</span>
+c = <span class=hljs-number >3</span> + <span class=hljs-number >3</span>
+println(<span class=hljs-string >&quot;pear&quot;</span>)</code></pre>
+<p>Repeat this process for all of the merge conflicts. You can use the <code>Prev</code> and <code>Next</code> buttons to quickly jump between merge conflicts.</p>
+<p><strong>Important:</strong> Make sure that you resolve all of the merge conflicts. In particular, make sure that you have removed all of the conflict markers. The conflict markers are the lines that look like this: <pre><code class="julia hljs">&lt;&lt;&lt;&lt;&lt;&lt;&lt; blah_blah_blah
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; 
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; blah_blah_blah</code></pre>
+<p>Once you have resolved all of the merge conflicts and removed all of the conflict markers, click on the <code>Mark as resolved</code> button. Then, click on the green <code>Commit merge</code> button.</p>
+<h2 id=33_quotcomplicatedquot_merge_conflicts ><a href="#33_quotcomplicatedquot_merge_conflicts">3.3 &quot;Complicated&quot; merge conflicts</a></h2>
 <p>TODO: write this section.<div class=page-foot >
   <div class=copyright >
     <small>
