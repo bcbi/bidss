@@ -45,8 +45,9 @@ git rebase origin/master</code></pre>
 git branch yourinitials/your-branch-name
 git fetch --all --prune
 git checkout master
-git merge --ff-only origin/master
-git checkout yourinitials/your-branch-name</code></pre>
+git reset --hard origin/master
+git checkout yourinitials/your-branch-name
+git stash pop</code></pre>
 <h2 id=32_simple_merge_conflicts ><a href="#32_simple_merge_conflicts">3.2 Simple merge conflicts</a></h2>
 <p>TODO: write this section.</p>
 <h2 id=33_complicated_merge_conflicts ><a href="#33_complicated_merge_conflicts">3.3 Complicated merge conflicts</a></h2>
