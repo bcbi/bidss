@@ -1,14 +1,20 @@
 # Contributing
 
-## One-time setup
+| Table of contents | 
+| ----------------- |
+| [1. One-time setup](#1-one-time-setup) | 
+| [2. Normal workflow](#2-normal-workflow) |
+| [3. Troubleshooting](#3-troubleshooting) |
+
+# 1. One-time setup
 
 ```bash
 git config --global core.editor vim
 ```
 
-## How to work on your own branch:
+# 2. Normal workflow
 
-### Set up branch
+## 2.1 Set up branch
 Run these commands to set up your own branch:
 ```bash
 git fetch --all --prune
@@ -18,7 +24,7 @@ git branch yourinitials/your-branch-name
 git checkout yourinitials/your-branch-name
 ```
 
-### Save work and push to GitHub
+## 2.2 Save work and push to GitHub
 
 Now you work on your branch. To save your work:
 ```bash
@@ -32,7 +38,7 @@ git commit
 git push origin yourinitials/your-branch-name
 ```
 
-### Make a pull request
+## 2.3 Make a pull request
 
 1. Click on the `Pull Requests` tab.
 2. Click the green `New pull request` button.
@@ -42,9 +48,17 @@ git push origin yourinitials/your-branch-name
 6. In the large `Leave a comment` box, enter a long detailed description of the changes that your pull request makes.
 7. Click the green `Create pull request` botton.
 
-## Troubleshooting
+## 2.4 Update your branch with new changes from `master`
 
-### If you accidentally worked on the `master` branch instead of a separate branch:
+```bash
+git fetch --all --prune
+git checkout dpa/contributing
+git rebase origin/master
+```
+
+# 3. Troubleshooting
+
+## 3.1 If you accidentally worked on the `master` branch instead of a separate branch:
 
 ```bash
 git stash
@@ -54,3 +68,11 @@ git checkout master
 git merge --ff-only origin/master
 git checkout yourinitials/your-branch-name
 ```
+
+## 3.2 Simple merge conflicts
+
+TODO: write this section.
+
+## 3.3 Complicated merge conflicts
+
+TODO: write this section.
