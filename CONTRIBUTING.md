@@ -67,11 +67,9 @@ foo
 git fetch --all --prune
 foo
 git checkout master
-foo
-git merge --ff-only origin/master
-foo
+git reset --hard origin/master
 git checkout yourinitials/your-branch-name
-foo
+git stash pop
 ```
 
 ## 3.2 Simple merge conflicts
