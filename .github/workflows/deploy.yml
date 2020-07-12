@@ -1,4 +1,4 @@
-name: deploy
+name: Build and Deploy
 on:
   pull_request:
     branches:
@@ -8,7 +8,7 @@ on:
       - master
     tags: '*'
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
