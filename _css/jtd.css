@@ -123,9 +123,9 @@ hr{
 
 @media (min-width: 50rem){
   .page-wrap{
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     display: flex;
     width: 100%;
     height: 100%;
@@ -141,6 +141,7 @@ TOP NAV BAR
 
 ============================================================
 ************************************************************/
+
 /* accessibility */
 
 a.skip_main {
@@ -172,7 +173,7 @@ a.skip_main {
 
 @media screen and (min-width: 1024px){
 .logo-box {
-    max-width: 298px;
+    max-width: 250px;
     justify-content: center;
     -webkit-box-pack: center;
 }
@@ -350,12 +351,68 @@ SIDE BAR
 ============================================================
 ************************************************************/
 
-.side-bar{
-  z-index: 100;
-  display: flex;
-  flex-wrap: wrap;
-  background-color:#ffc72c;
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  background-color: rgb(152, 164, 174,.2);
+  border-right: 1px solid rgb(152, 164, 174,.4);
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
 }
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  background-color: rgb(152, 164, 174,.5);
+}
+
+/* Main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
 .side-bar .header {
   display: flex;
   min-height: 80px;
@@ -412,13 +469,13 @@ SIDE BAR
 .menu-list-child-list .menu-list-item{
   position:relative
 }
-.menu-list-child-list .menu-list-item::before{
+/* .menu-list-child-list .menu-list-item::before{
   position:absolute;
   margin-top:0em;
   margin-left:-0.8em;
   color:rgba(92,89,98,0.3);
   content:"- "
-}
+} */
 .menu-list-child-list .menu-list-item.active::before{
   color:#5c5962
 }
@@ -439,20 +496,19 @@ SIDE BAR
   color:#000000
 }
 .menu-list-link.active{
-  font-weight:600;
-  color:#ed1c24;
+  background-color: white;
+  color:#FFC72C;
   padding-top:0rem;
   padding-bottom:0rem;
   text-decoration:none;
 }
 
-.side-bar .footer {
-  width: 150px;
+.footer {
   font-size: 13px;
   padding-right:1rem;
   padding-left:1rem;
   position:absolute;
-  bottom:0;
+  bottom:80px;
   left:0;
   padding-top:1rem;
   padding-bottom:1rem
@@ -536,6 +592,7 @@ input[type=checkbox]:checked ~ #side-menu{display: block;}
 }
 
 
+
 /************************************************************
 =============================================================
 
@@ -546,9 +603,9 @@ MAIN CONTENT
 
 @media (min-width: 50rem){
   .main-content-wrap{
-    position:absolute;
+    /* position:absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     height: 100%;
     -webkit-overflow-scrolling: touch;
