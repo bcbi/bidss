@@ -4,10 +4,10 @@ website.
 The website_* must be defined for the RSS to work
 -->
 @def website_title = "BIDSS"
-@def website_descr = "Biomedical Informatics and Data Science Skills"
+@def website_descr = "Biomedical Informatics and Data Science Skills (BIDSS)"
 @def website_url   = "https://bcbi.github.io/bidss/"
 
-@def author = "Brown Center for Biomedical Informatics"
+@def author = "Brown Center for Biomedical Informatics (BCBI)"
 @def title = "BIDSS"
 @def prepath = "bidss"
 
