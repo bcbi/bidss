@@ -2,10 +2,10 @@
 
 | Table of contents | 
 | ----------------- |
-| [1. One-time setup](#) | 
-| [2. Normal workflow](#) |
-| [3. Deleting branches](#) |
-| [4. Troubleshooting](#) |
+| [1. One-time setup](#1-one-time-setup) | 
+| [2. Normal workflow](#2-normal-workflow) |
+| [3. Deleting branches](#3-deleting-branches) |
+| [4. Troubleshooting](#4-troubleshooting) |
 
 # 1. One-time setup
 
