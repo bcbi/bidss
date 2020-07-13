@@ -4,7 +4,8 @@
 | ----------------- |
 | [1. One-time setup](#1-one-time-setup) | 
 | [2. Normal workflow](#2-normal-workflow) |
-| [3. Troubleshooting](#3-troubleshooting) |
+| [3. Deleting branches](#3-deleting-branches) |
+| [4. Troubleshooting](#4-troubleshooting) |
 
 # 1. One-time setup
 
@@ -57,9 +58,37 @@ git checkout yourinitials/your-branch-name
 git merge origin/yourinitials/your-branch-name
 ```
 
-# 3. Troubleshooting
+## 2.5 View all branches
 
-## 3.1 If you accidentally worked on the `master` branch instead of a separate branch:
+All branches on your local computer
+```bash
+git fetch --all --prune
+git branch
+```
+
+All branches on your local computer and GitHub
+```bash
+git fetch --all --prune
+git branch -a
+```
+
+# 3. Deleting branches
+
+## 3.1 I want to delete a branch and discard all of the work
+
+Suppose that `yourinitials/branch-you-want-to-delete` is the branch you want to delete.
+```bash
+git reset --hard
+git fetch --all --prune
+git checkout master
+git reset --hard origin/master
+git branch -D yourinitials/branch-you-want-to-delete # deletes the branch on your local computer
+git push origin --delete yourinitials/branch-you-want-to-delete # deletes the branch on GitHub
+```
+
+# 4. Troubleshooting
+
+## 4.1 If you accidentally worked on the `master` branch instead of a separate branch:
 
 ```bash
 git stash
