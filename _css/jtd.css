@@ -5,6 +5,27 @@ https://github.com/pmarsceill/just-the-docs/blob/master/LICENSE.txt
 (MIT licensed)
 */
 
+
+/************************************************************
+=============================================================
+
+BROWN COLORS
+Red (Main): rgb(237,28,36) / HEX: #ED1C24
+Brown (Main): rgb(78,54,41) / HEX: #4E3629
+Gold (Accent): rgb(255,199,44) / HEX: #FFC72C
+Gray (Accent): rgb(152, 164, 174) / HEX: #98A4AE
+-MAY BE USED AT A 55% TINT OF THE SPOT COLOR, OR 15% BLACK FOR A LIGHTER GRAY.
+
+
+Red should always be used at 100% tint. The brown, silver and gold may be used at different screens for design purposes.
+https://www.brown.edu/university-identity/sites/university-identity/files/Brown_Visual_Identity_Policy_2016-07-22.pdfs
+
+
+============================================================
+************************************************************/
+
+
+
 html{
   font-family:sans-serif;
   -ms-text-size-adjust:100%;
@@ -111,6 +132,214 @@ hr{
     overflow-x: hidden;
     overflow-y: hidden;
   }
+}
+
+/************************************************************
+=============================================================
+
+TOP NAV BAR
+
+============================================================
+************************************************************/
+/* accessibility */
+
+a.skip_main {
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  display: none;
+}
+
+.nav-main{
+    height: 80px;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    z-index: 20;
+    position: relative;
+    box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+    border-bottom: 1px solid #d4dadf;
+    background-color: #FFC72C;
+}
+
+/* LOGO */
+
+.img-logo{
+  width: 150px;
+}
+
+@media screen and (min-width: 1024px){
+.logo-box {
+    max-width: 298px;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+}
+
+.logo-box{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  border-right: 1px solid rgb(78,54,41,.5) ;
+  height: 50px;
+}
+
+
+/* MIDDLE NAV ITEMS */
+
+@media screen and (max-width: 1439px){
+.nav-middleitems-wrapper {
+    margin: 0px 24px 0px 88px;
+}
+}
+
+.nav-middleitems-wrapper {
+  flex: 1 1 auto;
+  margin: 0px 88px;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  max-width: 750px;
+}
+
+.nav-middleitems-header {
+  overflow-x: auto;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  opacity: 1;
+  padding: 0;
+  overflow-x: overlay;
+  overflow-y: hidden;
+  transition: flex 250ms ease,width 250ms ease,opacity 250ms ease;
+  -moz-transition: flex 250ms ease,width 250ms ease,opacity 250ms ease;
+  -webkit-transition: flex 250ms ease,width 250ms ease,opacity 250ms ease;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-middleitem {
+  height: 100%;
+  margin: 0px 16px;
+  display: flex;
+  padding: 0;
+  border-top: 3px solid transparent;
+  align-items: center;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-middleitem-button {
+  color: rgba(0,0,0,0.7) !important;
+  border: 1px solid;
+  cursor: pointer;
+  height: 40px;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  transition: all 250ms ease-out;
+  align-items: center;
+  line-height: 1em;
+  white-space: nowrap;
+  border-color: transparent;
+  border-radius: 3px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.nav-middleitem-text {
+  font-size: 16px;
+  /* font-family: Content-font, Roboto, sans-serif; */
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+
+/* SEARCH BOX */
+
+
+.searchbox-wrapper {
+  height: 50px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  max-width: 224px;
+  align-items: center;
+  border-left: 1px solid rgb(78,54,41,.5) ;
+}
+
+.searchbox-container {
+  margin: 0;
+  display: block;
+  padding: 0;
+  padding-left: 14px;
+  padding-right: 16px;
+}
+
+.searchbox-input-wrapper {
+  width: 100%;
+  border: none;
+  margin: 0;
+  display: flex;
+  outline: none;
+  padding: 0;
+  font-size: 16px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.625;
+  border-radius: 3px;
+  background-color: #FFC72C;
+}
+
+.searchbox-input-inner {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+
+.searchbox-input-box {
+  font: inherit;
+  color: #242A31;
+  width: 100%;
+  border: none;
+  cursor: inherit;
+  height: 38px;
+  margin: 0;
+  resize: none;
+  outline: none;
+  padding: 0px 8px;
+  background: transparent;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: inherit;
+  border-radius: 3px;
+}
+
+.searchbox-icon {
+  flex: 0 0 auto;
+  color: rgba(0,0,0,1);
+  order: -1;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.searchbox-iconsvg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
 }
 
 /************************************************************
