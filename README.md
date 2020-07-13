@@ -2,4 +2,4 @@
 
 This is the repository for the BIDSS manual.
 
-Some tips for working with on this repository with Git and GitHub are available in the [CONTRIBUTING.md](CONTRIBUTING.md) document.
+Some tips for working on this repository with Git and GitHub are available in the [CONTRIBUTING.md](CONTRIBUTING.md) document.
