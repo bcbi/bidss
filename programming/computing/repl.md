@@ -27,14 +27,14 @@
 
 * Type "julia" in terminal to launch REPL
 
-~~~ <img src="/_images/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
+~~~ <img src="/_images/programming/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
 
 ### Julia REPL Help Pages (local)
 
 * Type "?" to enter help pages within REPL
 * Type a function from Julia to read help pages (ex: `println`)
 
-~~~ <img src="/_images/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
+~~~ <img src="/_images/programming/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
 
 ### Practice with this web-based Julia REPL
 <!-- Could be cool how to add something like this below from https://repl.it/languages -->
