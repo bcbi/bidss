@@ -1,7 +1,7 @@
-@def title = "Strings, Characters, and Regular Expressions"
+@def title = "The MIMIC-III Database Demo"
 @def hascode = true
 @def date = Date(2019, 3, 22)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def rss = "BIDSS: MIMIC-III Database Demo"
 
 @def tags = ["setup", "enviornment"]
 
@@ -26,6 +26,7 @@
 ### Explore the Data Files
 
 Confirm that your data files are in your present working directory:
+
 ```
 $ ls -1
 ADMISSIONS.csv
@@ -34,6 +35,7 @@ PATIENTS.csv
 ```
 
 Count number of lines in file (PATIENTS.csv) using wc: 
+
 ```
 $ wc PATIENTS.csv
      101     448    8605 PATIENTS.csv
@@ -43,18 +45,21 @@ $ wc -l PATIENTS.csv
 
 Look at contents of a text file (PATIENTS.csv) to fill a screen using more or less:
 (Use spacebar or up and down arrows to scroll through pages and then press q to quit)
+
 ```
 $ more PATIENTS.csv
 $ less PATIENTS.csv
 ```
 
 Look at first and last lines of a text file (PATIENTS.csv) to fill a screen using head or tail:
+
 ```
 $ head PATIENTS.csv
 $ tail PATIENTS.csv
 ```
 
 Look at first line and last three lines of a text file (ADMISSIONS.csv) using head or tail:
+
 ```
 $ head -n 1 ADMISSIONS.csv
 row_id,subject_id,gender,dob,dod,dod_hosp,dod_ssn,expire_flag
@@ -65,11 +70,13 @@ $ tail -n 3 ADMISSIONS.csv
 ```
 
 Extract a specific field (10) from a delimited file using cut (tab is default delimiter):
+
 ```
 $ cut -f10 -d',' ADMISSIONS.csv
 ```
 
 Extract a specific field (10) from a delimited file using cut (tab is default delimiter) and review output:
+
 ```
 $ cut -f10 -d',' ADMISSIONS.csv | more
 insurance
@@ -80,6 +87,7 @@ Medicare
 ```
 
 Another solution to the above using awk:
+
 ```
 $ awk -F"," '{print $10}' ADMISSIONS.csv
 insurance
@@ -90,6 +98,7 @@ Medicare
 ```
 
 Extract a specific field (10) from a delimited file using cut (tab is default delimiter) and review first five rows:
+
 ```
 $ cut -f10 -d',' ADMISSIONS.csv | head -n 5
 insurance
@@ -100,6 +109,7 @@ Medicare
 ```
 
 Extract specific fields (2,3,10) from a delimited file using cut (tab is default delimiter) and review output:
+
 ```
 $ cut -f2,3,10 -d',' ADMISSIONS.csv
 subject_id,hadm_id,insurance
@@ -110,6 +120,7 @@ subject_id,hadm_id,insurance
 ```
 
 Another solution to the above using awk (also skip header line and separate fields with ‘|’ delimiter)
+
 ```
 $ awk -F"," 'NR!=1{print $2,$3,$10}' OFS="|" ADMISSIONS.csv |more
 10006|142345|Medicare
@@ -120,6 +131,7 @@ $ awk -F"," 'NR!=1{print $2,$3,$10}' OFS="|" ADMISSIONS.csv |more
 
 Combine cut, sort, and uniq to determine how many times each value in field 10 occurs:
 (Need to sort first, so that uniq will be able to correctly tabulate values; command only remembers most recent row and current total counts)
+
 ```
 $ cut -f10 -d',' ADMISSIONS.csv | sort | uniq -c
    1 Government
@@ -130,6 +142,7 @@ $ cut -f10 -d',' ADMISSIONS.csv | sort | uniq -c
 ```
 
 Sort in numerical order:
+
 ```
 $ cut -f10 -d',' ADMISSIONS.csv | sort | uniq -c | sort -r
   98 Medicare
@@ -140,6 +153,7 @@ $ cut -f10 -d',' ADMISSIONS.csv | sort | uniq -c | sort -r
 ```
 
 Retrieve rows that contain a particular phrase using grep (MacOS/Linux) or select-string (Windows):
+
 ```
 $ grep "DIVORCED" ADMISSIONS.csv
 12269,10017,199207,2149-05-26 17:19:00,2149-06-03 18:42:00,,EMERGENCY,EMERGENCY ROOM ADMIT,SNF,Medicare,,CATHOLIC,DIVORCED,WHITE,2149-05-26 12:08:00,2149-05-26 19:45:00,HUMERAL FRACTURE,0,1
@@ -151,6 +165,7 @@ $ grep "DIVORCED" ADMISSIONS.csv
 ```
 
 Get the subject identifier (field 2), admission identifier (field 3), insurance (field 10) and diagnosis (field 17) for the above:
+
 ```
 $ grep DIVORCED ADMISSIONS.csv | cut -f2,3,10,17 -d','
 10017,199207,Medicare,HUMERAL FRACTURE
@@ -162,6 +177,7 @@ $ grep DIVORCED ADMISSIONS.csv | cut -f2,3,10,17 -d','
 ```
 
 Find admission times from the year 2112:
+
 ```
 $ cut -d',' -f4 ADMISSIONS.csv | grep "2112"
 2112-02-04 14:49:00
@@ -171,6 +187,7 @@ $ cut -d',' -f4 ADMISSIONS.csv | grep "2112"
 ```
 
 Add “ADMISSIONS:” to the beginning of each line using sed:
+
 ```
 $ sed 's/^/ADMISSION:/' ADMISSIONS.csv
 ADMISSION:row_id,subject_id,hadm_id,admittime,dischtime,deathtime,admission_type,admission_location,discharge_location,insurance,language,religion,marital_status,ethnicity,edregtime,edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
@@ -179,6 +196,7 @@ ADMISSION:12263,10011,105331,2126-08-14 22:32:00,2126-08-28 18:59:00,2126-08-28 
 ```
 
 Replace “EMERGENCY ROOM” with “ER” and “SNF” with “SKILLED NURSING FACILITY” using sed:
+
 ```
 $ cut -d',' -f7,8,9 ADMISSIONS.csv |more
 admission_type,admission_location,discharge_location
