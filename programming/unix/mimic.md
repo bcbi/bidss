@@ -5,167 +5,231 @@
 
 @def tags = ["setup", "enviornment"]
 
-# Strings, Characters, and Regular Expressions
+# 3.3 The MIMIC-III Clinical Database Demo
 
 \toc
 
 ## Documentation
-* Julia
-    * Manual: ~~~ <a href="https://docs.julialang.org/en/v1/manual/strings/" target="_blank">Strings</a> ~~~
-    * Base: ~~~ <a href="https://docs.julialang.org/en/v1/base/strings/" target="_blank">Strings</a> ~~~
-* Regular Expressions
-    * ~~~ <a href="https://regex101.com/" target="_blank">Regular Expressions 101</a> ~~~
-    * ~~~ <a href="http://www.regexlib.com/" target="_blank">Regular Expressions Library</a> ~~~
-    * ~~~ <a href="http://www.regexlib.com/CheatSheet.aspx" target="_blank">Regular Expressions Cheat Sheet</a> ~~~
+* MIMIC-III Demo: ~~~ <a href="https://physionet.org/content/mimiciii-demo/1.4/" target="_blank">Database information and data download</a> ~~~
 
-## Theory
+## Analyzing the MIMIC-III Database Demo
 
-## Practice
+### Getting Started
 
-### Characters and Strings
-* `Char` is a single character
-* `String` is a sequence of one or more characters (index values start at `1`)
-
-#### Some functions that can be performed on strings
-
-| Action                                            | Function                          |
-| :------------------------------------------------ | :-------------------------------- |
-| get `word` length                                 | `length(word)`                    |
-| extract `nth` character from `word`               | `word[n]`                         |
-| extract substring `nth-mth` character from `word` | `word[n:m]`                       |
-| search for `letter` in `word`                     | `findfirst(isequal(letter), word)`|
-| search for `subword` in `word`                    | `occursin(word, subword)`         |
-| remove record separator from `word` (e.g., `n`)   | `chomp(word)`                     |
-| remove last character from `word`                 | `chop(word)`                      |
+1. Download the following files
+  * [Admissions.csv](https://physionet.org/content/mimiciii-demo/1.4/PATIENTS.csv)
+  * [Patients.csv](https://physionet.org/content/mimiciii-demo/1.4/ADMISSIONS.csv)
+  * [Diagnoses_ICD](https://physionet.org/content/mimiciii-demo/1.4/DIAGNOSES_ICD.csv)
+2. Move files to a working directory (see [3.1 Getting Started](/programming/unix/intro) for more detail)
+3. Open a Unix shell and navigate to that directory (see [3.1 Getting Started](/programming/unix/intro) for more detail)
 
 
-Use `typeof()` function to determine type
+### Explore the Data Files
 
-Input:
-
-```julia:./chars_and_strings.jl
-# chars_and_strings.jl
-
-letter = 'b'
-word = "good-bye"
-subword = "good"
-
-word_length = length(word)
-word_first_char = word[1]
-word_subword = word[6:8]
-
-println("Length of word: $word_length")
-println("First character: $word_first_char")
-println("Last three characters: $word_subword")
-
-println("$letter is in $word: $(findfirst(isequal(letter), word))")
-println("$subword is in $word: $(occursin(word, subword))")
-println("chop off the last character: $(chop(word))")
-
+Confirm that your data files are in your present working directory:
+```
+$ ls -1
+ADMISSIONS.csv
+DIAGNOSES_ICD.csv
+PATIENTS.csv
 ```
 
-Output:
-
-\output{./chars_and_strings.jl}
-
-
-### Regular Expressions (regex)
-
-*Regular expressions* are powerful tools for pattern matching and text processing. They are representated ad a `pattern` that consists of a special set of characters to search for in a string `str`.
-
-#### Functions
-
-| Action                                            | Function                          |
-| :------------------------------------------------ | :-------------------------------- |
-| Check if regex matches a string		            | 'occursin(r"pattern", str)'       |
-| Capture regex matches			                    | `match(r"pattern", str)`          |
-| Specify alternative regex			                | `pattern1|pattern2`              |
-
-
-#### Character Class 
-
-*Character class* specifies a list of characters to match (`[...]` where `...` represents the list) or not match (`[^...]`)
-
-| Character Class                                           | `...`                             |
-| :-------------------------------------------------------- | :-------------------------------- |
-| Any lowercase vowel                                       | `\[aeiou]`                        |
-| Any digit                                                 | `[0-9]`                           |
-| Any lowercase letter                                      | `[a-z]`                           |
-| Any uppercase letter                                      | `[A-Z]`                           |
-| Any digit, lowercase letter, or uppercase letter          | `[a-zA-Z0-9]`                     |
-| Anything except a lowercase vowel                         | `[^aeiou]`                        |
-| Anything except a digit                                   | `[^0-9]`                          |
-| Anything except a space                                   | `[^ ]`                            |
-| Any character                                             | `.`                               |
-| Any word character (equivalent to `[a-zA-Z0-9_]`)         | `\w`                              |
-| Any non-word character (equivalent to `[^a-zA-Z0-9_]`)    | `W`                               |
-| A digit character (equivalent to `[0-9]`)                 | `\d`                              |
-| Any non-digit character (equivalent to `[^0-9]`)          | `\D`                              |
-| Any whitespace character (equivalent to `[\t\r\n\f]`)     | `\s`                              |
-| Any non-whitespace character (equivalent to `[^\t\r\n\f]`)| `\S`                              |
-
-
-#### Anchors
-
-*Anchors* are special characters that can be used to match a pattern at a specified position
-
-| Anchor                                            | Special Character                 |
-| :------------------------------------------------ | :-------------------------------- |
-| Beginning of line	                                | `^`                               |
-| End of line                                       | `$`                               |
-| Beginning of string                               | `\A`                              |
-| End of string                                     | `\Z`                              |
-
-
-#### Repetition and Quantifier Characters
-
-*Repetition or quantifier characters* specify the number of times to match a particular character or set of characters
-
-| Repetition                                        | Character                |
-| :------------------------------------------------ | :----------------------- |
-| Zero or more times                                | `*`                      |
-| One or more times                                 | `+`                      |
-| Zero or one time                                  | `?`                      |
-| Exactly n times                                   | `{n}`                    |
-| n or more times                                   | `{n,}`                   |
-| m or less times                                   | `{,m}`                   |
-| At least n and at most m times                    | `{n.m}`                  |
-
-Input:
-
-```julia:./regex.jl
-# regex.jl
-number1 = "(555)123-4567"
-number2 = "123-45-6789"
-
-# check if matches
-if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number1)
-   println("match!")
-end
-
-if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number2)
-  println("match!")
-else
-  println("no match!")
-end
-
-# capture matches
-# use parentheses to "capture" different parts of a regular 
-# expression for later use the first set of parentheses corresponds 
-# to index 1, second to index 2, etc.
-
-number_details = match(r"\(([0-9]{3})\)([0-9]{3}-[0-9]{4})", number1)
-
-if number_details != nothing
-   area_code = number_details[1]
-   phone_number = number_details[2]
-
-   println("area code: $area_code")
-   println("phone number: $phone_number")
-end
-
+Count number of lines in file (PATIENTS.csv) using wc: 
+```
+$ wc PATIENTS.csv
+     101     448    8605 PATIENTS.csv
+$ wc -l PATIENTS.csv
+     101 PATIENTS.csv
 ```
 
-Output:
+Look at contents of a text file (PATIENTS.csv) to fill a screen using more or less:
+(Use spacebar or up and down arrows to scroll through pages and then press q to quit)
+```
+$ more PATIENTS.csv
+$ less PATIENTS.csv
+```
 
-\output{./regex.jl}
+Look at first and last lines of a text file (PATIENTS.csv) to fill a screen using head or tail:
+```
+$ head PATIENTS.csv
+$ tail PATIENTS.csv
+```
+
+Look at first line and last three lines of a text file (ADMISSIONS.csv) using head or tail:
+```
+$ head -n 1 ADMISSIONS.csv
+row_id,subject_id,gender,dob,dod,dod_hosp,dod_ssn,expire_flag
+$ tail -n 3 ADMISSIONS.csv
+41087,44212,163189,2123-11-24 14:14:00,2123-12-30 14:31:00,,EMERGENCY,TRANSFER FROM HOSP/EXTRAM,REHAB/DISTINCT PART HOSP,Medicare,ENGL,UNOBTAINABLE,SINGLE,BLACK/AFRICAN AMERICAN,,,ACUTE RESPIRATORY DISTRESS SYNDROME;ACUTE RENAL FAILURE,0,1
+41090,44222,192189,2180-07-19 06:55:00,2180-07-20 13:00:00,,EMERGENCY,EMERGENCY ROOM ADMIT,HOME,Medicare,ENGL,CATHOLIC,SINGLE,WHITE,2180-07-19 04:50:00,2180-07-19 08:23:00,BRADYCARDIA,0,1
+41092,44228,103379,2170-12-15 03:14:00,2170-12-24 18:00:00,,EMERGENCY,EMERGENCY ROOM ADMIT,HOME HEALTH CARE,Private,ENGL,NOT SPECIFIED,SINGLE,WHITE,2170-12-15 02:22:00,2170-12-15 05:25:00,CHOLANGITIS,0,1
+```
+
+Extract a specific field (10) from a delimited file using cut (tab is default delimiter):
+```
+$ cut -f10 -d',' ADMISSIONS.csv
+```
+
+Extract a specific field (10) from a delimited file using cut (tab is default delimiter) and review output:
+```
+$ cut -f10 -d',' ADMISSIONS.csv | more
+insurance
+Medicare
+Private
+Medicare
+...
+```
+
+Another solution to the above using awk:
+```
+$ awk -F"," '{print $10}' ADMISSIONS.csv
+insurance
+Medicare
+Private
+Medicare
+...
+```
+
+Extract a specific field (10) from a delimited file using cut (tab is default delimiter) and review first five rows:
+```
+$ cut -f10 -d',' ADMISSIONS.csv | head -n 5
+insurance
+Medicare
+Private
+Medicare
+Medicare
+```
+
+Extract specific fields (2,3,10) from a delimited file using cut (tab is default delimiter) and review output:
+```
+$ cut -f2,3,10 -d',' ADMISSIONS.csv
+subject_id,hadm_id,insurance
+10006,142345,Medicare
+10011,105331,Private
+10013,165520,Medicare
+...
+```
+
+Another solution to the above using awk (also skip header line and separate fields with ‘|’ delimiter)
+```
+$ awk -F"," 'NR!=1{print $2,$3,$10}' OFS="|" ADMISSIONS.csv |more
+10006|142345|Medicare
+10011|105331|Private
+10013|165520|Medicare
+...
+```
+
+Combine cut, sort, and uniq to determine how many times each value in field 10 occurs:
+(Need to sort first, so that uniq will be able to correctly tabulate values; command only remembers most recent row and current total counts)
+```
+$ cut -f10 -d',' ADMISSIONS.csv | sort | uniq -c
+   1 Government
+   6 Medicaid
+  98 Medicare
+  24 Private
+   1 insurance
+```
+
+Sort in numerical order:
+```
+$ cut -f10 -d',' ADMISSIONS.csv | sort | uniq -c | sort -r
+  98 Medicare
+  24 Private
+   6 Medicaid
+   1 insurance
+   1 Government
+```
+
+Retrieve rows that contain a particular phrase using grep (MacOS/Linux) or select-string (Windows):
+```
+$ grep "DIVORCED" ADMISSIONS.csv
+12269,10017,199207,2149-05-26 17:19:00,2149-06-03 18:42:00,,EMERGENCY,EMERGENCY ROOM ADMIT,SNF,Medicare,,CATHOLIC,DIVORCED,WHITE,2149-05-26 12:08:00,2149-05-26 19:45:00,HUMERAL FRACTURE,0,1
+12270,10019,177759,2163-05-14 20:43:00,2163-05-15 12:00:00,2163-05-15 12:00:00,EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED,Medicare,,CATHOLIC,DIVORCED,WHITE,,,ALCOHOLIC HEPATITIS,1,1
+12280,10029,132349,2139-09-22 10:58:00,2139-10-02 14:29:00,,EMERGENCY,EMERGENCY ROOM ADMIT,SNF,Medicare,,PROTESTANT QUAKER,DIVORCED,WHITE,2139-09-22 06:03:00,2139-09-22 11:50:00,SYNCOPE;TELEMETRY,0,1
+12363,10112,188574,2148-01-13 22:32:00,2148-01-19 15:03:00,2148-01-19 15:03:00,URGENT,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED,Medicare,,PROTESTANT QUAKER,DIVORCED,WHITE,,,VF ARREST ,1,1
+39859,40286,109698,2193-10-15 07:15:00,2193-10-20 13:18:00,,ELECTIVE,PHYS REFERRAL/NORMAL DELI,REHAB/DISTINCT PART HOSP,Medicare,ENGL,PROTESTANT QUAKER,DIVORCED,WHITE,,,LEFT HIP OA/SDA,0,1
+39929,40503,168803,2186-07-06 19:59:00,2186-07-07 19:00:00,2186-07-07 19:00:00,EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED,Medicare,ENGL,UNOBTAINABLE,DIVORCED,WHITE,,,STEMI;,1,1
+```
+
+Get the subject identifier (field 2), admission identifier (field 3), insurance (field 10) and diagnosis (field 17) for the above:
+```
+$ grep DIVORCED ADMISSIONS.csv | cut -f2,3,10,17 -d','
+10017,199207,Medicare,HUMERAL FRACTURE
+10019,177759,Medicare,ALCOHOLIC HEPATITIS
+10029,132349,Medicare,SYNCOPE;TELEMETRY
+10112,188574,Medicare,VF ARREST
+40286,109698,Medicare,LEFT HIP OA/SDA
+40503,168803,Medicare,STEMI;
+```
+
+Find admission times from the year 2112:
+```
+$ cut -d',' -f4 ADMISSIONS.csv | grep "2112"
+2112-02-04 14:49:00
+2112-05-04 08:00:00
+2112-05-22 15:37:00
+2112-05-28 15:45:00
+```
+
+Add “ADMISSIONS:” to the beginning of each line using sed:
+```
+$ sed 's/^/ADMISSION:/' ADMISSIONS.csv
+ADMISSION:row_id,subject_id,hadm_id,admittime,dischtime,deathtime,admission_type,admission_location,discharge_location,insurance,language,religion,marital_status,ethnicity,edregtime,edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
+ADMISSION:12258,10006,142345,2164-10-23 21:09:00,2164-11-01 17:15:00,,EMERGENCY,EMERGENCY ROOM ADMIT,HOME HEALTH CARE,Medicare,,CATHOLIC,SEPARATED,BLACK/AFRICAN AMERICAN,2164-10-23 16:43:00,2164-10-23 23:00:00,SEPSIS,0,1
+ADMISSION:12263,10011,105331,2126-08-14 22:32:00,2126-08-28 18:59:00,2126-08-28 18:59:00,EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED,Private,,CATHOLIC,SINGLE,UNKNOWN/NOT SPECIFIED,,,HEPATITIS B,1,1
+```
+
+Replace “EMERGENCY ROOM” with “ER” and “SNF” with “SKILLED NURSING FACILITY” using sed:
+```
+$ cut -d',' -f7,8,9 ADMISSIONS.csv |more
+admission_type,admission_location,discharge_location
+EMERGENCY,EMERGENCY ROOM ADMIT,HOME HEALTH CARE
+EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED
+EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED
+EMERGENCY,EMERGENCY ROOM ADMIT,SNF
+
+$ cut -d',' -f7,8,9 ADMISSIONS.csv | sed 's/EMERGENCY ROOM/ER/g' | sed 's/SNF/SKILLED NURSING FACILITY/'
+admission_type,admission_location,discharge_location
+EMERGENCY,ER ADMIT,HOME HEALTH CARE
+EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED
+EMERGENCY,TRANSFER FROM HOSP/EXTRAM,DEAD/EXPIRED
+EMERGENCY,ER ADMIT,SKILLED NURSING FACILITY
+```
+
+Class Exercises
+
+1. Determine number of lines that have the value “ENGL”
+
+```
+$ YOUR COMMAND
+      58     537   11802
+```
+
+2. Determine number of times each value in the discharge location field occurs
+
+```
+$ YOUR COMMAND
+  40 DEAD/EXPIRED
+  39 SNF
+  15 HOME
+  14 HOME HEALTH CARE -
+  13 REHAB/DISTINCT PART HOSP
+   3 ICF
+   2 LONG TERM CARE HOSPITAL
+   1 discharge_location
+   1 HOSPICE-HOME
+   1 HOME WITH HOME IV PROVIDR
+   1 DISCH-TRAN TO PSYCH HOSP
+```
+
+3. Determine how many times each year in the admission time field occurs
+
+```
+$ YOUR COMMAND
+   5 2201
+   4 2202
+   3 2200
+   3 2145
+   3 2112
+   ...
+```
