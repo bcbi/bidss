@@ -17,12 +17,11 @@
 ### Getting Started
 
 1. Download the following files
-  * [Admissions.csv](https://physionet.org/content/mimiciii-demo/1.4/PATIENTS.csv)
-  * [Patients.csv](https://physionet.org/content/mimiciii-demo/1.4/ADMISSIONS.csv)
-  * [Diagnoses_ICD](https://physionet.org/content/mimiciii-demo/1.4/DIAGNOSES_ICD.csv)
+  * ~~~ <a href="https://physionet.org/content/mimiciii-demo/1.4/PATIENTS.csv" target="_blank">Admissions.csv</a> ~~~
+  * ~~~ <a href="https://physionet.org/content/mimiciii-demo/1.4/ADMISSIONS.csv" target="_blank">Patients.csv</a> ~~~
+  * ~~~ <a href="https://physionet.org/content/mimiciii-demo/1.4/DIAGNOSES_ICD.csv" target="_blank">Diagnoses_ICD</a> ~~~
 2. Move files to a working directory (see [3.1 Getting Started](/programming/unix/intro) for more detail)
 3. Open a Unix shell and navigate to that directory (see [3.1 Getting Started](/programming/unix/intro) for more detail)
-
 
 ### Explore the Data Files
 
