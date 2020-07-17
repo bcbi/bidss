@@ -1,6 +1,6 @@
-@def title = "BCBI Biomedical Informatics and Data Science Skills"
+@def title = "Biomedical Informatics and Data Science Skills (BIDSS) Learning Platform"
 @def tags = ["syntax", "code"]
 
-# About BIDSS
+# Biomedical Informatics and Data Science Skills (BIDSS) Learning Platform
 
-Welcome to the Biomedical Informatics and Data Science Skills (BIDSS) manual.
+Welcome to the BIDSS Learning Platform.
