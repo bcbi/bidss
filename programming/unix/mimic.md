@@ -1,9 +1,9 @@
 @def title = "The MIMIC-III Database Demo"
 @def hascode = true
-@def date = Date(2019, 3, 22)
+@def date = Date(2020, 7, 16)
 @def rss = "BIDSS: MIMIC-III Database Demo"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["unix"]
 
 # 3.3 The MIMIC-III Clinical Database Demo
 

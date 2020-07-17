@@ -1,9 +1,9 @@
 @def title = "Analyzing the Adult (Census Income) Data Set"
 @def hascode = true
-@def date = Date(2019, 3, 22)
+@def date = Date(2020, 7, 16)
 @def rss = "BIDSS: Analyzing the Adult (Census Income) Data Set"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["unix"]
 
 # 3.2 Analyzing the Adult (Census Income) Data Set
 
