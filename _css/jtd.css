@@ -475,6 +475,7 @@ SIDE BAR
   list-style:none;
   /* get rid of indention */
 }
+
 .menu-list-child-list{
   padding-left:.75rem;
   list-style:none;
