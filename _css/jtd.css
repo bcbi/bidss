@@ -485,6 +485,7 @@ SIDE BAR
 .menu-list-child-list{
   padding-left:.75rem;
   list-style:none;
+  margin-top: 10px;
 }
 .menu-list-child-list .menu-list-link{
   color:#7d7d7d
@@ -505,7 +506,6 @@ SIDE BAR
 }
 .menu-list-item{
   font-size:14px !important;
-  margin:0;
 }
 .menu-list-item .menu-list-child-list{
   display:none
