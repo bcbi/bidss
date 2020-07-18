@@ -33,8 +33,6 @@ While you are in `Normal mode`, you can save ("write") your changes and quit Vim
 
 While you are in `Normal mode`, you can quit Vim WITHOUT saving your changes by typing `:q!` and pressing `Enter/Return`. This will discard any text that you typed.
 
-https://eastmanreference.com/a-quick-start-guide-for-beginners-to-the-vim-text-editor
-
 # 3. Normal Git workflow and normal GitHub workflow
 
 ## 3.1. Set up branch
