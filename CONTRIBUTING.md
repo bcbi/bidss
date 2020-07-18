@@ -2,11 +2,11 @@
 
 | Table of contents | 
 | ----------------- |
-| [1. One-time setup](#) | 
-| [2. How to use Vim](#) |
-| [3. Normal Git workflow and normal GitHub workflow](#) |
-| [4. Deleting branches](#) |
-| [5. Troubleshooting](#) |
+| [1. One-time setup](#1-one-time-setup) | 
+| [2. How to use Vim](#2-how-to-use-vim) |
+| [3. Normal Git workflow and normal GitHub workflow](#3-normal-git-workflow-and-normal-github-workflow) |
+| [4. Deleting branches](#4-deleting-branches) |
+| [5. Troubleshooting](#5-troubleshooting) |
 
 # 1. One-time setup
 
