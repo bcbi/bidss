@@ -138,8 +138,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-This means that there are some changes on GitHub that you don't have on your local computer.
-
+This means that there are some changes on GitHub that you don't have on your local computer. In order to fix this error, run the following commands:
 ```bash
 git fetch --all --prune
 git checkout YOURINITIALS/YOUR-BRANCH-NAME
