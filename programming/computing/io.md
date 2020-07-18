@@ -1,11 +1,11 @@
 @def title = "File Input/Output"
 @def hascode = true
-@def date = Date(2020, 6, 18)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def date = Date(2020, 7, 18)
+@def rss = "BIDSS: File Input/Output"
 
-@def tags = ["julia", "file io", "input", "output"]
+@def tags = ["computing", "julia", "file io", "input", "output"]
 
-# File Input/Output
+# 5.6 File Input/Output
 
 \toc
 
@@ -19,13 +19,9 @@
 
 * Note: Using Julia Base functions only
 
-## Practice
-
 ### ~~~ <a href="https://archive.ics.uci.edu/ml/datasets/adult" target="_blank"> UCI Machine Learning Repository: Adult Data Set</a> ~~~ 
 
 * Tabulate and report counts for sex in Adult Data Set
-
-
 
 **_Dataset_** (adult.data)
 

@@ -1,11 +1,11 @@
 @def title = "Strings, Characters, and Regular Expressions"
 @def hascode = true
-@def date = Date(2019, 3, 22)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def date = Date(2020, 7, 17)
+@def rss = "BIDSS: Strings, Characters, and Regular Expressions"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["computing","julia"]
 
-# Strings, Characters, and Regular Expressions
+# 5.3 Strings, Characters, and Regular Expressions in Julia
 
 \toc
 
@@ -18,15 +18,11 @@
     * ~~~ <a href="http://www.regexlib.com/" target="_blank">Regular Expressions Library</a> ~~~
     * ~~~ <a href="http://www.regexlib.com/CheatSheet.aspx" target="_blank">Regular Expressions Cheat Sheet</a> ~~~
 
-## Theory
-
-## Practice
-
-### Characters and Strings
+## Characters and Strings
 * `Char` is a single character
 * `String` is a sequence of one or more characters (index values start at `1`)
 
-#### Some functions that can be performed on strings
+### Some functions that can be performed on strings
 
 | Action                                            | Function                          |
 | :------------------------------------------------ | :-------------------------------- |
@@ -69,11 +65,11 @@ Output:
 \output{./chars_and_strings.jl}
 
 
-### Regular Expressions (regex)
+## Regular Expressions (regex)
 
 *Regular expressions* are powerful tools for pattern matching and text processing. They are representated ad a `pattern` that consists of a special set of characters to search for in a string `str`.
 
-#### Functions
+### Functions
 
 | Action                                            | Function                          |
 | :------------------------------------------------ | :-------------------------------- |
@@ -82,7 +78,7 @@ Output:
 | Specify alternative regex			                | `pattern1|pattern2`              |
 
 
-#### Character Class 
+### Character Class 
 
 *Character class* specifies a list of characters to match (`[...]` where `...` represents the list) or not match (`[^...]`)
 
@@ -105,7 +101,7 @@ Output:
 | Any non-whitespace character (equivalent to `[^\t\r\n\f]`)| `\S`                              |
 
 
-#### Anchors
+### Anchors
 
 *Anchors* are special characters that can be used to match a pattern at a specified position
 
@@ -117,7 +113,7 @@ Output:
 | End of string                                     | `\Z`                              |
 
 
-#### Repetition and Quantifier Characters
+### Repetition and Quantifier Characters
 
 *Repetition or quantifier characters* specify the number of times to match a particular character or set of characters
 
