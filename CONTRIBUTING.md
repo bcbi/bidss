@@ -2,10 +2,10 @@
 
 | Table of contents | 
 | ----------------- |
-| [1. One-time setup](#1-one-time-setup) | 
-| [2. Normal workflow](#2-normal-workflow) |
-| [3. Deleting branches](#3-deleting-branches) |
-| [4. Troubleshooting](#4-troubleshooting) |
+| [1. One-time setup](#) | 
+| [2. Normal workflow](#) |
+| [3. Deleting branches](#) |
+| [4. Troubleshooting](#) |
 
 # 1. One-time setup
 
@@ -15,7 +15,7 @@ git config --global core.editor vim
 
 # 2. Normal workflow
 
-## 2.1 Set up branch
+## 2.1. Set up branch
 Run these commands to set up your own branch:
 ```bash
 git fetch --all --prune
@@ -25,7 +25,7 @@ git branch yourinitials/your-branch-name
 git checkout yourinitials/your-branch-name
 ```
 
-## 2.2 Save work and push to GitHub
+## 2.2. Save work and push to GitHub
 
 Now you work on your branch. To save your work:
 ```bash
@@ -39,7 +39,7 @@ git commit
 git push origin yourinitials/your-branch-name
 ```
 
-## 2.3 Make a pull request
+## 2.3. Make a pull request
 
 1. Click on the `Pull Requests` tab.
 2. Click the green `New pull request` button.
@@ -49,7 +49,7 @@ git push origin yourinitials/your-branch-name
 6. In the large `Leave a comment` box, enter a long detailed description of the changes that your pull request makes.
 7. Click the green `Create pull request` botton.
 
-## 2.4 Update your local branch with changes made on GitHub.com
+## 2.4. Update your local branch with changes made on GitHub.com
 
 After you push your branch to GitHub, you may decide to use the GitHub web editor to make changes directly in your web browser. If you do this, you should then pull the changes you made on the GitHub website back down to your local computer:
 ```bash
@@ -58,7 +58,7 @@ git checkout yourinitials/your-branch-name
 git merge origin/yourinitials/your-branch-name
 ```
 
-## 2.5 View all branches
+## 2.5. View all branches
 
 All branches on your local computer
 ```bash
@@ -74,7 +74,7 @@ git branch -a
 
 # 3. Deleting branches
 
-## 3.1 I want to delete a branch and discard all of the work
+## 3.1. I want to delete a branch and discard all of the work
 
 Suppose that `yourinitials/branch-you-want-to-delete` is the branch you want to delete.
 ```bash
@@ -88,7 +88,7 @@ git push origin --delete yourinitials/branch-you-want-to-delete # deletes the br
 
 # 4. Troubleshooting
 
-## 4.1 If you accidentally worked on the `master` branch instead of a separate branch:
+## 4.1. If you accidentally worked on the `master` branch instead of a separate branch:
 
 ```bash
 git stash
@@ -100,7 +100,7 @@ git checkout yourinitials/your-branch-name
 git stash pop
 ```
 
-## 3.2 "Simple" merge conflicts
+## 4.2. "Simple" merge conflicts (merge conflicts that can be resolved using the web editor on GitHub.com)
 
 If your pull request has a "simple" merge conflict, then you will see the following message at the bottom of the pull request page, right above the merge button:
 
@@ -146,6 +146,6 @@ Repeat this process for all of the merge conflicts. You can use the `Prev` and `
 
 Once you have resolved all of the merge conflicts and removed all of the conflict markers, click on the `Mark as resolved` button. Then, click on the green `Commit merge` button.
 
-## 3.3 "Complicated" merge conflicts
+## 4.3. "Complicated" merge conflicts (merge conflicts that must be resolved using the command line)
 
 TODO: write this section.
