@@ -1,5 +1,5 @@
 # This file was generated, do not modify it. # hide
-# loops.jl                                                                                                     # Demonstrates use of loops                                                                                    
+# Demonstrates use of loops                                                                                    
 
 i = 1
 
