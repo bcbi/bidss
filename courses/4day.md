@@ -5,10 +5,10 @@
 
 @def tags = ["computing","julia"]
 
-# 5.1 Introduction to Scientific Computing in Julia
+# Four-Day Short Course
 
 \toc
 
-## Documentation
+## Description
 
-## 
+## Outline
