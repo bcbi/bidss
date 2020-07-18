@@ -1,15 +1,16 @@
-@def title = "Numbers and Math"
+@def title = "Numbers and Math in Julia"
 @def hascode = true
 @def date = Date(2020, 7, 17)
 @def rss = "BIDSS: Numbers and Math"
 
 @def tags = ["computing","julia"]
 
-# Numbers and Math
+# 5.2 Numbers and Math in Julia
 
 \toc
 
 ## Documentation
+
 * Manual
     * ~~~ <a href="https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/" target="_blank">Integers and Floating Point Numbers</a> ~~~
     * ~~~ <a href="https://docs.julialang.org/en/v1/manual/mathematical-operations/" target="_blank">Mathematical Operations and Elementary Functions</a> ~~~
@@ -17,17 +18,14 @@
     * ~~~ <a href="https://docs.julialang.org/en/v1/base/numbers/" target="_blank">Numbers</a> ~~~
     * ~~~ <a href="https://docs.julialang.org/en/v1/base/math/" target="_blank">Mathematics</a> ~~~
 
-## Theory
+## Types of Numbers
+
 * Integer (positive and negative counting number) - e.g. `-3, -2, -1, 0, 1, 2, and 3`
     * Signed: `Int8, Int16, Int32, Int64, and Int128`
     * Unsigned: `UInt8, UInt16, UInt32, UInt64, and UInt128`
     * Boolean: `Bool` (0 = False and 1 = True)
 * Float (real or floating point numbers) - e.g., `-2.14, 0.0, and 3.777`
     * `Float16, Float32, Float64`
-
-## Practice
-
-### Types of Numbers
 
 Use `typeof()` function to determine type
 
@@ -48,7 +46,7 @@ Output:
 \output{./types.jl}
 
 
-### Arithmetic Operators
+## Arithmetic Operators
 
 | Operator | Example |
 | :--- | :--- |
@@ -83,7 +81,7 @@ Output:
 
 \output{./math_operators.jl}
 
-### Comparison Operators and Functions
+## Comparison Operators and Functions
 
 Input:
 

@@ -3,9 +3,9 @@
 @def date = Date(2020, 7, 17)
 @def rss = "BIDSS: Collections and Data Structures"
 
-@def tags = ["setup","enviornment"]
+@def tags = ["computing","julia"]
 
-# Collections and Data Structures
+# 5.5 Collections and Data Structures in Julia
 
 \toc
 
@@ -17,15 +17,11 @@
     * Learn X in Y Minutes: ~~~ <a href="https://learnxinyminutes.com/docs/julia/" target="_blank">X=Julia</a> ~~~
     * Introducing Julia Wikibook: ~~~ <a href="https://en.wikibooks.org/wiki/Introducing_Julia/Arrays_and_tuples" target="_blank">Arrays and Tuples</a> ~~~ and ~~~ <a href="https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets" target="_blank">Dictionaries and Sets</a> ~~~
 
-## Theory
-
-## Practice
-
-### Arrays
+## Arrays
 
 Arrays are ordered collection of elements. In `Julia` they are automatically indexed (consecutively numbered) by an integer starting with 1.
 
-#### Creating arrays
+### Creating arrays
 
 | Action                    | Syntax                |
 | :------------------------ | :-------------------- |
@@ -36,13 +32,13 @@ Arrays are ordered collection of elements. In `Julia` they are automatically ind
 | Array with values         | `["a1", "b2", "c3"]`  |
 | Array of numbers          | `collect(1:10)`       |
 
-#### Creating array from string
+### Creating array from string
 
 | Action                                                   | Syntax                            |
 | :------------------------------------------------------- | :-------------------------------- |
 | Split string `str` by delimiter into words (e.g., space) | `split(str, " ")`                 |
 
-#### Accessing elements
+### Accessing elements
 
 | Action                                            | Syntax                            |
 | :------------------------------------------------ | :-------------------------------- |
@@ -52,7 +48,7 @@ Arrays are ordered collection of elements. In `Julia` they are automatically ind
 | Get n element of array my_array (e.g., 2)         | `my_array[2]`                     |
 | Check if element is in array                      | `in(str, my_array)`               |
 
-#### Adding and removing elements
+### Adding and removing elements
 
 | Action                                            | Syntax                            |
 | :------------------------------------------------ | :-------------------------------- |
@@ -61,7 +57,7 @@ Arrays are ordered collection of elements. In `Julia` they are automatically ind
 | Remove element from beginning                     | `popfirst!(my_array)`             |
 | Add element to beginning                          | `pushfirst!(my_array, str)`       |
 
-#### Sort and unique
+### Sort and unique
 
 | Action                                            | Syntax                            |
 | :------------------------------------------------ | :-------------------------------- |
@@ -69,14 +65,14 @@ Arrays are ordered collection of elements. In `Julia` they are automatically ind
 | Sort array in place (will change array)           | `sort!(my_array)`                 |
 | Get unique elements in array                      | `unique(my_array)`                |
 
-#### Compare arrays
+### Compare arrays
 
 | Action                        | Syntax                            |
 | :---------------------------- | :-------------------------------- |
 | Intersection                  | `intersect(my_array, your_array)` |
 | Union                         | `union(my_array, you_array)`      |
 
-#### Convert array to string
+### Convert array to string
 
 | Action                                            | Syntax                            |
 | :------------------------------------------------ | :-------------------------------- |
@@ -124,11 +120,11 @@ Output:
 \output{./arrays.jl}
 
 
-### Sets
+## Sets
 
 Sets are an unordered collection of unique elements.
 
-#### Creating sets
+### Creating sets
 
 | Action                        | Syntax                            |
 | :---------------------------- | :-------------------------------- |
@@ -137,7 +133,7 @@ Sets are an unordered collection of unique elements.
 | Set with values               | `Set([1, 2, 3, 4, 5])`            |
 | Set with values               | `Set(["a1", "b2", "c3", "b2"])`   |
 
-#### Interacting with sets
+### Interacting with sets
 
 | Action                        | Syntax                            |
 | :---------------------------- | :-------------------------------- |
@@ -145,7 +141,7 @@ Sets are an unordered collection of unique elements.
 | Check if value is in set      | `in(str, my_set)`                 |
 | Add value                     | `push!(my_set, str)`              |
 
-#### Comparing sets
+### Comparing sets
 
 | Action                        | Syntax                            |
 | :---------------------------- | :-------------------------------- |
@@ -180,11 +176,11 @@ Output:
 
 \output{./sets.jl}
 
-### Dictionaries
+## Dictionaries
 
 Dictionaries are unordered collection of key-value pairs where the key serves as the index (“associative collection”). Similar to elements of a set, keys are *always* unique.
 
-#### Creating dictionaries
+### Creating dictionaries
 
 | Action                        | Syntax                                                        |
 | :---------------------------- | :------------------------------------------------------------ |
@@ -192,7 +188,7 @@ Dictionaries are unordered collection of key-value pairs where the key serves as
 | Specify type                  | `Dict{String, Int64}`                                         |
 | Dictionary with values        | `Dict("one" => 1 , "two" => 2, "three" => 3, "four" => 4)`    |
 
-#### Accessing dictionaries
+### Accessing dictionaries
 
 | Action                                    | Syntax                                                |
 | :---------------------------------------- | :---------------------------------------------------- |
@@ -205,14 +201,14 @@ Dictionaries are unordered collection of key-value pairs where the key serves as
 | Get keys                                  | keys(my_dict)                                         |
 | Get values                                | values(dict)                                          |
 
-#### Converting dictionaries
+### Converting dictionaries
 
 | Action                        | Syntax                            |
 | :---------------------------- | :-------------------------------- |
 | Convert keys to array         | `collect(keys(my_dict))`          |
 | Convert values to array       | `collect(values(my_dict))`        |
 
-#### Sorting dictionaries
+### Sorting dictionaries
 
 | Action                                | Syntax                                                              |
 | :------------------------------------ | :------------------------------------------------------------------ |

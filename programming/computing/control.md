@@ -5,7 +5,7 @@
 
 @def tags = ["computing","julia"]
 
-# Control Flow
+# 5.4 Control Flow in Julia
 
 \toc
 
@@ -13,10 +13,7 @@
 * Julia Documentation
     * ~~~ <a href="https://docs.julialang.org/en/v1.0/manual/control-flow/" target="_blank">Control Flow</a> ~~~
 
-## Theory
-
-## Examples
-
+## Use Cases and Syntax
 * Test if a specified expression is true or false 
 * Short-circuit evaluation
     * Test if all of the conditions are true 		`x && y`
@@ -28,8 +25,7 @@
     * `if-elseif-else` 
     * `?:` (ternary operator)
 
-### Conditional Statements
-
+## Conditional Statements
 Input:
 
 ```julia:./conditions.jl
@@ -92,7 +88,7 @@ Output:
 \output{./conditions.jl}
 
 
-### Loops
+## Loops
 * Repeat a block of code a specified number of times or until some condition is met.
 * `while` loop
 * `for` loop
@@ -101,7 +97,7 @@ Output:
 Input:
 
 ```julia:./loops.jl
-# loops.jl                                                                                                     # Demonstrates use of loops                                                                                    
+# Demonstrates use of loops                                                                                    
 
 i = 1
 
@@ -132,18 +128,19 @@ Output:
 
 \output{./loops.jl}
 
-### Comparison Operators and Functions
+
+## Comparison Operators and Functions
+
+| Operator                 | Example                   |
+| :----------------------- | :------------------------ |
+| Equality                 | x == y or isequal(x, y)   |
+| Inequality               | x != y or !isequal (x, y) |
+| Less than                | x < y                     |
+| Less than or equal to    | x <= y                    |
+| Greater than             | x > y                     |
+| Greater than or equal to | x >= y                    |
 
 Input:
-
-| Operator | Example |
-| :--- | :--- |
-| Equality | x == y or isequal(x, y) |
-| Inequality | x != y or !isequal (x, y) |
-| Less than | x < y |
-| Less than or equal to | x <= y |
-| Greater than | x > y |
-| Greater than or equal to | x >= y |
 
 ```julia:./compare_operators.jl
 # compare.jl                                                                                                 
