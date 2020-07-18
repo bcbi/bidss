@@ -1,0 +1,21 @@
+name: CleanUpPullRequestPreviews
+
+on:
+  schedule:
+    - cron: '00 00 * * *' # run one time per day
+  workflow_dispatch:
+
+jobs:
+  CleanUpPullRequestPreviews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SSH Client (pull request previews)
+        uses: webfactory/ssh-agent@v0.2.0
+        with:
+          ssh-private-key: ${{ secrets.FRANKLIN_PRIV_PREVIEW }}
+      - run: julia --project=.ci/ -e 'using Pkg; Pkg.develop(Pkg.PackageSpec(url = "https://github.com/bcbi/CleanUpPullRequestPreviews.jl.git"))'
+      - run: julia --project=.ci/ -e 'using Pkg; Pkg.instantiate()'
+      - name: CleanUpPullRequestPreviews.remove_old_previews
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: julia --project=.ci/ -e 'using CleanUpPullRequestPreviews; CleanUpPullRequestPreviews.remove_old_previews(; my_regex = r"^\.\/previews\/PR(\d*)", repo_main = "JuliaHealth/juliahealth.github.io", repo_previews = "git@github.com:JuliaHealth/juliahealth.github.io-previews.git", repo_previews_branch = "gh-pages")'
