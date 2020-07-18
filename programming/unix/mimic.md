@@ -5,7 +5,7 @@
 
 @def tags = ["unix"]
 
-# 3.3 The MIMIC-III Clinical Database Demo
+# 3.3 The MIMIC-III Demo
 
 \toc
 
