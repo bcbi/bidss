@@ -120,6 +120,12 @@ git checkout master
 git reset --hard origin/master
 git checkout yourinitials/your-branch-name
 git stash pop
+git add -A
+
+git commit
+# Vim opens. Press `i` to enter `Insert mode`. Type a long and descriptive commit message. Press `Escape` to exit `Insert mode` and enter `Normal mode`. Type `:wq` to save your changes and quit vim.
+
+git push origin yourinitials/your-branch-name
 ```
 
 ## 5.2. "error: failed to push some refs"
