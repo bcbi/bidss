@@ -1,29 +1,27 @@
 @def title = "Introduction to UNIX"
 @def hascode = true
-@def date = Date(2019, 3, 22)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def date = Date(2020, 7, 16)
+@def rss = "BIDSS: Introduction to UNIX"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["unix"]
 
-# Introduction to UNIX
+# 3.1 Introduction to UNIX
 
 \toc
 
 ## What is Unix?
+Unix is a family of operating systems officially trademarked as UNIX®. These operating systesms are computing environments that are optimized for multi-tasking across multiple users. The original system was developed by AT&T in 1969 as a text only system. There are many Unix variants or Unix-like systems (e.g. GNU/Linux, Sun Solaris, IBM AIX, and Mac OS X). ON Windows, Cygwin is a program that provides a Unix-like environment.
 
-* Officially trademarked as UNIX®
-* Multi-tasking, multi-user, text command based operating system originally developed in 1969 at AT&T
-* Many Unix variants or Unix-like systems (e.g., GNU/Linux, Sun Solaris, IBM AIX, and Mac OS X). On Windows, Cygwin is a program that provides a Unix-like environment.
-* Main components
-    * Kernel – bridge between hardware and application
-    * Shell – command line interface
-    * File System – how files are stored and organized
+The main components of a Unix operating system include:
+* Kernel – bridge between hardware (i.e. silicon) and application (i.e. software)
+* Shell – command line interface to enable user interaction with the system
+* File System – the organization structure for how files are stored
  
 ## Unix File System
  
-The Unix file system organizes files and directories into a hierarchical structure like an upside-down tree.
+The Unix file system organizes files and directories into a hierarchical structure like root system of a tree.
 
-* The root directory (/) is the top of the hierarchy
+* The "root" directory (e.g. "/") is the top of the hierarchy
     * Standard directories within the root directory
     * `/bin` and `/usr` contain commands needed by system administrators and users
     * `/etc` contains system-wide configuration files and system databases
@@ -36,19 +34,23 @@ The Unix file system organizes files and directories into a hierarchical structu
     * relative path is the path relative to the working directory
 
 
-If the working directory is the `home` directory for `bcbi`, the full path for the `course` directory is `/home/bcbi/course` while the relative path is just `course`. 
+If the working directory is the `home` directory for `bcbi`, the full path for the `course` directory is `/home/bcbi/course` while the relative path is just `course`. A schematic of this is below:
 
-If code then becomes the working directory, the full path for the data directory from there is `/home/bcbi/course/data` while the relative path is `../data`.
+![Unix File System Schematic](/_images/unix/intro/unix_filesystem_bcbi.png)
 
-*INSERT FIGURE*
+If `code` then becomes the working directory, the full path for the data directory from there is `/home/bcbi/course/data` while the relative path is `../data`. A schematic of this is below:
+
+![Unix File System Schematic](/_images/unix/intro/unix_filesystem_code.png)
 
 ## Unix Shell
  
-The Unix shell provides a command line interface for interacting with the operating system and is where commands are entered. 
+The Unix shell provides a command line interface for interacting with the operating system and is where commands are entered. An example below is a Mac OS X Terminal Shell logged into a RedHat Linux Server as `user_name`.
 
-* The shell prompt or command-line prompt may look different depending on your shell (e.g., Bourne shell [sh], C shell [csh], or Bourne-Again shell [bash])
+![Unix Shell](/_images/unix/intro/unix_shell.png)
+
+* The prompt may look different depending on your shell (e.g., Bourne shell [sh], C shell [csh], or Bourne-Again shell [bash])
 * Default prompts  include `$` and `%`
-* The prompt `#` typically appears when logged in as the superuser or root user who can do anything on the system, so should be restricted to trusted users, used only when necessary and with caution
+* The prompt `#` typically appears when logged in as the `superuser` or `root user` who can do anything on the system, so should be restricted to trusted users, used only when necessary and with caution. While you may be able to do this on a system you control, you are unlikely to ever have root priviledges on a shared computing resource (e.g. Oscar or Stronghold at Brown University)
 * The prompt can be configured to include additional information such as hostname, username, and pathname (e.g., `computer:/home/bcbi/course bcbi $`).
 
 ## Unix Commands
@@ -127,7 +129,7 @@ Using the Unix commands: `more`, `less`, `head`, `tail`, `wc`, `cut`, `sort`, `u
 
 ### File and Directory Navigation
 
-| Command           | Action                                                                                                    |
+| Command           | Action (with sftp specific notes)                                                                         |
 | :---------------- | :-------------------------------------------------------------------------------------------------------- |
 | `ls`              | directory listing (remotely in sftp)                                                                      |
 | `lls`             | local directory listing (sftp only)                                                                       |
