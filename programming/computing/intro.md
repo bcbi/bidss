@@ -1,7 +1,7 @@
-@def title = "Numbers and Math in Julia"
+@def title = "Introduction to Scientific Computing in Julia"
 @def hascode = true
 @def date = Date(2020, 7, 17)
-@def rss = "BIDSS: Numbers and Math"
+@def rss = "BIDSS: Introduction to Scientific Computing in Julia"
 
 @def tags = ["computing","julia"]
 
