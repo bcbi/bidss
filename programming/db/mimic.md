@@ -7,6 +7,4 @@
 
 # 4.3 Querying the MIMIC-III Demo Database
 
-\toc
-
 **Coming soon...**
