@@ -50,10 +50,12 @@ git checkout yourinitials/your-branch-name
 Now you work on your branch. To save your work:
 ```bash
 git add -A
-
 git commit
-# Vim opens. Press `i` to enter `Insert mode`. Type a long and descriptive commit message. Press `Escape` to exit `Insert mode` and enter `Normal mode`. Type `:wq` to save your changes and quit vim.
-
+# Vim opens.
+# Press `i` to enter `Insert mode`.
+# Type a long and descriptive commit message.
+# Press `Escape` to exit `Insert mode` and enter `Normal mode`.
+# Type `:wq` to save your changes and quit vim.
 git push origin yourinitials/your-branch-name
 ```
 
@@ -73,10 +75,11 @@ After you push your branch to GitHub, you may decide to use the GitHub web edito
 ```bash
 git fetch --all --prune
 git checkout yourinitials/your-branch-name
-
 git merge origin/yourinitials/your-branch-name
-# Vim opens. You will notice that it already contains an auto-generated merge commit message. Type `:wq` to accept this message and quit vim.
-
+# Vim opens.
+# You will notice that it already contains
+# an auto-generated merge commit message.
+# Type `:wq` to accept this message and quit vim.
 git push origin yourinitials/your-branch-name
 ```
 
@@ -145,10 +148,11 @@ This means that there are some changes on GitHub that you don't have on your loc
 ```bash
 git fetch --all --prune
 git checkout YOURINITIALS/YOUR-BRANCH-NAME
-
 git merge origin/YOURINITIALS/YOUR-BRANCH-NAME
-# Vim opens. You will notice that it already contains an auto-generated merge commit message. Type `:wq` to accept this message and quit vim.
-
+# Vim opens.
+# You will notice that it already contains
+# an auto-generated merge commit message.
+# Type `:wq` to accept this message and quit vim.
 git push origin YOURINITIALS/YOUR-BRANCH-NAME
 ```
 
