@@ -40,7 +40,7 @@ Run these commands to set up your own branch:
 ```bash
 git fetch --all --prune
 git checkout master
-git reset --hard origin/master
+git merge origin/master
 git branch yourinitials/your-branch-name
 git checkout yourinitials/your-branch-name
 ```
