@@ -83,7 +83,10 @@ git fetch --all --prune
 git checkout master
 git reset --hard origin/master
 git checkout yourinitials/your-branch-name
-git stash pop</code></pre>
+git stash pop
+git add -A
+git commit
+git push origin yourinitials/your-branch-name</code></pre>
 <h2 id=52_quoterror_failed_to_push_some_refsquot ><a href="#52_quoterror_failed_to_push_some_refsquot">5.2. &quot;error: failed to push some refs&quot;</a></h2>
 <p>You might encounter this error when you try to push your branch to GitHub.</p>
 <p>For example, you try to run <code>git push origin YOURINITIALS/YOUR-BRANCH-NAME</code>, but you get the following error: <pre><code class="julia hljs">To github.com:REPO_OWNER/REPO_NAME.git
