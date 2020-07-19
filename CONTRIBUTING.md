@@ -120,6 +120,9 @@ git checkout master
 git reset --hard origin/master
 git checkout yourinitials/your-branch-name
 git stash pop
+git add -A
+git commit
+git push origin yourinitials/your-branch-name
 ```
 
 ## 5.2. "error: failed to push some refs"
