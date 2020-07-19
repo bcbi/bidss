@@ -1,11 +1,11 @@
 @def title = "REPL & Packages"
 @def hascode = true
-@def date = Date(2019, 3, 22)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def date = Date(2020, 7, 18)
+@def rss = "BIDSS: REPL & Packages"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["computing", "julia"]
 
-# REPL & Packages
+# 5.7 REPL & Packages in Julia
 
 \toc
 
@@ -27,14 +27,14 @@
 
 * Type "julia" in terminal to launch REPL
 
-~~~ <img src="/_images/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
+~~~ <img src="/_images/programming/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
 
 ### Julia REPL Help Pages (local)
 
 * Type "?" to enter help pages within REPL
 * Type a function from Julia to read help pages (ex: `println`)
 
-~~~ <img src="/_images/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
+~~~ <img src="/_images/computing/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
 
 ### Practice with this web-based Julia REPL
 <!-- Could be cool how to add something like this below from https://repl.it/languages -->
