@@ -24,10 +24,12 @@ git branch yourinitials/your-branch-name
 git checkout yourinitials/your-branch-name</code></pre>
 <h2 id=32_save_work_and_push_to_github ><a href="#32_save_work_and_push_to_github">3.2. Save work and push to GitHub</a></h2>
 <p>Now you work on your branch. To save your work: <pre><code class="bash hljs">git add -A
-
 git commit
-<span class=hljs-comment ># Vim opens. Press `i` to enter `Insert mode`. Type a long and descriptive commit message. Press `Escape` to exit `Insert mode` and enter `Normal mode`. Type `:wq` to save your changes and quit vim.</span>
-
+<span class=hljs-comment ># Vim opens.</span>
+<span class=hljs-comment ># Press `i` to enter `Insert mode`.</span>
+<span class=hljs-comment ># Type a long and descriptive commit message.</span>
+<span class=hljs-comment ># Press `Escape` to exit `Insert mode` and enter `Normal mode`.</span>
+<span class=hljs-comment ># Type `:wq` to save your changes and quit vim.</span>
 git push origin yourinitials/your-branch-name</code></pre>
 <h2 id=33_make_a_pull_request ><a href="#33_make_a_pull_request">3.3. Make a pull request</a></h2>
 <ol>
@@ -49,10 +51,11 @@ git push origin yourinitials/your-branch-name</code></pre>
 <h2 id=34_update_your_local_branch_with_changes_made_on_githubcom ><a href="#34_update_your_local_branch_with_changes_made_on_githubcom">3.4. Update your local branch with changes made on GitHub.com</a></h2>
 <p>After you push your branch to GitHub, you may decide to use the GitHub web editor to make changes directly in your web browser. If you do this, you should then pull the changes you made on the GitHub website back down to your local computer: <pre><code class="bash hljs">git fetch --all --prune
 git checkout yourinitials/your-branch-name
-
 git merge origin/yourinitials/your-branch-name
-<span class=hljs-comment ># Vim opens. You will notice that it already contains an auto-generated merge commit message. Type `:wq` to accept this message and quit vim.</span>
-
+<span class=hljs-comment ># Vim opens.</span>
+<span class=hljs-comment ># You will notice that it already contains</span>
+<span class=hljs-comment ># an auto-generated merge commit message.</span>
+<span class=hljs-comment ># Type `:wq` to accept this message and quit vim.</span>
 git push origin yourinitials/your-branch-name</code></pre>
 <h2 id=35_view_all_branches ><a href="#35_view_all_branches">3.5. View all branches</a></h2>
 <p>All branches on your local computer <pre><code class="bash hljs">git fetch --all --prune
@@ -99,10 +102,11 @@ hint: (<span class=hljs-literal >e</span>.g., &#x27;git pull ...&#x27;) before p
 hint: See the &#x27;Note about fast-forwards&#x27; <span class=hljs-keyword >in</span> &#x27;git push --help&#x27; <span class=hljs-keyword >for</span> details.</code></pre>
 <p>This means that there are some changes on GitHub that you don&#39;t have on your local computer. In order to fix this error, run the following commands: <pre><code class="bash hljs">git fetch --all --prune
 git checkout YOURINITIALS/YOUR-BRANCH-NAME
-
 git merge origin/YOURINITIALS/YOUR-BRANCH-NAME
-<span class=hljs-comment ># Vim opens. You will notice that it already contains an auto-generated merge commit message. Type `:wq` to accept this message and quit vim.</span>
-
+<span class=hljs-comment ># Vim opens.</span>
+<span class=hljs-comment ># You will notice that it already contains</span>
+<span class=hljs-comment ># an auto-generated merge commit message.</span>
+<span class=hljs-comment ># Type `:wq` to accept this message and quit vim.</span>
 git push origin YOURINITIALS/YOUR-BRANCH-NAME</code></pre>
 <h2 id=53_quotsimplequot_merge_conflicts_merge_conflicts_that_can_be_resolved_using_the_web_editor_on_githubcom ><a href="#53_quotsimplequot_merge_conflicts_merge_conflicts_that_can_be_resolved_using_the_web_editor_on_githubcom">5.3. &quot;Simple&quot; merge conflicts &#40;merge conflicts that can be resolved using the web editor on GitHub.com&#41;</a></h2>
 <p>If your pull request has a &quot;simple&quot; merge conflict, then you will see the following message at the bottom of the pull request page, right above the merge button:</p>
