@@ -65,7 +65,7 @@ git push origin yourinitials/your-branch-name
 2. Click the green `New pull request` button.
 3. Click on the drop-down box that says `compare:`, and select your branch `yourinitials/your-branch-name`.
 4. Click on the green `Create pull request` button.
-5. In the `title` box, Enter a descriptive **title** for your pull request.
+5. In the `title` box, enter a descriptive title for your pull request.
 6. In the large `Leave a comment` box, enter a long detailed description of the changes that your pull request makes.
 7. Click the green `Create pull request` botton.
 
