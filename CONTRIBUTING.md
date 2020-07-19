@@ -77,7 +77,7 @@ git checkout yourinitials/your-branch-name
 git merge origin/yourinitials/your-branch-name
 # Vim opens. You will notice that it already contains an auto-generated merge commit message. Type `:wq` to accept this message and quit vim.
 
-git push origin/yourinitials/your-branch-name
+git push origin yourinitials/your-branch-name
 ```
 
 ## 3.5. View all branches
