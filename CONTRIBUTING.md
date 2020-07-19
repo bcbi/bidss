@@ -158,6 +158,8 @@ git push origin YOURINITIALS/YOUR-BRANCH-NAME
 
 ## 5.3. "Simple" merge conflicts (merge conflicts that can be resolved using the web editor on GitHub.com)
 
+A "simple" merge conflict is a merge conflict that can be resolved using the web editor on GitHub.com.
+
 If your pull request has a "simple" merge conflict, then you will see the following message at the bottom of the pull request page, right above the merge button:
 
 > This branch has conflicts that must be resolved
