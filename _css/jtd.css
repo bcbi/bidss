@@ -357,6 +357,8 @@ SIDE BAR
   width: 250px;
   position: fixed;
   background-color: rgb(152, 164, 174,.2);
+  /* color picker for .2 rgb university gray color */
+  /* background-color: #ebeeef */
   border-right: 1px solid rgb(152, 164, 174,.4);
   /* overflow-x: hidden; */
   padding-top: 20px;
@@ -532,8 +534,11 @@ SIDE BAR
   position:absolute;
   bottom:80px;
   left:0;
-  padding-top:1rem;
-  padding-bottom:1rem
+  background-color:#ebeeef;
+}
+
+.bcbi-logo {
+
 }
 
 
