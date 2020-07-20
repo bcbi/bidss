@@ -173,7 +173,7 @@ a.skip_main {
 
 @media screen and (min-width: 1024px){
 .logo-box {
-    max-width: 265px;
+    max-width: 260px;
     justify-content: center;
     -webkit-box-pack: center;
 }
@@ -354,7 +354,7 @@ SIDE BAR
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 265px;
+  width: 260px;
   position: fixed;
   background-color: rgb(152, 164, 174,.2);
   /* color picker for .2 rgb university gray color */
@@ -402,12 +402,12 @@ SIDE BAR
 
 .sidenav li a {
   display: block;
-  width: 250px;
+  width: 260px;
 }
 
 /* Main content */
 .main {
-  margin-left: 250px; /* Same as the width of the sidenav */
+  margin-left: 260px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }
 

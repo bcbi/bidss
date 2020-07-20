@@ -5,7 +5,7 @@
 
 @def tags = ["setup", "enviornment"]
 
-# Plotting and Vizualization
+# 5.10 Plotting and Vizualization
 
 \toc
 
