@@ -9,3 +9,14 @@
     {{ end }}
   </body>
 </html>
+
+
+<script>
+$(window).scroll(function() {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop <= 80)
+      $('.sidenav').css('top', 80 - scrollTop);
+  else
+      $('.sidenav').css('top', 0);
+});
+</script>

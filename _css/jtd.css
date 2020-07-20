@@ -173,7 +173,7 @@ a.skip_main {
 
 @media screen and (min-width: 1024px){
 .logo-box {
-    max-width: 250px;
+    max-width: 265px;
     justify-content: center;
     -webkit-box-pack: center;
 }
@@ -354,13 +354,30 @@ SIDE BAR
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 250px;
+  width: 265px;
   position: fixed;
   background-color: rgb(152, 164, 174,.2);
+  /* color picker for .2 rgb university gray color */
+  /* background-color: #ebeeef */
   border-right: 1px solid rgb(152, 164, 174,.4);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-top: 20px;
-  padding-left: 20px;
+  overflow: auto;
+}
+
+.sidenav-wrap {
+  display: flex;
+  height: 75vh;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.section-title{
+  text-transform: uppercase;
+  font-size: 14px;
+  color:  rgb(152, 164, 174);
+  letter-spacing: 1px;
+  margin: 10px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -378,8 +395,14 @@ SIDE BAR
 }
 
 /* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  background-color: rgb(152, 164, 174,.5);
+.sidenav a:hover{
+  background-color: white;
+  max-width: 100%;
+}
+
+.sidenav li a {
+  display: block;
+  width: 250px;
 }
 
 /* Main content */
@@ -405,6 +428,7 @@ SIDE BAR
   float: right;
   padding-right: 8px;
 }
+
 
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
@@ -457,17 +481,21 @@ SIDE BAR
   padding:0;
   margin-top:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  /* get rid of indention */
 }
+
 .menu-list-child-list{
   padding-left:.75rem;
-  list-style:none
+  list-style:none;
+  margin-top: 10px;
 }
 .menu-list-child-list .menu-list-link{
   color:#7d7d7d
 }
 .menu-list-child-list .menu-list-item{
-  position:relative
+  position:relative;
+  margin-top: -10px;
 }
 /* .menu-list-child-list .menu-list-item::before{
   position:absolute;
@@ -481,7 +509,6 @@ SIDE BAR
 }
 .menu-list-item{
   font-size:14px !important;
-  margin:0
 }
 .menu-list-item .menu-list-child-list{
   display:none
@@ -496,11 +523,8 @@ SIDE BAR
   color:#000000
 }
 .menu-list-link.active{
-  background-color: white;
-  color:#FFC72C;
-  padding-top:0rem;
-  padding-bottom:0rem;
-  text-decoration:none;
+  /* background-color: white; */
+  color: rgb(237,28,36);
 }
 
 .footer {
@@ -510,9 +534,15 @@ SIDE BAR
   position:absolute;
   bottom:80px;
   left:0;
-  padding-top:1rem;
-  padding-bottom:1rem
+  background-color:#ebeeef;
 }
+
+.bcbi-logo {
+
+}
+
+
+
 
 /*Hide checkbox*/
 input[type=checkbox]{display: none;}

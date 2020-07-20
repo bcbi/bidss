@@ -150,5 +150,212 @@ Output:
 
 \output{./dataframes.jl}
 
+**_Get element_**
+
+Input: 
+
+```julia:./dataframes.jl
+# get element in row 2, column 3
+println(df[2,3])
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**_Get subset (specific rows and all columns)_**
+
+Input: 
+
+```julia:./dataframes.jl
+# print out rows 1, 3, & 5
+println(df[[1,3,5], :])
+```
+
+Output:
+
+\output{./dataframes.jl}
 
 
+**_Get subset (all rows and specific columns)_**
+
+Input: 
+
+```julia:./dataframes.jl
+# print out all rows and only columns 1 (id) and 3 (age)
+println("Using column names:\n")
+println(df[:, [:id, :age]])
+println()
+
+println("Using column numbers:\n")
+println(df[:, [1,3]])
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**_Get subset (all rows meeting specified criteria - numbers)_**
+
+Input: 
+
+```julia:./dataframes.jl
+# print out all rows where age is greater than 50
+println(df[df.age .> 50, :])
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**_Get subset (all rows meeting specified criteria - strings)_**
+
+Input: 
+
+```julia:./dataframes.jl
+# print out all rows where gender is female ("F")
+println(df[df.gender .== "F", :])
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+
+**_Get subset (all rows meeting specified criteria)_**
+
+Input: 
+
+```julia:./dataframes.jl
+# print out all rows where gender is female ("F") and age is between 25-50
+println(df[(df.gender .== "F") .& (25 .< df.age .< 50), :])
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**Add Column**
+
+**_New columns with specified values_**
+
+Input: 
+
+```julia:./dataframes.jl
+# add a column for weight
+df.weight = [100, 120, 150, 175, 300]
+
+# add a column for height
+df.height = [62, 60, 61, 63, 64]
+
+println(df)
+println()
+
+println("Describe dataframe to see column names and summary:\n")
+println(describe(df))
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+
+**_New column with calculated value_**
+
+Input: 
+
+```julia:./dataframes.jl
+# add a column with calculated BMI
+df.bmi = map((x,y) -> (x/y^2)*703, df.weight, df.height)
+
+println(df)
+println()
+
+println("Describe dataframe to see new bmi column and summary:\n")
+println(describe(df))
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**_Get counts/frequency_**
+
+Input: 
+
+```julia:./dataframes.jl
+# get counts of males and females in the dataframe
+println(by(df, :gender, N = :gender => length))
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**Transform DataFrame**
+
+**_sort_**
+
+Input: 
+
+```julia:./dataframes.jl
+# sort the dataframe by gender and then age in reverse order for age (oldest to youngest)
+println(sort(df, [:gender, :age], rev=(false, true)))
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**_stack (reshape from wide to long format)_**
+
+Input: 
+
+```julia:./dataframes.jl
+# Reshape from wide to long format (disclude id to see which column and value matches which patient id)
+long_df = stack(df, Not(:id))
+println(long_df)
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+**_unstack (reshape from long to wide format)_**
+
+Input: 
+
+```julia:./dataframes.jl
+#unstack dataframe to get back to wide format based off "id" (unstack(df, :id, :variable, :value))
+wide_df = unstack(long_df, :id, :variable, :value)
+println(wide_df)
+```
+
+Output:
+
+\output{./dataframes.jl}
+
+
+**Traversing DataFrame (for loops)**
+
+**_sort_**
+
+Input: 
+
+```julia:./dataframes.jl
+# size of dataframe = size(df)
+# set number of rows to nrows and number of columns to ncols
+println("(nrows, ncols) = $(size(df))")
+nrows, ncols = size(df)
+
+# use nested for loop to get information from dataframe by row and column
+for row in 1:nrows
+  for col in 1:ncols
+	println("value for row $row and col $col is $(df[row,col])")
+  end
+end
+```
+
+Output:
+
+\output{./dataframes.jl}
