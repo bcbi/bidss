@@ -358,8 +358,9 @@ SIDE BAR
   position: fixed;
   background-color: rgb(152, 164, 174,.2);
   border-right: 1px solid rgb(152, 164, 174,.4);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-top: 20px;
+  overflow: auto;
 }
 
 .sidenav-wrap {
@@ -534,6 +535,9 @@ SIDE BAR
   padding-top:1rem;
   padding-bottom:1rem
 }
+
+
+
 
 /*Hide checkbox*/
 input[type=checkbox]{display: none;}
