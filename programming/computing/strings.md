@@ -166,5 +166,3 @@ end
 Output:
 
 \output{./regex.jl}
-
-Test: set hasmath = false to disable Katex
