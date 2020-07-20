@@ -2,6 +2,7 @@
 @def hascode = true
 @def date = Date(2020, 7, 17)
 @def rss = "BIDSS: Strings, Characters, and Regular Expressions"
+@def hasmath = false
 
 @def tags = ["computing","julia"]
 
@@ -165,3 +166,5 @@ end
 Output:
 
 \output{./regex.jl}
+
+Test: set hasmath = false to disable Katex
