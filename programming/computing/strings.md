@@ -136,11 +136,13 @@ number1 = "(555)123-4567"
 number2 = "123-45-6789"
 
 # check if matches
-if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number1)
+#if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number1)
+if occursin(r"5", number1)
    println("match!")
 end
 
-if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number2)
+#if occursin(r"\([0-9]{3}\)[0-9]{3}-[0-9]{4}", number2)
+if occursin(r"1", number2)
   println("match!")
 else
   println("no match!")
