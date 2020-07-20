@@ -1,5 +1,31 @@
-DataFrameRow
-│ Row │ id    │ gender │ age   │
-│     │ Int64 │ String │ Int64 │
-├─────┼───────┼────────┼───────┤
-│ 2   │ 2     │ M      │ 54    │
+(nrows, ncols) = (5, 6)
+value for row 1 and col 1 is 1
+value for row 1 and col 2 is F
+value for row 1 and col 3 is 68
+value for row 1 and col 4 is 100
+value for row 1 and col 5 is 62
+value for row 1 and col 6 is 18.28824141519251
+value for row 2 and col 1 is 2
+value for row 2 and col 2 is M
+value for row 2 and col 3 is 54
+value for row 2 and col 4 is 120
+value for row 2 and col 5 is 60
+value for row 2 and col 6 is 23.433333333333334
+value for row 3 and col 1 is 3
+value for row 3 and col 2 is F
+value for row 3 and col 3 is 49
+value for row 3 and col 4 is 150
+value for row 3 and col 5 is 61
+value for row 3 and col 6 is 28.339156140822357
+value for row 4 and col 1 is 4
+value for row 4 and col 2 is M
+value for row 4 and col 3 is 28
+value for row 4 and col 4 is 175
+value for row 4 and col 5 is 63
+value for row 4 and col 6 is 30.99647266313933
+value for row 5 and col 1 is 5
+value for row 5 and col 2 is F
+value for row 5 and col 3 is 36
+value for row 5 and col 4 is 300
+value for row 5 and col 5 is 64
+value for row 5 and col 6 is 51.4892578125
