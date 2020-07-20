@@ -5,7 +5,7 @@
 
 @def tags = ["setup", "enviornment"]
 
-# Statistics and Machine Learning
+# 5.9 Statistics and Machine Learning
 
 \toc
 
