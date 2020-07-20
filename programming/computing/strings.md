@@ -2,7 +2,6 @@
 @def hascode = true
 @def date = Date(2020, 7, 17)
 @def rss = "BIDSS: Strings, Characters, and Regular Expressions"
-@def hasmath = false
 
 @def tags = ["computing","julia"]
 
@@ -74,7 +73,7 @@ Output:
 
 | Action                                            | Function                          |
 | :------------------------------------------------ | :-------------------------------- |
-| Check if regex matches a string		            | 'occursin(r"pattern", str)'       |
+| Check if regex matches a string		            | `occursin(r"pattern", str)`       |
 | Capture regex matches			                    | `match(r"pattern", str)`          |
 | Specify alternative regex			                | `pattern1|pattern2`              |
 
