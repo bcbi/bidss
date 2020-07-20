@@ -18,7 +18,7 @@
 
 | Summer 2020 Gateways Data Science Skills Short Course |
 | :------------------------ |
-|July 27-30, 2020 12:00pm-2:00pm ET |
+|July 27-30, 2020 12:00pm-2:00pm ET \| Zoom |
 | ~~~<a href="https://docs.google.com/document/d/1NSdseZhN-ZBOdgfYiR8eSc_68cBvbj3XNrINN2ctIus/edit" target="_blank">Syllabus</a>~~~ |
 | Google Classroom |
 | ~~~<a href="https://docs.google.com/document/d/1rN3SZSalqhyZSxoHXMRbZjua_R8a60894BsbwiEeFoQ/edit" target="_blank">Stronghold Instructions</a>~~~ |
