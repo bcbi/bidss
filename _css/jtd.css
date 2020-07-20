@@ -173,7 +173,7 @@ a.skip_main {
 
 @media screen and (min-width: 1024px){
 .logo-box {
-    max-width: 250px;
+    max-width: 265px;
     justify-content: center;
     -webkit-box-pack: center;
 }
@@ -354,7 +354,7 @@ SIDE BAR
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 250px;
+  width: 265px;
   position: fixed;
   background-color: rgb(152, 164, 174,.2);
   /* color picker for .2 rgb university gray color */
