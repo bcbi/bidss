@@ -7,6 +7,20 @@
     {{ if hascode }}
       {{ insert foot_highlight.html }}
     {{ end }}
+
+    <!--
+    https://github.com/Alex-D/Cookies-EU-banner
+    -->
+    <script src="/assets/cookies-eu-banner/dist/cookies-eu-banner.min.js"></script>
+    <script>
+        new CookiesEuBanner(function () {
+            /* Your code to launch when user accept cookies */
+            console.log("BIDSS/Cookies-EU-banner: Attempting to load Google Analytics...");
+            /* Load Google Analytics here */
+            console.log("BIDSS/Cookies-EU-banner: Successfully loaded Google Analytics.");
+        }, true); /* set waitAccept (the second parameter) to true */
+    </script>
+
   </body>
 </html>
 
