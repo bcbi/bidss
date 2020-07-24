@@ -16,9 +16,9 @@ The main components of a Unix operating system include:
 * Kernel – bridge between hardware (i.e. silicon) and application (i.e. software)
 * Shell – command line interface to enable user interaction with the system
 * File System – the organization structure for how files are stored
- 
+
 ## Unix File System
- 
+
 The Unix file system organizes files and directories into a hierarchical structure like root system of a tree.
 
 * The "root" directory (e.g. "/") is the top of the hierarchy
@@ -36,17 +36,17 @@ The Unix file system organizes files and directories into a hierarchical structu
 
 If the working directory is the `home` directory for `bcbi`, the full path for the `course` directory is `/home/bcbi/course` while the relative path is just `course`. A schematic of this is below:
 
-![Unix File System Schematic](/_images/unix/intro/unix_filesystem_bcbi.png)
+![Unix File System Schematic](/assets/images/programming/unix/intro/unix_filesystem_bcbi.png)
 
 If `code` then becomes the working directory, the full path for the data directory from there is `/home/bcbi/course/data` while the relative path is `../data`. A schematic of this is below:
 
-![Unix File System Schematic](/_images/unix/intro/unix_filesystem_code.png)
+![Unix File System Schematic](/assets/images/programming/unix/intro/unix_filesystem_code.png)
 
 ## Unix Shell
- 
+
 The Unix shell provides a command line interface for interacting with the operating system and is where commands are entered. An example below is a Mac OS X Terminal Shell logged into a RedHat Linux Server as `user_name`.
 
-![Unix Shell](/_images/unix/intro/unix_shell.png)
+![Unix Shell](/assets/images/programming/unix/intro/unix_shell.png)
 
 * The prompt may look different depending on your shell (e.g., Bourne shell [sh], C shell [csh], or Bourne-Again shell [bash])
 * Default prompts  include `$` and `%`
@@ -64,7 +64,7 @@ There are many Unix commands. Some commands will display output and then return 
 
 To get to a Unix shell on your computer:
 * For Mac, launch the Terminal application (under Applications → Utilities → Terminal)
-* For Linux, launch the Terminal application 
+* For Linux, launch the Terminal application
 * For Windows, launch the PowerShell application
 
 ```
@@ -90,7 +90,7 @@ Determine what directory you are currently in with pwd (present working director
 $ pwd
 /home/bcbi
 ```
- 
+
 Get a listing of current directory contents using ls:
 ```
 $ ls
@@ -123,7 +123,7 @@ $ pwd
 ## Working with Data
 
 Using the Unix commands: `more`, `less`, `head`, `tail`, `wc`, `cut`, `sort`, `uniq`, `grep`, `sed`, and `awk`
- 
+
 * Adult (Income Census) Data Set
 * MIMIC-III Demo Data Set
 
@@ -145,7 +145,7 @@ Using the Unix commands: `more`, `less`, `head`, `tail`, `wc`, `cut`, `sort`, `u
 | `rm -f file`      | force remove file                                                                                         |
 | `rm -rf dir`      | force remove directory dir *                                                                              |
 | `cp file1 file2`  | copy file1 to file2                                                                                       |
-| `cp -r dir1 dir2` | copy dir1 to dir2; create dir2 if it doesn't exist                                                        | 
+| `cp -r dir1 dir2` | copy dir1 to dir2; create dir2 if it doesn't exist                                                        |
 | `mv file1 file2`  | rename or move file1 to file2 if file2 is an existing \\n directory, moves file1 into directory file2     |
 | `put file`        | copy local file to current remote directory (sftp only)                                                   |
 | `get file`        | copy remote file to current local directory (sftp only)                                                   |
@@ -159,7 +159,7 @@ Using the Unix commands: `more`, `less`, `head`, `tail`, `wc`, `cut`, `sort`, `u
 | `uptime`          | show current uptime               |
 | `who`             | display who is online             |
 | `whoami`          | who you are logged in as          |
- 
+
 ### Analyzing and Searching Files
 
 | Command                   | Action                                                                                            |
@@ -175,7 +175,7 @@ Using the Unix commands: `more`, `less`, `head`, `tail`, `wc`, `cut`, `sort`, `u
 | `awk pattern file`        | manipulate data and generate reports                                                              |
 | `sed pattern file`        | text stream editor                                                                                |
 
-### Common Shortcuts 
+### Common Shortcuts
 
 | Keys      | Action                                                                                            |
 | :-------- | :------------------------------------------------------------------------------------------------ |
