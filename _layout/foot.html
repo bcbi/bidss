@@ -7,6 +7,28 @@
     {{ if hascode }}
       {{ insert foot_highlight.html }}
     {{ end }}
+
+    <!-- https://github.com/Alex-D/Cookies-EU-banner -->
+    <script src="/assets/cookies-eu-banner/dist/cookies-eu-banner.min.js"></script>
+    <script>
+      var cookiesBanner = new CookiesEuBanner(function () {
+        console.log("BIDSS/Cookies-EU-banner: Attempting to load Google Analytics...");
+        /* Load Google Analytics here */
+        console.log("BIDSS/Cookies-EU-banner: Successfully loaded Google Analytics.");
+      }, true); /* Make sure that we set `waitAccept` (the second parameter) to `true`. This is very important. */
+      var cookies_eu_custom_reset_div = document.getElementById('cookies-eu-custom-reset-div');
+      var cookies_eu_custom_reset_button = document.getElementById('cookies-eu-custom-reset-button');
+      if (cookies_eu_custom_reset_div !== null) { /* if the <div> exists */
+        if (cookies_eu_custom_reset_button !== null) { /* and if the <button> also exists */
+          cookies_eu_custom_reset_div.style.display = 'block';
+          cookiesBanner.addClickListener(cookies_eu_custom_reset_button, function () {
+            cookiesBanner.deleteCookie(cookiesBanner.cookieName);
+            window.location.reload();
+          });
+        }
+      } 
+    </script>
+
   </body>
 </html>
 
