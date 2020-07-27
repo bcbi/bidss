@@ -37,22 +37,12 @@
     
 
     <div class="searchbox-wrapper">
-      <div class="searchbox-container">
-        <div aria-label="" class="searchbox-input-wrapper">
-          <div class="searchbox-input-inner">
-            <input placeholder="Search..." type="text" class="searchbox-input-box">
-          </div>
-          <div class="searchbox-icon">
-            <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="searchbox-iconsvg">
-              <g>
-                <circle cx="10.5" cy="10.5" r="7.5">
-                </circle>
-                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
+
+            <form id="lunrSearchForm" name="lunrSearchForm">
+              <button class="fa fa-search search-icon" aria-hidden="true" formaction="/search/index.html"></button>
+              <input class="search-input" name="q" placeholder="Search..." type="text"> 
+              <!-- <input type="submit" value="Search" formaction="/search/index.html"> -->
+            </form>
     </div>
 
   </nav>
@@ -102,15 +92,15 @@
               <li class="menu-list-item"><a href="/programming/computing/stats/"       class="menu-list-link {{ispage /programming/computing/stats/}}active{{end}}"><b>5.9</b> Statistics and Machine Learning</a>
               <li class="menu-list-item"><a href="/programming/computing/viz/"         class="menu-list-link {{ispage /programming/computing/viz/}}active{{end}}"><b>5.10</b> Plotting and Visualization</a>
             </ul>
-          <div class="section-title">Informatics Software</div>
+          <!-- <div class="section-title">Informatics Software</div>
           <div class="section-title">Data Sources</div>
           <div class="section-title">Electronic Health Records</div>
           <div class="section-title">Standards</div>
-          <div class="section-title">Informatics Theory</div>
+          <div class="section-title">Informatics Theory</div> -->
           <div class="section-title">Course Outlines</div>
-             <li class="menu-list-item {{ispage /courses/*}}active{{end}}"><a href="/courses/intro/" class="menu-list-link {{ispage /courses/*}}active{{end}}"><b>11</b> Course Materials</a>
+             <li class="menu-list-item {{ispage /courses/*}}active{{end}}"><a href="/courses/intro/" class="menu-list-link {{ispage /courses/*}}active{{end}}"><b>6</b> Course Materials</a>
               <ul class="menu-list-child-list ">
-                <li class="menu-list-item"><a href="/courses/4day"     class="menu-list-link {{ispage /courses/4day/}}active{{end}}"><b>11.1</b> Four-Day Short Course</a>
+                <li class="menu-list-item"><a href="/courses/4day"     class="menu-list-link {{ispage /courses/4day/}}active{{end}}"><b>6.1</b> Four-Day Short Course</a>
               </ul>
 
 

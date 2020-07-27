@@ -41,12 +41,21 @@ jobs:
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.4.1
+    - run: git config --global user.email "bcbi@brown.edu"
+    - run: git config --global user.name "Brown Center for Biomedical Informatics"
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "Franklin"]);
-            using NodeJS; run(`$(npm_cmd()) install highlight.js`);
+            using NodeJS;
+            run(`$(npm_cmd()) install highlight.js`);
+            run(`$(npm_cmd()) install lunr`);
+            run(`$(npm_cmd()) install cheerio`);
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
-            optimize(prerender=false)'
+            franklin_prepath = get(ENV, "JULIA_FRANKLIN_PREPATH", "bidss"); 
+            optimize(prerender=false);
+            publish(; final=lunr);
+            optimize(prerender=false);
+            publish(; final=lunr);'
     - name: Deploy (pull request previews)
       if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name # if this is a pull request build AND the pull request is NOT made from a fork
       uses: JamesIves/github-pages-deploy-action@releases/v3
