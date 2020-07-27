@@ -11,10 +11,10 @@
 
 ## Documentation
 * ~~~ <a href="https://juliadocs.github.io/Julia-Cheat-Sheet/" target="_blank">Julia Cheat Sheet</a> ~~~ (see REPL and Package Management)
-* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/REPL/" target="_blank">Julia REPL</a> ~~~ 
-* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Pkg/index.html" target="_blank">Julia Pkg</a> ~~~ 
+* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/REPL/" target="_blank">Julia REPL</a> ~~~
+* ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Pkg/index.html" target="_blank">Julia Pkg</a> ~~~
 * Packages
-    * ~~~ <a href="https://juliadata.github.io/CSV.jl/stable/" target="_blank">CSV.jl</a> ~~~ 
+    * ~~~ <a href="https://juliadata.github.io/CSV.jl/stable/" target="_blank">CSV.jl</a> ~~~
     * ~~~ <a href="https://juliadata.github.io/DataFrames.jl/stable/" target="_blank">DataFrames.jl</a> ~~~
 
 ## Using REPL
@@ -27,14 +27,14 @@
 
 * Type "julia" in terminal to launch REPL
 
-~~~ <img src="/_images/programming/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
+~~~ <img src="/assets/images/programming/computing/repl/repl_ex.png" alt="Julia REPL Example"> ~~~
 
 ### Julia REPL Help Pages (local)
 
 * Type "?" to enter help pages within REPL
 * Type a function from Julia to read help pages (ex: `println`)
 
-~~~ <img src="/_images/computing/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
+~~~ <img src="/assets/images/programming/computing/repl/repl_help.png" alt="Julia REPL Help Example"> ~~~
 
 ### Practice with this web-based Julia REPL
 <!-- Could be cool how to add something like this below from https://repl.it/languages -->

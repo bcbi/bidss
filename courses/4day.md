@@ -23,4 +23,6 @@
 |~~~<a href="https://classroom.google.com/c/MTI5NzIxMzEwNzY5" target="_blank">Google Classroom</a>~~~ |
 | ~~~<a href="https://docs.google.com/document/d/1rN3SZSalqhyZSxoHXMRbZjua_R8a60894BsbwiEeFoQ/edit" target="_blank">Stronghold Instructions</a>~~~ |
 
+## Day 1: Unix Commands
 
+[https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands](https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands)
