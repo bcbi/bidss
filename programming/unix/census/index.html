@@ -1,86 +1,86 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin=anonymous > <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <link rel=stylesheet  href="/bidss/libs/highlight/github.min.css"> <link rel=stylesheet  href="/bidss/css/jtd.css"> <link rel=icon  href="/bidss/assets/favicon.ico"> <title>Analyzing the Adult (Census Income) Data Set</title> <header> <a class=skip_main  href="#main">Skip to main content</a> <nav class="navbar navbar-expand-lg navbar-light nav-main"> <!-- <button class="navbar-toggler custom-toggler" type=button  data-toggle=collapse  data-target="#navbarContents" aria-expanded=false  aria-label="Toggle navigation"> <span class=navbar-toggler-icon ></span> </button> --> <div class=logo-box > <a href="#"><img class=img-logo  src="/bidss/assets/bidss_logo.png" alt = "BIDSS"></a> </div> <div class=nav-middleitems-wrapper > <div class=nav-middleitems-header > <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Home</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Getting Started</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Documentation</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >GitHub</span> </a> </div> --> </div> </div> <div class=searchbox-wrapper > <div class=searchbox-container > <div aria-label="" class=searchbox-input-wrapper > <div class=searchbox-input-inner > <input placeholder=Search...  type=text  class=searchbox-input-box > </div> <div class=searchbox-icon > <svg preserveAspectRatio="xMidYMid meet" height=1em  width=1em  fill=none  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width=2  stroke-linecap=round  stroke-linejoin=round  stroke=currentColor  class=searchbox-iconsvg > <g> <circle cx=10.5  cy=10.5  r=7.5 > </circle> <line x1="21" y1="21" x2="15.8" y2="15.8"></line> </g> </svg> </div> </div> </div> </div> </nav> </header> <div class=page-wrap > <div class=sidenav > <div class=sidenav-wrap > <ul class=menu-list > <li class=menu-list-item ><a href="/bidss/" class="menu-list-link "><b>1</b> Home</a> <div class=section-title >Infrastructure</div> <li class="menu-list-item "><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2</b> Setup</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2.1</b> Overview</a> <li class=menu-list-item ><a href="/bidss/programming/setup/wsl/" class="menu-list-link "><b>2.2</b> Linux for Windows</a> <li class=menu-list-item ><a href="/bidss/programming/setup/julia/" class="menu-list-link "><b>2.3</b> Julia</a> <li class=menu-list-item ><a href="/bidss/programming/setup/r/" class="menu-list-link "><b>2.4</b> R</a> <li class=menu-list-item ><a href="/bidss/programming/setup/vscode/" class="menu-list-link "><b>2.5</b> VS Code</a> <li class=menu-list-item ><a href="/bidss/programming/setup/filezilla/" class="menu-list-link "><b>2.6</b> FileZilla</a> </ul> <div class=section-title >Programming</div> <li class="menu-list-item active"><a href="/bidss/programming/unix/intro/" class="menu-list-link active"><b>3</b> Unix</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/unix/intro/" class="menu-list-link "><b>3.1</b> Getting Started with Unix</a> <li class=menu-list-item ><a href="/bidss/programming/unix/census/" class="menu-list-link active"><b>3.2</b> Analyzing the Adult (Census Income) Data Set</a> <li class=menu-list-item ><a href="/bidss/programming/unix/mimic/" class="menu-list-link "><b>3.3</b> Analyzing the MIMIC-III Demo Data Set</a> </ul> <li class="menu-list-item "><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4</b> Databases</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4.1</b> Getting Started with Databases</a> <li class=menu-list-item ><a href="/bidss/programming/db/emrbots/" class="menu-list-link "><b>4.2</b> Querying the EMRbots Database</a> <li class=menu-list-item ><a href="/bidss/programming/db/mimic/" class="menu-list-link "><b>4.3</b> Querying the MIMIC-III Demo Database</a> </ul> <li class="menu-list-item "><a href="/bidss/programming/computing/intro/" class="menu-list-link "><b>5</b> Scientific Computing</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/computing/intro/" class="menu-list-link "><b>5.1</b> Getting Started with Scientific Computing</a> <li class=menu-list-item ><a href="/bidss/programming/computing/numbers/" class="menu-list-link "><b>5.2</b> Numbers and Math</a> <li class=menu-list-item ><a href="/bidss/programming/computing/strings/" class="menu-list-link "><b>5.3</b> Strings, Characters, and Regular Expressions</a> <li class=menu-list-item ><a href="/bidss/programming/computing/control/" class="menu-list-link "><b>5.4</b> Control Flow</a> <li class=menu-list-item ><a href="/bidss/programming/computing/collections/" class="menu-list-link "><b>5.5</b> Collections and Data Structures</a> <li class=menu-list-item ><a href="/bidss/programming/computing/io/" class="menu-list-link "><b>5.6</b> File Input/Output</a> <li class=menu-list-item ><a href="/bidss/programming/computing/repl/" class="menu-list-link "><b>5.7</b> REPL and Packages</a> <li class=menu-list-item ><a href="/bidss/programming/computing/dataframes/" class="menu-list-link "><b>5.8</b> DataFrames</a> <li class=menu-list-item ><a href="/bidss/programming/computing/stats/" class="menu-list-link "><b>5.9</b> Statistics and Machine Learning</a> <li class=menu-list-item ><a href="/bidss/programming/computing/viz/" class="menu-list-link "><b>5.10</b> Plotting and Visualization</a> </ul> <div class=section-title >Informatics Software</div> <div class=section-title >Data Sources</div> <div class=section-title >Electronic Health Records</div> <div class=section-title >Standards</div> <div class=section-title >Informatics Theory</div> <div class=section-title >Course Outlines</div> <li class="menu-list-item "><a href="/bidss/courses/intro/" class="menu-list-link "><b>11</b> Course Materials</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/courses/4day" class="menu-list-link "><b>11.1</b> Four-Day Short Course</a> </ul> </ul> </div> <div class=footer > <a href = "https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/" target=_blank > <img src="/bidss/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics" class=bcbi-logo > </a> </div> </div> <div class=main > <div class=franklin-content ><h1 id=32_analyzing_the_adult_census_income_data_set ><a href="#32_analyzing_the_adult_census_income_data_set">3.2 Analyzing the Adult &#40;Census Income&#41; Data Set</a></h1> <div class=franklin-toc ><ol><li><a href="#documentation">Documentation</a><li><a href="#analyzing_adultdata_with_unix_commands">Analyzing Adult.data with Unix Commands</a><ol><li><a href="#getting_started">Getting Started</a><li><a href="#explore_the_data_files">Explore the Data Files</a></ol><li><a href="#exercises">Exercises</a></ol></div> <h2 id=documentation ><a href="#documentation">Documentation</a></h2> <ul> <li><p>The adult census income dataset is hosted at the <a href="https://archive.ics.uci.edu/ml/datasets/Adult" target=_blank >University of California Irvine machine learning repository.</a> </p> </ul> <h2 id=analyzing_adultdata_with_unix_commands ><a href="#analyzing_adultdata_with_unix_commands">Analyzing Adult.data with Unix Commands</a></h2> <h3 id=getting_started ><a href="#getting_started">Getting Started</a></h3> <ol> <li><p>Download <a href="_data/adult/adult.data" target=_blank >adult.data</a> and <a href="_data/adult/adult.names" target=_blank >adult.names</a> into the data directory</p> <li><p>Move files to a working directory &#40;see <a href="/bidss/programming/unix/intro">3.1 Getting Started</a> for more detail&#41;</p> <li><p>Open a Unix shell and navigate to that directory &#40;see <a href="/bidss/programming/unix/intro">3.1 Getting Started</a> for more detail&#41;</p> </ol> <p>Make a copy of the data file and rename:</p> <pre><code class=language-julia >$ ls
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin=anonymous > <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <script src="/bidss/libs/lunr/lunr.min.js"></script> <script src="/bidss/libs/lunr/lunr_index.js"></script> <script src="/bidss/libs/lunr/lunrclient.min.js"></script> <link rel=stylesheet  href="/bidss/libs/font-awesome/css/font-awesome.min.css"> <link rel=stylesheet  href="/bidss/libs/highlight/github.min.css"> <link rel=stylesheet  href="/bidss/css/jtd.css"> <link rel=icon  href="/bidss/assets/favicon.ico"> <title>Analyzing the Adult (Census Income) Data Set</title> <header> <a class=skip_main  href="#main">Skip to main content</a> <nav class="navbar navbar-expand-lg navbar-light nav-main"> <!-- <button class="navbar-toggler custom-toggler" type=button  data-toggle=collapse  data-target="#navbarContents" aria-expanded=false  aria-label="Toggle navigation"> <span class=navbar-toggler-icon ></span> </button> --> <div class=logo-box > <a href="#"><img class=img-logo  src="/bidss/assets/bidss_logo.png" alt = "BIDSS"></a> </div> <div class=nav-middleitems-wrapper > <div class=nav-middleitems-header > <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Home</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Getting Started</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Documentation</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >GitHub</span> </a> </div> --> </div> </div> <div class=searchbox-wrapper > <form id=lunrSearchForm  name=lunrSearchForm > <button class="fa fa-search search-icon" aria-hidden=true  formaction="/bidss/search/index.html"></button> <input class=search-input  name=q  placeholder=Search...  type=text > </form> </div> </nav> </header> <div class=page-wrap > <div class=sidenav > <div class=sidenav-wrap > <ul class=menu-list > <li class=menu-list-item ><a href="/bidss/" class="menu-list-link "><b>1</b> Home</a> <div class=section-title >Infrastructure</div> <li class="menu-list-item "><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2</b> Setup</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2.1</b> Overview</a> <li class=menu-list-item ><a href="/bidss/programming/setup/wsl/" class="menu-list-link "><b>2.2</b> Linux for Windows</a> <li class=menu-list-item ><a href="/bidss/programming/setup/julia/" class="menu-list-link "><b>2.3</b> Julia</a> <li class=menu-list-item ><a href="/bidss/programming/setup/r/" class="menu-list-link "><b>2.4</b> R</a> <li class=menu-list-item ><a href="/bidss/programming/setup/vscode/" class="menu-list-link "><b>2.5</b> VS Code</a> <li class=menu-list-item ><a href="/bidss/programming/setup/filezilla/" class="menu-list-link "><b>2.6</b> FileZilla</a> </ul> <div class=section-title >Programming</div> <li class="menu-list-item active"><a href="/bidss/programming/unix/intro/" class="menu-list-link active"><b>3</b> Unix</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/unix/intro/" class="menu-list-link "><b>3.1</b> Getting Started with Unix</a> <li class=menu-list-item ><a href="/bidss/programming/unix/census/" class="menu-list-link active"><b>3.2</b> Analyzing the Adult (Census Income) Data Set</a> <li class=menu-list-item ><a href="/bidss/programming/unix/mimic/" class="menu-list-link "><b>3.3</b> Analyzing the MIMIC-III Demo Data Set</a> </ul> <li class="menu-list-item "><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4</b> Databases</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4.1</b> Getting Started with Databases</a> <li class=menu-list-item ><a href="/bidss/programming/db/emrbots/" class="menu-list-link "><b>4.2</b> Querying the EMRbots Database</a> <li class=menu-list-item ><a href="/bidss/programming/db/mimic/" class="menu-list-link "><b>4.3</b> Querying the MIMIC-III Demo Database</a> </ul> <li class="menu-list-item "><a href="/bidss/programming/computing/intro/" class="menu-list-link "><b>5</b> Scientific Computing</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/computing/intro/" class="menu-list-link "><b>5.1</b> Getting Started with Scientific Computing</a> <li class=menu-list-item ><a href="/bidss/programming/computing/numbers/" class="menu-list-link "><b>5.2</b> Numbers and Math</a> <li class=menu-list-item ><a href="/bidss/programming/computing/strings/" class="menu-list-link "><b>5.3</b> Strings, Characters, and Regular Expressions</a> <li class=menu-list-item ><a href="/bidss/programming/computing/control/" class="menu-list-link "><b>5.4</b> Control Flow</a> <li class=menu-list-item ><a href="/bidss/programming/computing/collections/" class="menu-list-link "><b>5.5</b> Collections and Data Structures</a> <li class=menu-list-item ><a href="/bidss/programming/computing/io/" class="menu-list-link "><b>5.6</b> File Input/Output</a> <li class=menu-list-item ><a href="/bidss/programming/computing/repl/" class="menu-list-link "><b>5.7</b> REPL and Packages</a> <li class=menu-list-item ><a href="/bidss/programming/computing/dataframes/" class="menu-list-link "><b>5.8</b> DataFrames</a> <li class=menu-list-item ><a href="/bidss/programming/computing/stats/" class="menu-list-link "><b>5.9</b> Statistics and Machine Learning</a> <li class=menu-list-item ><a href="/bidss/programming/computing/viz/" class="menu-list-link "><b>5.10</b> Plotting and Visualization</a> </ul> <!-- <div class=section-title >Informatics Software</div> <div class=section-title >Data Sources</div> <div class=section-title >Electronic Health Records</div> <div class=section-title >Standards</div> <div class=section-title >Informatics Theory</div> --> <div class=section-title >Course Outlines</div> <li class="menu-list-item "><a href="/bidss/courses/intro/" class="menu-list-link "><b>6</b> Course Materials</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/courses/4day" class="menu-list-link "><b>6.1</b> Four-Day Short Course</a> </ul> </ul> </div> <div class=footer > <a href = "https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/" target=_blank > <img src="/bidss/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics" class=bcbi-logo > </a> </div> </div> <div class=main > <div class=franklin-content ><h1 id=32_analyzing_the_adult_census_income_data_set ><a href="#32_analyzing_the_adult_census_income_data_set">3.2 Analyzing the Adult &#40;Census Income&#41; Data Set</a></h1> <div class=franklin-toc ><ol><li><a href="#documentation">Documentation</a><li><a href="#analyzing_adultdata_with_unix_commands">Analyzing Adult.data with Unix Commands</a><ol><li><a href="#getting_started">Getting Started</a><li><a href="#explore_the_data_files">Explore the Data Files</a></ol><li><a href="#exercises">Exercises</a></ol></div> <h2 id=documentation ><a href="#documentation">Documentation</a></h2> <ul> <li><p>The adult census income dataset is hosted at the <a href="https://archive.ics.uci.edu/ml/datasets/Adult" target=_blank >University of California Irvine machine learning repository.</a> </p> </ul> <h2 id=analyzing_adultdata_with_unix_commands ><a href="#analyzing_adultdata_with_unix_commands">Analyzing Adult.data with Unix Commands</a></h2> <h3 id=getting_started ><a href="#getting_started">Getting Started</a></h3> <ol> <li><p>Download <a href="_data/adult/adult.data" target=_blank >adult.data</a> and <a href="_data/adult/adult.names" target=_blank >adult.names</a> into the data directory</p> <li><p>Move files to a working directory &#40;see <a href="/bidss/programming/unix/intro">3.1 Getting Started</a> for more detail&#41;</p> <li><p>Open a Unix shell and navigate to that directory &#40;see <a href="/bidss/programming/unix/intro">3.1 Getting Started</a> for more detail&#41;</p> </ol> <p>Make a copy of the data file and rename:</p> <pre><code class="julia hljs">$ ls
 adult.data  adult.names
 $ cp adult.data adult.txt
 $ ls
-$ adult.data  adult.names  adult.txt</code></pre> <h3 id=explore_the_data_files ><a href="#explore_the_data_files">Explore the Data Files</a></h3> <p>Count number of lines in file using wc: <pre><code class=language-julia >$ wc adult.data
-   32562  488415 3974305 adult.data
+$ adult.data  adult.names  adult.txt</code></pre> <h3 id=explore_the_data_files ><a href="#explore_the_data_files">Explore the Data Files</a></h3> <p>Count number of lines in file using wc: <pre><code class="julia hljs">$ wc adult.data
+   <span class=hljs-number >32562</span>  <span class=hljs-number >488415</span> <span class=hljs-number >3974305</span> adult.data
 $ wc -l adult.txt
-   32562 adult.txt</code></pre> <p>Look at contents of a text file &#40;to fill a screen&#41; using more or less: &#40;Use spacebar or up and down arrows to scroll through pages and then press q to quit&#41;: <pre><code class=language-julia >$ more adult.data
-$ less adult.data</code></pre> <p>Look at first and last lines of a text file &#40;to fill a screen&#41; using head or tail: <pre><code class=language-julia >$ head adult.data
-$ tail adult.data</code></pre> <p>Retrieve rows that contain a particular phrase using grep &#40;MacOS/Linux&#41; or select-string &#40;Windows&#41;: <pre><code class=language-julia >$ grep "Bachelors" adult.data</code></pre>
-<p>Extract a specific field &#40;2&#41; from a delimited file using cut &#40;tab is default delimiter&#41;: &#40;Note that fields in adult.data are separated by both a comma and space &#40;‘, ‘&#41;, so there will be an extra space in front&#41; <pre><code class=language-julia >$ cut -f2 -d',' adult.data</code></pre>
+   <span class=hljs-number >32562</span> adult.txt</code></pre> <p>Look at contents of a text file &#40;to fill a screen&#41; using more or less: &#40;Use spacebar or up and down arrows to scroll through pages and then press q to quit&#41;: <pre><code class="julia hljs">$ more adult.data
+$ less adult.data</code></pre> <p>Look at first and last lines of a text file &#40;to fill a screen&#41; using head or tail: <pre><code class="julia hljs">$ head adult.data
+$ tail adult.data</code></pre> <p>Retrieve rows that contain a particular phrase using grep &#40;MacOS/Linux&#41; or select-string &#40;Windows&#41;: <pre><code class="julia hljs">$ grep <span class=hljs-string >&quot;Bachelors&quot;</span> adult.data</code></pre>
+<p>Extract a specific field &#40;2&#41; from a delimited file using cut &#40;tab is default delimiter&#41;: &#40;Note that fields in adult.data are separated by both a comma and space &#40;‘, ‘&#41;, so there will be an extra space in front&#41; <pre><code class="julia hljs">$ cut -f2 -d<span class=hljs-string >&#x27;,&#x27;</span> adult.data</code></pre>
 <p>Combine cut, sort, and uniq to determine how many times each value in field 2 occurs: &#40;Need to sort first, so that uniq will be able to correctly tabulate values; command only remembers most recent row and current total counts&#41;</p>
-<pre><code class=language-julia >$ cut -f2 -d',' adult.data | sort | uniq -c
-   1
-1836  ?
- 960  Federal-gov
-2093  Local-gov
-   7  Never-worked
-22696  Private
-1116  Self-emp-inc
-2541  Self-emp-not-inc
-1298  State-gov
-  14  Without-pay
-$ cut -f2 -d',' adult.data | sort | uniq -c | sort -rn
-22696  Private
-2541  Self-emp-not-inc
-2093  Local-gov
-1836  ?
-1298  State-gov
-1116  Self-emp-inc
- 960  Federal-gov
-  14  Without-pay
-   7  Never-worked
-   1</code></pre>
+<pre><code class="julia hljs">$ cut -f2 -d<span class=hljs-string >&#x27;,&#x27;</span> adult.data | sort | uniq -c
+   <span class=hljs-number >1</span>
+<span class=hljs-number >1836</span>  ?
+ <span class=hljs-number >960</span>  Federal-gov
+<span class=hljs-number >2093</span>  Local-gov
+   <span class=hljs-number >7</span>  Never-worked
+<span class=hljs-number >22696</span>  Private
+<span class=hljs-number >1116</span>  Self-emp-inc
+<span class=hljs-number >2541</span>  Self-emp-not-inc
+<span class=hljs-number >1298</span>  State-gov
+  <span class=hljs-number >14</span>  Without-pay
+$ cut -f2 -d<span class=hljs-string >&#x27;,&#x27;</span> adult.data | sort | uniq -c | sort -rn
+<span class=hljs-number >22696</span>  Private
+<span class=hljs-number >2541</span>  Self-emp-not-inc
+<span class=hljs-number >2093</span>  Local-gov
+<span class=hljs-number >1836</span>  ?
+<span class=hljs-number >1298</span>  State-gov
+<span class=hljs-number >1116</span>  Self-emp-inc
+ <span class=hljs-number >960</span>  Federal-gov
+  <span class=hljs-number >14</span>  Without-pay
+   <span class=hljs-number >7</span>  Never-worked
+   <span class=hljs-number >1</span></code></pre>
 <h2 id=exercises ><a href="#exercises">Exercises</a></h2>
 <ol>
 <li><p>Determine number of lines that have the value “Tech-support”.</p>
 
 </ol>
-<pre><code class=language-julia >$ YOUR COMMAND HERE
-     928</code></pre>
+<pre><code class="julia hljs">$ YOUR COMMAND HERE
+     <span class=hljs-number >928</span></code></pre>
 <ol start=2 >
 <li><p>Determine number of times each value in the occupation field occurs.</p>
 
 </ol>
-<pre><code class=language-julia >$ YOUR COMMAND HERE
-4140  Prof-specialty
-4099  Craft-repair
-4066  Exec-managerial
-3770  Adm-clerical
-3650  Sales
-3295  Other-service
-2002  Machine-op-inspct
-1843  ?
-1597  Transport-moving
-1370  Handlers-cleaners
- 994  Farming-fishing
- 928  Tech-support
- 649  Protective-serv
- 149  Priv-house-serv
-   9  Armed-Forces
-   1</code></pre>
+<pre><code class="julia hljs">$ YOUR COMMAND HERE
+<span class=hljs-number >4140</span>  Prof-specialty
+<span class=hljs-number >4099</span>  Craft-repair
+<span class=hljs-number >4066</span>  Exec-managerial
+<span class=hljs-number >3770</span>  Adm-clerical
+<span class=hljs-number >3650</span>  Sales
+<span class=hljs-number >3295</span>  Other-service
+<span class=hljs-number >2002</span>  Machine-op-inspct
+<span class=hljs-number >1843</span>  ?
+<span class=hljs-number >1597</span>  Transport-moving
+<span class=hljs-number >1370</span>  Handlers-cleaners
+ <span class=hljs-number >994</span>  Farming-fishing
+ <span class=hljs-number >928</span>  Tech-support
+ <span class=hljs-number >649</span>  Protective-serv
+ <span class=hljs-number >149</span>  Priv-house-serv
+   <span class=hljs-number >9</span>  Armed-Forces
+   <span class=hljs-number >1</span></code></pre>
 <ol start=3 >
 <li><p>Determine how to remove the extra space at the beginning of each value in the occupation field.</p>
 
 </ol>
-<pre><code class=language-julia >$ YOUR COMMAND HERE
-4140 Prof-specialty
-4099 Craft-repair
-4066 Exec-managerial
-3770 Adm-clerical
-3650 Sales
-3295 Other-service
-2002 Machine-op-inspct
-1843 ?
-1597 Transport-moving
-1370 Handlers-cleaners
- 994 Farming-fishing
- 928 Tech-support
- 649 Protective-serv
- 149 Priv-house-serv
-   9 Armed-Forces
-   1</code></pre><div class=page-foot >
+<pre><code class="julia hljs">$ YOUR COMMAND HERE
+<span class=hljs-number >4140</span> Prof-specialty
+<span class=hljs-number >4099</span> Craft-repair
+<span class=hljs-number >4066</span> Exec-managerial
+<span class=hljs-number >3770</span> Adm-clerical
+<span class=hljs-number >3650</span> Sales
+<span class=hljs-number >3295</span> Other-service
+<span class=hljs-number >2002</span> Machine-op-inspct
+<span class=hljs-number >1843</span> ?
+<span class=hljs-number >1597</span> Transport-moving
+<span class=hljs-number >1370</span> Handlers-cleaners
+ <span class=hljs-number >994</span> Farming-fishing
+ <span class=hljs-number >928</span> Tech-support
+ <span class=hljs-number >649</span> Protective-serv
+ <span class=hljs-number >149</span> Priv-house-serv
+   <span class=hljs-number >9</span> Armed-Forces
+   <span class=hljs-number >1</span></code></pre><div class=page-foot >
   <div class=copyright >
     <small>
       &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: July 27, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>.
@@ -92,8 +92,8 @@ $ cut -f2 -d',' adult.data | sort | uniq -c | sort -rn
     </div> <!-- end of class page-wrap-->
     
     
-      <script src="/bidss/libs/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+      
+
 
     
   
