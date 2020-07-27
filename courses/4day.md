@@ -25,4 +25,4 @@
 
 ## Day 1: Unix Commands
 
-https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands
+[https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands](https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands)
