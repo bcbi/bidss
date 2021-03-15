@@ -21,3 +21,4 @@ franklin.pub
 package-lock.json
 package.json
 .Rproj.user/
+.Rhistory
