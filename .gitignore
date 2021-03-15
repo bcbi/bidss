@@ -11,7 +11,8 @@ node_modules/
 *.jl.mem
 .DS_Store
 Icon
-Icon[]
+Icon[
+]
 Manifest.toml
 deps/build.log
 deps/deps.jl
@@ -19,3 +20,4 @@ franklin
 franklin.pub
 package-lock.json
 package.json
+.Rproj.user/
