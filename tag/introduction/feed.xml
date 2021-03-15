@@ -4,7 +4,7 @@
   <description><![CDATA[Biomedical Informatics and Data Science Skills &#40;BIDSS&#41;
 ]]></description>
   <link>https://bcbi.github.io/bidss/</link>
-  <atom:link href="https://bcbi.github.io/bidss/tag/python/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://bcbi.github.io/bidss/tag/introduction/feed.xml" rel="self" type="application/rss+xml" />
   <item>
     <title><![CDATA[Intro to Python]]></title>
     <link>https://bcbi.github.io/bidss/programming/computing/python/</link>
