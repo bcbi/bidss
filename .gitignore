@@ -1,3 +1,4 @@
+.Rproj.user/
 __site/
 deps/downloads/
 deps/src/
@@ -5,12 +6,12 @@ deps/usr/
 docs/build/
 docs/site/
 node_modules/
-.Rproj.user/
 
 *.jl.*.cov
 *.jl.cov
 *.jl.mem
 .DS_Store
+.Rhistory
 Icon
 Manifest.toml
 deps/build.log
@@ -19,4 +20,3 @@ franklin
 franklin.pub
 package-lock.json
 package.json
-.Rhistory
