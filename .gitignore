@@ -5,6 +5,7 @@ deps/usr/
 docs/build/
 docs/site/
 node_modules/
+.Rproj.user/
 
 *.jl.*.cov
 *.jl.cov
@@ -18,5 +19,4 @@ franklin
 franklin.pub
 package-lock.json
 package.json
-.Rproj.user/
 .Rhistory
