@@ -22,7 +22,7 @@ jobs:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV_PREVIEW }}
     - name: Install SSH Client (main)
       if: github.event_name != 'pull_request'
-      uses: webfactory/ssh-agent@v0.2.0
+      uses: webfactory/ssh-agent@v0.5.1
       with:
         ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
     - name: Fix URLs for PR preview deployment (pull request previews)
