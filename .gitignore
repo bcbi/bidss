@@ -1,3 +1,4 @@
+.Rproj.user/
 __site/
 deps/downloads/
 deps/src/
@@ -10,8 +11,8 @@ node_modules/
 *.jl.cov
 *.jl.mem
 .DS_Store
+.Rhistory
 Icon
-Icon[]
 Manifest.toml
 deps/build.log
 deps/deps.jl
