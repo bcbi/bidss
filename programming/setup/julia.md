@@ -1,7 +1,7 @@
 @def title = "Getting Started"
 @def hascode = true
 @def date = Date(2019, 3, 22)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def rss = "Instructions on how to install the Julia programming language on Mac OS and Windows."
 
 @def tags = ["setup", "enviornment"]
 
@@ -9,8 +9,8 @@
 
 \toc
 
-## Mac OS X 10.15.X Catalina
-The below instructions apply to computers running Mac OS X 10.15 Catalina. In order to check the Mac OS X version running on your computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.15.X (where 'X' is any number). 
+## Mac OS 10.16.X Big Sur
+The below instructions have been tested on computers running Mac OS 10.16 Big Sur. In order to check the Mac OS version running on your computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.16.X (where 'X' is any number). These instructions will likely work with earlier versions of Mac OS as well.
 
 If you are not running OS X 10.15 Catalina, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on Mac OS X 10.15 Catalina.
 
