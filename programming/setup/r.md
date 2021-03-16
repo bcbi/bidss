@@ -5,7 +5,7 @@
 
 @def tags = ["setup", "enviornment"]
 
-# R Project for Statistical Computing Installation
+# The R Project for Statistical Computing Installation
 
 \toc
 
