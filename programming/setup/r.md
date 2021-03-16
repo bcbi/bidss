@@ -7,8 +7,8 @@
 
 #R Project for Statisticall Computing Installation
 
-# Mac OS
-Download and install the latest version of The R Project for Statistical computing for Mac OS ~~~<a href="https://cloud.r-project.org/" target="_blank">here</a>~~~
+# macOS
+Download and install the latest version of The R Project for Statistical computing for macOS ~~~<a href="https://cloud.r-project.org/" target="_blank">here</a>~~~
 For an integrated development environment (IDE) / graphical interface, you can also download and install R Student from ~~~<a href="https://rstudio.com/products/rstudio/download/#download" target="_blank">here</a>~~~.
 
 # Debian on Windows 10 (Windows Subsystem for Linux)
