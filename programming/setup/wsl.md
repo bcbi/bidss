@@ -27,5 +27,6 @@ Windows Subsystem for Linux 2 can be installed on all versions of Windows 10.
 8. Open Debian. The first time you use Debian, you will be prompted to create a username and password for the guest operating system.
 
 ## Troubleshooting
-1. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells</a>~~~).
-2. Complete WSL installation documenation from Microsoft is available ~~~<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">here</a>~~~.
+1. If you get an error related to "permissions", close PowerShell, and reopen by selecting "Run as Administrator."
+2. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells</a>~~~).
+3. Complete WSL installation documenation from Microsoft is available ~~~<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">here</a>~~~.
