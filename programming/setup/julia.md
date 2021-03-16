@@ -40,7 +40,7 @@ If you are not running macOS 11.X Big Sur, you can upgrade for free following th
 ## Debian on Windows 10 (Windows Subsystem for Linux)
 First ensure that you have installed Debian and Windows Subsystem for Linux (WSL) as described in ~~~<a href="/programming/setup/wsl/">Linux for Windows</a>~~~.\\
 
-**Download and Install Julia**
+**Download and Install Julia** \\ \\
 From within the Debian terminal, type the following commands one at a time, each followed `Enter`. If you are prompted for a password, use the password you created the first time you opened Debian:
 1. `sudo apt-get install wget`
 2. `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.4-linux-x86_64.tar.gz`
@@ -49,7 +49,7 @@ From within the Debian terminal, type the following commands one at a time, each
 5. `echo 'export PATH="$PATH:/usr/lib/julia-1.5.4/bin"' | tee -a ~/.bash_profile`
 6. `. ~/.bash_profile`
 
-**Run Julia**\\ \\
+**Run Julia** \\ \\
     * Type `julia` and hit `enter`
     * Julia should open
     * To quit Julia, type `exit()` and hit `enter`
