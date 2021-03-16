@@ -22,7 +22,7 @@ Windows Subsystem for Linux can be installed on all versions of Windows 10 with 
 3. Restart your computer
 4. Download and install: ~~~<a href=https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">WSL Update</a>~~~
 5. Restart your computer
-6. Run Windows Powershell as Administrator, and enter the following command: `wsl --set-default-version 2`
+6. Run Windows Powershell as Administrator, then enter the following command followed by `Enter`: `wsl --set-default-version 2`
 7. Open the ~~~<a href=https://aka.ms/wslstore>Microsoft Store</a>~~~. Download and install Debian.
 8. Open Debian. The first time you use Debian, you will be prompted to create a username and password for the guest operating system.
 
