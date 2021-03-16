@@ -7,6 +7,8 @@
 
 # R Project for Statistical Computing Installation
 
+\toc
+
 # macOS
 1. Download and install the latest version of The R Project for Statistical computing for macOS ~~~<a href="https://cloud.r-project.org/" target="_blank">here</a>~~~.
 2. For an integrated development environment (IDE) / graphical interface, you can also download and install R Student from ~~~<a href="https://rstudio.com/products/rstudio/download/#download" target="_blank">here</a>~~~.
