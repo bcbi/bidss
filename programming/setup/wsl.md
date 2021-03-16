@@ -22,11 +22,11 @@ Windows Subsystem for Linux can be installed on all versions of Windows 10 with 
 3. Restart your computer
 4. Download and install: ~~~<a href=https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">WSL Update</a>~~~
 5. Restart your computer
-6. Run Windows Powershell as Administrator, then enter the following command followed by `Enter`: `wsl --set-default-version 2`
+6. Run Windows Powershell as Administrator, then enter the following command: `wsl --set-default-version 2`, followed by `Enter`
 7. Open the ~~~<a href=https://aka.ms/wslstore>Microsoft Store</a>~~~. Download and install Debian.
 8. Open Debian. The first time you use Debian, you will be prompted to create a username and password for the guest operating system.
 
 ## Troubleshooting
-1. If you are unable to install WSL, confim that you are running a compatable version of Windows (e.g. NOT Windows Home edition). ~~~<a href="ms-settings:about?activationSource=SMC-IA-4027391">Click here</a>~~~ to check your "Edition" of Windows. If your device is running Windows 10 Home Edition you may be eligible for a free license of Windows 10 Education (which is capable of running WSL). Contact your school's IT department or visit ~~~<a href = "https://onthehub.com/download/free-software/windows-10-education-for-students/">OnTheHub</a>~~~.
-2. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells></a>~~~)
-3. Complete documenation from Microsoft is available ~~~<a href = "https://docs.microsoft.com/en-us/windows/wsl/install-win10">here</a>~~~.
+1. If you are unable to install WSL, confim that you are running a compatable version of Windows (e.g. NOT Windows Home edition). ~~~<a href="ms-settings:about?activationSource=SMC-IA-4027391">Click here</a>~~~ to check your "Edition" of Windows. If your device is running Windows 10 Home Edition you may be eligible for a free license of Windows 10 Education (which is capable of running WSL). Contact your school's IT department or visit ~~~<a href="https://onthehub.com/download/free-software/windows-10-education-for-students/" target = "_blank">OnTheHub</a>~~~.
+2. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells</a>~~~)
+3. Complete documenation from Microsoft is available ~~~<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">here</a>~~~.
