@@ -12,11 +12,11 @@
 ## macOS 11.X Big Sur
 The below instructions have been tested on computers running macOS 11 Big Sur. In order to check the macOS version running onmyour computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.16.X (where 'X' is any number). These instructions will likely work with earlier versions of macOS as well.
 
-If you are not running OS X 10.15 Catalina, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on macOS 11 Big Sur.
+If you are not running macOS 11.X Big Sur, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on macOS 11 Big Sur.
 
 1. **Download Julia** \\ \\ Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julialang.org/downloads/</a>~~~ and download the "Current stable release" of Julia for macOS 10.8+ (.dmg)
 
-2. **Install Julia** \\ \\ Open the downloaded file (julia-1.4.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
+2. **Install Julia** \\ \\ Open the downloaded file (julia-1.5.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
 
 3. **Create a symbolic link** \\ \\ Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. 
     1. Copy the Julia application path
@@ -27,7 +27,7 @@ If you are not running OS X 10.15 Catalina, you can upgrade for free following t
         
     3. Create the symbolic link - **it is very important to pay attention to exact directions including spaces below**
         * Start by typing "ln -s " into the terminal
-        * Next, right click and *Paste* the path to the Julia application that you previously copied. This should appear something like "/Applications/Julia-1.4.app"
+        * Next, right click and *Paste* the path to the Julia application that you previously copied. This should appear something like "/Applications/Julia-1.5.app"
         * Type "/Contents/MacOS/applet" directly after ".app"
         * Finally, type " julia" \\ *the final command will look something like:*\\ `ln -s /Applications/Julia-1.4.app/Contents/MacOS/applet julia`
         * If your command looks correct based on the above example, hit *return*
