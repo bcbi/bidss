@@ -5,7 +5,7 @@
 
 @def tags = ["setup", "enviornment"]
 
-#R Project for Statisticall Computing Installation
+# R Project for Statistical Computing Installation
 
 # macOS
 1. Download and install the latest version of The R Project for Statistical computing for macOS ~~~<a href="https://cloud.r-project.org/" target="_blank">here</a>~~~.
