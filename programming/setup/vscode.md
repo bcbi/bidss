@@ -5,4 +5,5 @@
 
 @def tags = ["setup", "enviornment"]
 
-\\
+# Microsoft Visual Studio Code
+Programming exercises are best written using a text editor. We recommend ~~~<a href="https://code.visualstudio.com/" target="_blank">Microsoft Visual Studio Code</a>~~~ which is available for Mac, Windows, and Linux operating systems.

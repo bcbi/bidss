@@ -11,9 +11,9 @@ Below is an overview of the setup required to perform the programming exercises 
 \toc
 
 ## Computing Environment
-A computing environment is required to complete the programming exercises presented in BIDSS. All can be completed on a personal computer running Mac OS X, Windows, or a distribution of Linux. Alternatively, it should be possible to complete the exercises on most university shared computing cluster environments (e.g. ~~~<a href="https://docs.ccv.brown.edu/oscar/" target="_blank">Oscar</a>~~~ and ~~~<a href="https://docs.ccv.brown.edu/stronghold/" target="_blank">Stronghold</a>~~~ at Brown University). 
+A computing environment is required to complete the programming exercises presented in BIDSS. All can be completed on a personal computer running macOS, Windows, or a distribution of Linux. Alternatively, it should be possible to complete the exercises on most university shared computing cluster environments (e.g. ~~~<a href="https://docs.ccv.brown.edu/oscar/" target="_blank">Oscar</a>~~~ and ~~~<a href="https://docs.ccv.brown.edu/stronghold/" target="_blank">Stronghold</a>~~~ at Brown University). 
 
-Detailed instructions for environment setup on a personal computer are provided for the latest version of Mac OS X 10.15 Catalina and Windows 10 Pro / Pro Education editions. Alternative or earlier versions of Mac OS X and Windows may require a modified configuration. In particular, Windows 10 Home edition presents some challenges that we will attempt to make clear throughout BIDSS.
+Detailed instructions for environment setup on a personal computer are provided for the latest version of macOS 11 Big Sur and Windows 10 Pro / Pro Education editions. Alternative or earlier versions of macOS and Windows may require a modified configuration. In particular, Windows 10 Home edition presents some challenges that we will attempt to make clear throughout BIDSS.
  
 ## Programming Languages
 A programming language is a set of rules and syntax that can be used to compose instructions that are interpretable by a computer to carry out defined tasks. ~~~<a href="https://brown.edu/go/bcbi" target="_blank">The Center for Biomedical Informatics at Brown University</a>~~~ has chosen Julia as our primary programming language for teaching and carring out informatics and data science research.

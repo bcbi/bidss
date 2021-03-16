@@ -1,7 +1,7 @@
 @def title = "Getting Started"
 @def hascode = true
 @def date = Date(2019, 3, 22)
-@def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+@def rss = "Instructions on how to install the Julia programming language on macOS and Windows."
 
 @def tags = ["setup", "enviornment"]
 
@@ -9,32 +9,49 @@
 
 \toc
 
-## Mac OS X 10.15.X Catalina
-The below instructions apply to computers running Mac OS X 10.15 Catalina. In order to check the Mac OS X version running on your computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.15.X (where 'X' is any number). 
+## macOS 11.X Big Sur
+The below instructions have been tested on computers running macOS 11 Big Sur. In order to check the macOS version running onmyour computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.16.X (where 'X' is any number). These instructions will likely work with earlier versions of macOS as well.
 
-If you are not running OS X 10.15 Catalina, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on Mac OS X 10.15 Catalina.
+If you are not running macOS 11.X Big Sur, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on macOS 11 Big Sur.
 
 1. **Download Julia** \\ \\ Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julialang.org/downloads/</a>~~~ and download the "Current stable release" of Julia for macOS 10.8+ (.dmg)
 
-2. **Install Julia** \\ \\ Open the downloaded file (julia-1.4.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
+2. **Install Julia** \\ \\ Open the downloaded file (julia-1.5.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
 
 3. **Create a symbolic link** \\ \\ Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. 
     1. Copy the Julia application path
         * Locate the Julia application in the list of Applications (if you have more than one from prior installations, select the highest version number).
         * Right click on it and select *copy*. 
     2. Open Terminal
-        * Click the magnifying glass in the top right corner of your screen. This will open a Spotlight Search box. Type "Terminal" and hit "return." This should open up a mostly blank box that has the name of your computer and username in it.
+        * Click the magnifying glass in the top right corner of your screen. This will open a Spotlight Search box. Type "Terminal" and hit `return`. This should open up a mostly blank box that has the name of your computer and username in it.
         
     3. Create the symbolic link - **it is very important to pay attention to exact directions including spaces below**
         * Start by typing "ln -s " into the terminal
-        * Next, right click and *Paste* the path to the Julia application that you previously copied. This should appear something like "/Applications/Julia-1.4.app"
+        * Next, right click and *Paste* the path to the Julia application that you previously copied. This should appear something like "/Applications/Julia-1.5.app"
         * Type "/Contents/MacOS/applet" directly after ".app"
         * Finally, type " julia" \\ *the final command will look something like:*\\ `ln -s /Applications/Julia-1.4.app/Contents/MacOS/applet julia`
-        * If your command looks correct based on the above example, hit *return*
+        * If your command looks correct based on the above example, hit `return`
 
 4. **Run Julia** \\ \\
-    * Type "julia" into terminal and hit *return*
+    * Type "julia" into terminal and hit `return`
     * Julia should open
+    * To quit Julia, type `exit()` and hit `return`
 
-## Windows 10 Pro / Pro Education
+## Debian on Windows 10 (Windows Subsystem for Linux)
+First ensure that you have installed Debian and Windows Subsystem for Linux (WSL) as described in ~~~<a href="/programming/setup/wsl/">Linux for Windows</a>~~~.\\
+
+**Download and Install Julia** \\ \\
+From within the Debian terminal, type the following commands one at a time, each followed `Enter`. If you are prompted for a password, use the password you created the first time you opened Debian:
+1. `sudo apt-get install wget`
+2. `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.4-linux-x86_64.tar.gz`
+3. `tar xvzf julia-1.5.4-linux-x86_64.tar.gz`
+4. `sudo mv julia-1.5.4 /usr/lib`
+5. `echo 'export PATH="$PATH:/usr/lib/julia-1.5.4/bin"' | tee -a ~/.bash_profile`
+6. `. ~/.bash_profile`
+
+**Run Julia** \\ \\
+    * Type `julia` and hit `enter`
+    * Julia should open
+    * To quit Julia, type `exit()` and hit `enter`
+
 \\

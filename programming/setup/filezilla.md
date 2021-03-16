@@ -5,5 +5,6 @@
 
 @def tags = ["setup", "enviornment"]
 
-
+# FileZilla
+If you are working in a server environment that requires you to transfer files via FTP, we recommend ~~~<a href="https://filezilla-project.org/" target="_blank">FileZilla</a>~~~, a free FTP client with a graphical user interface for Mac, Windows, and Linuix operating systems.
 \\
