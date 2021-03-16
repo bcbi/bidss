@@ -27,5 +27,6 @@ Windows Subsystem for Linux can be installed on all versions of Windows 10 with 
 8. Open Debian. The first time you use Debian, you will be prompted to create a username and password for the guest operating system.
 
 ## Troubleshooting
-1. If you are unable to install WSL, confim that you are running a compatable version of Windows (e.g. NOT Windows Home edition). ~~~<a href="ms-settings:about?activationSource=SMC-IA-4027391">Click here</a>~~~ to check your "Edition" of Windows.
+1. If you are unable to install WSL, confim that you are running a compatable version of Windows (e.g. NOT Windows Home edition). ~~~<a href="ms-settings:about?activationSource=SMC-IA-4027391">Click here</a>~~~ to check your "Edition" of Windows. If your device is running Windows 10 Home Edition you may be eligible for a free license of Windows 10 Education (which is capable of running WSL). Contact your school's IT department or visit ~~~<a href = "https://onthehub.com/download/free-software/windows-10-education-for-students/">OnTheHub</a>~~~.
 2. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells></a>~~~)
+3. Complete documenation from Microsoft is available ~~~<a href = "https://docs.microsoft.com/en-us/windows/wsl/install-win10">here</a>~~~.
