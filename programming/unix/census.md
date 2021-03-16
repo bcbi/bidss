@@ -16,7 +16,7 @@
 
 ### Getting Started
 
-1. Download ~~~ <a href="_data/adult/adult.data" target="_blank">adult.data</a> ~~~ and ~~~ <a href="_data/adult/adult.names" target="_blank">adult.names</a> ~~~ into the data directory
+1. Download ~~~ <a href="https://raw.githubusercontent.com/bcbi/bidss/master/_data/adult/adult.data" target="_blank">adult.data</a> ~~~ and ~~~ <a href="https://raw.githubusercontent.com/bcbi/bidss/master/_data/adult/adult.names" target="_blank">adult.names</a> ~~~ into the data directory
 2. Move files to a working directory (see [3.1 Getting Started](/programming/unix/intro) for more detail)
 3. Open a Unix shell and navigate to that directory (see [3.1 Getting Started](/programming/unix/intro) for more detail)
 
