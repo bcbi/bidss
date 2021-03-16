@@ -17,8 +17,8 @@ Windows Subsystem for Linux can be installed on all versions of Windows 10 with 
 
 1. Run Windows Powershell as Administrator. You can search your computer for "Powershell" from the Windows menu. Right click on "Windows Powershell" and select "Run as Administrator."
 2. Inside Windows Powershell, enter the following commands:
-    *`dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
-    *`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+    * `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+    * `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 3. Restart your computer
 4. Download and install: ~~~<a href=https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">WSL Update</a>~~~
 5. Restart your computer
