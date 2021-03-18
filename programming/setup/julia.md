@@ -20,8 +20,7 @@ Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julial
 2. **Install Julia** \\ 
 Open the downloaded file (julia-1.5.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
 
-3. **Create a symbolic link** \\ 
-Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. From within at Terminal window, type the following commands one at at time, each followed by `return`:
+3. **Create a symbolic link.** Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. From within at Terminal window, type the following commands one at at time, each followed by `return`:
     * `rm -f /usr/local/bin/julia`
     * `ln -s /Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia`
 
