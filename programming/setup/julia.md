@@ -26,9 +26,9 @@ Next, you will create a symbolic link to the Julia application you just installe
 * `ln -s /Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia`
 
 4. **Run Julia** \\
-    * Type "julia" into terminal and hit `return`
-    * Julia should open
-    * To quit Julia, type `exit()` and hit `return`
+* Type "julia" into terminal and hit `return`
+* Julia should open
+* To quit Julia, type `exit()` and hit `return`
 
 ## Debian on Windows 10 (Windows Subsystem for Linux)
 First ensure that you have installed Debian and Windows Subsystem for Linux (WSL) as described in ~~~<a href="/programming/setup/wsl/">Linux for Windows</a>~~~.\\
@@ -43,8 +43,8 @@ From within the Debian terminal, type the following commands one at a time, each
 * `. ~/.bash_profile`
 
 2. **Run Julia** \\
-    * Type `julia` and hit `enter`
-    * Julia should open
-    * To quit Julia, type `exit()` and hit `enter`
+* Type `julia` and hit `enter`
+* Julia should open
+* To quit Julia, type `exit()` and hit `enter`
 
 \\
