@@ -28,5 +28,6 @@ Windows Subsystem for Linux 2 can be installed on all versions of Windows 10.
 
 ## Troubleshooting
 1. If you get an error related to "permissions", close PowerShell, and reopen by selecting "Run as Administrator."
-2. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells</a>~~~).
-3. Complete WSL installation documenation from Microsoft is available ~~~<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">here</a>~~~.
+2. If you get the error `Invalid command line option: --set-default-version` when attempting to set default WSL version (step 5 above), then your version of Windows may need updating. Run Windows Update and go back to step 4.
+3. If you are running Windows as a virtual machine and receive the error: `Error: 0x80370102 The virtual machine could not be started because a required feature is not installed` when attempting to open Debian, then your virtual machine hypervisor does not have nested virtualization enabled (e.g. for ~~~<a href="https://kb.parallels.com/en/125195">Paralells</a>~~~).
+4. Complete WSL installation documenation from Microsoft is available ~~~<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">here</a>~~~.
