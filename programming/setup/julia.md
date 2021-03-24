@@ -14,44 +14,37 @@ The below instructions have been tested on computers running macOS 11 Big Sur. I
 
 If you are not running macOS 11.X Big Sur, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on macOS 11 Big Sur.
 
-1. **Download Julia** \\ \\ Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julialang.org/downloads/</a>~~~ and download the "Current stable release" of Julia for macOS 10.8+ (.dmg)
+1. **Download Julia** \\
+Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julialang.org/downloads/</a>~~~ and download the "Current stable release" of Julia for macOS 10.8+ (.dmg)
 
-2. **Install Julia** \\ \\ Open the downloaded file (julia-1.5.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
+2. **Install Julia** \\ 
+Open the downloaded file (julia-1.5.X-mac64.dmg). A window will pop up with a link to your Applications folder and the Julia software (pictured below). Drag Julia to your applications folder. Next, double click on the Applications folder shortcut to open it.
 
-3. **Create a symbolic link** \\ \\ Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. 
-    1. Copy the Julia application path
-        * Locate the Julia application in the list of Applications (if you have more than one from prior installations, select the highest version number).
-        * Right click on it and select *copy*. 
-    2. Open Terminal
-        * Click the magnifying glass in the top right corner of your screen. This will open a Spotlight Search box. Type "Terminal" and hit `return`. This should open up a mostly blank box that has the name of your computer and username in it.
-        
-    3. Create the symbolic link - **it is very important to pay attention to exact directions including spaces below**
-        * Start by typing "ln -s " into the terminal
-        * Next, right click and *Paste* the path to the Julia application that you previously copied. This should appear something like "/Applications/Julia-1.5.app"
-        * Type "/Contents/MacOS/applet" directly after ".app"
-        * Finally, type " julia" \\ *the final command will look something like:*\\ `ln -s /Applications/Julia-1.4.app/Contents/MacOS/applet julia`
-        * If your command looks correct based on the above example, hit `return`
+3. **Create a symbolic link.** \\
+Next, you will create a symbolic link to the Julia application you just installed. This will enable your computer to find Julia when you go to use it. From within at Terminal window, type the following commands one at at time, each followed by `return`:\\
+* `rm -f /usr/local/bin/julia`
+* `ln -s /Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia`
 
-4. **Run Julia** \\ \\
-    * Type "julia" into terminal and hit `return`
-    * Julia should open
-    * To quit Julia, type `exit()` and hit `return`
+4. **Run Julia** \\
+* Type "julia" into terminal and hit `return`
+* Julia should open
+* To quit Julia, type `exit()` and hit `return`
 
 ## Debian on Windows 10 (Windows Subsystem for Linux)
 First ensure that you have installed Debian and Windows Subsystem for Linux (WSL) as described in ~~~<a href="/programming/setup/wsl/">Linux for Windows</a>~~~.\\
 
-**Download and Install Julia** \\ \\
-From within the Debian terminal, type the following commands one at a time, each followed `Enter`. If you are prompted for a password, use the password you created the first time you opened Debian:
-1. `sudo apt-get install wget`
-2. `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.4-linux-x86_64.tar.gz`
-3. `tar xvzf julia-1.5.4-linux-x86_64.tar.gz`
-4. `sudo mv julia-1.5.4 /usr/lib`
-5. `echo 'export PATH="$PATH:/usr/lib/julia-1.5.4/bin"' | tee -a ~/.bash_profile`
-6. `. ~/.bash_profile`
+1. **Download and Install Julia** \\
+From within the Debian terminal, type the following commands one at a time, each followed `Enter`. If you are prompted for a password, use the password you created the first time you opened Debian: \\
+* `sudo apt-get install wget`
+* `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.4-linux-x86_64.tar.gz`
+* `tar xvzf julia-1.5.4-linux-x86_64.tar.gz`
+* `sudo mv julia-1.5.4 /usr/lib`
+* `echo 'export PATH="$PATH:/usr/lib/julia-1.5.4/bin"' | tee -a ~/.bash_profile`
+* `. ~/.bash_profile`
 
-**Run Julia** \\ \\
-    * Type `julia` and hit `enter`
-    * Julia should open
-    * To quit Julia, type `exit()` and hit `enter`
+2. **Run Julia** \\
+* Type `julia` and hit `enter`
+* Julia should open
+* To quit Julia, type `exit()` and hit `enter`
 
 \\
