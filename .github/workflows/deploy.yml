@@ -45,6 +45,7 @@ jobs:
     - run: git config --global user.name "Brown Center for Biomedical Informatics"
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "Franklin"]);
+            Pkg.add(Pkg.PackageSpec(name = "Franklin", rev = "master"));
             using NodeJS;
             run(`$(npm_cmd()) install highlight.js`);
             run(`$(npm_cmd()) install lunr`);
