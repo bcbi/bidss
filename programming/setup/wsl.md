@@ -12,7 +12,7 @@
 ## Why run Linux on Windows?
 Most high performance computing environments run a version of Linux. Microsoft has created a way to run Linux on top of Windows 10 that enables you to take advantage of powerful Linux software and develop tools locally that will work in cluster computing environments. Microsoft has called this feature Windows Subsystem for Linux (WSL).
 
-## Windows Subsystem for Linux
+## Windows Subsystem for Linux 2
 Windows Subsystem for Linux 2 can be installed on all versions of Windows 10.
 
 1. Run Windows Powershell as Administrator. You can search your computer for "Powershell" from the Windows menu. Right click on "Windows Powershell" and select "Run as Administrator."
