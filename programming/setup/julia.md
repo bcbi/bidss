@@ -51,9 +51,9 @@ From within the Debian terminal, type the following commands one at a time, each
 * To quit Julia, type `exit()` and hit `enter`
 
 3. **Troubleshooting**
-* If you already have an older version of Julia installed, you can follow these instructions to install a newer version. However, you will need to manually edit your `.bash_profile` file to remove the link to the older version. To do this:
+* If you already have an older version of Julia installed, you can follow the instructions above to install a newer version. However, you will need to manually edit your `.bash_profile` file to remove the link to the older version. To do this:
     * `sudo apt-get install vim`
     * `vim ~/.bash_profile`
-    * Using the arrow keys, move your cursor to the line of the file that has a link to the old version of Julia, hit `d` twice (this shoudl delete the corresponding line). Save the file by typing `:wq` and then `enter`. Close and reopen Debian and the new version of Julia should open when you run `julia`.
+    * Using the arrow keys, move your cursor to the line of the file that has a link to the old version of Julia, hit `d` twice (this should delete the corresponding line). Save the file by typing `:wq` and then `enter`. Close and reopen Debian and the new version of Julia should open when you run `julia`.
 
 \\
