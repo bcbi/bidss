@@ -52,8 +52,6 @@ jobs:
             run(`$(npm_cmd()) install lunr`);
             run(`$(npm_cmd()) install cheerio`);
             using Franklin;
-            using Pkg;
-            Pkg.activate("."); Pkg.instantiate();
             franklin_prepath = get(ENV, "JULIA_FRANKLIN_PREPATH", "bidss");
             optimize(prerender=false);
             publish(; do_push=false, final=lunr);
