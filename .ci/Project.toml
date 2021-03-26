@@ -1,4 +1,10 @@
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
 RCall = "6f49c342-dc21-5d91-9882-a32aef131414"
 RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
+
+[compat]
+Franklin = "0.10.34"
+NodeJS = "1.1.1"

@@ -1,12 +1,12 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin=anonymous > <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <script src="/bidss/libs/lunr/lunr.min.js"></script> <script src="/bidss/libs/lunr/lunr_index.js"></script> <script src="/bidss/libs/lunr/lunrclient.min.js"></script> <link rel=stylesheet  href="/bidss/libs/font-awesome/css/font-awesome.min.css"> <link rel=stylesheet  href="/bidss/libs/highlight/github.min.css"> <link rel=stylesheet  href="/bidss/css/jtd.css"> <link rel=icon  href="/bidss/assets/favicon.ico"> <title>DataFrames</title> <header> <a class=skip_main  href="#main">Skip to main content</a> <nav class="navbar navbar-expand-lg navbar-light nav-main"> <!-- <button class="navbar-toggler custom-toggler" type=button  data-toggle=collapse  data-target="#navbarContents" aria-expanded=false  aria-label="Toggle navigation"> <span class=navbar-toggler-icon ></span> </button> --> <div class=logo-box > <a href="/bidss/"><img class=img-logo  src="/bidss/assets/bidss_logo.png" alt = "BIDSS"></a> </div> <div class=nav-middleitems-wrapper > <div class=nav-middleitems-header > <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Home</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Getting Started</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Documentation</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >GitHub</span> </a> </div> --> </div> </div> <div class=searchbox-wrapper > <form id=lunrSearchForm  name=lunrSearchForm > <button class="fa fa-search search-icon" aria-hidden=true  formaction="/bidss/search/index.html"></button> <input class=search-input  name=q  placeholder=Search...  type=text > </form> </div> </nav> </header> <div class=page-wrap > <div class=sidenav > <div class=sidenav-wrap > <ul class=menu-list > <li class=menu-list-item ><a href="/bidss/" class="menu-list-link "><b>1</b> Home</a> <div class=section-title >Infrastructure</div> <li class="menu-list-item "><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2</b> Setup</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2.1</b> Overview</a> <li class=menu-list-item ><a href="/bidss/programming/setup/wsl/" class="menu-list-link "><b>2.2</b> Linux for Windows</a> <li class=menu-list-item ><a href="/bidss/programming/setup/julia/" class="menu-list-link "><b>2.3</b> Julia</a> <li class=menu-list-item ><a href="/bidss/programming/setup/r/" class="menu-list-link "><b>2.4</b> R</a> <li class=menu-list-item ><a href="/bidss/programming/setup/vscode/" class="menu-list-link "><b>2.5</b> VS Code</a> <li class=menu-list-item ><a href="/bidss/programming/setup/filezilla/" class="menu-list-link "><b>2.6</b> FileZilla</a> </ul> <div class=section-title >Programming</div> <li class="menu-list-item "><a href="/bidss/programming/unix/intro/" class="menu-list-link "><b>3</b> Unix</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/unix/intro/" class="menu-list-link "><b>3.1</b> Getting Started with Unix</a> <li class=menu-list-item ><a href="/bidss/programming/unix/census/" class="menu-list-link "><b>3.2</b> Analyzing the Adult (Census Income) Data Set</a> <li class=menu-list-item ><a href="/bidss/programming/unix/mimic/" class="menu-list-link "><b>3.3</b> Analyzing the MIMIC-III Demo Data Set</a> </ul> <li class="menu-list-item "><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4</b> Databases</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4.1</b> Getting Started with Databases</a> <li class=menu-list-item ><a href="/bidss/programming/db/emrbots/" class="menu-list-link "><b>4.2</b> Querying the EMRbots Database</a> <li class=menu-list-item ><a href="/bidss/programming/db/mimic/" class="menu-list-link "><b>4.3</b> Querying the MIMIC-III Demo Database</a> </ul> <li class="menu-list-item active"><a href="/bidss/programming/computing/intro/" class="menu-list-link active"><b>5</b> Scientific Computing</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/computing/intro/" class="menu-list-link "><b>5.1</b> Getting Started with Scientific Computing</a> <li class=menu-list-item ><a href="/bidss/programming/computing/numbers/" class="menu-list-link "><b>5.2</b> Numbers and Math</a> <li class=menu-list-item ><a href="/bidss/programming/computing/strings/" class="menu-list-link "><b>5.3</b> Strings, Characters, and Regular Expressions</a> <li class=menu-list-item ><a href="/bidss/programming/computing/control/" class="menu-list-link "><b>5.4</b> Control Flow</a> <li class=menu-list-item ><a href="/bidss/programming/computing/collections/" class="menu-list-link "><b>5.5</b> Collections and Data Structures</a> <li class=menu-list-item ><a href="/bidss/programming/computing/io/" class="menu-list-link "><b>5.6</b> File Input/Output</a> <li class=menu-list-item ><a href="/bidss/programming/computing/repl/" class="menu-list-link "><b>5.7</b> REPL and Packages</a> <li class=menu-list-item ><a href="/bidss/programming/computing/dataframes/" class="menu-list-link active"><b>5.8</b> DataFrames</a> <li class=menu-list-item ><a href="/bidss/programming/computing/stats/" class="menu-list-link "><b>5.9</b> Statistics and Machine Learning</a> <li class=menu-list-item ><a href="/bidss/programming/computing/viz/" class="menu-list-link "><b>5.10</b> Plotting and Visualization</a> <li class=menu-list-item ><a href="/bidss/programming/computing/R/" class="menu-list-link "><b>5.11</b> Intro to R</a> <li class=menu-list-item ><a href="/bidss/programming/computing/python/" class="menu-list-link "><b>5.12</b> Intro to Python</a> </ul> <!-- <div class=section-title >Informatics Software</div> <div class=section-title >Data Sources</div> <div class=section-title >Electronic Health Records</div> <div class=section-title >Standards</div> <div class=section-title >Informatics Theory</div> --> <div class=section-title >Course Outlines</div> <li class="menu-list-item "><a href="/bidss/courses/intro/" class="menu-list-link "><b>6</b> Course Materials</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/courses/4day" class="menu-list-link "><b>6.1</b> Four-Day Short Course</a> </ul> </ul> </div> <div class=footer > <a href = "https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/" target=_blank > <img src="/bidss/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics" class=bcbi-logo > </a> </div> </div> <div class=main > <div class=franklin-content ><h1 id=58_dataframes ><a href="#58_dataframes" class=header-anchor >5.8 DataFrames</a></h1> <div class=franklin-toc ><ol><li><a href="#documentation">Documentation</a><li><a href="#theory">Theory</a><li><a href="#practice">Practice</a></ol></div> <h2 id=documentation ><a href="#documentation" class=header-anchor >Documentation</a></h2> <ul> <li><p> <a href="https://juliadata.github.io/CSV.jl/stable/" target=_blank >CSV.jl</a> </p> <li><p> <a href="https://juliadata.github.io/DataFrames.jl/stable/man/getting_started.html" target=_blank >DataFrames.jl</a> </p> <li><p> <a href="https://en.wikibooks.org/wiki/Introducing_Julia/DataFrames" target=_blank >Introducing Julia Wikibook: DataFrames</a> </p> <li><p> <a href="https://jcharistech.wordpress.com/julia-dataframes-cheat-sheets/" target=_blank >Julia DataFrames Cheat Sheets</a> </p> </ul> <h2 id=theory ><a href="#theory" class=header-anchor >Theory</a></h2> <h2 id=practice ><a href="#practice" class=header-anchor >Practice</a></h2> <p><strong>Install and Load DataFrames.jl Package</strong></p> <pre><code class="julia hljs"><span class=hljs-keyword >using</span> Pkg
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin=anonymous > <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <script src="/bidss/libs/lunr/lunr.min.js"></script> <script src="/bidss/libs/lunr/lunr_index.js"></script> <script src="/bidss/libs/lunr/lunrclient.min.js"></script> <link rel=stylesheet  href="/bidss/libs/font-awesome/css/font-awesome.min.css"> <link rel=stylesheet  href="/bidss/libs/highlight/github.min.css"> <link rel=stylesheet  href="/bidss/css/jtd.css"> <link rel=icon  href="/bidss/assets/favicon.ico"> <title>DataFrames</title> <header> <a class=skip_main  href="#main">Skip to main content</a> <nav class="navbar navbar-expand-lg navbar-light nav-main"> <!-- <button class="navbar-toggler custom-toggler" type=button  data-toggle=collapse  data-target="#navbarContents" aria-expanded=false  aria-label="Toggle navigation"> <span class=navbar-toggler-icon ></span> </button> --> <div class=logo-box > <a href="/bidss/"><img class=img-logo  src="/bidss/assets/bidss_logo.png" alt = "BIDSS"></a> </div> <div class=nav-middleitems-wrapper > <div class=nav-middleitems-header > <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Home</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Getting Started</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >Documentation</span> </a> </div> --> <!-- <div class=nav-middleitem  style="border-bottom-color: transparent;"> <a class=nav-middleitem-button  target=_blank  rel="noopener noreferrer" href="#"> <span class=nav-middleitem-text >GitHub</span> </a> </div> --> </div> </div> <div class=searchbox-wrapper > <form id=lunrSearchForm  name=lunrSearchForm > <button class="fa fa-search search-icon" aria-hidden=true  formaction="/bidss/search/index.html"></button> <input class=search-input  name=q  placeholder=Search...  type=text > </form> </div> </nav> </header> <div class=page-wrap > <div class=sidenav > <div class=sidenav-wrap > <ul class=menu-list > <li class=menu-list-item ><a href="/bidss/" class="menu-list-link "><b>1</b> Home</a> <div class=section-title >Infrastructure</div> <li class="menu-list-item "><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2</b> Setup</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/setup/intro/" class="menu-list-link "><b>2.1</b> Overview</a> <li class=menu-list-item ><a href="/bidss/programming/setup/wsl/" class="menu-list-link "><b>2.2</b> Linux for Windows</a> <li class=menu-list-item ><a href="/bidss/programming/setup/julia/" class="menu-list-link "><b>2.3</b> Julia</a> <li class=menu-list-item ><a href="/bidss/programming/setup/r/" class="menu-list-link "><b>2.4</b> R</a> <li class=menu-list-item ><a href="/bidss/programming/setup/vscode/" class="menu-list-link "><b>2.5</b> VS Code</a> <li class=menu-list-item ><a href="/bidss/programming/setup/filezilla/" class="menu-list-link "><b>2.6</b> FileZilla</a> </ul> <div class=section-title >Programming</div> <li class="menu-list-item "><a href="/bidss/programming/unix/intro/" class="menu-list-link "><b>3</b> Unix</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/unix/intro/" class="menu-list-link "><b>3.1</b> Getting Started with Unix</a> <li class=menu-list-item ><a href="/bidss/programming/unix/census/" class="menu-list-link "><b>3.2</b> Analyzing the Adult (Census Income) Data Set</a> <li class=menu-list-item ><a href="/bidss/programming/unix/mimic/" class="menu-list-link "><b>3.3</b> Analyzing the MIMIC-III Demo Data Set</a> </ul> <li class="menu-list-item "><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4</b> Databases</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/db/mysql/" class="menu-list-link "><b>4.1</b> Getting Started with Databases</a> <li class=menu-list-item ><a href="/bidss/programming/db/emrbots/" class="menu-list-link "><b>4.2</b> Querying the EMRbots Database</a> <li class=menu-list-item ><a href="/bidss/programming/db/mimic/" class="menu-list-link "><b>4.3</b> Querying the MIMIC-III Demo Database</a> </ul> <li class="menu-list-item active"><a href="/bidss/programming/computing/intro/" class="menu-list-link active"><b>5</b> Scientific Computing</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/programming/computing/intro/" class="menu-list-link "><b>5.1</b> Getting Started with Scientific Computing</a> <li class=menu-list-item ><a href="/bidss/programming/computing/numbers/" class="menu-list-link "><b>5.2</b> Numbers and Math</a> <li class=menu-list-item ><a href="/bidss/programming/computing/strings/" class="menu-list-link "><b>5.3</b> Strings, Characters, and Regular Expressions</a> <li class=menu-list-item ><a href="/bidss/programming/computing/control/" class="menu-list-link "><b>5.4</b> Control Flow</a> <li class=menu-list-item ><a href="/bidss/programming/computing/collections/" class="menu-list-link "><b>5.5</b> Collections and Data Structures</a> <li class=menu-list-item ><a href="/bidss/programming/computing/io/" class="menu-list-link "><b>5.6</b> File Input/Output</a> <li class=menu-list-item ><a href="/bidss/programming/computing/repl/" class="menu-list-link "><b>5.7</b> REPL and Packages</a> <li class=menu-list-item ><a href="/bidss/programming/computing/dataframes/" class="menu-list-link active"><b>5.8</b> DataFrames</a> <li class=menu-list-item ><a href="/bidss/programming/computing/stats/" class="menu-list-link "><b>5.9</b> Statistics and Machine Learning</a> <li class=menu-list-item ><a href="/bidss/programming/computing/viz/" class="menu-list-link "><b>5.10</b> Plotting and Visualization</a> <li class=menu-list-item ><a href="/bidss/programming/computing/R/" class="menu-list-link "><b>5.11</b> Intro to R</a> <li class=menu-list-item ><a href="/bidss/programming/computing/python/" class="menu-list-link "><b>5.12</b> Intro to Python</a> </ul> <!-- <div class=section-title >Informatics Software</div> <div class=section-title >Data Sources</div> <div class=section-title >Electronic Health Records</div> <div class=section-title >Standards</div> <div class=section-title >Informatics Theory</div> --> <div class=section-title >Course Outlines</div> <li class="menu-list-item "><a href="/bidss/courses/intro/" class="menu-list-link "><b>6</b> Course Materials</a> <ul class="menu-list-child-list "> <li class=menu-list-item ><a href="/bidss/courses/4day" class="menu-list-link "><b>6.1</b> Four-Day Short Course</a> </ul> </ul> </div> <div class=footer > <a href = "https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/" target=_blank > <img src="/bidss/assets/bcbi_logo.png" alt = "Brown Center for Biomedical Informatics" class=bcbi-logo > </a> </div> </div> <div class=main > <div class=franklin-content ><h1 id=58_dataframes ><a href="#58_dataframes" class=header-anchor >5.8 DataFrames</a></h1> <div class=franklin-toc ><ol><li><a href="#documentation">Documentation</a><li><a href="#theory">Theory</a><li><a href="#practice">Practice</a></ol></div> <h2 id=documentation ><a href="#documentation" class=header-anchor >Documentation</a></h2> <ul> <li><p> <a href="https://juliadata.github.io/CSV.jl/stable/" target=_blank >CSV.jl</a> </p> <li><p> <a href="https://juliadata.github.io/DataFrames.jl/stable/man/getting_started.html" target=_blank >DataFrames.jl</a> </p> <li><p> <a href="https://en.wikibooks.org/wiki/Introducing_Julia/DataFrames" target=_blank >Introducing Julia Wikibook: DataFrames</a> </p> <li><p> <a href="https://jcharistech.wordpress.com/julia-dataframes-cheat-sheets/" target=_blank >Julia DataFrames Cheat Sheets</a> </p> </ul> <h2 id=theory ><a href="#theory" class=header-anchor >Theory</a></h2> <h2 id=practice ><a href="#practice" class=header-anchor >Practice</a></h2> <p><strong>Install and Load DataFrames.jl Package</strong></p> <pre><code class=language-julia >using Pkg
 
-<span class=hljs-comment ># Add DataFrames package</span>
-Pkg.add(<span class=hljs-string >&quot;DataFrames&quot;</span>)
+# Add DataFrames package
+Pkg.add&#40;&quot;DataFrames&quot;&#41;
 
-<span class=hljs-comment ># Load paackages</span>
-<span class=hljs-keyword >using</span> DataFrames</code></pre> <p><strong>Create Dataframe</strong></p> <pre><code class="julia hljs"><span class=hljs-comment ># Create dataframe</span>
-df = DataFrame(id = <span class=hljs-number >1</span>:<span class=hljs-number >5</span>, gender = [<span class=hljs-string >&quot;F&quot;</span>, <span class=hljs-string >&quot;M&quot;</span>, <span class=hljs-string >&quot;F&quot;</span>, <span class=hljs-string >&quot;M&quot;</span>, <span class=hljs-string >&quot;F&quot;</span>], age = [<span class=hljs-number >68</span>, <span class=hljs-number >54</span>, <span class=hljs-number >49</span>, <span class=hljs-number >28</span>, <span class=hljs-number >36</span>])</code></pre> <p><strong>Display Dataframe</strong></p> <p>Input:</p> <pre><code class="julia hljs"><span class=hljs-comment ># display dataframe</span>
-println(df)</code></pre> <p>Output: <pre><code class="plaintext hljs">5×3 DataFrame
+# Load paackages
+using DataFrames</code></pre> <p><strong>Create Dataframe</strong></p> <pre><code class=language-julia ># Create dataframe
+df &#61; DataFrame&#40;id &#61; 1:5, gender &#61; &#91;&quot;F&quot;, &quot;M&quot;, &quot;F&quot;, &quot;M&quot;, &quot;F&quot;&#93;, age &#61; &#91;68, 54, 49, 28, 36&#93;&#41;</code></pre> <p><strong>Display Dataframe</strong></p> <p>Input:</p> <pre><code class=language-julia ># display dataframe
+println&#40;df&#41;</code></pre> <p>Output: <pre><code class=plaintext >5×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -15,9 +15,9 @@ println(df)</code></pre> <p>Output: <pre><code class="plaintext hljs">5×3 DataF
    3 │     3  F          49
    4 │     4  M          28
    5 │     5  F          36
-</code></pre></p> <p>First two lines of dataframe: Input:</p> <pre><code class="julia hljs">println(first(df, <span class=hljs-number >2</span>))</code></pre>
+</code></pre></p> <p>First two lines of dataframe: Input:</p> <pre><code class=language-julia >println&#40;first&#40;df, 2&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">2×3 DataFrame
+<pre><code class=plaintext >2×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -26,9 +26,9 @@ println(df)</code></pre> <p>Output: <pre><code class="plaintext hljs">5×3 DataF
 </code></pre>
 <p>Last two lines of dataframe:</p>
 <p>Input:</p>
-<pre><code class="julia hljs">println(last(df, <span class=hljs-number >2</span>))</code></pre>
+<pre><code class=language-julia >println&#40;last&#40;df, 2&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">2×3 DataFrame
+<pre><code class=plaintext >2×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -38,24 +38,24 @@ println(df)</code></pre> <p>Output: <pre><code class="plaintext hljs">5×3 DataF
 <p><strong>Describe Dataframe</strong></p>
 <p>Dataframe size:</p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># dataframe size</span>
-println(size(df))</code></pre>
+<pre><code class=language-julia ># dataframe size
+println&#40;size&#40;df&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">(5, 3)
+<pre><code class=plaintext >(5, 3)
 </code></pre>
 <p>Dataframe column names:</p>
 <p>Input:</p>
-<pre><code class="julia hljs"><span class=hljs-comment ># dataframe column names</span>
-println(names(df))</code></pre>
+<pre><code class=language-julia ># dataframe column names
+println&#40;names&#40;df&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">[&quot;id&quot;, &quot;gender&quot;, &quot;age&quot;]
+<pre><code class=plaintext >["id", "gender", "age"]
 </code></pre>
 <p>Dataframe description:</p>
 <p>Input:</p>
-<pre><code class="julia hljs"><span class=hljs-comment ># describe dataframe</span>
-println(describe(df))</code></pre>
+<pre><code class=language-julia ># describe dataframe
+println&#40;describe&#40;df&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">3×7 DataFrame
+<pre><code class=plaintext >3×7 DataFrame
  Row │ variable  mean    min  median  max  nmissing  eltype
      │ Symbol    Union…  Any  Union…  Any  Int64     DataType
 ─────┼────────────────────────────────────────────────────────
@@ -66,25 +66,25 @@ println(describe(df))</code></pre>
 <p><strong>Accessing DataFrames</strong></p>
 <p><strong><em>Get &quot;age&quot; column &#40;different ways to call the column&#41;</em></strong></p>
 <p>Input:</p>
-<pre><code class="julia hljs"><span class=hljs-comment ># call by column name</span>
-println(df[!, :age])
+<pre><code class=language-julia ># call by column name
+println&#40;df&#91;&#33;, :age&#93;&#41;
 
-<span class=hljs-comment ># get column by column number</span>
-println(df[!, <span class=hljs-number >3</span>])
+# get column by column number
+println&#40;df&#91;&#33;, 3&#93;&#41;
 
-<span class=hljs-comment ># alternate syntax</span>
-println(df.age)</code></pre>
+# alternate syntax
+println&#40;df.age&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">[68, 54, 49, 28, 36]
+<pre><code class=plaintext >[68, 54, 49, 28, 36]
 [68, 54, 49, 28, 36]
 [68, 54, 49, 28, 36]
 </code></pre>
 <p><strong><em>Get row</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># print row 2</span>
-println(df[<span class=hljs-number >2</span>, :])</code></pre>
+<pre><code class=language-julia ># print row 2
+println&#40;df&#91;2, :&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">DataFrameRow
+<pre><code class=plaintext >DataFrameRow
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -92,17 +92,17 @@ println(df[<span class=hljs-number >2</span>, :])</code></pre>
 </code></pre>
 <p><strong><em>Get element</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># get element in row 2, column 3</span>
-println(df[<span class=hljs-number >2</span>,<span class=hljs-number >3</span>])</code></pre>
+<pre><code class=language-julia ># get element in row 2, column 3
+println&#40;df&#91;2,3&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">54
+<pre><code class=plaintext >54
 </code></pre>
 <p><strong><em>Get subset &#40;specific rows and all columns&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># print out rows 1, 3, &amp; 5</span>
-println(df[[<span class=hljs-number >1</span>,<span class=hljs-number >3</span>,<span class=hljs-number >5</span>], :])</code></pre>
+<pre><code class=language-julia ># print out rows 1, 3, &amp; 5
+println&#40;df&#91;&#91;1,3,5&#93;, :&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">3×3 DataFrame
+<pre><code class=plaintext >3×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -112,15 +112,15 @@ println(df[[<span class=hljs-number >1</span>,<span class=hljs-number >3</span>,
 </code></pre>
 <p><strong><em>Get subset &#40;all rows and specific columns&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># print out all rows and only columns 1 (id) and 3 (age)</span>
-println(<span class=hljs-string >&quot;Using column names:\n&quot;</span>)
-println(df[:, [:id, :age]])
-println()
+<pre><code class=language-julia ># print out all rows and only columns 1 &#40;id&#41; and 3 &#40;age&#41;
+println&#40;&quot;Using column names:\n&quot;&#41;
+println&#40;df&#91;:, &#91;:id, :age&#93;&#93;&#41;
+println&#40;&#41;
 
-println(<span class=hljs-string >&quot;Using column numbers:\n&quot;</span>)
-println(df[:, [<span class=hljs-number >1</span>,<span class=hljs-number >3</span>]])</code></pre>
+println&#40;&quot;Using column numbers:\n&quot;&#41;
+println&#40;df&#91;:, &#91;1,3&#93;&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">Using column names:
+<pre><code class=plaintext >Using column names:
 
 5×2 DataFrame
  Row │ id     age
@@ -146,10 +146,10 @@ Using column numbers:
 </code></pre>
 <p><strong><em>Get subset &#40;all rows meeting specified criteria - numbers&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># print out all rows where age is greater than 50</span>
-println(df[df.age .&gt; <span class=hljs-number >50</span>, :])</code></pre>
+<pre><code class=language-julia ># print out all rows where age is greater than 50
+println&#40;df&#91;df.age .&gt; 50, :&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">2×3 DataFrame
+<pre><code class=plaintext >2×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -158,10 +158,10 @@ println(df[df.age .&gt; <span class=hljs-number >50</span>, :])</code></pre>
 </code></pre>
 <p><strong><em>Get subset &#40;all rows meeting specified criteria - strings&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># print out all rows where gender is female (&quot;F&quot;)</span>
-println(df[df.gender .== <span class=hljs-string >&quot;F&quot;</span>, :])</code></pre>
+<pre><code class=language-julia ># print out all rows where gender is female &#40;&quot;F&quot;&#41;
+println&#40;df&#91;df.gender .&#61;&#61; &quot;F&quot;, :&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">3×3 DataFrame
+<pre><code class=plaintext >3×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -171,10 +171,10 @@ println(df[df.gender .== <span class=hljs-string >&quot;F&quot;</span>, :])</cod
 </code></pre>
 <p><strong><em>Get subset &#40;all rows meeting specified criteria&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># print out all rows where gender is female (&quot;F&quot;) and age is between 25-50</span>
-println(df[(df.gender .== <span class=hljs-string >&quot;F&quot;</span>) .&amp; (<span class=hljs-number >25</span> .&lt; df.age .&lt; <span class=hljs-number >50</span>), :])</code></pre>
+<pre><code class=language-julia ># print out all rows where gender is female &#40;&quot;F&quot;&#41; and age is between 25-50
+println&#40;df&#91;&#40;df.gender .&#61;&#61; &quot;F&quot;&#41; .&amp; &#40;25 .&lt; df.age .&lt; 50&#41;, :&#93;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">2×3 DataFrame
+<pre><code class=plaintext >2×3 DataFrame
  Row │ id     gender  age
      │ Int64  String  Int64
 ─────┼──────────────────────
@@ -184,19 +184,19 @@ println(df[(df.gender .== <span class=hljs-string >&quot;F&quot;</span>) .&amp; 
 <p><strong>Add Column</strong></p>
 <p><strong><em>New columns with specified values</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># add a column for weight</span>
-df.weight = [<span class=hljs-number >100</span>, <span class=hljs-number >120</span>, <span class=hljs-number >150</span>, <span class=hljs-number >175</span>, <span class=hljs-number >300</span>]
+<pre><code class=language-julia ># add a column for weight
+df.weight &#61; &#91;100, 120, 150, 175, 300&#93;
 
-<span class=hljs-comment ># add a column for height</span>
-df.height = [<span class=hljs-number >62</span>, <span class=hljs-number >60</span>, <span class=hljs-number >61</span>, <span class=hljs-number >63</span>, <span class=hljs-number >64</span>]
+# add a column for height
+df.height &#61; &#91;62, 60, 61, 63, 64&#93;
 
-println(df)
-println()
+println&#40;df&#41;
+println&#40;&#41;
 
-println(<span class=hljs-string >&quot;Describe dataframe to see column names and summary:\n&quot;</span>)
-println(describe(df))</code></pre>
+println&#40;&quot;Describe dataframe to see column names and summary:\n&quot;&#41;
+println&#40;describe&#40;df&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">5×5 DataFrame
+<pre><code class=plaintext >5×5 DataFrame
  Row │ id     gender  age    weight  height
      │ Int64  String  Int64  Int64   Int64
 ─────┼──────────────────────────────────────
@@ -220,16 +220,16 @@ Describe dataframe to see column names and summary:
 </code></pre>
 <p><strong><em>New column with calculated value</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># add a column with calculated BMI</span>
-df.bmi = map((x,y) -&gt; (x/y^<span class=hljs-number >2</span>)*<span class=hljs-number >703</span>, df.weight, df.height)
+<pre><code class=language-julia ># add a column with calculated BMI
+df.bmi &#61; map&#40;&#40;x,y&#41; -&gt; &#40;x/y^2&#41;*703, df.weight, df.height&#41;
 
-println(df)
-println()
+println&#40;df&#41;
+println&#40;&#41;
 
-println(<span class=hljs-string >&quot;Describe dataframe to see new bmi column and summary:\n&quot;</span>)
-println(describe(df))</code></pre>
+println&#40;&quot;Describe dataframe to see new bmi column and summary:\n&quot;&#41;
+println&#40;describe&#40;df&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">5×6 DataFrame
+<pre><code class=plaintext >5×6 DataFrame
  Row │ id     gender  age    weight  height  bmi
      │ Int64  String  Int64  Int64   Int64   Float64
 ─────┼───────────────────────────────────────────────
@@ -254,18 +254,18 @@ Describe dataframe to see new bmi column and summary:
 </code></pre>
 <p><strong><em>Get counts/frequency</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># get counts of males and females in the dataframe</span>
-println(by(df, :gender, N = :gender =&gt; length))</code></pre>
+<pre><code class=language-julia ># get counts of males and females in the dataframe
+println&#40;by&#40;df, :gender, N &#61; :gender &#61;&gt; length&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">ArgumentError: by function was removed from DataFrames.jl. Use the `combine(groupby(...), ...)` or `combine(f, groupby(...))` instead.
+<pre><code class=plaintext >ArgumentError: by function was removed from DataFrames.jl. Use the `combine(groupby(...), ...)` or `combine(f, groupby(...))` instead.
 </code></pre>
 <p><strong>Transform DataFrame</strong></p>
 <p><strong><em>sort</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># sort the dataframe by gender and then age in reverse order for age (oldest to youngest)</span>
-println(sort(df, [:gender, :age], rev=(<span class=hljs-literal >false</span>, <span class=hljs-literal >true</span>)))</code></pre>
+<pre><code class=language-julia ># sort the dataframe by gender and then age in reverse order for age &#40;oldest to youngest&#41;
+println&#40;sort&#40;df, &#91;:gender, :age&#93;, rev&#61;&#40;false, true&#41;&#41;&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">5×6 DataFrame
+<pre><code class=plaintext >5×6 DataFrame
  Row │ id     gender  age    weight  height  bmi
      │ Int64  String  Int64  Int64   Int64   Float64
 ─────┼───────────────────────────────────────────────
@@ -277,11 +277,11 @@ println(sort(df, [:gender, :age], rev=(<span class=hljs-literal >false</span>, <
 </code></pre>
 <p><strong><em>stack &#40;reshape from wide to long format&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># Reshape from wide to long format (disclude id to see which column and value matches which patient id)</span>
-long_df = stack(df, Not(:id))
-println(long_df)</code></pre>
+<pre><code class=language-julia ># Reshape from wide to long format &#40;disclude id to see which column and value matches which patient id&#41;
+long_df &#61; stack&#40;df, Not&#40;:id&#41;&#41;
+println&#40;long_df&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">25×3 DataFrame
+<pre><code class=plaintext >25×3 DataFrame
  Row │ id     variable  value
      │ Int64  String    Any
 ─────┼──────────────────────────
@@ -313,11 +313,11 @@ println(long_df)</code></pre>
 </code></pre>
 <p><strong><em>unstack &#40;reshape from long to wide format&#41;</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment >#unstack dataframe to get back to wide format based off &quot;id&quot; (unstack(df, :id, :variable, :value))</span>
-wide_df = unstack(long_df, :id, :variable, :value)
-println(wide_df)</code></pre>
+<pre><code class=language-julia >#unstack dataframe to get back to wide format based off &quot;id&quot; &#40;unstack&#40;df, :id, :variable, :value&#41;&#41;
+wide_df &#61; unstack&#40;long_df, :id, :variable, :value&#41;
+println&#40;wide_df&#41;</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">5×6 DataFrame
+<pre><code class=plaintext >5×6 DataFrame
  Row │ id     gender  age  weight  height  bmi
      │ Int64  Any     Any  Any     Any     Any
 ─────┼─────────────────────────────────────────────
@@ -330,19 +330,19 @@ println(wide_df)</code></pre>
 <p><strong>Traversing DataFrame &#40;for loops&#41;</strong></p>
 <p><strong><em>sort</em></strong></p>
 <p>Input: </p>
-<pre><code class="julia hljs"><span class=hljs-comment ># size of dataframe = size(df)</span>
-<span class=hljs-comment ># set number of rows to nrows and number of columns to ncols</span>
-println(<span class=hljs-string >&quot;(nrows, ncols) = <span class=hljs-subst >$(size(df)</span>)&quot;</span>)
-nrows, ncols = size(df)
+<pre><code class=language-julia ># size of dataframe &#61; size&#40;df&#41;
+# set number of rows to nrows and number of columns to ncols
+println&#40;&quot;&#40;nrows, ncols&#41; &#61; &#36;&#40;size&#40;df&#41;&#41;&quot;&#41;
+nrows, ncols &#61; size&#40;df&#41;
 
-<span class=hljs-comment ># use nested for loop to get information from dataframe by row and column</span>
-<span class=hljs-keyword >for</span> row <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:nrows
-  <span class=hljs-keyword >for</span> col <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:ncols
-	println(<span class=hljs-string >&quot;value for row <span class=hljs-variable >$row</span> and col <span class=hljs-variable >$col</span> is <span class=hljs-subst >$(df[row,col])</span>&quot;</span>)
-  <span class=hljs-keyword >end</span>
-<span class=hljs-keyword >end</span></code></pre>
+# use nested for loop to get information from dataframe by row and column
+for row in 1:nrows
+  for col in 1:ncols
+	println&#40;&quot;value for row &#36;row and col &#36;col is &#36;&#40;df&#91;row,col&#93;&#41;&quot;&#41;
+  end
+end</code></pre>
 <p>Output:</p>
-<pre><code class="plaintext hljs">(nrows, ncols) = (5, 6)
+<pre><code class=plaintext >(nrows, ncols) = (5, 6)
 value for row 1 and col 1 is 1
 value for row 1 and col 2 is F
 value for row 1 and col 3 is 68
@@ -377,7 +377,7 @@ value for row 5 and col 6 is 51.4892578125
 <div class=page-foot >
   <div class=copyright >
     <small>
-      &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: March 25, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>.
+      &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: March 26, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>.
     </small>
   </div>
 </div>
@@ -386,8 +386,8 @@ value for row 5 and col 6 is 51.4892578125
     </div> <!-- end of class page-wrap-->
     
     
-      
-
+      <script src="/bidss/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
 
     
   
