@@ -30,6 +30,9 @@ Next, you will create a symbolic link to the Julia application you just installe
 * Julia should open
 * To quit Julia, type `exit()` and hit `return`
 
+5. **Troubleshooting**
+* If you get a `Permission denied` error, rerun the command prepended with `sudo `. You will be prompted to enter your computer password.
+
 ## Debian on Windows 10 (Windows Subsystem for Linux)
 First ensure that you have installed Debian and Windows Subsystem for Linux (WSL) as described in ~~~<a href="/programming/setup/wsl/">Linux for Windows</a>~~~.\\
 
@@ -46,5 +49,11 @@ From within the Debian terminal, type the following commands one at a time, each
 * Type `julia` and hit `enter`
 * Julia should open
 * To quit Julia, type `exit()` and hit `enter`
+
+3. **Troubleshooting**
+* If you already have an older version of Julia installed, you can follow these instructions to install a newer version. However, you will need to manually edit your `.bash_profile` file to remove the link to the older version. To do this:
+    * `sudo apt-get install vim`
+    * `vim ~/.bash_profile`
+    * Using the arrow keys, move your cursor to the line of the file that has a link to the old version of Julia, hit `d` twice (this shoudl delete the corresponding line). Save the file by typing `:wq` and then `enter`. Close and reopen Debian and the new version of Julia should open when you run `julia`.
 
 \\
