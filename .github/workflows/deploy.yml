@@ -29,7 +29,7 @@ jobs:
       if: github.event_name == 'pull_request'
       run: |
         echo "JULIA_FRANKLIN_WEBSITE_URL=https://bcbi.github.io/bidss_previews/previews/PR${{ github.event.number }}/" >> $GITHUB_ENV
-        echo "JULIA_FRANKLIN_PREPATH=bidss_previews/previews/PR${{ github.event.number }}" >> $GITHUB_ENV  
+        echo "JULIA_FRANKLIN_PREPATH=bidss_previews/previews/PR${{ github.event.number }}" >> $GITHUB_ENV
     - run: echo $JULIA_FRANKLIN_WEBSITE_URL
     - run: echo $JULIA_FRANKLIN_PREPATH
     - name: Install python
@@ -43,15 +43,16 @@ jobs:
         version: 1.4.1
     - run: git config --global user.email "bcbi@brown.edu"
     - run: git config --global user.name "Brown Center for Biomedical Informatics"
-    - run: julia -e '
-            using Pkg; Pkg.add(["NodeJS", "Franklin"]);
+    - run: julia -e 'using Pkg; Pkg.Registry.update()'
+    - run: julia --project=.ci -e 'using Pkg; Pkg.instantiate()'
+    - run: julia --project=.ci -e 'using Pkg; Pkg.precompile()'
+    - run: julia --project=.ci -e '
             using NodeJS;
             run(`$(npm_cmd()) install highlight.js`);
             run(`$(npm_cmd()) install lunr`);
             run(`$(npm_cmd()) install cheerio`);
             using Franklin;
-            Pkg.activate("."); Pkg.instantiate();
-            franklin_prepath = get(ENV, "JULIA_FRANKLIN_PREPATH", "bidss"); 
+            franklin_prepath = get(ENV, "JULIA_FRANKLIN_PREPATH", "bidss");
             optimize(prerender=false);
             publish(; do_push=false, final=lunr);
             optimize(prerender=false);
