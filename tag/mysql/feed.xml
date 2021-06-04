@@ -1,18 +1,42 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-<channel>
-  <title><![CDATA[BIDSS]]></title>
-  <description><![CDATA[Biomedical Informatics and Data Science Skills &#40;BIDSS&#41;
-]]></description>
-  <link>https://bcbi.github.io/bidss/</link>
-  <atom:link href="https://bcbi.github.io/bidss/tag/mysql/feed.xml" rel="self" type="application/rss+xml" />
-  <item>
-    <title><![CDATA[Getting Started with MySQL]]></title>
-    <link>https://bcbi.github.io/bidss/programming/db/mysql/</link>
-    <description><![CDATA[BIDSS: Getting Started with MySQL
-<br><a href="https://bcbi.github.io/bidss/programming/db/mysql/">Read more</a>]]></description>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:georss="http://www.georss.org/georss">
+
+  <channel>
+    <title>
+      <![CDATA[  {{fd2rss website_title}}  ]]>
+    </title>
+    <link> {{website_url}} </link>
+    <description>
+      <![CDATA[  {{fd2rss website_description}}  ]]>
+    </description>
+    <atom:link
+      href="{{fd_rss_feed_url}}"
+      rel="self"
+      type="application/rss+xml" />
+
+
+<item>
+  <title>
+    <![CDATA[  Getting Started with MySQL  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/programming/db/mysql/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/db/mysql/index.html </guid>
+  <description>
+    <![CDATA[  BIDSS: Getting Started with MySQL  ]]>
+  </description>  
     
-    <guid>https://bcbi.github.io/bidss/programming/db/mysql/</guid>
-    <pubDate>Fri, 22 Mar 2019 00:00:00 UT</pubDate>
-  </item>
-</channel>
-</rss>
+  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+</channel></rss>
