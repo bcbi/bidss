@@ -13,6 +13,8 @@
 
 ## Description
 
+COMPLETED
+
 * This course will introduce basic **_informatics_**, **_data science_**, and **_implementation science_** skills needed for supporting research in biomedicine and health care. The framework of a learning health system will be used to demonstrate core concepts in transforming data to knowledge, applying knowledge into practice, and assessing changes in practice. The course will be done in the context of student-driven projects, with the goal of establishing necessary foundational quantitative and qualitative skills for supporting longer-term research goals. 
 * Students are expected to be **_first-year medical students in the Scholarly Concentration in Biomedical Informatics, Primary Care-Population Medicine program, PhD student in a biomedical or public health discipline, or have instructor permission._** No assumptions are made about computer-based analytic background; however, some experience with computers and familiarity with biomedical informatics and data science will be useful. 
 
