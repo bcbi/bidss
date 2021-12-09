@@ -56,7 +56,7 @@ println("First character: $word_first_char")
 println("Last three characters: $word_subword")
 
 println("$letter is in $word: $(findfirst(isequal(letter), word))")
-println("$subword is in $word: $(occursin(word, subword))")
+println("$subword is in $word: $(occursin(subword, word))")
 println("chop off the last character: $(chop(word))")
 
 ```
