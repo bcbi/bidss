@@ -6,7 +6,7 @@ print&#40;apple&#41;
 # Get the class of the vector.
 print&#40;class&#40;apple&#41;&#41;
 
-&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >LoadError: UndefVarError: @R_str not defined
+&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">LoadError: UndefVarError: @R_str not defined
 in expression starting at none:1
 </code></pre> <h3 id=lists ><a href="#lists" class=header-anchor >Lists</a></h3> <p>Contain many different types of elements inside</p> <pre><code class=language-julia ># Create a list.
 
@@ -15,23 +15,23 @@ list1 &lt;- list&#40;c&#40;2,5,3&#41;,21.3&#41;
 
 # Print the list.
 print&#40;list1&#41;
-&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >LoadError: UndefVarError: @R_str not defined
+&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">LoadError: UndefVarError: @R_str not defined
 in expression starting at none:3
 </code></pre> <h3 id=matrices ><a href="#matrices" class=header-anchor >Matrices</a></h3> <p>Two-dimensional rectangular data set</p> <pre><code class=language-julia >R&quot;
 M &#61; matrix&#40; c&#40;&#39;a&#39;,&#39;a&#39;,&#39;b&#39;,&#39;b&#39;,&#39;c&#39;,&#39;c&#39;&#41;, nrow &#61; 2, ncol &#61; 3, byrow &#61; TRUE&#41;
 print&#40;M&#41;
-&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >LoadError: UndefVarError: @R_str not defined
+&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">LoadError: UndefVarError: @R_str not defined
 in expression starting at none:1
 </code></pre> <h3 id=arrays ><a href="#arrays" class=header-anchor >Arrays</a></h3> <p>Multi-dimensional data set</p> <pre><code class=language-julia >R&quot;
 a &lt;- array&#40;c&#40;&#39;a&#39;,&#39;b&#39;&#41;,dim &#61; c&#40;4,4,2&#41;&#41;
 print&#40;a&#41;
-&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >LoadError: UndefVarError: @R_str not defined
+&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">LoadError: UndefVarError: @R_str not defined
 in expression starting at none:1
 </code></pre> <h3 id=factors ><a href="#factors" class=header-anchor >Factors</a></h3> <p>Stores the vector along with the distinct values of the elements in the vector as labels</p> <pre><code class=language-julia >R&quot;
 apple &lt;- c&#40;&#39;red&#39;,&#39;green&#39;,&#39;yellow&#39;&#41;
 factor_apple &lt;- factor&#40;apple&#41;
 print&#40;factor_apple&#41;
-&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >LoadError: UndefVarError: @R_str not defined
+&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">LoadError: UndefVarError: @R_str not defined
 in expression starting at none:1
 </code></pre> <h3 id=data_frames ><a href="#data_frames" class=header-anchor >Data Frames</a></h3> <p>Tabular data objects</p> <pre><code class=language-julia ># Create the data frame.
 
@@ -43,7 +43,7 @@ BMI &lt;- 	data.frame&#40;
    Age &#61; c&#40;35,43,22&#41;
 &#41;
 print&#40;BMI&#41;
-&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >LoadError: UndefVarError: @R_str not defined
+&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">LoadError: UndefVarError: @R_str not defined
 in expression starting at none:3
 </code></pre> <h2 id=loops ><a href="#loops" class=header-anchor >Loops</a></h2> <h3 id=repeat_loop ><a href="#repeat_loop" class=header-anchor >Repeat Loop</a></h3> <pre><code class=language-julia >repeat &#123;
    commands
@@ -65,7 +65,7 @@ using RDatasets
 mtcars &#61; dataset&#40;&quot;datasets&quot;,&quot;mtcars&quot;&#41;;
 @rput mtcars
 
-R&quot;str&#40;mtcars&#41;&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >'data.frame':	32 obs. of  12 variables:
+R&quot;str&#40;mtcars&#41;&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">'data.frame':	32 obs. of  12 variables:
  $ Model: chr  "Mazda RX4" "Mazda RX4 Wag" "Datsun 710" "Hornet 4 Drive" ...
  $ MPG  : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
  $ Cyl  : int  6 6 4 6 8 6 8 4 4 6 ...
@@ -81,7 +81,7 @@ R&quot;str&#40;mtcars&#41;&quot;</code></pre> <p>Output:</p> <pre><code class=pl
 </code></pre> <ul> <li><p>head&#40;data,n&#41; and tail&#40;data,n&#41;</p> </ul> <p>head&#40;&#41;: Top n elements</p> <p>tail&#40;&#41;: Bottom n elements</p> <pre><code class=language-julia >@rput mtcars
 
 R&quot;print&#40;head&#40;mtcars, n &#61; 3&#41;&#41;&quot;
-R&quot;print&#40;tail&#40;mtcars, n &#61; 3&#41;&#41;&quot;</code></pre> <p>Output:</p> <pre><code class=plaintext >          Model  MPG Cyl Disp  HP DRat    WT  QSec VS AM Gear Carb
+R&quot;print&#40;tail&#40;mtcars, n &#61; 3&#41;&#41;&quot;</code></pre> <p>Output:</p> <pre><code class="plaintext code-output">          Model  MPG Cyl Disp  HP DRat    WT  QSec VS AM Gear Carb
 1     Mazda RX4 21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
 2 Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
 3    Datsun 710 22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
@@ -91,7 +91,7 @@ R&quot;print&#40;tail&#40;mtcars, n &#61; 3&#41;&#41;&quot;</code></pre> <p>Outp
 32    Volvo 142E 21.4   4  121 109 4.11 2.78 18.6  1  1    4    2
 </code></pre> <h3 id=descriptive_statistics ><a href="#descriptive_statistics" class=header-anchor >Descriptive Statistics</a></h3> <ul> <li><p>summary&#40;data&#41;: gives descriptive statistics for each variable</p> </ul> <p>Common Functions</p> <table><tr><th align=left >Tasks<th align=left >Functions<tr><td align=left >Mean<td align=left >mean&#40;&#41;<tr><td align=left >Standard deviation<td align=left >sd&#40;&#41;<tr><td align=left >Variance<td align=left >var&#40;&#41;<tr><td align=left >Minimum<td align=left >min&#40;&#41;<tr><td align=left >Maximum<td align=left >max&#40;&#41;<tr><td align=left >Median<td align=left >median&#40;&#41;<tr><td align=left >Range of values<td align=left >range&#40;&#41;<tr><td align=left >Sample quantiles<td align=left >quantile&#40;&#41;<tr><td align=left >Interquartile range<td align=left >IQR&#40;&#41;</table> <h4 id=case_of_missing_values ><a href="#case_of_missing_values" class=header-anchor >Case of missing values</a></h4> <ul> <li><p>na.rm &#61; T</p> </ul> <pre><code class=language-julia >@rput mtcars
 
-R&quot;print&#40;mean&#40;mtcars&#36;MPG, na.rm &#61; T&#41;&#41;&quot;</code></pre> <p>Output: <pre><code class=plaintext >[1] 20.09062
+R&quot;print&#40;mean&#40;mtcars&#36;MPG, na.rm &#61; T&#41;&#41;&quot;</code></pre> <p>Output: <pre><code class="plaintext code-output">[1] 20.09062
 </code></pre></p> <h3 id=basic_plots ><a href="#basic_plots" class=header-anchor >Basic Plots</a></h3> <ul> <li><p>plot&#40;&#41;</p> </ul> <pre><code class=language-julia >using RCall
 using RDatasets
 mtcars &#61; dataset&#40;&quot;datasets&quot;,&quot;mtcars&quot;&#41;;
@@ -131,4 +131,4 @@ png&#40;&#39;qqnorm.png&#39;&#41;
 qqnorm&#40;mtcars&#36;Disp&#41;
 qqline&#40;mtcars&#36;Disp&#41;
 dev.off&#40;&#41;
-&quot;</code></pre> <p>Output: <img src="/bidss/qqnorm.png" alt=""></p> <h2 id=statistical_analysis ><a href="#statistical_analysis" class=header-anchor >Statistical Analysis</a></h2> <table><tr><th align=left >Analysis<th align=left >Continuous Outcome&#40;Y&#41;<th align=left >Binary Outcome&#40;Y&#41;<tr><td align=left >Correlation Analysis<td align=left ><td align=left ><tr><td align=left >X: Continuous<td align=left >cor.test&#40;&#41;<td align=left >t.test&#40;&#41;<tr><td align=left >X: Categorical<td align=left >t.test&#40;&#41;, ANOVA&#40;&#41;<td align=left >chisq.test&#40;&#41;<tr><td align=left >Regression Model<td align=left >lm&#40;&#41;<td align=left >glm&#40;&#41;</table> <div class=page-foot > <div class=copyright > <small> &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: June 04, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>. </small> </div> </div> </div> </div> </div> <!-- end of class page-wrap--> <script src="/bidss/libs/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: ' '});</script> <script> $(window).scroll(function() { var scrollTop = $(window).scrollTop(); if (scrollTop <= 80) $('.sidenav').css('top', 80 - scrollTop); else $('.sidenav').css('top', 0); }); </script>
+&quot;</code></pre> <p>Output: <img src="/bidss/qqnorm.png" alt=""></p> <h2 id=statistical_analysis ><a href="#statistical_analysis" class=header-anchor >Statistical Analysis</a></h2> <table><tr><th align=left >Analysis<th align=left >Continuous Outcome&#40;Y&#41;<th align=left >Binary Outcome&#40;Y&#41;<tr><td align=left >Correlation Analysis<td align=left ><td align=left ><tr><td align=left >X: Continuous<td align=left >cor.test&#40;&#41;<td align=left >t.test&#40;&#41;<tr><td align=left >X: Categorical<td align=left >t.test&#40;&#41;, ANOVA&#40;&#41;<td align=left >chisq.test&#40;&#41;<tr><td align=left >Regression Model<td align=left >lm&#40;&#41;<td align=left >glm&#40;&#41;</table> <div class=page-foot > <div class=copyright > <small> &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: December 14, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>. </small> </div> </div> </div> </div> </div> <!-- end of class page-wrap--> <script src="/bidss/libs/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: ' '});</script> <script> $(window).scroll(function() { var scrollTop = $(window).scrollTop(); if (scrollTop <= 80) $('.sidenav').css('top', 80 - scrollTop); else $('.sidenav').css('top', 0); }); </script>
