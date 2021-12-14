@@ -378,7 +378,7 @@ The full pandas documentation is very extensive and should have any features tha
 
 
 
-## Miscellanious Tasks
+## Miscellaneous Tasks
 
 ### Reading a CSV file as a DataFrame
 Python:

@@ -14,8 +14,8 @@
 * ~~~ <a href="http://juliastats.github.io/" target="_blank">Julia Stats</a> ~~~
 * Packages
     * ~~~ <a href="https://juliadata.github.io/CSV.jl/stable/" target="_blank">CSV.jl</a> ~~~
-    * ~~~ <a href="https://juliadata.github.io/DataFrames.jl/stable/man/getting_started.html" target="_blank">DataFrames.jl</a> ~~~
-    * ~~~ <a href="http://juliastats.github.io/Distributions.jl/latest/starting.html" target="_blank">Distributions.jl</a> ~~~
+    * ~~~ <a href="https://dataframes.juliadata.org/stable/" target="_blank">DataFrames.jl</a> ~~~
+    * ~~~ <a href="https://juliastats.org/Distributions.jl/latest/" target="_blank">Distributions.jl</a> ~~~
     * ~~~ <a href="http://juliastats.github.io/HypothesisTests.jl/dev/" target="_blank">HypothesisTests.jl</a> ~~~
 * ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Statistics/index.html" target="_blank">Statistics Module</a> ~~~
 * ~~~ <a href="https://docs.julialang.org/en/v1/stdlib/Random/index.html" target="_blank">Random Number Generator</a> ~~~

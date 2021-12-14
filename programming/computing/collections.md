@@ -145,9 +145,9 @@ Sets are an unordered collection of unique elements.
 
 | Action                        | Syntax                            |
 | :---------------------------- | :-------------------------------- |
-| Intersection                  | intersect(my_set, your_set)       |
-| Union                         | union(my_set, your_set)           |
-| Difference                    | setdiff(my_set, your_set)         |
+| Intersection                  | `intersect(my_set, your_set)`     |
+| Union                         | `union(my_set, your_set)`         |
+| Difference                    | `setdiff(my_set, your_set)`       |
 
 Input:
 
@@ -192,14 +192,14 @@ Dictionaries are unordered collection of key-value pairs where the key serves as
 
 | Action                                    | Syntax                                                |
 | :---------------------------------------- | :---------------------------------------------------- |
-| Get value for key in dictionary my_dict   | my_dict["one"]                                        |
-| Check if dictionary has key               | haskey(my_dict, "one")                                |
-| Check for key/value pair                  | in(("one" => 1), my_dict)                             |
-| Get value and set default                 | get(my_dict, "one", 5)<br>get(my_dict, "five", 5)     |
-| Add key/value pair                        | my_dict["five"] = 5                                   |
-| Delete key/value pair                     | delete!(my_dict, "four")                              |
-| Get keys                                  | keys(my_dict)                                         |
-| Get values                                | values(dict)                                          |
+| Get value for key in dictionary my_dict   | `my_dict["one"]`                                      |
+| Check if dictionary has key               | `haskey(my_dict, "one")`                              |
+| Check for key/value pair                  | `in(("one" => 1), my_dict)`                           |
+| Get value and set default                 | `get!(my_dict, "one", 5)<br>get!(my_dict, "five", 5)` |
+| Add key/value pair                        | `my_dict["five"] = 5`                                 |
+| Delete key/value pair                     | `delete!(my_dict, "four")`                            |
+| Get keys                                  | `keys(my_dict)`                                       |
+| Get values                                | `values(dict)`                                        |
 
 ### Converting dictionaries
 
