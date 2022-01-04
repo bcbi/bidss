@@ -237,7 +237,8 @@ a.skip_main {
     position: relative;
     box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
     border-bottom: 1px solid #d4dadf;
-    background: url('/assets/nav_bar_graph.png'), linear-gradient(90deg, rgba(0,85,121,1)0%, rgba(0,124,136,1) 44%, rgba(0,155,147,1) 100%);
+    background: linear-gradient(90deg, rgba(0,85,121,1), rgba(0,124,136,1), rgba(0,155,147,1)), url('/assets/nav_bar_graph.png');
+    background-blend-mode: overlay;
     background-size: cover;
 }
 
