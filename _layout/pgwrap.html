@@ -1,12 +1,14 @@
 <header>
   <a class="skip_main" href="#main">Skip to main content</a>
   <nav class="navbar navbar-expand-lg navbar-light nav-main">
+    
+    
     <!-- <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarContents" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button> -->
 
     <div class="logo-box">
-      <a href="/"><img class="img-logo" src = "/assets/bidss_logo.png" alt = "BIDSS"></a>
+      <a href="../intro"><img class="img-logo" src = "/assets/bidss_logo_white.png" alt = "BIDSS"></a>
     </div>
 
 
@@ -55,45 +57,46 @@
     <!-- Add all section headings -->
     <div class="sidenav-wrap">
         <ul class="menu-list">
-          <li class="menu-list-item"><a href="/"  class="menu-list-link {{ispage index}}active{{end}}"><b>1</b> Home</a>
+          <li class="menu-list-item"><a href="/"  class="menu-list-link {{ispage index}}active{{end}}"><b>Home</b> </a>
+          <li class="menu-list-item"><a href="/about"  class="menu-list-link {{ispage /about}}active{{end}}"><b>About</b> </a>
           <div class="section-title">Infrastructure</div>
-            <li class="menu-list-item {{ispage /programming/setup/*}}active{{end}}"><a href="/programming/setup/intro/" class="menu-list-link {{ispage /programming/setup/*}}active{{end}}"><b>2</b> Setup</a>
+            <li class="menu-list-item {{ispage /programming/setup/*}}active{{end}}"><a href="/programming/setup/intro/" class="menu-list-link {{ispage /programming/setup/*}}active{{end}}"><b>1</b> Setup</a>
             <ul class="menu-list-child-list ">
-              <li class="menu-list-item"><a href="/programming/setup/intro/"     class="menu-list-link {{ispage /programming/setup/intro/}}active{{end}}"><b>2.1</b> Overview</a>
-              <li class="menu-list-item"><a href="/programming/setup/wsl/"       class="menu-list-link {{ispage /programming/setup/wsl/}}active{{end}}"><b>2.2</b> Linux for Windows</a>
-              <li class="menu-list-item"><a href="/programming/setup/julia/"     class="menu-list-link {{ispage /programming/setup/julia/}}active{{end}}"><b>2.3</b> Julia</a>
-              <li class="menu-list-item"><a href="/programming/setup/r/"         class="menu-list-link {{ispage /programming/setup/r/}}active{{end}}"><b>2.4</b> R</a>
-              <li class="menu-list-item"><a href="/programming/setup/vscode/"    class="menu-list-link {{ispage /programming/setup/vscode/}}active{{end}}"><b>2.5</b> VS Code</a>
-              <li class="menu-list-item"><a href="/programming/setup/filezilla/" class="menu-list-link {{ispage /programming/setup/filezilla/}}active{{end}}"><b>2.6</b> FileZilla</a>
+              <li class="menu-list-item"><a href="/programming/setup/intro/"     class="menu-list-link {{ispage /programming/setup/intro/}}active{{end}}"><b>1.1</b> Overview</a>
+              <li class="menu-list-item"><a href="/programming/setup/wsl/"       class="menu-list-link {{ispage /programming/setup/wsl/}}active{{end}}"><b>1.2</b> Linux for Windows</a>
+              <li class="menu-list-item"><a href="/programming/setup/julia/"     class="menu-list-link {{ispage /programming/setup/julia/}}active{{end}}"><b>1.3</b> Julia</a>
+              <li class="menu-list-item"><a href="/programming/setup/r/"         class="menu-list-link {{ispage /programming/setup/r/}}active{{end}}"><b>1.4</b> R</a>
+              <li class="menu-list-item"><a href="/programming/setup/vscode/"    class="menu-list-link {{ispage /programming/setup/vscode/}}active{{end}}"><b>1.5</b> VS Code</a>
+              <li class="menu-list-item"><a href="/programming/setup/filezilla/" class="menu-list-link {{ispage /programming/setup/filezilla/}}active{{end}}"><b>1.6</b> FileZilla</a>
             </ul>
             <div class="section-title">Programming</div>
-            <li class="menu-list-item {{ispage /programming/unix/*}}active{{end}}"><a href="/programming/unix/intro/" class="menu-list-link {{ispage /programming/unix/*}}active{{end}}"><b>3</b> Unix</a>
+            <li class="menu-list-item {{ispage /programming/unix/*}}active{{end}}"><a href="/programming/unix/intro/" class="menu-list-link {{ispage /programming/unix/*}}active{{end}}"><b>2</b> Unix</a>
             <ul class="menu-list-child-list ">
-              <li class="menu-list-item"><a href="/programming/unix/intro/"  class="menu-list-link {{ispage /programming/unix/intro/}}active{{end}}"><b>3.1</b> Getting Started with Unix</a>
-              <li class="menu-list-item"><a href="/programming/unix/census/" class="menu-list-link {{ispage /programming/unix/census/}}active{{end}}"><b>3.2</b> Analyzing the Adult (Census Income) Data Set</a>
-              <li class="menu-list-item"><a href="/programming/unix/mimic/"  class="menu-list-link {{ispage /programming/unix/mimic/}}active{{end}}"><b>3.3</b> Analyzing the MIMIC-III Demo Data Set</a>
+              <li class="menu-list-item"><a href="/programming/unix/intro/"  class="menu-list-link {{ispage /programming/unix/intro/}}active{{end}}"><b>2.1</b> Getting Started with Unix</a>
+              <li class="menu-list-item"><a href="/programming/unix/census/" class="menu-list-link {{ispage /programming/unix/census/}}active{{end}}"><b>2.2</b> Analyzing the Adult (Census Income) Data Set</a>
+              <li class="menu-list-item"><a href="/programming/unix/mimic/"  class="menu-list-link {{ispage /programming/unix/mimic/}}active{{end}}"><b>2.3</b> Analyzing the MIMIC-III Demo Data Set</a>
             </ul>
-          <li class="menu-list-item {{ispage /programming/db/*}}active{{end}}"><a href="/programming/db/mysql/" class="menu-list-link {{ispage /programming/db/*}}active{{end}}"><b>4</b> Databases</a>
+          <li class="menu-list-item {{ispage /programming/db/*}}active{{end}}"><a href="/programming/db/mysql/" class="menu-list-link {{ispage /programming/db/*}}active{{end}}"><b>3</b> Databases</a>
             <ul class="menu-list-child-list ">
-              <li class="menu-list-item"><a href="/programming/db/mysql/"   class="menu-list-link {{ispage /programming/db/mysql/}}active{{end}}"><b>4.1</b> Getting Started with Databases</a>
-              <li class="menu-list-item"><a href="/programming/db/emrbots/" class="menu-list-link {{ispage /programming/db/emrbots/}}active{{end}}"><b>4.2</b> Querying the EMRbots Database</a>
-              <li class="menu-list-item"><a href="/programming/db/mimic/"   class="menu-list-link {{ispage /programming/db/mimic/}}active{{end}}"><b>4.3</b> Querying the MIMIC-III Demo Database</a>
+              <li class="menu-list-item"><a href="/programming/db/mysql/"   class="menu-list-link {{ispage /programming/db/mysql/}}active{{end}}"><b>3.1</b> Getting Started with Databases</a>
+              <li class="menu-list-item"><a href="/programming/db/emrbots/" class="menu-list-link {{ispage /programming/db/emrbots/}}active{{end}}"><b>3.2</b> Querying the EMRbots Database</a>
+              <li class="menu-list-item"><a href="/programming/db/mimic/"   class="menu-list-link {{ispage /programming/db/mimic/}}active{{end}}"><b>3.3</b> Querying the MIMIC-III Demo Database</a>
             </ul>
-          <li class="menu-list-item {{ispage /programming/computing/*}}active{{end}}"><a href="/programming/computing/intro/" class="menu-list-link {{ispage /programming/computing/*}}active{{end}}"><b>5</b> Scientific Computing</a>
+          <li class="menu-list-item {{ispage /programming/computing/*}}active{{end}}"><a href="/programming/computing/intro/" class="menu-list-link {{ispage /programming/computing/*}}active{{end}}"><b>4</b> Scientific Computing</a>
             <ul class="menu-list-child-list ">
-              <li class="menu-list-item"><a href="/programming/computing/intro/"     class="menu-list-link {{ispage /programming/computing/}}active{{end}}"><b>5.1</b> Getting Started with Scientific Computing</a>
-              <li class="menu-list-item"><a href="/programming/computing/numbers/"     class="menu-list-link {{ispage /programming/computing/numbers/}}active{{end}}"><b>5.2</b> Numbers and Math</a>
-              <li class="menu-list-item"><a href="/programming/computing/strings/"     class="menu-list-link {{ispage /programming/computing/strings/}}active{{end}}"><b>5.3</b> Strings, Characters, and Regular Expressions</a>
-              <li class="menu-list-item"><a href="/programming/computing/control/"     class="menu-list-link {{ispage /programming/computing/control/}}active{{end}}"><b>5.4</b> Control Flow</a>
-              <li class="menu-list-item"><a href="/programming/computing/collections/" class="menu-list-link {{ispage /programming/computing/collections/}}active{{end}}"><b>5.5</b> Collections and Data Structures</a>
-              <li class="menu-list-item"><a href="/programming/computing/io/"          class="menu-list-link {{ispage /programming/computing/io/}}active{{end}}"><b>5.6</b> File Input/Output</a>
-              <li class="menu-list-item"><a href="/programming/computing/repl/"        class="menu-list-link {{ispage /programming/computing/repl/}}active{{end}}"><b>5.7</b> REPL and Packages</a>
-              <li class="menu-list-item"><a href="/programming/computing/dataframes/"  class="menu-list-link {{ispage /programming/computing/dataframes/}}active{{end}}"><b>5.8</b> DataFrames</a>
-              <li class="menu-list-item"><a href="/programming/computing/stats/"       class="menu-list-link {{ispage /programming/computing/stats/}}active{{end}}"><b>5.9</b> Statistics and Machine Learning</a>
-              <li class="menu-list-item"><a href="/programming/computing/stats-2/"       class="menu-list-link {{ispage /programming/computing/stats-2/}}active{{end}}"><b>5.9.a</b> Stats/ML (Extra Resources)</a>
-              <li class="menu-list-item"><a href="/programming/computing/viz/"         class="menu-list-link {{ispage /programming/computing/viz/}}active{{end}}"><b>5.10</b> Plotting and Visualization</a>
-              <li class="menu-list-item"><a href="/programming/computing/R/"         class="menu-list-link {{ispage /programming/computing/R/}}active{{end}}"><b>5.11</b> Intro to R</a>
-              <li class="menu-list-item"><a href="/programming/computing/python/"         class="menu-list-link {{ispage /programming/computing/python/}}active{{end}}"><b>5.12</b> Intro to Python</a>
+              <li class="menu-list-item"><a href="/programming/computing/intro/"     class="menu-list-link {{ispage /programming/computing/}}active{{end}}"><b>4.1</b> Getting Started with Scientific Computing</a>
+              <li class="menu-list-item"><a href="/programming/computing/numbers/"     class="menu-list-link {{ispage /programming/computing/numbers/}}active{{end}}"><b>4.2</b> Numbers and Math</a>
+              <li class="menu-list-item"><a href="/programming/computing/strings/"     class="menu-list-link {{ispage /programming/computing/strings/}}active{{end}}"><b>4.3</b> Strings, Characters, and Regular Expressions</a>
+              <li class="menu-list-item"><a href="/programming/computing/control/"     class="menu-list-link {{ispage /programming/computing/control/}}active{{end}}"><b>4.4</b> Control Flow</a>
+              <li class="menu-list-item"><a href="/programming/computing/collections/" class="menu-list-link {{ispage /programming/computing/collections/}}active{{end}}"><b>4.5</b> Collections and Data Structures</a>
+              <li class="menu-list-item"><a href="/programming/computing/io/"          class="menu-list-link {{ispage /programming/computing/io/}}active{{end}}"><b>4.6</b> File Input/Output</a>
+              <li class="menu-list-item"><a href="/programming/computing/repl/"        class="menu-list-link {{ispage /programming/computing/repl/}}active{{end}}"><b>4.7</b> REPL and Packages</a>
+              <li class="menu-list-item"><a href="/programming/computing/dataframes/"  class="menu-list-link {{ispage /programming/computing/dataframes/}}active{{end}}"><b>4.8</b> DataFrames</a>
+              <li class="menu-list-item"><a href="/programming/computing/stats/"       class="menu-list-link {{ispage /programming/computing/stats/}}active{{end}}"><b>4.9</b> Statistics and Machine Learning</a>
+              <li class="menu-list-item"><a href="/programming/computing/stats-2/"       class="menu-list-link {{ispage /programming/computing/stats-2/}}active{{end}}"><b>4.9.a</b> Stats/ML (Extra Resources)</a>
+              <li class="menu-list-item"><a href="/programming/computing/viz/"         class="menu-list-link {{ispage /programming/computing/viz/}}active{{end}}"><b>4.10</b> Plotting and Visualization</a>
+              <li class="menu-list-item"><a href="/programming/computing/R/"         class="menu-list-link {{ispage /programming/computing/R/}}active{{end}}"><b>4.11</b> Intro to R</a>
+              <li class="menu-list-item"><a href="/programming/computing/python/"         class="menu-list-link {{ispage /programming/computing/python/}}active{{end}}"><b>4.12</b> Intro to Python</a>
             </ul>
           <!-- <div class="section-title">Informatics Software</div>
           <div class="section-title">Data Sources</div>
@@ -101,10 +104,10 @@
           <div class="section-title">Standards</div>
           <div class="section-title">Informatics Theory</div> -->
           <div class="section-title">Course Outlines</div>
-             <li class="menu-list-item {{ispage /courses/*}}active{{end}}"><a href="/courses/intro/" class="menu-list-link {{ispage /courses/*}}active{{end}}"><b>6</b> Course Materials</a>
+             <li class="menu-list-item {{ispage /courses/*}}active{{end}}"><a href="/courses/intro/" class="menu-list-link {{ispage /courses/*}}active{{end}}"><b>5</b> Course Materials</a>
               <ul class="menu-list-child-list ">
-                <li class="menu-list-item"><a href="/courses/summer"     class="menu-list-link {{ispage /courses/summer/}}active{{end}}"><b>6.1</b> Summer Course</a>
-                <li class="menu-list-item"><a href="/courses/4day"     class="menu-list-link {{ispage /courses/4day/}}active{{end}}"><b>6.2</b> Four-Day Short Course</a>
+                <li class="menu-list-item"><a href="/courses/summer"     class="menu-list-link {{ispage /courses/summer/}}active{{end}}"><b>5.1</b> Summer Course</a>
+                <li class="menu-list-item"><a href="/courses/4day"     class="menu-list-link {{ispage /courses/4day/}}active{{end}}"><b>5.2</b> Four-Day Short Course</a>
                 </ul>
 
 

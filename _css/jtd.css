@@ -134,6 +134,81 @@ hr{
   }
 }
 
+
+/************************************************************
+=============================================================
+
+SPLASH PAGE
+
+============================================================
+************************************************************/
+
+.splash-page {
+  background: #0C2553;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0px;
+}
+
+.splash-video {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0px;
+}
+
+.nav-splash{
+  height: 80px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  z-index: 20;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  border-bottom: 1px solid #d4dadf;
+  background: #0C2553;
+  background-size: cover;
+}
+
+.img-icon {
+  width: 50px;
+}
+
+.left-icon {
+  margin: 50px;
+}
+
+.right-icon {
+  position:absolute; 
+  right:50px;
+}
+
+
+/************************************************************
+=============================================================
+
+ABOUT PAGE
+
+============================================================
+************************************************************/
+
+.brown-img {
+
+}
+
+.headshot-img {
+}
+
 /************************************************************
 =============================================================
 
@@ -162,16 +237,18 @@ a.skip_main {
     position: relative;
     box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
     border-bottom: 1px solid #d4dadf;
-    background-color: #FFC72C;
+    background: url('/assets/nav_bar_graph.png'), linear-gradient(90deg, rgba(0,85,121,1)0%, rgba(0,124,136,1) 44%, rgba(0,155,147,1) 100%);
+    background-size: cover;
 }
 
 /* LOGO */
 
 .img-logo{
-  width: 150px;
+  width: 175px;
+  background: rgba(0,85,121,1);
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 600px){
 .logo-box {
     max-width: 260px;
     justify-content: center;
@@ -186,7 +263,7 @@ a.skip_main {
   padding: 0;
   position: relative;
   align-items: center;
-  border-right: 1px solid rgb(78,54,41,.5) ;
+  border-right: 2px solid rgb(255,255,255);
   height: 50px;
 }
 
@@ -236,7 +313,7 @@ a.skip_main {
 }
 
 .nav-middleitem-button {
-  color: rgba(0,0,0,0.7) !important;
+  color: white !important;
   border: 1px solid;
   cursor: pointer;
   height: 40px;
@@ -271,14 +348,31 @@ a.skip_main {
 
 .search-input {
   background-color: transparent;
-  border: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+
 
 .search-icon {
   background-color: transparent;
   border: none;
-  -webkit-text-stroke: 1px #FFC72C; /* background color */
-
+  color: white;
 }
 
 .searchbox-wrapper {
@@ -289,7 +383,7 @@ a.skip_main {
   position: relative;
   max-width: 400px;
   align-items: center;
-  border-left: 1px solid rgb(78,54,41,.8) ;
+  border-left: 2px solid rgb(255,255,255);
   text-align: center;
 }
 
@@ -309,7 +403,7 @@ SIDE BAR
   height: 100%;
   width: 260px;
   position: fixed;
-  background-color: rgb(152, 164, 174,.2);
+  background-color: rgba(0,85,121,.6);
   /* color picker for .2 rgb university gray color */
   /* background-color: #ebeeef */
   border-right: 1px solid rgb(152, 164, 174,.4);
@@ -327,8 +421,9 @@ SIDE BAR
 
 .section-title{
   text-transform: uppercase;
-  font-size: 14px;
-  color:  rgb(152, 164, 174);
+  font-size: 16px;
+  color:  #003C71;
+  font-weight:bolder;
   letter-spacing: 1px;
   margin: 10px;
 }
@@ -337,7 +432,7 @@ SIDE BAR
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
   border: none;
   background: none;
@@ -350,6 +445,7 @@ SIDE BAR
 /* On mouse-over */
 .sidenav a:hover{
   background-color: white;
+  color: navy;
   max-width: 100%;
 }
 
@@ -444,7 +540,7 @@ SIDE BAR
   margin-top: 10px;
 }
 .menu-list-child-list .menu-list-link{
-  color:#7d7d7d
+  color:white;
 }
 .menu-list-child-list .menu-list-item{
   position:relative;
@@ -477,7 +573,7 @@ SIDE BAR
 }
 .menu-list-link.active{
   /* background-color: white; */
-  color: rgb(237,28,36);
+  color: #003C71;
 }
 
 .footer {
@@ -487,7 +583,7 @@ SIDE BAR
   position:absolute;
   bottom:80px;
   left:0;
-  background-color:#ebeeef;
+ 
 }
 
 .bcbi-logo {
