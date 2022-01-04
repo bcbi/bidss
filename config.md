@@ -9,7 +9,7 @@ The website_* must be defined for the RSS to work
 
 @def author = "Brown Center for Biomedical Informatics (BCBI) at Brown University"
 @def title = "BIDSS"
-@def prepath = get(ENV, "JULIA_FRANKLIN_PREPATH", "bidss/intro")
+@def prepath = get(ENV, "JULIA_FRANKLIN_PREPATH", "bidss")
 
 @def mintoclevel = 2
 
