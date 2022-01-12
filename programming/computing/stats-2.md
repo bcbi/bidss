@@ -60,7 +60,7 @@ Prisma Course Library: ~~~ <a href="https://prismia.chat/shared/python-to-julia"
     <th>Python</th>
   </tr>
   <tr>
-    <td rowspan="2">Commenting</td>
+    <th style="text-align:left" rowspan="2">Commenting</th>
     <td><pre><code class="language-julia"># this is a comment</td>
     <td><pre><code class="language-python"># this is a comment</td>
   </tr>
@@ -73,7 +73,7 @@ Prisma Course Library: ~~~ <a href="https://prismia.chat/shared/python-to-julia"
     comment'''</td>
   </tr>
   <tr>
-    <td rowspan="3">Types</td>
+    <th style="text-align:left" rowspan="3">Types</th>
     <td><code>Int</td>
     <td><code>int</td>
   </tr>
@@ -86,7 +86,7 @@ Prisma Course Library: ~~~ <a href="https://prismia.chat/shared/python-to-julia"
     <td><code>string</td>
   </tr>
     <tr>
-    <td rowspan="4">Logical Operators</td>
+    <th style="text-align:left" rowspan="4">Logical Operators</th>
     <td><code>&&</td>
     <td><code>and</td>
   </tr>
@@ -103,7 +103,7 @@ Prisma Course Library: ~~~ <a href="https://prismia.chat/shared/python-to-julia"
     <td><code>!=, ==, >, < , >=, <=</td>
   </tr>
   <tr>
-    <td rowspan="3">Control Flow</td>
+    <th style="text-align:left" rowspan="3">Control Flow</th>
     <td style="text-align:left">
         <pre><code class="language-julia">if i <= n
     # insert code
@@ -157,6 +157,159 @@ end
     # insert code
 </code></pre>
     </td>
+  </tr>
+  <tr>
+    <th style="text-align:left">Arrays</th>
+    <td style="text-align:left"><pre><code class="language-julia">array = []</td>
+    <td style="text-align:left"><pre><code class="language-python">array = []</td>
+  </tr>
+  <tr>
+    <td style="text-indent:5px">Length</td>
+    <td style="text-align:left"><pre><code class="language-julia">length(array)</td>
+    <td style="text-align:left"><pre><code class="language-python">len(array)</td>
+  </tr>
+  <tr>
+    <td>First Element</td>
+    <td style="text-align:left"><pre><code class="language-julia">array[1]</td>
+    <td style="text-align:left"><pre><code class="language-python">array[0]</td>
+  </tr>
+  <tr>
+    <td>Last Element</td>
+    <td style="text-align:left"><pre><code class="language-julia">array[end]</td>
+    <td style="text-align:left"><pre><code class="language-python">array[-1]</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Subsets</td>
+    <td style="text-align:left">
+        <pre><code class="language-julia"># [start,end]
+array[start_index:end_index]
+</code></pre>
+    </td>
+    <td style="text-align:left">
+        <pre><code class="language-python"># [start, end)
+array[start_index:end_index]
+</code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:left">
+        <pre><code class="language-julia">array[2:end]</code></pre>
+    </td>
+    <td style="text-align:left">
+        <pre><code class="language-python">array[1:]</code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:left">
+        <pre><code class="language-julia">array[1:length(array)-1]</code></pre>
+    </td>
+    <td style="text-align:left">
+        <pre><code class="language-python">array[:-1]</code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td>Appending</td>
+    <td style="text-align:left"><pre><code class="language-julia">append!(array, element)</td>
+    <td style="text-align:left"><pre><code class="language-python">array.append(element)]</td>
+  </tr>
+  <tr>
+    <th style="text-align:left">Functions</th>
+    <td style="text-align:left"><pre><code class="language-julia">function function_name(x,y)
+    # insert code
+end
+</td>
+    <td style="text-align:left"><pre><code class="language-python">def function_name(x,y):
+    # insert code
+</td>
+  </tr>
+  <tr>
+    <th style="text-align:left">Sets</th>
+    <td style="text-align:left"><pre><code class="language-julia">s = Set()</td>
+    <td style="text-align:left"><pre><code class="language-python">s = set()</td>
+  </tr>
+  <tr>
+    <td>Adding Element</td>
+    <td style="text-align:left"><pre><code class="language-julia">push!(s,element)</td>
+    <td style="text-align:left"><pre><code class="language-python">s.add(element)</td>
+  </tr>
+  <tr>
+    <td>Removing Element</td>
+    <td style="text-align:left"><pre><code class="language-julia">delete!(s,element)</td>
+    <td style="text-align:left"><pre><code class="language-python">s.remove(element)</td>
+  </tr>
+  <tr>
+    <td>Union</td>
+    <td style="text-align:left"><pre><code class="language-julia">union(set1,set2)</td>
+    <td style="text-align:left"><pre><code class="language-python">set1|set2</td>
+  </tr>
+  <tr>
+    <td>Intersection</td>
+    <td style="text-align:left"><pre><code class="language-julia">intersect(set1,set2)</td>
+    <td style="text-align:left"><pre><code class="language-python">set1&set2</td>
+  </tr>
+  <tr>
+    <th style="text-align:left">Dictionaries</th>
+    <td style="text-align:left"><pre><code class="language-julia">d = Dict()</td>
+    <td style="text-align:left"><pre><code class="language-python">d = {}
+d = dict()
+</td>
+  </tr>
+  <tr>
+    <td>Accessing</td>
+    <td style="text-align:left"><pre><code class="language-julia">d[key] = value</td>
+    <td style="text-align:left"><pre><code class="language-python">d[key] = value</td>
+  </tr>
+  <tr>
+    <td>Iterating</td>
+    <td style="text-align:left"><pre><code class="language-julia">for (key, value) in d:
+    print(key,value)
+end
+</td>
+    <td style="text-align:left"><pre><code class="language-python">for key, value in d.items():
+    print(key,value)
+</td>
+  </tr>
+  <tr>
+    <th style="text-align:left">DataFrames</th>
+    <td style="text-align:left"><pre><code class="language-julia">using DataFrames</td>
+    <td style="text-align:left"><pre><code class="language-python">import pandas as pd</td>
+  </tr>
+  <tr>
+    <td>Creating DataFrame</td>
+    <td style="text-align:left"><pre><code class="language-julia">df = DataFrame(
+    A = [element_1, element_2, ...], 
+    B = [element_1, element_2, ...])
+</td>
+    <td style="text-align:left"><pre><code class="language-python">data = 
+    {
+      'A': [element_1, element_2, ...],
+      'B': [element_1, element_2, ...],
+      ...
+    }
+
+df = pd.DataFrame(data)</tr>
+<tr>
+    <td>Accessing Column</td>
+    <td style="text-align:left"><pre><code class="language-julia">df.A
+df[“A”]
+</td>
+    <td style="text-align:left"><pre><code class="language-python">df.A
+df[“A”]
+</td>
+  </tr>
+  <tr>
+    <td>Sorting DataFrame</td>
+    <td style="text-align:left"><pre><code class="language-julia">sort(df, [:row1, :row2])</td>
+    <td style="text-align:left"><pre><code class="language-python">df.sort_values(by=['row1', 'row2'])</td>
+  </tr>
+  <tr>
+    <td>Reading CSV as DataFrame</td>
+    <td style="text-align:left"><pre><code class="language-julia">using CSV
+df = CSV.read([filename])
+</td>
+    <td style="text-align:left"><pre><code class="language-python">import pandas as pd 
+df = pd.read_csv([filename])
+</td>
   </tr>
 </table>
 ~~~
