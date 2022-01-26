@@ -14,11 +14,20 @@ Red (Main): rgb(237,28,36) / HEX: #ED1C24
 Brown (Main): rgb(78,54,41) / HEX: #4E3629
 Gold (Accent): rgb(255,199,44) / HEX: #FFC72C
 Gray (Accent): rgb(152, 164, 174) / HEX: #98A4AE
--MAY BE USED AT A 55% TINT OF THE SPOT COLOR, OR 15% BLACK FOR A LIGHTER GRAY.
+-MAY BE USED AT A 55% TINT OF THE SPOT COLOR, OR 15% BLACK FOR A LIGHTER GRAY
 
 
 Red should always be used at 100% tint. The brown, silver and gold may be used at different screens for design purposes.
-https://www.brown.edu/university-identity/sites/university-identity/files/Brown_Visual_Identity_Policy_2016-07-22.pdfs
+https://www.brown.edu/academics/biomed/offices-and-services/communications/colors
+
+
+
+SECONDARY COLORS (**updated website colors**)
+
+Navy: PANTONE:541C/U // CMYK: 100, 58, 9, 46 // RGB: 0, 60, 113 // HEX: #003C71 // LAB: 23, 7, 79
+Emerald (teal green): PANTONE: 3275C // CMYK: 90, 0, 52, 0 // RGB: 0, 179, 152 // HEX: 00B398 // LAB: 61, 71, 6
+Sky Blue: PANTONE: 305C/U // CMYK: 54, 0, 6, 0 // RGB: 89, 203, 232 // HEX: #59CBE8 // LAB: 75, 27, 26
+
 
 
 ============================================================
@@ -193,7 +202,6 @@ SPLASH PAGE
   right:50px;
 }
 
-
 /************************************************************
 =============================================================
 
@@ -202,12 +210,65 @@ ABOUT PAGE
 ============================================================
 ************************************************************/
 
-.brown-img {
-
+.brown-img{
+  width: 70%;
 }
 
-.headshot-img {
+.flexMe{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
+
+.flexMe li{
+  width: 150px; 
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.flexMe li img{
+  width: auto; 
+  height: 100%;
+}
+
+table.blueTable {
+  border: 0px solid #A4A4A4;
+  background-color: #FFFFFF;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed ;
+  width: 100% ;
+}
+table.blueTable td, table.blueTable th {
+  padding: 3px 2px;
+  border-bottom: 1px solid #A4A4A4;
+  border-top: 1px solid #A4A4A4;
+}
+table.blueTable tbody td {
+  font-size: 16px;
+  height: 26px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
 
 /************************************************************
 =============================================================
@@ -695,7 +756,7 @@ MAIN CONTENT
   .main-content{
     position:relative;
     max-width: 800px;
-    margin-left: 248px
+    margin-left: 248px;
   }
 }
 @media (min-width: 66.5rem){
@@ -753,6 +814,23 @@ MAIN CONTENT
   }
 }
 
+
+.cite-box{
+  border: 1px solid;
+  font-style: italic;
+  font-size: x-small;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.citation{
+  font-size: xx-small;
+  font-style: italic;
+  color: gray;
+}
+
 /************************************************************
 =============================================================
 
@@ -792,7 +870,7 @@ td.fndef-backref {
 }
 
 
-.franklin-content table {
+/* .franklin-content table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
@@ -804,7 +882,7 @@ td.fndef-backref {
 
 .franklin-content table tbody tr td {
   border: 1px solid black;
-}
+} */
 
 .franklin-content blockquote {
     background: lemonchiffon;
@@ -863,7 +941,7 @@ td.fndef-backref {
 .franklin-content img {
     width: 70%;
     text-align: center;
-    padding-left: 10%; }
+    }
 
 .franklin-content .img-small img {
     width: 50%;
@@ -926,4 +1004,30 @@ body { counter-reset: eqnum; }
 
 .indent-code {
   margin-left: 200px;
+}
+
+
+/* ==================================================================
+    Home Page
+================================================================== */
+
+.home-box{
+  border: 2px solid #003C71;
+  padding: 20px;
+  background-color: rgba(0,85,121,.1);;
+}
+
+.img-box{
+  height: 100px;
+}
+
+.informatics_img{
+  height: 100%;
+  width: auto;
+}
+
+.title-text{
+  font-size: larger;
+  font-weight: bold;
+  color: #003C71;
 }

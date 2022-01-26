@@ -5,10 +5,10 @@
 
 @def tags = ["databases", "MySQL"]
 
-# 4.1 Getting Started with MySQL
+# 4.1 Biomedical Data
 
 \toc
 
-## What is a Database?
+## Clinical Data
 
-**Coming soon...**
+~~~ <img src="/assets/data/data.png"> </img> ~~~

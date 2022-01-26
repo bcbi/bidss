@@ -8,3 +8,20 @@
 # Knowledge Discovery
 
 \toc
+
+#### Introduction
+
+~~~ 
+<div class="home-box">
+    
+</div> 
+~~~ 
+
+
+#### Key Readings
+
+~~~ 
+<div class="home-box">
+    
+</div> 
+~~~ 
