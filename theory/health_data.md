@@ -1,16 +1,27 @@
-@def title = "Unix Operating System"
+@def title = "Electronic Health Data"
 @def hascode = true
-@def date = Date(2019, 3, 22)
+@def date = Date(2022, 01, 28)
 @def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
 
-@def tags = ["setup", "enviornment"]
+@def tags = ["Electronic Health Data"]
 
-# Unix Operating System
+# Electronic Health Data
 
 \toc
 
-## Getting Stared with Unix
+#### Introduction
 
-## Analyzing the Adult (Census Income) Data Set
+~~~ 
+<div class="home-box">
+    
+</div> 
+~~~ 
 
-## Analyzing the MIMIC-III Demo Data Set
+
+#### Key Readings
+
+~~~ 
+<div class="home-box">
+    
+</div> 
+~~~ 

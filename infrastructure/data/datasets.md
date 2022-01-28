@@ -5,7 +5,7 @@
 
 @def tags = ["databases", "MySQL"]
 
-# 4.1 Biomedical Data
+# 3.1 Biomedical Data
 
 \toc
 

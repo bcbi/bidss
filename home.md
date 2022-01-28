@@ -19,13 +19,13 @@ Adapted from: https://www.dbmi.columbia.edu/about-dbmi/
 </div> 
 ~~~ 
 
-~~~   
+<!-- ~~~   
 <div class="home-box">
 <center> <span class="title-text"> INFORMATICS @ BROWN </span> </center>
 <center><img src = "/assets/home_page/informatics_pipeline.png" alt = "biomedical informatics pipeline" class=""></center>
 <div class="cite-box"> Flynn AJ, Friedman CP, Boisvert P, Landis‐Lewis Z, Lagoze C. The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2018 Apr;2(2):e10054.</div>
 </div>
-~~~ 
+~~~  -->
 
 
 

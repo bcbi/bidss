@@ -1,11 +1,11 @@
-@def title = "Four-Day Short Course"
+@def title = "Gateways Data Science Skills Short Course: Four-Day Short Course"
 @def hascode = true
 @def date = Date(2020, 7, 17)
 @def rss = 
 
-@def tags = ["computing","julia"]
+@def tags = ["computing","julia", "short course"]
 
-# Four-Day Short Course
+# Gateways Data Science Skills Short Course: Four-Day Short Course
 
 \toc
 
@@ -16,16 +16,12 @@
 
 ## Important Links
 
-| Summer 2021 Gateways Data Science Skills Short Course |
+| Gateways Data Science Skills Short Course |
 | :------------------------ |
-|2021|
-| ~~~<a href="https://docs.google.com/document/d/1NSdseZhN-ZBOdgfYiR8eSc_68cBvbj3XNrINN2ctIus/edit" target="_blank">Syllabus</a>~~~ |
+| ~~~<a href="" target="_blank">Syllabus</a>~~~ |
 |~~~<a href="" target="_blank">Google Classroom</a>~~~ |
-| ~~~<a href="https://docs.google.com/document/d/1rN3SZSalqhyZSxoHXMRbZjua_R8a60894BsbwiEeFoQ/edit" target="_blank">Stronghold Instructions</a>~~~ |
 
-## Day 1: Unix Commands
-
-[https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands](https://docs.bcbi.brown.edu/bidss/programming/unix/intro/#unix_commands)
+## Day 1:
 
 ## Day 2: 
 

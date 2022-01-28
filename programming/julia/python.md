@@ -4,7 +4,7 @@
 
 @def tags = ["python","intro","introduction"]
 
-# 5.12 Intro to Python
+# 6.12 Intro to Python
 
 \toc
 

@@ -1,11 +1,11 @@
-@def title = "Biomedical Informatics"
+@def title = "Introduction to Biomedical Informatics and Data Science"
 @def hascode = true
 @def date = Date(2022, 01, 06)
 @def rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
 
-@def tags = ["biomedical informatics"]
+@def tags = ["biomedical informatics", "data science"]
 
-# Biomedical Informatics
+# Introduction to Biomedical Informatics and Data Science 
 
 \toc
 
@@ -15,7 +15,7 @@
 <div class="home-box">
     <center><img src = "/assets/home_page/biomedical_informatics.png" alt = "biomedical informatics pipeline" class="informatics_img"></center>
     
-    <div class="cite-box"> Courtesy of: Katherine Brown, MSN, RN, BCBI/CCMB PhD Candidate |Adapted from: https://www.dbmi.columbia.edu/about-dbmi/
+    <div class="cite-box"> Courtesy of: Katherine Brown, MSN, RN, BCBI/CCMB PhD Candidate | Adapted from: https://www.dbmi.columbia.edu/about-dbmi/
     </div>
     <br>
     <span style="font-size:20px;color:#003C71;font-weight:bold;">A Formal Definition:</span>
@@ -33,8 +33,8 @@
         <li><b>Human and social context:</b> draws upon the social and behavioral sciences to inform the design and evaluation of technical solutions, policies, and the evolution of economic, ethical, social, educational, and organizational systems.</li>
 
     </ul>
-    <span class="citation">Kulikowski CA, Shortliffe EH, Currie LM, et al. AMIA Board white paper: definition of biomedical informatics and specification of core competencies for graduate education in the discipline. J Am Med Inform Assoc. 2012;19(6):931–938. doi:10.1136/amiajnl-2012-001053</span>
-
+    <div class="citation">Kulikowski CA, Shortliffe EH, Currie LM, et al. AMIA Board white paper: definition of biomedical informatics and specification of core competencies for graduate education in the discipline. J Am Med Inform Assoc. 2012;19(6):931–938. doi:10.1136/amiajnl-2012-001053</div>
+    
 
 
 </div> 

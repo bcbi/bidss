@@ -5,7 +5,7 @@
 
 @def tags = ["computing","julia"]
 
-# 5.5 Collections and Data Structures in Julia
+# 6.5 Collections and Data Structures in Julia
 
 \toc
 

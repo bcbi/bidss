@@ -5,14 +5,15 @@
 
 @def tags = ["analytic pipelines"]
 
-# 9.2 Study 1
+# 9.1 Analytic Pipeline Intro
 
 \toc
 
 
-#### Research Question
+#### Introduction
 
 ~~~ 
 <div class="home-box">
+    
 </div> 
 ~~~ 

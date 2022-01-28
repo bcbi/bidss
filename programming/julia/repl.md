@@ -5,7 +5,7 @@
 
 @def tags = ["computing", "julia"]
 
-# 5.7 REPL & Packages in Julia
+# 6.7 REPL & Packages in Julia
 
 \toc
 

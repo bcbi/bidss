@@ -5,7 +5,7 @@
 
 @def tags = ["computing","julia"]
 
-# 5.4 Control Flow in Julia
+# 6.4 Control Flow in Julia
 
 \toc
 

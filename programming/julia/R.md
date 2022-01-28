@@ -5,7 +5,7 @@
 
 @def tags = ["R"]
 
-# 5.11 Intro to R
+# 6.11 Intro to R
 
 \toc
 

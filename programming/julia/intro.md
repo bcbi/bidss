@@ -5,7 +5,7 @@
 
 @def tags = ["computing","julia"]
 
-# 5.1 Introduction to Scientific Computing in Julia
+# 6.1 Introduction to Scientific Computing in Julia
 
 \toc
 

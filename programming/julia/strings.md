@@ -6,7 +6,7 @@
 
 @def tags = ["computing","julia"]
 
-# 5.3 Strings, Characters, and Regular Expressions in Julia
+# 6.3 Strings, Characters, and Regular Expressions in Julia
 
 \toc
 

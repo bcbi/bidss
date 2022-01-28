@@ -5,7 +5,7 @@
 
 @def tags = ["computing", "julia", "file io", "input", "output"]
 
-# 5.6 File Input/Output
+# 6.6 File Input/Output
 
 \toc
 

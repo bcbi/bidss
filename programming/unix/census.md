@@ -5,7 +5,7 @@
 
 @def tags = ["unix"]
 
-# 3.2 Analyzing the Adult (Census Income) Data Set
+# 4.2 Analyzing the Adult (Census Income) Data Set
 
 \toc
 
