@@ -7,7 +7,7 @@
 
 # About
 
-~~~ <div class="brown-img"> <img src="/assets/brown_university.png"> </img> </div> ~~~
+~~~ <div class="brown-img"> <img src="/assets/brown_university.jpeg"> </img> </div> ~~~
 
 ~~~ 
 <div class="home-box"> The <b>BIDSS Manual</b> was created to support research and education activities in Rhode Island involving computing for health. This community resource, funded in part by grants from the National Institutes of Health <b>(R25MH116440 and U54GM115677)</b>, continues to evolve since the first version in Summer 2017. 
@@ -30,15 +30,16 @@ Feedback and corrections are welcome. Additional questions and thoughts can be s
 .tg img{height:150px;width:auto;}
 </style>
 <table class="tg">
-<thead>
-  <tr>
+  <tr style="border:0px;">
     <th class="tg-8jgo"><img class="headshot-img" src="/assets/headshots/echen13_photo.jpeg" alt="liz_chen_photo"><br><br><a href="https://vivo.brown.edu/display/echen13" target="_blank" rel="noopener noreferrer"><span style="font-weight:bold;text-decoration:none">Elizabeth Chen, PhD, FACMI</span></a></th>
     <th class="tg-8jgo"><img class="headshot-img" src="/assets/headshots/isarkar_photo.jpeg" alt="neil_sarkar_photo" ><br><br><a href="https://vivo.brown.edu/display/isarkar" target="_blank" rel="noopener noreferrer"><span style="font-weight:bold">Indra Neil Sarkar, PhD, MLIS, FACMI</span></a><br></th>
+    <th style="border: 0px;"></th>
+  </tr>
+  <tr>
     <th class="tg-8jgo"><img class="headshot-img" src="/assets/headshots/eisman_aaron_photo.jpeg" alt="aaron_eisman_photo"><br><br><a href="https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/people/student/phd/aaron-eisman" target="_blank" rel="noopener noreferrer"><span style="font-weight:bold">Aaron Eisman</span></a><br>MD/PhD Student</th>
     <th class="tg-8jgo"><img class="headshot-img"  src="/assets/headshots/brown_katie_photo.jpeg" alt="katie_brown_photo"><br><br><a href="https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/people/phd/katie-brown" target="_blank" rel="noopener noreferrer"><span style="font-weight:bold">Katie Brown, MSN, RN</span></a><br>PhD Student</th>
     <th class="tg-8jgo"><img class="headshot-img" src="/assets/headshots/aluthge_dilum_photo.jpeg" alt="dilum_aluthge_photo""><br><br><a href="https://www.brown.edu/academics/medical/about-us/research/centers-institutes-and-programs/biomedical-informatics/people/phd/dilum-aluthge" target="_blank" rel="noopener noreferrer"><span style="font-weight:bold">Dilum Aluthge</span></a><br>MD/PhD Student</th>
   </tr>
-</thead>
 </table> 
 ~~~
 
