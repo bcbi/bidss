@@ -14,11 +14,20 @@ Red (Main): rgb(237,28,36) / HEX: #ED1C24
 Brown (Main): rgb(78,54,41) / HEX: #4E3629
 Gold (Accent): rgb(255,199,44) / HEX: #FFC72C
 Gray (Accent): rgb(152, 164, 174) / HEX: #98A4AE
--MAY BE USED AT A 55% TINT OF THE SPOT COLOR, OR 15% BLACK FOR A LIGHTER GRAY.
+-MAY BE USED AT A 55% TINT OF THE SPOT COLOR, OR 15% BLACK FOR A LIGHTER GRAY
 
 
 Red should always be used at 100% tint. The brown, silver and gold may be used at different screens for design purposes.
-https://www.brown.edu/university-identity/sites/university-identity/files/Brown_Visual_Identity_Policy_2016-07-22.pdfs
+https://www.brown.edu/academics/biomed/offices-and-services/communications/colors
+
+
+
+SECONDARY COLORS (**updated website colors**)
+
+Navy: PANTONE:541C/U // CMYK: 100, 58, 9, 46 // RGB: 0, 60, 113 // HEX: #003C71 // LAB: 23, 7, 79
+Emerald (teal green): PANTONE: 3275C // CMYK: 90, 0, 52, 0 // RGB: 0, 179, 152 // HEX: 00B398 // LAB: 61, 71, 6
+Sky Blue: PANTONE: 305C/U // CMYK: 54, 0, 6, 0 // RGB: 89, 203, 232 // HEX: #59CBE8 // LAB: 75, 27, 26
+
 
 
 ============================================================
@@ -134,6 +143,133 @@ hr{
   }
 }
 
+
+/************************************************************
+=============================================================
+
+SPLASH PAGE
+
+============================================================
+************************************************************/
+
+.splash-page {
+  background: #0C2553;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0px;
+}
+
+.splash-video {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0px;
+}
+
+.nav-splash{
+  height: 80px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  z-index: 20;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  border-bottom: 1px solid #d4dadf;
+  background: #0C2553;
+  background-size: cover;
+}
+
+.img-icon {
+  width: 50px;
+}
+
+.left-icon {
+  margin: 50px;
+}
+
+.right-icon {
+  position:absolute; 
+  right:50px;
+}
+
+/************************************************************
+=============================================================
+
+ABOUT PAGE
+
+============================================================
+************************************************************/
+
+.brown-img{
+  width: 70%;
+}
+
+.flexMe{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.flexMe li{
+  width: 150px; 
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.flexMe li img{
+  width: auto; 
+  height: 100%;
+}
+
+table.blueTable {
+  border: 0px solid #A4A4A4;
+  background-color: #FFFFFF;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed ;
+  width: 100% ;
+}
+table.blueTable td, table.blueTable th {
+  padding: 3px 2px;
+  border-bottom: 1px solid #A4A4A4;
+  border-top: 1px solid #A4A4A4;
+}
+table.blueTable tbody td {
+  font-size: 16px;
+  height: 26px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+
 /************************************************************
 =============================================================
 
@@ -162,16 +298,19 @@ a.skip_main {
     position: relative;
     box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
     border-bottom: 1px solid #d4dadf;
-    background-color: #FFC72C;
+    background: linear-gradient(90deg, rgba(0,85,121,1), rgba(0,124,136,1), rgba(0,155,147,1)), url('../assets/nav_bar_graph.png');
+    background-blend-mode: overlay;
+    background-size: cover;
 }
 
 /* LOGO */
 
 .img-logo{
-  width: 150px;
+  width: 175px;
+  background: rgba(0,85,121,1);
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 600px){
 .logo-box {
     max-width: 260px;
     justify-content: center;
@@ -186,7 +325,7 @@ a.skip_main {
   padding: 0;
   position: relative;
   align-items: center;
-  border-right: 1px solid rgb(78,54,41,.5) ;
+  border-right: 2px solid rgb(255,255,255);
   height: 50px;
 }
 
@@ -236,7 +375,7 @@ a.skip_main {
 }
 
 .nav-middleitem-button {
-  color: rgba(0,0,0,0.7) !important;
+  color: white !important;
   border: 1px solid;
   cursor: pointer;
   height: 40px;
@@ -271,14 +410,31 @@ a.skip_main {
 
 .search-input {
   background-color: transparent;
-  border: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+
 
 .search-icon {
   background-color: transparent;
   border: none;
-  -webkit-text-stroke: 1px #FFC72C; /* background color */
-
+  color: white;
 }
 
 .searchbox-wrapper {
@@ -289,7 +445,7 @@ a.skip_main {
   position: relative;
   max-width: 400px;
   align-items: center;
-  border-left: 1px solid rgb(78,54,41,.8) ;
+  border-left: 2px solid rgb(255,255,255);
   text-align: center;
 }
 
@@ -309,7 +465,7 @@ SIDE BAR
   height: 100%;
   width: 260px;
   position: fixed;
-  background-color: rgb(152, 164, 174,.2);
+  background-color: rgba(0,85,121,.6);
   /* color picker for .2 rgb university gray color */
   /* background-color: #ebeeef */
   border-right: 1px solid rgb(152, 164, 174,.4);
@@ -327,8 +483,9 @@ SIDE BAR
 
 .section-title{
   text-transform: uppercase;
-  font-size: 14px;
-  color:  rgb(152, 164, 174);
+  font-size: 16px;
+  color:  #003C71;
+  font-weight:bolder;
   letter-spacing: 1px;
   margin: 10px;
 }
@@ -337,7 +494,7 @@ SIDE BAR
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
   border: none;
   background: none;
@@ -350,6 +507,7 @@ SIDE BAR
 /* On mouse-over */
 .sidenav a:hover{
   background-color: white;
+  color: navy;
   max-width: 100%;
 }
 
@@ -444,7 +602,7 @@ SIDE BAR
   margin-top: 10px;
 }
 .menu-list-child-list .menu-list-link{
-  color:#7d7d7d
+  color:white;
 }
 .menu-list-child-list .menu-list-item{
   position:relative;
@@ -477,7 +635,7 @@ SIDE BAR
 }
 .menu-list-link.active{
   /* background-color: white; */
-  color: rgb(237,28,36);
+  color: #003C71;
 }
 
 .footer {
@@ -487,7 +645,7 @@ SIDE BAR
   position:absolute;
   bottom:80px;
   left:0;
-  background-color:#ebeeef;
+ 
 }
 
 .bcbi-logo {
@@ -598,7 +756,7 @@ MAIN CONTENT
   .main-content{
     position:relative;
     max-width: 800px;
-    margin-left: 248px
+    margin-left: 248px;
   }
 }
 @media (min-width: 66.5rem){
@@ -656,6 +814,23 @@ MAIN CONTENT
   }
 }
 
+
+.cite-box{
+  border: 1px solid;
+  font-style: italic;
+  font-size: x-small;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.citation{
+  font-size: xx-small;
+  font-style: italic;
+  color: gray;
+}
+
 /************************************************************
 =============================================================
 
@@ -696,10 +871,10 @@ td.fndef-backref {
 
 
 .franklin-content table {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     border-collapse: collapse;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1em;}
 .franklin-content tr,th,td{
     padding: 10px;
@@ -707,7 +882,7 @@ td.fndef-backref {
 
 .franklin-content table tbody tr td {
   border: 1px solid black;
-}
+} 
 
 .franklin-content blockquote {
     background: lemonchiffon;
@@ -766,7 +941,7 @@ td.fndef-backref {
 .franklin-content img {
     width: 70%;
     text-align: center;
-    padding-left: 10%; }
+    }
 
 .franklin-content .img-small img {
     width: 50%;
@@ -829,4 +1004,30 @@ body { counter-reset: eqnum; }
 
 .indent-code {
   margin-left: 200px;
+}
+
+
+/* ==================================================================
+    Home Page
+================================================================== */
+
+.home-box{
+  border: 2px solid #003C71;
+  padding: 20px;
+  background-color: rgba(0,85,121,.1);
+}
+
+.img-box{
+  height: 100px;
+}
+
+.informatics_img{
+  height: 100%;
+  width: auto;
+}
+
+.title-text{
+  font-size: larger;
+  font-weight: bold;
+  color: #003C71;
 }
