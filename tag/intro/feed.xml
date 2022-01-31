@@ -9,14 +9,14 @@
 
   <channel>
     <title>
-      <![CDATA[  {{fd2rss website_title}}  ]]>
+      <![CDATA[  BIDSS  ]]>
     </title>
-    <link> {{website_url}} </link>
+    <link> https://bcbi.github.io/bidss/ </link>
     <description>
-      <![CDATA[  {{fd2rss website_description}}  ]]>
+      <![CDATA[  Biomedical Informatics and Data Science Skills &#40;BIDSS&#41;  ]]>
     </description>
     <atom:link
-      href="{{fd_rss_feed_url}}"
+      href="https://bcbi.github.io/bidss/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
@@ -25,8 +25,8 @@
   <title>
     <![CDATA[  Intro to Python  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/python/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/python/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/python/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/python/index.html </guid>
   <description>
     <![CDATA[  Python is one of the many languages used in the data science community to perform data manipulation, statistical modeling and machine learning. There are certain tasks where Python excels and you may choose to use it over Julia. This section will provide you with the basic syntax of Python to get started.  ]]>
   </description>  

@@ -9,43 +9,24 @@
 
   <channel>
     <title>
-      <![CDATA[  {{fd2rss website_title}}  ]]>
+      <![CDATA[  BIDSS  ]]>
     </title>
-    <link> {{website_url}} </link>
+    <link> https://bcbi.github.io/bidss/ </link>
     <description>
-      <![CDATA[  {{fd2rss website_description}}  ]]>
+      <![CDATA[  Biomedical Informatics and Data Science Skills &#40;BIDSS&#41;  ]]>
     </description>
     <atom:link
-      href="{{fd_rss_feed_url}}"
+      href="https://bcbi.github.io/bidss/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
 
 <item>
   <title>
-    <![CDATA[  File Input/Output  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/io/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/io/index.html </guid>
-  <description>
-    <![CDATA[  BIDSS: File Input/Output  ]]>
-  </description>  
-    
-  <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
     <![CDATA[  REPL &amp; Packages  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/repl/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/repl/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/repl/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/repl/index.html </guid>
   <description>
     <![CDATA[  BIDSS: REPL &amp; Packages  ]]>
   </description>  
@@ -61,10 +42,29 @@
 
 <item>
   <title>
+    <![CDATA[  File Input/Output  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/programming/julia/io/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/io/index.html </guid>
+  <description>
+    <![CDATA[  BIDSS: File Input/Output  ]]>
+  </description>  
+    
+  <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Strings, Characters, and Regular Expressions  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/strings/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/strings/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/strings/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/strings/index.html </guid>
   <description>
     <![CDATA[  BIDSS: Strings, Characters, and Regular Expressions  ]]>
   </description>  
@@ -80,29 +80,10 @@
 
 <item>
   <title>
-    <![CDATA[  Control Flow  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/control/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/control/index.html </guid>
-  <description>
-    <![CDATA[  BIDSS: Control Flow  ]]>
-  </description>  
-    
-  <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
     <![CDATA[  Numbers and Math in Julia  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/numbers/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/numbers/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/numbers/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/numbers/index.html </guid>
   <description>
     <![CDATA[  BIDSS: Numbers and Math  ]]>
   </description>  
@@ -120,8 +101,8 @@
   <title>
     <![CDATA[  Collections and Data Structures  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/collections/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/collections/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/collections/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/collections/index.html </guid>
   <description>
     <![CDATA[  BIDSS: Collections and Data Structures  ]]>
   </description>  
@@ -137,10 +118,29 @@
 
 <item>
   <title>
+    <![CDATA[  Control Flow  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/programming/julia/control/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/control/index.html </guid>
+  <description>
+    <![CDATA[  BIDSS: Control Flow  ]]>
+  </description>  
+    
+  <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Introduction to Scientific Computing in Julia  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/intro/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/intro/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/intro/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/intro/index.html </guid>
   <description>
     <![CDATA[  BIDSS: Introduction to Scientific Computing in Julia  ]]>
   </description>  

@@ -9,24 +9,43 @@
 
   <channel>
     <title>
-      <![CDATA[  {{fd2rss website_title}}  ]]>
+      <![CDATA[  BIDSS  ]]>
     </title>
-    <link> {{website_url}} </link>
+    <link> https://bcbi.github.io/bidss/ </link>
     <description>
-      <![CDATA[  {{fd2rss website_description}}  ]]>
+      <![CDATA[  Biomedical Informatics and Data Science Skills &#40;BIDSS&#41;  ]]>
     </description>
     <atom:link
-      href="{{fd_rss_feed_url}}"
+      href="https://bcbi.github.io/bidss/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
 
 <item>
   <title>
+    <![CDATA[  Oscar Setup  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/oscar/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/oscar/index.html </guid>
+  <description>
+    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
+  </description>  
+    
+  <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Statistics and Machine Learning &#40;Extra Resources&#41;  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/stats-2/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/stats-2/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/stats-2/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/stats-2/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -44,8 +63,8 @@
   <title>
     <![CDATA[  Statistics  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/stats/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/stats/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/stats/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/stats/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -61,10 +80,10 @@
 
 <item>
   <title>
-    <![CDATA[  Getting Started  ]]>
+    <![CDATA[  Scientific Computing and Julia  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/setup/vscode/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/setup/vscode/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/computing_deprecated/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/computing_deprecated/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -82,84 +101,8 @@
   <title>
     <![CDATA[  Getting Started  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/setup/julia/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/setup/julia/index.html </guid>
-  <description>
-    <![CDATA[  Instructions on how to install the Julia programming language on macOS and Windows.  ]]>
-  </description>  
-    
-  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
-    <![CDATA[  Setup  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/setup/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/setup/index.html </guid>
-  <description>
-    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
-  </description>  
-    
-  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
-    <![CDATA[  Unix Operating System  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/unix/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/unix/index.html </guid>
-  <description>
-    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
-  </description>  
-    
-  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
-    <![CDATA[  DataFrames  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/dataframes/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/dataframes/index.html </guid>
-  <description>
-    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
-  </description>  
-    
-  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
-    <![CDATA[  Databases and MySQL  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/databases/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/databases/index.html </guid>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/filezilla/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/filezilla/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -177,27 +120,8 @@
   <title>
     <![CDATA[  Getting Started  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/setup/filezilla/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/setup/filezilla/index.html </guid>
-  <description>
-    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
-  </description>  
-    
-  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
-    <![CDATA[  Getting Started  ]]>
-  </title>
-  <link> https://bcbi.github.io/bidss/programming/setup/r/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/setup/r/index.html </guid>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/vscode/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/vscode/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -215,8 +139,8 @@
   <title>
     <![CDATA[  Scientific Computing and Julia  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/viz/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/viz/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/viz/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/viz/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -234,8 +158,27 @@
   <title>
     <![CDATA[  Getting Started  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/setup/intro/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/setup/intro/index.html </guid>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/intro/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/intro/index.html </guid>
+  <description>
+    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
+  </description>  
+    
+  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
+    <![CDATA[  Getting Started  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/r/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/r/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
   </description>  
@@ -253,8 +196,8 @@
   <title>
     <![CDATA[  Linux for Windows  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/setup/wsl/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/setup/wsl/index.html </guid>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/wsl/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/wsl/index.html </guid>
   <description>
     <![CDATA[  Instructions on getting started with Windows Subsystem for Linux.  ]]>
   </description>  
@@ -270,12 +213,31 @@
 
 <item>
   <title>
-    <![CDATA[  Scientific Computing and Julia  ]]>
+    <![CDATA[  DataFrames  ]]>
   </title>
-  <link> https://bcbi.github.io/bidss/programming/computing/computing/index.html </link>
-  <guid> https://bcbi.github.io/bidss/programming/computing/computing/index.html </guid>
+  <link> https://bcbi.github.io/bidss/programming/julia/dataframes/index.html </link>
+  <guid> https://bcbi.github.io/bidss/programming/julia/dataframes/index.html </guid>
   <description>
     <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
+  </description>  
+    
+  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
+    <![CDATA[  Getting Started  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/infrastructure/setup/julia/index.html </link>
+  <guid> https://bcbi.github.io/bidss/infrastructure/setup/julia/index.html </guid>
+  <description>
+    <![CDATA[  Instructions on how to install the Julia programming language on macOS and Windows.  ]]>
   </description>  
     
   <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
