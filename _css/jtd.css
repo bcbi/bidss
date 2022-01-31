@@ -871,10 +871,10 @@ td.fndef-backref {
 
 
 .franklin-content table {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     border-collapse: collapse;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1em;}
 .franklin-content tr,th,td{
     padding: 10px;
@@ -1014,7 +1014,7 @@ body { counter-reset: eqnum; }
 .home-box{
   border: 2px solid #003C71;
   padding: 20px;
-  background-color: rgba(0,85,121,.1);;
+  background-color: rgba(0,85,121,.1);
 }
 
 .img-box{

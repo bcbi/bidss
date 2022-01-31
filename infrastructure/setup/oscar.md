@@ -18,28 +18,12 @@
 ~~~ 
 <div class="home-box">
     <center><img src = "/assets/setup/oscar/oscar_1.png" alt = "oscar main" class=""></center>
+    <br>
+    <ul>
+        <li><b>Username</b> = Your Brown username</li>
+        <li><b>Password</b> = Your Brown password</li>
+    </ul>
 </div>
 ~~~
-\
-* Username = Your Brown username
-* Password = Your Brown password
-
-* Example usernames
-    * Prof. Chen: 	echen13
-    * Prof. Sarkar: 	isarkar
-
-
-#### What is VNC?
-
-
-#### Demo: Logging into Oscar (VNC)
-
-
-#### Demo: Logging off of Oscar (VNC)
-
-#### Setup and Test
-
-
-#### Troubleshooting
 
 

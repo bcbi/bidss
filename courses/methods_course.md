@@ -5,7 +5,8 @@
 
 @def tags = ["methods", "spring course", "biol 1555", "php 2561"]
 
-# BIOL 1555/PHP 2561 Methods in Informatics and Data Science for Health
+# BIOL 1555/PHP 2561 
+## Methods in Informatics and Data Science for Health
 
 \toc
 
@@ -25,383 +26,228 @@ Mastery of informatics and data science skills will be assessed by a final proje
 
 ### Schedule - Spring 2022
 
-
 ~~~
-<style id="Book1_2397_Styles">
-tr
-	{mso-height-source:auto;}
-col
-	{mso-width-source:auto;}
-br
-	{mso-data-placement:same-cell;}
-.style0
-	{mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	white-space:nowrap;
-	mso-rotate:0;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	color:black;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri, sans-serif;
-	mso-font-charset:0;
-	border:none;
-	mso-protection:locked visible;
-	mso-style-name:Normal;
-	mso-style-id:0;}
-td
-	{mso-style-parent:style0;
-	padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mso-ignore:padding;
-	color:black;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	border:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	mso-protection:locked visible;
-	white-space:nowrap;
-	mso-rotate:0;}
-.xl63
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.0pt;
-	font-weight:700;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	background:#D0CECE;
-	mso-pattern:black none;}
-.xl64
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.0pt;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;}
-.xl65
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.0pt;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"d\\-mmm";
-	text-align:left;
-	border:.5pt solid windowtext;}
-.xl66
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.0pt;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	text-align:center;
-	border:.5pt solid windowtext;}
-.xl67
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.0pt;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	text-align:left;
-	border:.5pt solid windowtext;}
--->
-</style>
+<table class="tg">
+<thead style="background: rgba(0,85,121,.1); color:#003C71;">
+  <tr>
+    <th>Day</th>
+    <th>Date</th>
+    <th>Type</th>
+    <th>Topic</th>
+    <th>BIDSS Section</th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+        <td rowspan="2">1</td>
+        <td rowspan="2">31-Jan</td>
+        <td>Theory</td>
+        <td>Introduction to Biomedical Informatics and Data Science</td>
+        <td><a href="/theory/biomedical_informatics/" target="_blank">1.1</a></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Computing Environment Setup</td>
+        <td><a href="/infrastructure/setup/oscar/" target="_blank">2.2,</a> <a href="/infrastructure/setup/julia/" target="_blank">2.4</a> </td>
+    </tr>
 
+    <tr>
+        <td rowspan="2">2</td>
+        <td rowspan="2">7-Feb</td>
+        <td>Theory</td>
+        <td>Electronic Health Data</td>
+        <td><a href="/theory/health_data/" target="_blank">1.2, </a> <a href="/theory/ehr/" target="_blank">1.2.1</a></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Unix - Basics</td>
+        <td><a href="/programming/unix/intro/" target="_blank">4.1, </a>
+            <a href="/programming/unix/census/" target="_blank">4.2, </a> 
+            <a href="/programming/unix/mimic/" target="_blank">4.3</a></td>
+    </tr>
 
-<div id="Book1_2397" >
+    <tr>
+        <td rowspan="2">3</td>
+        <td rowspan="2">14-Feb</td>
+        <td>Theory</td>
+        <td>Standards & Interoperability</td>
+        <td><a href="/theory/standards/" target="_blank">1.3, </a> <a href="/theory/interoperability/" target="_blank">1.4, </a></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Julia - Basics (Data Types, Control Structures, File Input/Output)</td>
+        <td><a href="/programming/julia/numbers/" target="_blank">6.2, </a> 
+            <a href="/programming/julia/strings/" target="_blank">6.3, </a> 
+            <a href="/programming/julia/control/" target="_blank">6.4, </a> 
+            <a href="/programming/julia/collections/" target="_blank">6.5, </a> 
+            <a href="/programming/julia/io/" target="_blank">6.6</a></td>
+    </tr>
 
-<table border=0 cellpadding=0 cellspacing=0 width=676 style='border-collapse:
- collapse;table-layout:fixed;width:507pt'>
- <col width=40 style='mso-width-source:userset;mso-width-alt:1280;width:30pt'>
- <col width=113 style='mso-width-source:userset;mso-width-alt:3626;width:85pt'>
- <col width=111 style='mso-width-source:userset;mso-width-alt:3541;width:83pt'>
- <col width=412 style='mso-width-source:userset;mso-width-alt:13184;width:309pt'>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl63 width=40 style='height:16.0pt;width:30pt'>
-  <div dir=ltr><span style='white-space:pre-wrap'>Day</span></td>
-  <td class=xl63 width=113 style='border-left:none;width:85pt;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Date</span></td>
-  <td class=xl63 width=111 style='border-left:none;width:83pt;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Type</span></td>
-  <td class=xl63 width=412 style='border-left:none;width:309pt;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Topic</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>1</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>31-Jan</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Introduction to Biomedical Informatics and Data
-  Science</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Computing Environment Setup</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>2</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>7-Feb</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Electronic Health Data</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Unix - Basics</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>3</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>14-Feb</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Standards &amp; Interoperability</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Julia - Basics (Data Types, Control Structures,
-  File Input/Output)</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl66 style='height:16.0pt;border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>-</span></td>
-  <td class=xl65 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>21-Feb</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>NO CLASS</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Long Weekend</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>4</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>28-Feb</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Research Process and Software Engineering</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Julia - Structures (Arrays, Sets, and
-  Dictionaries)</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>5</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>7-Mar</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Information Retrieval</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Julia - Packages, Web Services</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>6</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>14-Mar</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Analytic Pipelines</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Julia - DataFrames, Statistics, Visualization</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=3 height=63 class=xl64 align=right style='height:48.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>7</span></td>
-  <td rowspan=3 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>21-Mar</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Machine Learning and Natural Language Processing</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Julia - Machine Learning, RegEx; Python -
-  Introduction</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>MIDTERM</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>ASSIGNMENT AVAILABLE</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl66 style='height:16.0pt;border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>-</span></td>
-  <td class=xl65 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>28-Mar</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>NO CLASS</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Spring Recess</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>8</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>4-Apr</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory/Practice</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Databases/SQL</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Project</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Project Planning</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>9</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>11-Apr</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Project</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>PROPOSAL PRESENTATION</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>MIDTERM</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>ASSIGNMENT DUE</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>10</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>18-Apr</span></td>
-  <td rowspan=2 class=xl64 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Project</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Research Topic TBD</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Updates and Help</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>11</span></td>
-  <td rowspan=2 class=xl65 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>25-Apr</span></td>
-  <td rowspan=2 class=xl64 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Project</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Research Topic TBD</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl64 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>Updates and Help</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>12</span></td>
-  <td class=xl65 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>2-May</span></td>
-  <td rowspan=2 class=xl64 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Project</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Research Topic TBD</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl67 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>(Reading Period)</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Updates and Help</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>13</span></td>
-  <td class=xl65 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>9-May</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Theory</span></td>
-  <td class=xl64 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>Clinical Decision Support &amp; Learning Health
-  System *</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl67 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>(Reading Period)</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Project</span></td>
-  <td class=xl64 style='border-top:none;border-left:none'><span
-  style='white-space:pre-wrap'>Updates and Help</span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td rowspan=2 height=42 class=xl64 align=right style='height:32.0pt;
-  border-top:none;overflow-wrap:break-word'><span style='white-space:pre-wrap'>14</span></td>
-  <td class=xl65 style='border-top:none;border-left:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>13-May</span></td>
-  <td rowspan=2 class=xl64 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>FINAL</span></td>
-  <td rowspan=2 class=xl64 style='border-top:none;overflow-wrap:break-word'><span
-  style='white-space:pre-wrap'>FINAL PRESENTATIONS @ 2pm</div>
-  </span></td>
- </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 class=xl67 style='height:16.0pt;border-top:none;border-left:
-  none'><span style='white-space:pre-wrap'>(Final Exam)</span></td>
- </tr>
- <![if supportMisalignedColumns]>
- <tr height=0 style='display:none'>
-  <td width=40 style='width:30pt'></td>
-  <td width=113 style='width:85pt'></td>
-  <td width=111 style='width:83pt'></td>
-  <td width=412 style='width:309pt'></td>
- </tr>
- <![endif]>
+    <tr>
+        <td rowspan="2">-</td>
+        <td rowspan="2">21-Feb</td>
+        <td rowspan="2">NO CLASS</td>
+        <td rowspan="2">Long Weekend</td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+    </tr>
+
+    <tr>
+        <td rowspan="2">4</td>
+        <td rowspan="2">28-Feb</td>
+        <td>Theory</td>
+        <td>Research Process and Software Engineering</td>
+        <td><a href="/theory/research_process/" target="_blank">1.5, </a> <a href="/theory/software_engineering/" target="_blank">1.6</a></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Julia - Structures (Arrays, Sets, and Dictionaries)</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">5</td>
+        <td rowspan="2">7-Mar</td>
+        <td>Theory</td>
+        <td>Information Retrieval</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Julia - Packages, Web Services</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">6</td>
+        <td rowspan="2">14-Mar</td>
+        <td>Theory</td>
+        <td>Analytic Pipelines</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Julia - DataFrames, Statistics, Visualization</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">7</td>
+        <td rowspan="3">21-Mar</td>
+        <td>Theory</td>
+        <td>Machine Learning and Natural Language Processing</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Practice</td>
+        <td>Julia - Machine Learning, RegEx; Python - Introduction</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MIDTERM</td>
+        <td>ASSIGNMENT AVAILABLE</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">-</td>
+        <td rowspan="2">28-MAR</td>
+        <td rowspan="2">NO CLASS</td>
+        <td rowspan="2">Spring Recess</td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+    </tr>
+
+    <tr>
+        <td rowspan="2">8</td>
+        <td rowspan="2">4-Apr</td>
+        <td>Theory/Practice</td>
+        <td>Databases/SQL</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Project</td>
+        <td>Project Planning</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">9</td>
+        <td rowspan="2">11-Apr</td>
+        <td>Project</td>
+        <td>PROPOSAL PRESENTATION</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MIDTERM</td>
+        <td>ASSIGNMENT DUE</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">10</td>
+        <td rowspan="2">18-Apr</td>
+        <td rowspan="2">Project</td>
+        <td>Research Topic TBD</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Updates and Help</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">11</td>
+        <td rowspan="2">25-Apr</td>
+        <td rowspan="2">Project</td>
+        <td>Research Topic TBD</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Updates and Help</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">12</td>
+        <td>2-May</td>
+        <td rowspan="2">Project</td>
+        <td>Research Topic TBD</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>(Reading Period)</td>
+        <td>Updates and Help</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">13</td>
+        <td>9-May</td>
+        <td>Theory</td>
+        <td>Clinical Decision Support & Learning Health System</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>(Reading Period)</td>
+        <td>Project</td>
+        <td>Updates and Help</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">14</td>
+        <td>13-May</td>
+        <td rowspan="2">Final</td>
+        <td rowspan="2">FINAL PRESENTATIONS @ 2pm</td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+        <td>(Final Exam)</td>
+    </tr>
+  
+</tbody>
 </table>
-
-</div>
-
-
 ~~~

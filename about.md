@@ -48,14 +48,14 @@ Feedback and corrections are welcome. Additional questions and thoughts can be s
 <table class="blueTable">
 <tbody>
 <tr>
+<td>Karen Crowley</td>
+<td>Paul Stey</td>
 <td>Sotiris Karagounis</td>
 <td>My Vu</td>
-<td>Elizabeth Song</td>
-<td></td>
 </tr>
 
 <tr>
-<td></td>
+<td>Elizabeth Song</td>
 <td></td>
 <td></td>
 <td></td>

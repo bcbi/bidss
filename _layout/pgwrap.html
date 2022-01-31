@@ -61,24 +61,38 @@
           <li class="menu-list-item"><a href="/about"  class="menu-list-link {{ispage /about}}active{{end}}"><b>About</b> </a>
           <div class="section-title">Theory</div>
             <li class="menu-list-item {{ispage /theory/biomedical_informatics/*}}active{{end}}"><a href="/theory/biomedical_informatics/" class="menu-list-link {{ispage /theory/biomedical_informatics/*}}active{{end}}"><b>1.1</b> Biomedical Informatics</a>
-            <li class="menu-list-item {{ispage /theory/health_data/*}}active{{end}}"><a href="/theory/health_data/" class="menu-list-link {{ispage /theory/health_data/*}}active{{end}}"><b>1.2</b> Electronic Health Data</a>
-            <li class="menu-list-item {{ispage /theory/standards_interoperability/*}}active{{end}}"><a href="/theory/standards_interoperability/" class="menu-list-link {{ispage /theory/standards_interoperability/*}}active{{end}}"><b>1.3</b> Standards & Interoperability </a>
-            <li class="menu-list-item {{ispage /theory/software_engineering/*}}active{{end}}"><a href="/theory/software_engineering/" class="menu-list-link {{ispage /theory/software_engineering/*}}active{{end}}"><b>1.4</b> Research Process & Software Engineering</a>
-            <li class="menu-list-item {{ispage /theory/information_retrieval/*}}active{{end}}"><a href="/theory/information_retrieval/" class="menu-list-link {{ispage /theory/information_retrieval/*}}active{{end}}"><b>1.5</b> Information Retrieval</a>
-            <li class="menu-list-item {{ispage /theory/analytic_pipelines/*}}active{{end}}"><a href="/theory/analytic_pipelines/" class="menu-list-link {{ispage /theory/analytic_pipelines/*}}active{{end}}"><b>1.6</b> Analytic Pipelines</a>
-            <li class="menu-list-item {{ispage /theory/ml_nlp/*}}active{{end}}"><a href="/theory/ml_nlp/" class="menu-list-link {{ispage /theory/ml_nlp/*}}active{{end}}"><b>1.7</b> Machine Learning & NLP</a>
-            <li class="menu-list-item {{ispage /theory/cds/*}}active{{end}}"><a href="/theory/cds/" class="menu-list-link {{ispage /theory/cds/*}}active{{end}}"><b>1.8</b> Clinical Decision Support</a>
-              <li class="menu-list-item {{ispage /theory/lhs/*}}active{{end}}"><a href="/theory/lhs/" class="menu-list-link {{ispage /theory/lhs/*}}active{{end}}"><b>1.9</b> Learning Health System</a>
+            <ul class="menu-list">
+              <li class="menu-list-item {{ispage /theory/health_data/*}}active{{end}}"><a href="/theory/health_data/" class="menu-list-link {{ispage /theory/health_data/*}}active{{end}}"><b>1.2</b> Health Data</a>
+                <ul class="menu-list-child-list ">
+                  <li class="menu-list-item {{ispage /theory/ehr/*}}active{{end}}"><a href="/theory/ehr/" class="menu-list-link {{ispage /theory/ehr/*}}active{{end}}"><b>1.2.1</b> Electronic Health Records</a>
+                </ul>
+            </ul>
+
+            <li class="menu-list-item {{ispage /theory/standards/*}}active{{end}}"><a href="/theory/standards/" class="menu-list-link {{ispage /theory/standards/*}}active{{end}}"><b>1.3</b> Standards</a>
+            <li class="menu-list-item {{ispage /theory/interoperability/*}}active{{end}}"><a href="/theory/interoperability/" class="menu-list-link {{ispage /theory/interoperability/*}}active{{end}}"><b>1.4</b> Interoperability </a>            
+            <li class="menu-list-item {{ispage /theory/research_process/*}}active{{end}}"><a href="/theory/research_process/" class="menu-list-link {{ispage /theory/research_process/*}}active{{end}}"><b>1.5</b> Research Process</a>
+              <li class="menu-list-item {{ispage /theory/software_engineering/*}}active{{end}}"><a href="/theory/software_engineering/" class="menu-list-link {{ispage /theory/software_engineering/*}}active{{end}}"><b>1.6</b> Software Engineering</a>
+            <li class="menu-list-item {{ispage /theory/information_retrieval/*}}active{{end}}"><a href="/theory/information_retrieval/" class="menu-list-link {{ispage /theory/information_retrieval/*}}active{{end}}"><b>1.7</b> Information Retrieval</a>
+            <li class="menu-list-item {{ispage /theory/analytic_pipelines/*}}active{{end}}"><a href="/theory/analytic_pipelines/" class="menu-list-link {{ispage /theory/analytic_pipelines/*}}active{{end}}"><b>1.8</b> Analytic Pipelines</a>
+            <ul class="menu-list">
+              <li class="menu-list-item {{ispage /theory/ai/*}}active{{end}}"><a href="/theory/ai/" class="menu-list-link {{ispage /theory/ai/*}}active{{end}}"><b>1.9</b> Artificial Intelligence</a>
+              <ul class="menu-list-child-list ">
+                <li class="menu-list-item {{ispage /theory/ml/*}}active{{end}}"><a href="/theory/ml/" class="menu-list-link {{ispage /theory/ml/*}}active{{end}}"><b>1.9.1</b> Machine Learning</a>
+                <li class="menu-list-item {{ispage /theory/nlp/*}}active{{end}}"><a href="/theory/nlp/" class="menu-list-link {{ispage /theory/nlp/*}}active{{end}}"><b>1.9.2</b> Natural Language Processing</a>
+              </ul>
+            </ul>
+            <li class="menu-list-item {{ispage /theory/cds/*}}active{{end}}"><a href="/theory/cds/" class="menu-list-link {{ispage /theory/cds/*}}active{{end}}"><b>1.10</b> Clinical Decision Support</a>
+              <li class="menu-list-item {{ispage /theory/lhs/*}}active{{end}}"><a href="/theory/lhs/" class="menu-list-link {{ispage /theory/lhs/*}}active{{end}}"><b>1.11</b> Learning Health System</a>
           <div class="section-title">Infrastructure</div>
             <li class="menu-list-item {{ispage /infrastructure/setup/*}}active{{end}}"><a href="/infrastructure/setup/intro/" class="menu-list-link {{ispage /infrastructure/setup/*}}active{{end}}"><b>2</b> Setup</a>
             <ul class="menu-list-child-list ">
               <li class="menu-list-item"><a href="/infrastructure/setup/intro/"     class="menu-list-link {{ispage /infrastructure/setup/intro/}}active{{end}}"><b>2.1</b> Overview</a>
               <li class="menu-list-item"><a href="/infrastructure/setup/oscar/"     class="menu-list-link {{ispage /infrastructure/setup/oscar/}}active{{end}}"><b>2.2</b> Oscar</a>
-              <li class="menu-list-item"><a href="/infrastructure/setup/wsl/"       class="menu-list-link {{ispage /infrastructure/setup/wsl/}}active{{end}}"><b>2.2</b> Linux for Windows</a>
-              <li class="menu-list-item"><a href="/infrastructure/setup/julia/"     class="menu-list-link {{ispage /infrastructure/setup/julia/}}active{{end}}"><b>2.3</b> Julia</a>
-              <li class="menu-list-item"><a href="/infrastructure/setup/r/"         class="menu-list-link {{ispage /infrastructure/setup/r/}}active{{end}}"><b>2.4</b> R</a>
-              <li class="menu-list-item"><a href="/infrastructure/setup/vscode/"    class="menu-list-link {{ispage /infrastructure/setup/vscode/}}active{{end}}"><b>2.5</b> VS Code</a>
-              <li class="menu-list-item"><a href="/infrastructure/setup/filezilla/" class="menu-list-link {{ispage /infrastructure/setup/filezilla/}}active{{end}}"><b>2.6</b> FileZilla</a>
+              <li class="menu-list-item"><a href="/infrastructure/setup/wsl/"       class="menu-list-link {{ispage /infrastructure/setup/wsl/}}active{{end}}"><b>2.3</b> Linux for Windows</a>
+              <li class="menu-list-item"><a href="/infrastructure/setup/julia/"     class="menu-list-link {{ispage /infrastructure/setup/julia/}}active{{end}}"><b>2.4</b> Julia</a>
+              <li class="menu-list-item"><a href="/infrastructure/setup/r/"         class="menu-list-link {{ispage /infrastructure/setup/r/}}active{{end}}"><b>2.5</b> R</a>
+              <li class="menu-list-item"><a href="/infrastructure/setup/vscode/"    class="menu-list-link {{ispage /infrastructure/setup/vscode/}}active{{end}}"><b>2.6</b> VS Code</a>
+              <li class="menu-list-item"><a href="/infrastructure/setup/filezilla/" class="menu-list-link {{ispage /infrastructure/setup/filezilla/}}active{{end}}"><b>2.7</b> FileZilla</a>
             </ul>
             <li class="menu-list-item {{ispage /infrastructure/data/*}}active{{end}}"><a href="/infrastructure/data/datasets/" class="menu-list-link {{ispage /infrastructure/data/*}}active{{end}}"><b>3</b> Data</a>
               <ul class="menu-list-child-list ">
@@ -106,7 +120,7 @@
                   <li class="menu-list-item"><a href="/programming/julia/repl/"        class="menu-list-link {{ispage /programming/julia/repl/}}active{{end}}"><b>6.7</b> REPL and Packages</a>
                   <li class="menu-list-item"><a href="/programming/julia/dataframes/"  class="menu-list-link {{ispage /programming/julia/dataframes/}}active{{end}}"><b>6.8</b> DataFrames</a>
                   <li class="menu-list-item"><a href="/programming/julia/stats/"       class="menu-list-link {{ispage /programming/julia/stats/}}active{{end}}"><b>6.9</b> Statistics and Machine Learning</a>
-                  <li class="menu-list-item"><a href="/programming/julia/stats-2/"       class="menu-list-link {{ispage /programming/julia/stats-2/}}active{{end}}"><b>6.9.a</b> Stats/ML (Extra Resources)</a>
+                  <li class="menu-list-item"><a href="/programming/julia/stats-2/"       class="menu-list-link {{ispage /programming/julia/stats-2/}}active{{end}}"><b>6.9.1</b> Stats/ML (Extra Resources)</a>
                   <li class="menu-list-item"><a href="/programming/julia/viz/"         class="menu-list-link {{ispage /programming/julia/viz/}}active{{end}}"><b>6.10</b> Plotting and Visualization</a>
                   <li class="menu-list-item"><a href="/programming/julia/R/"         class="menu-list-link {{ispage /programming/julia/R/}}active{{end}}"><b>6.11</b> Intro to R</a>
                   <li class="menu-list-item"><a href="/programming/julia/python/"         class="menu-list-link {{ispage /programming/julia/python/}}active{{end}}"><b>6.12</b> Intro to Python</a>
