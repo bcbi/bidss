@@ -18,6 +18,9 @@ Included in this information are <b>patient demographics, progress notes, proble
 The EHR <b>automates and streamlines the clinician's workflow.</b>
 The EHR has the ability to generate a complete record of a clinical patient encounter - as well as supporting other care-related activities directly or indirectly via interface - including <b>evidence-based decision support, quality management, and outcomes reporting.</b>”
 
+<div class="cite-box"> Yamada Y. The electronic health record as a primary source of clinical phenotype for genetic epidemiological studies. Genomic Med 2008;2(1-2):5.
+    </div>
+
 </div> 
 ~~~ 
 
