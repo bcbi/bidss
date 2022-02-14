@@ -15,7 +15,7 @@
 <div class="home-box">
     <center><img src = "/assets/home_page/biomedical_informatics.png" alt = "biomedical informatics pipeline" class="informatics_img"></center>
     
-    <div class="cite-box"> Courtesy of: Katherine Brown, MSN, RN, BCBI/CCMB PhD Candidate | Adapted from: https://www.dbmi.columbia.edu/about-dbmi/
+    <div class="cite-box"> Adapted from: https://www.dbmi.columbia.edu/about-dbmi/
     </div>
     <br>
     <span style="font-size:20px;color:#003C71;font-weight:bold;">A Formal Definition:</span>
@@ -48,8 +48,8 @@
     <ul style=“list-style-type:square”>
 
         <li> 
-        Chapter 1 (Introduction) in Sarkar, Indra Neil (Ed). <a href="https://ebookcentral-proquest-com.revproxy.brown.edu/lib/brown/reader.action?docID=1377720" target="_blank">Methods in Biomedical Informatics.</a> Academic Press (2014). ISBN: 9780124016781 (Freely accessible with Brown email address on campus or on VPN)
-        </li>
+        Chapter 1 (Introduction) in Sarkar, Indra Neil (Ed). <a href="https://ebookcentral-proquest-com.revproxy.brown.edu/lib/brown/reader.action?docID=1377720" target="_blank"> Methods in Biomedical Informatics.</a> Academic Press (2014). ISBN: 9780124016781 (Freely accessible with Brown email address on campus or on VPN)
+        </li> 
         <li>
         Sarkar IN. <a href="https://pubmed.ncbi.nlm.nih.gov/20187952" target="_blank"> Biomedical informatics and translational medicine.</a> J Transl Med. 2010;8:22. Published 2010 Feb 26. doi:10.1186/1479-5876-8-22
         </li>

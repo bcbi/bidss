@@ -11,4 +11,3 @@
 
 ## Clinical Data
 
-~~~ <img src="/assets/data/data.png"> </img> ~~~
