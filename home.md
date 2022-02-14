@@ -1,6 +1,7 @@
 @def title = "Biomedical Informatics and Data Science Skills (BIDSS) Learning Platform"
 
-# Biomedical Informatics and Data Science Skills (BIDSS) Manual
+# BIDSS Manual
+### *Biomedical Informatics and Data Science Skills*
 
 ~~~   
 <div class="home-box">
