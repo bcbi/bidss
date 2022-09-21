@@ -24,6 +24,17 @@ The EHR has the ability to generate a complete record of a clinical patient enco
 </div> 
 ~~~ 
 
+#### Challenges
+
+~~~ 
+<div class="home-box">
+
+<div class="cite-box"> Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
+    </div>
+
+</div> 
+~~~ 
+
 
 #### Key Readings
 
