@@ -28,6 +28,27 @@ The EHR has the ability to generate a complete record of a clinical patient enco
 
 ~~~ 
 <div class="home-box">
+    "Research with EHR presents several challenges that should be considered: 
+    - Obtaining data
+      - Access to <b>Personally Identifiable Information (PII)</b> is tightly regulated by federal law, industry standard, and institutional policy.
+      - Synthetic datasets such as [MIMIC-IV](https://physionet.org/content/mimiciv/2.0/) can be accessed more readily.
+    - Bias in data
+      - Data may be gathered with an original purpose other than research or scientific discovery:
+        - Billing
+        - Documentation
+        - Patient management
+        - Preparation of legal documents
+        - Use by health care personnel
+      - Research-relevant data might not be collected.
+      - Patients might be excluded based on difficulty of measurement.
+      - There may be High missing rates, possibly correlated to condition.
+    - Considerations for assessing data quality
+      - Attribute domain constraints (e.g., Are any negative pulse oximetry values present?)
+      - Relational integrity rules (e.g., Could there be multiple primary keys for a patient?)
+      - Historical data rules (e.g., Is the same format used over time?)
+      - State-dependent rules (e.g., Do records exists after time of death?)
+      - Attribute dependency rules (e.g., Is pregnancy in males observed?)
+Much of the effort spent in an EHR study involves preparing the data for use."
 
 <div class="cite-box"> Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
     </div>
