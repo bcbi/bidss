@@ -28,6 +28,8 @@ The EHR has the ability to generate a complete record of a clinical patient enco
 
 ~~~ 
 <div class="home-box">
+The following section is adapted from <a href="#footnote-1">Wu et al.[1]</a>.
+
 Research with EHR presents several challenges that should be considered: 
 <ul>
     <li> Obtaining data
@@ -60,7 +62,7 @@ Research with EHR presents several challenges that should be considered:
 </ul>
 Much of the effort spent in an EHR study involves preparing the data for use.
 
-<div class="cite-box"> Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
+<div class="cite-box" id="cite-Wu"> [1] Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
     </div>
 
 </div> 
