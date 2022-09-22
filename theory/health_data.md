@@ -19,7 +19,7 @@
 
 #### Working with health data
 
-The following section is adapted from Wu et al.[1].
+The following section is adapted from Wu et al.[^Wu].
 
 - Data extraction
   - Health data is stored as a database
@@ -69,7 +69,7 @@ The following section is adapted from Wu et al.[1].
   - Domain clinical and epidemiological experts should work together carefully
 - Publication and dissemination
 
-[1]: Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
+[^Wu]: Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
 
 #### Key Readings
 
