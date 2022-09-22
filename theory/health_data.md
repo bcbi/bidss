@@ -17,6 +17,59 @@
 </div> 
 ~~~ 
 
+#### Working with health data
+
+The following section is adapted from Wu et al.[1].
+
+- Data extraction
+  - Health data is stored as a database
+- Data cleaning/cleansing/scrubbing
+  - These steps are performed over the entire database:
+    - Address errors, inconsistencies, redundancies
+    - Standardize inconsistent coding schemes, and units, and spellings
+    - Combine data and variables that were mistakenly spread to different tables
+  - Ideally, data should be in a tidy format:
+    - Each variable has 1 column
+    - Each observation has 1 row
+    - Each cell has 1 value
+  - Exercise caution with heuristic algorithms for data cleaning!
+    - For example, suppose you assume any decrease or unexpected increase in height is always an error. You might be excluding a valid and interesting minority of cases in order to focus on the mundane! This can increase bias in the dataset.
+- Data preprocessing
+  - These steps are performed once for each research project:
+    - Summarize and extract useful features (e.g., feature engineering and dimension reduction)
+    - Impute missing data
+      - Keep in mind that data may be missing different reasons, possibly correlated with some feature
+    - Combine redundant information
+  - However, this is an iterative process:
+    - Make incremental changes
+    - Document any changes and observations
+  - Dimension reduction
+    - Variable grouping or clustering
+      - Which hierarchical medical code to use
+    - Principal Component Analysis
+      - Explain most of the variance with a small portion of the data
+    - Embedding and deep learning
+      - Embedding turns binary and categorical variables into continuous feature vectors
+- Data preparation
+ - These steps might be done multiple times within a project:
+   - Combine or separate overlapping time intervals
+   - Define, classify,  and label patients by different outcomes
+   - Define encounters and time intervals to prepare for analyses
+   - Prepare for different scenarios, such as sensitivity analysis
+- Data visualization
+  - This can help for checking the validity of your approach
+- Select appropriate model
+- Data types, many missing, highly correlated, errors and uncertainty
+  - Predict future event based on current data
+  - Estimate value based on data (filtering out noise)
+- Result validation
+  - Reduce bias and confounding
+  - Split your data into testing and validation sets, or use different data sources
+- Result interpretation
+  - Domain clinical and epidemiological experts should work together carefully
+- Publication and dissemination
+
+[1]: Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
 
 #### Key Readings
 
