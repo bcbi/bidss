@@ -7,13 +7,16 @@ docs/build/
 docs/site/
 node_modules/
 
+# vim
+*.swp
+
 *.jl.*.cov
 *.jl.cov
 *.jl.mem
 .DS_Store
 .Rhistory
 Icon
-Icon
+Icon
 Manifest.toml
 deps/build.log
 deps/deps.jl
