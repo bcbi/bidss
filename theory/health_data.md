@@ -23,7 +23,7 @@ The following section is adapted from Wu et al.[^Wu].
 
 Health data research involves the following tasks that occur between the extraction of data and the dissemination of results:
 
-- Data cleaning/cleansing/scrubbing
+1. Data cleaning/cleansing/scrubbing
   - These steps are performed over the entire database:
     - Address errors, inconsistencies, redundancies
     - Standardize inconsistent coding schemes, and units, and spellings
@@ -34,7 +34,7 @@ Health data research involves the following tasks that occur between the extract
     - each cell has 1 value.
   - Exercise caution with heuristic algorithms for data cleaning!
     - For example, suppose you assume any decrease or unexpected increase in height is always an error. You might be excluding a valid and interesting minority of cases in order to focus on the mundane! This can increase bias in the dataset.
-- Data preprocessing
+2. Data preprocessing
   - These steps are performed at the research project scale:
     - Summarize and extract useful features (e.g., feature engineering and dimension reduction)
     - Impute missing data, carefully considering why it is missing
@@ -43,19 +43,19 @@ Health data research involves the following tasks that occur between the extract
     - Variable grouping or clustering (Which hierarchical medical code should be used?)
     - Principal Component Analysis (Can most of the variance be explained with a small portion of the data?)
     - Embedding and deep learning (Can binary and categorical variables be turned into continuous feature vectors?)
-- Data preparation
+3. Data preparation
   - These steps might be done multiple times within a project:
     - Combine or separate overlapping time intervals
     - Define, classify,  and label patients by different outcomes
     - Define encounters and time intervals to prepare for analyses
     - Prepare for different scenarios, such as sensitivity analysis
-- Data visualization
+4. Data visualization
   - This can help for checking the validity of your approach
-- Select appropriate model
-- Result validation
+5. Model selection
+6. Result validation
   - Reduce bias and confounding
   - Split your data into testing and validation sets, or use different data sources
-- Result interpretation
+7. Result interpretation
   - Domain clinical and epidemiological experts should work together carefully at this stage.
 
 Over the course of research, the exact steps might need to be updated frequently. Changes should be documented and tested individually.
