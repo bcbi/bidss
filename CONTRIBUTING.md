@@ -8,9 +8,12 @@
 | [4. Deleting branches](#4-deleting-branches) |
 | [5. Troubleshooting](#5-troubleshooting) |
 
+Any file changes should be made with a plain text editor.
+The following instructions assume that the Vim text editor will be used.
+
 # 1. One-time setup
 
-Tell Git to use Vim as your editor:
+The following command changes Git's default editor to Vim:
 ```bash
 git config --global core.editor vim
 ```
@@ -60,6 +63,9 @@ git push origin yourinitials/your-branch-name
 ```
 
 ## 3.3. Make a pull request
+
+If you've recently pushed your changes to GitHub, a popup on [this repository's main page](https://github.com/bcbi/bidss/) should appear.
+Click the button in order to create a pull request, or follow these steps to create one manually:
 
 1. Click on the `Pull Requests` tab.
 2. Click the green `New pull request` button.
