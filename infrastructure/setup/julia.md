@@ -16,9 +16,10 @@ Some developers might wish to use a different version, or to switch between vers
 For this, the [Juliaup version manager](https://github.com/JuliaLang/juliaup) can be useful.
 
 ## macOS 11.X Big Sur
-The below instructions have been tested on computers running macOS 11 Big Sur. In order to check the macOS version running onmyour computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.16.X (where 'X' is any number). These instructions will likely work with earlier versions of macOS as well.
-
-If you are not running macOS 11.X Big Sur, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~. While it may not be necessary for you to perform this upgrade for the following instructions to work, they have only been tested on macOS 11 Big Sur.
+The following instructions have been tested on computers running macOS 11 Big Sur.
+In order to check the macOS version running on your computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac."
+A window will pop up that includes a version number. Confirm you are running at least Version 10.16.X (where 'X' is any number). These instructions will likely work with earlier versions of macOS as well.
+If you are not running macOS 11.X Big Sur, you can upgrade for free following the instructions provided on ~~~<a href="https://support.apple.com/en-us/HT201475" target="_blank">Apple's website</a>~~~.
 
 1. **Download Julia** \\
 Navigate to ~~~<a href="https://julialang.org/downloads/" target="_blank">julialang.org/downloads/</a>~~~ and download the "Current stable release" of Julia for macOS 10.8+ (.dmg)
