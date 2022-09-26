@@ -21,53 +21,44 @@
 
 The following section is adapted from Wu et al.[^Wu].
 
-- Data extraction
-  - Health data is stored as a database
+Health data research involves the following tasks that occur between the extraction of data and the dissemination of results:
+
 - Data cleaning/cleansing/scrubbing
   - These steps are performed over the entire database:
     - Address errors, inconsistencies, redundancies
     - Standardize inconsistent coding schemes, and units, and spellings
     - Combine data and variables that were mistakenly spread to different tables
-  - Ideally, data should be in a tidy format:
-    - Each variable has 1 column
-    - Each observation has 1 row
-    - Each cell has 1 value
+  - Ideally, data will be in a tidy format, where
+    - each variable has 1 column,
+    - each observation has 1 row, and
+    - each cell has 1 value.
   - Exercise caution with heuristic algorithms for data cleaning!
     - For example, suppose you assume any decrease or unexpected increase in height is always an error. You might be excluding a valid and interesting minority of cases in order to focus on the mundane! This can increase bias in the dataset.
 - Data preprocessing
-  - These steps are performed once for each research project:
+  - These steps are performed at the research project scale:
     - Summarize and extract useful features (e.g., feature engineering and dimension reduction)
-    - Impute missing data
-      - Keep in mind that data may be missing different reasons, possibly correlated with some feature
+    - Impute missing data, carefully considering why it is missing
     - Combine redundant information
-  - However, this is an iterative process:
-    - Make incremental changes
-    - Document any changes and observations
-  - Dimension reduction
-    - Variable grouping or clustering
-      - Which hierarchical medical code to use
-    - Principal Component Analysis
-      - Explain most of the variance with a small portion of the data
-    - Embedding and deep learning
-      - Embedding turns binary and categorical variables into continuous feature vectors
+  - This stage can involve some type of dimension reduction:
+    - Variable grouping or clustering (Which hierarchical medical code should be used?)
+    - Principal Component Analysis (Can most of the variance be explained with a small portion of the data?)
+    - Embedding and deep learning (Can binary and categorical variables be turned into continuous feature vectors?)
 - Data preparation
- - These steps might be done multiple times within a project:
-   - Combine or separate overlapping time intervals
-   - Define, classify,  and label patients by different outcomes
-   - Define encounters and time intervals to prepare for analyses
-   - Prepare for different scenarios, such as sensitivity analysis
+  - These steps might be done multiple times within a project:
+    - Combine or separate overlapping time intervals
+    - Define, classify,  and label patients by different outcomes
+    - Define encounters and time intervals to prepare for analyses
+    - Prepare for different scenarios, such as sensitivity analysis
 - Data visualization
   - This can help for checking the validity of your approach
 - Select appropriate model
-- Data types, many missing, highly correlated, errors and uncertainty
-  - Predict future event based on current data
-  - Estimate value based on data (filtering out noise)
 - Result validation
   - Reduce bias and confounding
   - Split your data into testing and validation sets, or use different data sources
 - Result interpretation
-  - Domain clinical and epidemiological experts should work together carefully
-- Publication and dissemination
+  - Domain clinical and epidemiological experts should work together carefully at this stage.
+
+Over the course of research, the exact steps might need to be updated frequently. Changes should be documented and tested individually.
 
 [^Wu]: Ed. Hulin Wu et al. Statistics and machine learning methods for EHR data: from data extraction to data analytics. CRC Press 2021; ISBN 978-0-367-44239-2
 
