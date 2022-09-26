@@ -9,6 +9,12 @@
 
 \toc
 
+## Installing Julia
+
+For most users, it is recommended to download the current stable release from [https://julialang.org/downloads/](https://julialang.org/downloads/).
+Some developers might wish to use a different version, or to switch between versions.
+For this, the [Juliaup version manager](https://github.com/JuliaLang/juliaup) can be useful.
+
 ## macOS 11.X Big Sur
 The below instructions have been tested on computers running macOS 11 Big Sur. In order to check the macOS version running onmyour computer, click on the "apple" icon in the top left hand corner of your screen and select "About This Mac." A window will pop up that includes a version number. Confirm you are running Version 10.16.X (where 'X' is any number). These instructions will likely work with earlier versions of macOS as well.
 
