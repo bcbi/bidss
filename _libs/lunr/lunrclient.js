@@ -35,8 +35,13 @@ function parseLunrResults(results) {
         html.push(result);
     }
     if (html.length) {
-        html.join("");
-        return '<ul>'+html+'</ul>'
+        if (/^Tag:/.test(title)) {
+            return "";
+        }
+        else {
+            html.join("");
+            return '<ul>'+html+'</ul>'
+        }
     }
     else {
         return "";
