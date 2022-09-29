@@ -67,8 +67,8 @@ function searchLunr(query) {
     // Write results to page
     var results = idx.search(query);
     var resultHtml = parseLunrResults(results);
-    var regex = /,/g;
-    var trimmedHtml = resultHtml.replace(regex, "");
+    var regex = /,<li>/g;
+    var trimmedHtml = resultHtml.replace(regex, "<li>");
     var elementId = LUNR_CONFIG["resultsElementId"];
     document.getElementById(elementId).innerHTML = trimmedHtml;
     // Write the number of results
