@@ -32,16 +32,13 @@ function parseLunrResults(results) {
         var link = item["l"].replace("__site/", "");
         var result = ('<li><span class="result-title"><a href="' + link + '">'
                     + title + '</a></span>');
-        html.push(result);
+        if (!/^Tag:/.test(title)) {
+            html.push(result);
+        }
     }
     if (html.length) {
-        if (/^Tag:/.test(title)) {
-            return "";
-        }
-        else {
-            html.join("");
-            return '<ul>'+html+'</ul>'
-        }
+        html.join("");
+        return '<ul>'+html+'</ul>'
     }
     else {
         return "";
