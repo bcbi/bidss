@@ -1,4 +1,5 @@
 // This file and its minified version is adapted from https://github.com/BLE-LTER/Lunr-Index-and-Search-for-Static-Sites which is unlicensed.
+// The function searchLunr has been adapted for use in the BIDSS manual.
 //
 
 "use strict";
@@ -67,6 +68,9 @@ function searchLunr(query) {
     // Write results to page
     var results = idx.search(query);
     var resultHtml = parseLunrResults(results);
+    // The following regular expression was added manually for the BIDSS manual.
+    // Any commas in resultHtml that appear before a new entry are trimmed.
+    // This prevents them from being displayed in the search results.
     var regex = /,<li>/g;
     var trimmedHtml = resultHtml.replace(regex, "<li>");
     var elementId = LUNR_CONFIG["resultsElementId"];
