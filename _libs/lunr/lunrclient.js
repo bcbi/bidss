@@ -1,5 +1,5 @@
 // This file and its minified version is adapted from https://github.com/BLE-LTER/Lunr-Index-and-Search-for-Static-Sites which is unlicensed.
-// The functions parseLunrResults and searchLunr have been adapted for use in the BIDSS Manual
+// The functions parseLunrResults, showResultCount, and searchLunr have been adapted for use in the BIDSS Manual.
 //
 
 "use strict";
@@ -60,9 +60,27 @@ function escapeHtml(unsafe) {
 
 
 function showResultCount(total) {
-    var element = document.getElementById(LUNR_CONFIG["countElementId"])
-    if (element !== null) {
-        element.innerHTML = total + ".";
+    // Old version:
+    //var element = document.getElementById(LUNR_CONFIG["countElementId"])
+    //if (element !== null) {
+    //    element.innerHTML = total + ".";
+    //}
+
+    // This function was rewritten for the BIDSS manual.
+    // Tag entries are filtered out of the from the search results.
+    // So, the printed total number of results should reflect this.
+
+    var total = document.getElementById(LUNR_CONFIG["countElementId"]);
+    var text = document.getElementById(LUNR_CONFIG["resultsElementId"]);
+
+    var regex = /Tag: /g;
+
+    if (regex.test(text)) {
+        var total = total - text.match(regex).length;
+    }
+
+    if (total !== null) {
+        total.innerHTML = total + ".";
     }
 }
 
