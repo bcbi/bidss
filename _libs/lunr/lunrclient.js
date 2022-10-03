@@ -70,17 +70,17 @@ function showResultCount(total) {
     // Tag entries are filtered out of the from the search results.
     // So, the printed total number of results should reflect this.
 
-    var total = document.getElementById(LUNR_CONFIG["countElementId"]);
+    var element = document.getElementById(LUNR_CONFIG["elementElementId"]);
     var text = document.getElementById(LUNR_CONFIG["resultsElementId"]);
 
-    var regex = /Tag: /g;
+    if (element !== null) {
+        var regex = /Tag: /g;
 
-    if (regex.test(text)) {
-        var total = total - text.match(regex).length;
-    }
-
-    if (total !== null) {
-        total.innerHTML = total + ".";
+        var count = total
+        if (regex.test(text)) {
+            count = count - text.match(regex).length;
+        }
+        element.innerHTML = count + ".";
     }
 }
 
