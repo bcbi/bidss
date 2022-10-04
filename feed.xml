@@ -23,6 +23,25 @@
 
 <item>
   <title>
+    <![CDATA[  AI in Healthcare  ]]>
+  </title>
+  <link> https://bcbi.github.io/bidss/theory/healthcare/index.html </link>
+  <guid> https://bcbi.github.io/bidss/theory/healthcare/index.html </guid>
+  <description>
+    <![CDATA[  BIDSS: Opportunities for Artificial Intelligence in Healthcare  ]]>
+  </description>  
+    
+  <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Brown Center for Biomedical Informatics (BCBI) at Brown University</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Introduction to Matlab  ]]>
   </title>
   <link> https://bcbi.github.io/bidss/programming/matlab/intro/index.html </link>

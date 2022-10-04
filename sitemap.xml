@@ -38,6 +38,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://bcbi.github.io/bidss/theory/healthcare/index.html</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://bcbi.github.io/bidss/theory/biomedical_informatics/index.html</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -213,6 +219,12 @@
 </url>
 <url>
     <loc>https://bcbi.github.io/bidss/infrastructure/setup/r/index.html</loc>
+    <lastmod>2022-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://bcbi.github.io/bidss/courses/new/index.html</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
