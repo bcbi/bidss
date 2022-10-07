@@ -81,10 +81,10 @@ function searchLunr(query) {
     document.getElementById(elementId).innerHTML = trimmedHtml;
     // Write the number of results
     // The following code line was altered for the BIDSS manual.
-    // results still contains tag entries, so the number of these are subtracted
+    // results still counts tag entries, so the number of actual entries is used
     var total = results.length;
-    if (/Tag:/.test(resultHtml)) {
-        total = total - resultHtml.match(/Tag:/).length;
+    if (/<li>/.test(resultHtml)) {
+        total = trimmedHtml.match(/<li>/).length;
     }
     showResultCount(total);
 }
