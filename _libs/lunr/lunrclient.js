@@ -80,7 +80,9 @@ function searchLunr(query) {
     var elementId = LUNR_CONFIG["resultsElementId"];
     document.getElementById(elementId).innerHTML = trimmedHtml;
     // Write the number of results
-    showResultCount(results.length);
+    // The following code line was altered for the BIDSS manual.
+    // results still contains tag entries, so the length of trimmedHtml is shown.
+    showResultCount(trimmedHtml.length);
 }
 
 
