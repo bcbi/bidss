@@ -85,9 +85,9 @@ function searchLunr(query) {
     var total = results.length;
     if (/<li>/.test(trimmedHtml)) {
         total = trimmedHtml.match(/<li>/g).length;
-        //if (/Tag:/.test(trimmedHtml)) {
-        //    total = total - trimmedHtml.match(/Tag:/g).length;
-        //}
+        if (/tag/i.test(query)) {
+            total = total - resultHtml.match(/Tag:/g).length;
+        }
     }
     showResultCount(total);
 }
