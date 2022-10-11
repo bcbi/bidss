@@ -85,6 +85,9 @@ function searchLunr(query) {
     var total = results.length;
     if (/<li>/.test(resultHtml)) {
         total = trimmedHtml.match(/<li>/).length;
+        if (/Tag:/.test(resultHtml)) {
+            total = total - trimmedHtml.match(/Tag:/).length;
+        }
     }
     showResultCount(total);
 }
