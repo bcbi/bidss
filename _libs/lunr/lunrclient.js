@@ -84,9 +84,9 @@ function searchLunr(query) {
     // results still counts tag entries, so the number of actual entries is used
     var total = results.length;
     if (/<li>/.test(resultHtml)) {
-        total = resultHtml.match(/<li>/).length;
+        total = resultHtml.match(/<li>/g).length;
         if (/Tag:/.test(resultHtml)) {
-            total = total - resultHtml.match(/Tag:/).length;
+            total = total - resultHtml.match(/Tag:/g).length;
         }
     }
     showResultCount(total);
