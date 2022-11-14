@@ -25,5 +25,5 @@
 We believe that this registry is up to date with current areas of AI in Medicine related research being carried out at Brown. If you believe information presented here is inaccurate or would like to add additional information, please reach out to jay_khurana@alumni.brown.edu
 
 
-[//]: # Note for maintainers: https://tableconvert.com/excel-to-markdown can be helpful for copying/pasting from excel/gsheets to markdown. Using PyCharm or other Jetbrains software also makes markdown formatting easier.
+[//]: # (Note for maintainers: https://tableconvert.com/excel-to-markdown can be helpful for copying/pasting from excel/gsheets to markdown. Using PyCharm or other Jetbrains software also makes markdown formatting easier.)
 
