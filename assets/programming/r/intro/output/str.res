@@ -1,2 +1,1 @@
-RCall.RObject{RCall.NilSxp}
-NULL
+nothing

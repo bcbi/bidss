@@ -65,33 +65,16 @@ df &lt;- read.xlsx(<span class=hljs-string >&quot;c:/data.xlsx&quot;</span>)</co
 mtcars = dataset(<span class=hljs-string >&quot;datasets&quot;</span>,<span class=hljs-string >&quot;mtcars&quot;</span>);
 <span class=hljs-meta >@rput</span> mtcars
 
-<span class=hljs-string >R&quot;str(mtcars)&quot;</span></code></pre> <p>Output:</p> <pre><code class="plaintext hljs">e[?25le[2Ke[?25h&#x27;data.frame&#x27;:	32 obs. of  12 variables:
- $ Model: chr  &quot;Mazda RX4&quot; &quot;Mazda RX4 Wag&quot; &quot;Datsun 710&quot; &quot;Hornet 4 Drive&quot; ...
- $ MPG  : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
- $ Cyl  : int  6 6 4 6 8 6 8 4 4 6 ...
- $ Disp : num  160 160 108 258 360 ...
- $ HP   : int  110 110 93 110 175 105 245 62 95 123 ...
- $ DRat : num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
- $ WT   : num  2.62 2.88 2.32 3.21 3.44 ...
- $ QSec : num  16.5 17 18.6 19.4 17 ...
- $ VS   : int  0 0 1 1 0 1 0 1 1 1 ...
- $ AM   : int  1 1 1 0 0 0 0 0 0 0 ...
- $ Gear : int  4 4 4 3 3 3 3 4 4 4 ...
- $ Carb : int  4 4 1 1 2 1 4 2 2 4 ...
+<span class=hljs-string >R&quot;str(mtcars)&quot;</span></code></pre> <p>Output:</p> <pre><code class="plaintext hljs">e[?25le[2Ke[?25hUnable to automatically install &#x27;Zlib&#x27; from &#x27;/home/runner/.julia/packages/Zlib_jll/BGVLi/Artifacts.toml&#x27;
 </code></pre> <ul> <li><p>head&#40;data,n&#41; and tail&#40;data,n&#41;</p> </ul> <p>head&#40;&#41;: Top n elements</p> <p>tail&#40;&#41;: Bottom n elements</p> <pre><code class="julia hljs"><span class=hljs-meta >@rput</span> mtcars
 
 <span class=hljs-string >R&quot;print(head(mtcars, n = 3))&quot;</span>
-<span class=hljs-string >R&quot;print(tail(mtcars, n = 3))&quot;</span></code></pre> <p>Output:</p> <pre><code class="plaintext hljs">          Model  MPG Cyl Disp  HP DRat    WT  QSec VS AM Gear Carb
-1     Mazda RX4 21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
-2 Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
-3    Datsun 710 22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
-           Model  MPG Cyl Disp  HP DRat   WT QSec VS AM Gear Carb
-30  Ferrari Dino 19.7   6  145 175 3.62 2.77 15.5  0  1    5    6
-31 Maserati Bora 15.0   8  301 335 3.54 3.57 14.6  0  1    5    8
-32    Volvo 142E 21.4   4  121 109 4.11 2.78 18.6  1  1    4    2
+<span class=hljs-string >R&quot;print(tail(mtcars, n = 3))&quot;</span></code></pre> <p>Output:</p> <pre><code class="plaintext hljs">LoadError: UndefVarError: @rput not defined
+in expression starting at none:1
 </code></pre> <h3 id=descriptive_statistics ><a href="#descriptive_statistics" class=header-anchor >Descriptive Statistics</a></h3> <ul> <li><p>summary&#40;data&#41;: gives descriptive statistics for each variable</p> </ul> <p>Common Functions</p> <table><tr><th align=left >Tasks<th align=left >Functions<tr><td align=left >Mean<td align=left >mean&#40;&#41;<tr><td align=left >Standard deviation<td align=left >sd&#40;&#41;<tr><td align=left >Variance<td align=left >var&#40;&#41;<tr><td align=left >Minimum<td align=left >min&#40;&#41;<tr><td align=left >Maximum<td align=left >max&#40;&#41;<tr><td align=left >Median<td align=left >median&#40;&#41;<tr><td align=left >Range of values<td align=left >range&#40;&#41;<tr><td align=left >Sample quantiles<td align=left >quantile&#40;&#41;<tr><td align=left >Interquartile range<td align=left >IQR&#40;&#41;</table> <h4 id=case_of_missing_values ><a href="#case_of_missing_values" class=header-anchor >Case of missing values</a></h4> <ul> <li><p>na.rm &#61; T</p> </ul> <pre><code class="julia hljs"><span class=hljs-meta >@rput</span> mtcars
 
-<span class=hljs-string >R&quot;print(mean(mtcars<span class=hljs-variable >$MPG</span>, na.rm = T))&quot;</span></code></pre> <p>Output: <pre><code class="plaintext hljs">[1] 20.09062
+<span class=hljs-string >R&quot;print(mean(mtcars<span class=hljs-variable >$MPG</span>, na.rm = T))&quot;</span></code></pre> <p>Output: <pre><code class="plaintext hljs">LoadError: UndefVarError: @rput not defined
+in expression starting at none:1
 </code></pre></p> <h3 id=basic_plots ><a href="#basic_plots" class=header-anchor >Basic Plots</a></h3> <ul> <li><p>plot&#40;&#41;</p> </ul> <pre><code class="julia hljs"><span class=hljs-keyword >using</span> RCall
 <span class=hljs-keyword >using</span> RDatasets
 mtcars = dataset(<span class=hljs-string >&quot;datasets&quot;</span>,<span class=hljs-string >&quot;mtcars&quot;</span>);
@@ -131,4 +114,7 @@ png(&#x27;qqnorm.png&#x27;)
 qqnorm(mtcars<span class=hljs-variable >$Disp</span>)
 qqline(mtcars<span class=hljs-variable >$Disp</span>)
 dev.off()
-&quot;</span></code></pre> <p>Output: <img src="/bidss/qqnorm.png" alt=""></p> <h2 id=statistical_analysis ><a href="#statistical_analysis" class=header-anchor >Statistical Analysis</a></h2> <table><tr><th align=left >Analysis<th align=left >Continuous Outcome&#40;Y&#41;<th align=left >Binary Outcome&#40;Y&#41;<tr><td align=left >Correlation Analysis<td align=left ><td align=left ><tr><td align=left >X: Continuous<td align=left >cor.test&#40;&#41;<td align=left >t.test&#40;&#41;<tr><td align=left >X: Categorical<td align=left >t.test&#40;&#41;, ANOVA&#40;&#41;<td align=left >chisq.test&#40;&#41;<tr><td align=left >Regression Model<td align=left >lm&#40;&#41;<td align=left >glm&#40;&#41;</table> <div class=page-foot > <div class=copyright > <small> &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: October 11, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>. </small> </div> </div> </div> </div> </div> <!-- end of class page-wrap--> <script> $(window).scroll(function() { var scrollTop = $(window).scrollTop(); if (scrollTop <= 80) $('.sidenav').css('top', 80 - scrollTop); else $('.sidenav').css('top', 0); }); </script>
+&quot;</span></code></pre> <p>Output: <pre><code class="plaintext hljs">ArgumentError: Package RCall not found in current path:
+- Run `import Pkg; Pkg.add(&quot;RCall&quot;)` to install the RCall package.
+
+</code></pre> <img src="/bidss/qqnorm.png" alt=""></p> <h2 id=statistical_analysis ><a href="#statistical_analysis" class=header-anchor >Statistical Analysis</a></h2> <table><tr><th align=left >Analysis<th align=left >Continuous Outcome&#40;Y&#41;<th align=left >Binary Outcome&#40;Y&#41;<tr><td align=left >Correlation Analysis<td align=left ><td align=left ><tr><td align=left >X: Continuous<td align=left >cor.test&#40;&#41;<td align=left >t.test&#40;&#41;<tr><td align=left >X: Categorical<td align=left >t.test&#40;&#41;, ANOVA&#40;&#41;<td align=left >chisq.test&#40;&#41;<tr><td align=left >Regression Model<td align=left >lm&#40;&#41;<td align=left >glm&#40;&#41;</table> <div class=page-foot > <div class=copyright > <small> &copy; <a href="https://github.com/bcbi">Brown Center for Biomedical Informatics (BCBI) at Brown University</a>. Last updated: November 15, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. Powered by the <a href="https://julialang.org">Julia programming language</a>. </small> </div> </div> </div> </div> </div> <!-- end of class page-wrap--> <script> $(window).scroll(function() { var scrollTop = $(window).scrollTop(); if (scrollTop <= 80) $('.sidenav').css('top', 80 - scrollTop); else $('.sidenav').css('top', 0); }); </script>
